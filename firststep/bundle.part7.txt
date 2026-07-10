@@ -1,0 +1,147 @@
+    ${chip('large_group', t('largeGroup'), v.group === 'large_group', 'v-group')}
+      </div>
+      <h3>${t('activity')}</h3>
+      <div class="chip-row wrap">
+        ${chip('eating', t('eating'), v.activity === 'eating', 'v-activity')}
+        ${chip('reading', t('reading'), v.activity === 'reading', 'v-activity')}
+        ${chip('phone', t('phone'), v.activity === 'phone', 'v-activity')}
+        ${chip('ordering', t('ordering'), v.activity === 'ordering', 'v-activity')}
+        ${chip('live_music', t('liveMusic'), v.activity === 'live_music', 'v-activity')}
+        ${chip('screen', t('screenActivity'), v.activity === 'screen', 'v-activity')}
+        ${chip('shared_event', t('event'), v.activity === 'shared_event', 'v-activity')}
+        ${chip('group_talking', t('groupTalking'), v.activity === 'group_talking', 'v-activity')}
+      </div>
+      <h3>${t('openness')}</h3>
+      <div class="chip-row wrap">
+        ${chip('open', t('open'), v.openness === 'open', 'v-openness')}
+        ${chip('neutral', t('neutral'), v.openness === 'neutral', 'v-openness')}
+        ${chip('busy', t('busy'), v.openness === 'busy', 'v-openness')}
+        ${chip('closed', t('closed'), v.openness === 'closed', 'v-openness')}
+      </div>
+      <h3>${t('language')}</h3>
+      <div class="chip-row wrap">
+        ${chip('unknown', t('unknown'), v.language === 'unknown', 'v-language')}
+        ${chip('tr', t('turkish'), v.language === 'tr', 'v-language')}
+        ${chip('en', t('english'), v.language === 'en', 'v-language')}
+        ${chip('ar', t('arabic'), v.language === 'ar', 'v-language')}
+        ${chip('id', t('indonesian'), v.language === 'id', 'v-language')}
+        ${chip('other', t('otherLanguage'), v.language === 'other', 'v-language')}
+      </div>
+      <button class="primary-button full" data-action="generate-venue">${t('generate')}</button>
+    </section>
+    ${v.resultCreated ? `<section class="result-card venue-result">
+      <div class="mini-section"><span>${t('assessment')}</span><p>${escapeHtml(assessment)}</p></div>
+      <div class="result-label">${t('mainSuggestion')}</div>
+      <blockquote>${escapeHtml(suggestion)}</blockquote>
+      <div class="result-actions">
+        <button class="secondary-button" data-action="venue-next">${icon('refresh')} ${t('warmer')}</button>
+        <button class="secondary-button" data-action="save" data-save-text="${escapeHtml(suggestion)}" data-save-meta="${escapeHtml(v.name || labelForVenueType(v.type, state.lang))}">${icon('heart')} ${t('save')}</button>
+      </div>
+      <div class="topic-block"><strong>${t('topics')}</strong><div class="topic-chips">${topics.map((topic) => `<span>${escapeHtml(topic)}</span>`).join('')}</div></div>
+    </section>` : ''}`;
+}
+
+function renderRescue() {
+  const { situation, variant } = state.rescue;
+  const suggestion = situation ? rescueSuggestion({ situation, lang: state.lang, variant }) : '';
+  const alt = situation ? rescueSuggestion({ situation, lang: state.lang, variant: variant + 1 }) : '';
+  const situations = ['silence', 'short_answer', 'asks_question', 'topic_ended', 'interested', 'leaving', 'joined_group'];
+  return `${header(t('rescueTitle'), t('rescueSubtitle'))}
+    <section class="choice-grid rescue-grid">
+      ${situations.map((item) => `<button class="quick-choice ${situation === item ? 'selected' : ''}" data-rescue="${item}"><span>${rescueSymbol(item)}</span><strong>${t(item)}</strong></button>`).join('')}
+    </section>
+    ${suggestion ? `<section class="result-card instant-result">
+      <div class="result-label">${t('doThis')}</div>
+      <blockquote>${escapeHtml(suggestion)}</blockquote>
+      <div class="alternative"><span>${t('alternative')}</span><p>${escapeHtml(alt)}</p></div>
+      <div class="result-actions">
+        <button class="secondary-button" data-action="rescue-next">${icon('refresh')} ${t('warmer')}</button>
+        <button class="secondary-button" data-action="save" data-save-text="${escapeHtml(suggestion)}" data-save-meta="${escapeHtml(t('rescue'))}">${icon('heart')} ${t('save')}</button>
+      </div>
+    </section>` : ''}`;
+}
+
+function rescueSymbol(item) {
+  return ({ silence: '…', short_answer: '—', asks_question: '?', topic_ended: '↪', interested: '＋', leaving: '↗', joined_group: '◎' })[item] || '•';
+}
+
+function renderPractice() {
+  const scenarios = practiceScenarios[state.lang];
+  const selectedScenario = state.practice.scenario ? scenarios.find((s) => s.id === state.practice.scenario) : null;
+  if (!selectedScenario) {
+    return `${header(t('practiceTitle'), t('chooseScenario'))}
+      <section class="scenario-list">${scenarios.map((scenario) => `<button class="scenario-card" data-scenario="${scenario.id}"><span>${icon('practice')}</span><div><strong>${escapeHtml(scenario.title)}</strong><small>${escapeHtml(scenario.scene)}</small></div>${icon('arrow')}</button>`).join('')}</section>`;
+  }
+
+  const chosen = state.practice.selected;
+  return `${header(selectedScenario.title, selectedScenario.scene)}
+    <section class="panel">
+      <h2>${t('chooseOpener')}</h2>
+      <div class="answer-list">${selectedScenario.choices.map((choice, index) => `<button class="answer ${chosen === index ? 'selected' : ''} ${chosen !== null && index === selectedScenario.best ? 'best' : ''}" data-practice-choice="${index}">${escapeHtml(choice)}</button>`).join('')}</div>
+    </section>
+    ${chosen !== null ? `<section class="result-card practice-result">
+      <div class="result-label ${chosen === selectedScenario.best ? 'success' : 'warning'}">${chosen === selectedScenario.best ? t('correct') : t('improve')}</div>
+      <div class="mini-section"><span>${t('response')}</span><p>“${escapeHtml(selectedScenario.response)}”</p></div>
+      <div class="mini-section"><span>${t('feedback')}</span><p>${escapeHtml(selectedScenario.feedback)}</p></div>
+      <button class="primary-button full" data-action="practice-reset">${t('retry')}</button>
+    </section>` : ''}`;
+}
+
+function renderFavorites() {
+  return `${header(t('favorites'))}
+    ${state.favorites.length ? `<section class="favorite-list">${state.favorites.map((item) => `<article class="favorite-card"><div><blockquote>${escapeHtml(item.text)}</blockquote><small>${escapeHtml(item.meta || '')}</small></div><button class="round-button small" data-delete-favorite="${item.id}" aria-label="Delete">×</button></article>`).join('')}</section>
+      <button class="danger-button" data-action="clear-favorites">${t('clearFavorites')}</button>` : `<section class="empty-state">${icon('heart')}<p>${t('noFavorites')}</p></section>`}`;
+}
+
+function renderPrivacy() {
+  return `${header(t('privacyTitle'))}
+    <section class="panel privacy-panel">
+      <span class="privacy-icon">${icon('shield')}</span>
+      <p>${t('privacyBody')}</p>
+    </section>
+    <section class="panel">
+      <h2>${t('stored')}</h2>
+      <p>${t('storedItems')}</p>
+      <button class="danger-button" data-action="clear-all">${t('clearAll')}</button>
+    </section>
+    <section class="panel source-panel">
+      <h2>Open data</h2>
+      <p>${t('openSource')}</p>
+      <p>© OpenStreetMap contributors. ODbL.</p>
+    </section>`;
+}
+
+function routeTo(route) {
+  state.route = route;
+  render();
+}
+
+function bindPageEvents() {
+  $$('[data-route]').forEach((el) => el.addEventListener('click', () => routeTo(el.dataset.route)));
+  $$('[data-action="back"]').forEach((el) => el.addEventListener('click', () => routeTo('home')));
+
+  $$('[data-chip-group]').forEach((el) => el.addEventListener('click', () => {
+    const group = el.dataset.chipGroup;
+    const value = el.dataset.value;
+    if (group === 'sp-person') state.spontaneous.person = value;
+    if (group === 'venue-type') state.venue.type = value;
+    if (group === 'v-group') state.venue.group = value;
+    if (group === 'v-activity') state.venue.activity = value;
+    if (group === 'v-openness') state.venue.openness = value;
+    if (group === 'v-language') state.venue.language = value;
+    state.venue.resultCreated = false;
+    render();
+  }));
+
+  $$('[data-anchor]').forEach((el) => el.addEventListener('click', () => {
+    state.spontaneous.anchor = el.dataset.anchor;
+    state.spontaneous.detail = null;
+    state.spontaneous.variant = 0;
+    render();
+  }));
+  $$('[data-queue-detail]').forEach((el) => el.addEventListener('click', () => {
+    state.spontaneous.detail = el.dataset.queueDetail;
+    state.spontaneous.variant = 0;
+    render();
+  }));
+  $('[data-action="sp-next"]')?.addEventListener('click', () => { state.spontaneou
