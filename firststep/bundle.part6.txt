@@ -1,0 +1,169 @@
+s: renderFavorites,
+    privacy: renderPrivacy
+  };
+  main.innerHTML = (routes[state.route] || renderHome)();
+  main.focus({ preventScroll: true });
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  bindPageEvents();
+}
+
+function renderHome() {
+  return `<section class="hero">
+      <div class="eyebrow">FIRSTSTEP BETA 0.3.2</div>
+      <h1>${t('tagline')}</h1>
+      <p>${t('homeIntro')}</p>
+    </section>
+    <section class="mode-grid" aria-label="Modes">
+      <button class="mode-card primary" data-route="spontaneous">
+        <span class="mode-icon">${icon('spark')}</span>
+        <span><strong>${t('spontaneous')}</strong><small>${t('spontaneousDesc')}</small></span>
+        <span class="mode-arrow">${icon('arrow')}</span>
+      </button>
+      <button class="mode-card" data-route="venue">
+        <span class="mode-icon">${icon('pin')}</span>
+        <span><strong>${t('atVenue')}</strong><small>${t('atVenueDesc')}</small></span>
+        <span class="mode-arrow">${icon('arrow')}</span>
+      </button>
+      <button class="mode-card" data-route="rescue">
+        <span class="mode-icon">${icon('rescue')}</span>
+        <span><strong>${t('rescue')}</strong><small>${t('rescueDesc')}</small></span>
+        <span class="mode-arrow">${icon('arrow')}</span>
+      </button>
+      <button class="mode-card" data-route="practice">
+        <span class="mode-icon">${icon('practice')}</span>
+        <span><strong>${t('practice')}</strong><small>${t('practiceDesc')}</small></span>
+        <span class="mode-arrow">${icon('arrow')}</span>
+      </button>
+    </section>
+    <section class="trust-strip">
+      <span>${icon('shield')}</span>
+      <p>${t('privacyNote')}</p>
+    </section>
+    <section class="micro-notes">
+      <p>${t('disclaimer')}</p>
+      <p>${t('quotePolicy')}</p>
+    </section>`;
+}
+
+function renderSpontaneous() {
+  const { person, anchor, detail, variant } = state.spontaneous;
+  const needsDetail = anchor === 'queue';
+  const ready = Boolean(anchor) && (!needsDetail || Boolean(detail));
+  const result = ready ? spontaneousSuggestion({ person, anchor, detail, lang: state.lang, variant }) : null;
+
+  const anchors = [
+    ['ordering', t('ordering'), '☕'],
+    ['queue', t('queue'), '↔'],
+    ['live_music', t('live_music'), '♫'],
+    ['event', t('event'), '✦'],
+    ['screen', t('screen'), '▣'],
+    ['book', t('book'), '▤'],
+    ['venue_advice', t('venue_advice'), '⌂'],
+    ['no_anchor', t('no_anchor'), '—']
+  ];
+
+  return `${header(t('spontaneous'), t('spontaneousDesc'))}
+    <section class="panel compact">
+      <h2>${t('person')}</h2>
+      <div class="chip-row">
+        ${chip('single', t('single'), person === 'single', 'sp-person')}
+        ${chip('pair', t('pair'), person === 'pair', 'sp-person')}
+        ${chip('group', t('group'), person === 'group', 'sp-person')}
+      </div>
+    </section>
+    <section class="panel compact">
+      <h2>${t('anchor')}</h2>
+      <div class="choice-grid quick anchor-grid">
+        ${anchors.map(([value, label, symbol]) => quickChoice(value, label, symbol, anchor === value, 'anchor')).join('')}
+      </div>
+    </section>
+    ${needsDetail ? `<section class="panel compact">
+      <h2>${t('queueDetail')}</h2>
+      <div class="choice-grid queue-detail-grid">
+        ${quickChoice('order_service', t('order_service'), '☕', detail === 'order_service', 'queue-detail')}
+        ${quickChoice('entrance', t('entrance'), '⇥', detail === 'entrance', 'queue-detail')}
+        ${quickChoice('transport', t('transport_wait'), '⌁', detail === 'transport', 'queue-detail')}
+        ${quickChoice('event_entry', t('event_entry'), '✦', detail === 'event_entry', 'queue-detail')}
+      </div>
+    </section>` : ''}
+    ${result ? `<section class="result-card instant-result ${result.kind === 'guidance' ? 'guidance-result' : ''}">
+      <div class="result-label ${result.kind === 'guidance' ? 'warning' : ''}">${result.kind === 'guidance' ? t('noOpener') : t('sayNow')}</div>
+      <blockquote>${escapeHtml(result.text)}</blockquote>
+      ${result.kind === 'opener' ? `<div class="result-actions">
+        <button class="secondary-button" data-action="sp-next">${icon('refresh')} ${t('warmer')}</button>
+        <button class="secondary-button" data-action="save" data-save-text="${escapeHtml(result.text)}" data-save-meta="${escapeHtml(t('spontaneous'))}">${icon('heart')} ${t('save')}</button>
+      </div>` : ''}
+      <p class="safety-line">${t('groundingNotice')}</p>
+    </section>` : ''}`;
+}
+
+function quickChoice(value, label, symbol, selected = false, kind = 'anchor') {
+  const attr = kind === 'queue-detail' ? `data-queue-detail="${value}"` : `data-anchor="${value}"`;
+  return `<button class="quick-choice ${selected ? 'selected' : ''}" ${attr}><span>${symbol}</span><strong>${escapeHtml(label)}</strong></button>`;
+}
+
+function renderVenue() {
+  const v = state.venue;
+  const typeChips = venueTypes.map((type) => chip(type, labelForVenueType(type, state.lang), v.type === type, 'venue-type')).join('');
+  const nearby = v.nearby.length ? `<section class="panel">
+      <h2>${t('nearby')}</h2>
+      <div class="place-list">
+        ${v.nearby.map((place, index) => `<button class="place-item ${v.selected?.id === place.id ? 'selected' : ''}" data-place-index="${index}">
+          <span><strong>${escapeHtml(place.name)}</strong><small>${escapeHtml(labelForVenueType(place.type, state.lang))}${place.distance ? ` · ${place.distance} m` : ''}</small></span>
+          <span>${icon('arrow')}</span>
+        </button>`).join('')}
+        <button class="place-item manual" data-action="manual-place"><span><strong>${t('noNearby')}</strong></span><span>${icon('arrow')}</span></button>
+      </div>
+    </section>` : '';
+
+  const context = v.contextCreated ? renderVenueContext() : '';
+
+  return `${header(t('venueTitle'), t('venueHelp'))}
+    <section class="panel">
+      <div class="field-grid">
+        <label class="field"><span>${t('venueName')}</span><input id="venueName" value="${escapeHtml(v.name)}" placeholder="${escapeHtml(t('venuePlaceholder'))}" autocomplete="organization" /></label>
+        <label class="field"><span>${t('location')}</span><input id="locationText" value="${escapeHtml(v.location)}" placeholder="${escapeHtml(t('locationPlaceholder'))}" autocomplete="address-level2" /></label>
+      </div>
+      <div class="inline-actions three">
+        <button class="secondary-button" data-action="voice-name">${icon('mic')} ${t('voiceVenue')}</button>
+        <button class="secondary-button" data-action="voice-location">${icon('mic')} ${t('voiceLocation')}</button>
+        <button class="primary-button" data-action="locate">${icon('gps')} ${t('locate')}</button>
+      </div>
+      <p class="source-note">${t('openSource')}</p>
+    </section>
+    ${nearby}
+    <section class="panel">
+      <h2>${t('venueType')}</h2>
+      <div class="chip-row wrap">${typeChips}</div>
+      <button class="primary-button full" data-action="create-context">${t('createContext')}</button>
+    </section>
+    ${context}`;
+}
+
+function renderVenueContext() {
+  const v = state.venue;
+  const archetypes = buildVenueArchetypes({ type: v.type, lang: state.lang });
+  const assessment = approachAssessment(v.openness, state.lang);
+  const suggestion = v.resultCreated ? contextualSuggestion({
+    type: v.type, venueName: v.name, location: v.location, group: v.group,
+    activity: v.activity, openness: v.openness, lang: state.lang, variant: v.variant
+  }) : '';
+  const topics = topicIdeas({ type: v.type, lang: state.lang });
+
+  return `<section class="context-banner">
+      <div><span>${t('contextReady')}</span><strong>${escapeHtml(v.name || labelForVenueType(v.type, state.lang))}</strong><small>${escapeHtml(v.location)}</small></div>
+      <span class="context-badge">${escapeHtml(labelForVenueType(v.type, state.lang))}</span>
+    </section>
+    <section class="panel">
+      <h2>${t('likelyContexts')}</h2>
+      <ul class="archetype-list">${archetypes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+      <p class="probability-note">${t('probabilityNotice')}</p>
+    </section>
+    <section class="panel">
+      <div class="section-title-row"><h2>${t('targetInfo')}</h2><span>${t('optional')}</span></div>
+      <h3>${t('person')}</h3>
+      <div class="chip-row wrap">
+        ${chip('single', t('alone'), v.group === 'single', 'v-group')}
+        ${chip('pair', t('two'), v.group === 'pair', 'v-group')}
+        ${chip('small_group', t('smallGroup'), v.group === 'small_group', 'v-group')}
+    
