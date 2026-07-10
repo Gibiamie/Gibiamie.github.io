@@ -1,0 +1,108 @@
+I heard the desserts are good.', feedback: 'A low-pressure opener based on a shared decision.' },
+    { id: 'event_break', title: 'Event break', scene: 'During a break, an attendee standing alone is reading the programme.', choices: ['How are you finding the event so far?', 'Did you come alone?', 'What do you do for work?'], best: 0, response: 'It is quite good. I especially liked the second talk.', feedback: 'A natural opener based on shared context without moving into personal territory.' },
+    { id: 'bar_music', title: 'Live music', scene: 'The person beside you at a bar is listening closely to the band.', choices: ['Have you heard this band before?', 'Who did you come with?', 'Isn’t it too loud?'], best: 0, response: 'Yes, they played here last year too.', feedback: 'A safe question based on a visible shared event.' }
+  ]
+};
+
+function mapOsmType(tags = {}) {
+  const amenity = tags.amenity;
+  if (amenity === 'cafe') return 'cafe';
+  if (amenity === 'restaurant' || amenity === 'fast_food' || amenity === 'food_court') return 'restaurant';
+  if (amenity === 'bar' || amenity === 'nightclub') return 'bar';
+  if (amenity === 'pub' || amenity === 'biergarten') return 'pub';
+  return 'other';
+}
+
+function haversineMeters(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const p1 = toRad(lat1);
+  const p2 = toRad(lat2);
+  const dp = toRad(lat2 - lat1);
+  const dl = toRad(lon2 - lon1);
+  const a = Math.sin(dp / 2) ** 2 + Math.cos(p1) * Math.cos(p2) * Math.sin(dl / 2) ** 2;
+  return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+}
+
+
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+const translations = {
+  tr: {
+    tagline: 'Gerçek ortamda, doğru ilk adım.',
+    homeIntro: 'Bir konuşmayı başlatmak için uzun form doldurmayın. İhtiyacınız olan yolu seçin.',
+    spontaneous: 'Spontane Başlat',
+    spontaneousDesc: 'Şu anda gördüğünüz kişi veya grupla konuşmak için 3–5 saniyelik yardım.',
+    atVenue: 'Mekândayım',
+    atVenueDesc: 'Mekânı ve çevreyi kullanarak daha bağlamsal bir başlangıç oluşturun.',
+    rescue: 'Hızlı Kurtarma',
+    rescueDesc: 'Sessizlik, kısa cevap veya konu tükenmesi için tek dokunuşluk yardım.',
+    practice: 'Pratik',
+    practiceDesc: 'Gerçek hayata geçmeden kısa senaryolarla refleks geliştirin.',
+    privacyNote: 'Hesap yok. Gizli dinleme yok. Konuşmalar sunucuya gönderilmez.',
+    person: 'Kiminle konuşacaksınız?',
+    anchor: 'Konuşmayı hangi gerçek ayrıntı üzerinden açacaksınız?',
+    queueDetail: 'Sıra ne için?',
+    single: 'Tek kişi', pair: 'İki kişi', group: 'Grup',
+    ordering: 'Menü / sipariş', queue: 'Net bir sıra', live_music: 'Canlı müzik', event: 'Etkinlik / program', screen: 'Maç / ortak yayın', book: 'Kitap', venue_advice: 'Mekân tavsiyesi', no_anchor: 'Net ortak bağlam yok',
+    order_service: 'Sipariş / hizmet', entrance: 'Giriş / kontrol', transport_wait: 'Ulaşım', event_entry: 'Etkinlik girişi',
+    sayNow: 'Şimdi söyle', noOpener: 'Cümle üretmedim', warmer: 'Başka öneri', save: 'Favoriye ekle', saved: 'Favoriye eklendi',
+    groundingNotice: 'Öneri yalnızca seçtiğiniz, gözle görülebilen ortak bağlama dayanır. Uygulama bilinmeyen bir ayrıntıyı varmış gibi kabul etmez.',
+    back: 'Geri', home: 'Ana Sayfa', favorites: 'Favoriler', privacy: 'Gizlilik',
+    venueTitle: 'Mekân bağlamı',
+    venueHelp: 'Mekânı manuel yazın veya konum izni vererek yakındaki açık veri kaynaklı mekânları bulun.',
+    venueName: 'Mekân adı', location: 'Şehir / semt / ülke',
+    venuePlaceholder: 'Örn. The Beach House', locationPlaceholder: 'Örn. Muscat, Oman',
+    voice: 'Sesle gir', voiceVenue: 'Mekânı söyle', voiceLocation: 'Konumu söyle', locate: 'Konumumu kullan', locating: 'Konum alınıyor…',
+    nearby: 'Yakındaki mekânlar', noNearby: 'Mekân listede yok / manuel gireceğim',
+    venueType: 'Mekân türü', createContext: 'Mekân bağlamını oluştur',
+    contextReady: 'Mekân bağlamı hazır', likelyContexts: 'Muhtemel sosyal bağlamlar',
+    probabilityNotice: 'Bunlar gerçek kişiler hakkında kesin profil değildir; mekân türü, konum ve zamana dayalı olasılıksal bağlamlardır.',
+    targetInfo: 'Konuşmak istediğiniz kişi/grup', optional: 'İsteğe bağlı',
+    activity: 'Şu anda ne yapıyor?', openness: 'Yaklaşılabilirlik sinyali', language: 'Duyulan dil',
+    alone: 'Tek başına', two: 'İki kişi', smallGroup: 'Küçük grup', largeGroup: 'Büyük grup',
+    reading: 'Kitap okuyor', phone: 'Telefonla ilgileniyor', eating: 'Yiyor / içiyor', liveMusic: 'Canlı müzik dinliyor', screenActivity: 'Maç / yayın izliyor', groupTalking: 'Grubuyla konuşuyor',
+    open: 'Açık / rahat', neutral: 'Nötr / emin değilim', busy: 'Meşgul', closed: 'Yaklaşmak uygun görünmüyor',
+    unknown: 'Emin değilim', turkish: 'Türkçe', english: 'İngilizce', arabic: 'Arapça', indonesian: 'Endonezce', otherLanguage: 'Diğer',
+    generate: 'Öneriyi oluştur', assessment: 'Durumsal değerlendirme', mainSuggestion: 'Önerilen ilk cümle', topics: 'Doğal konu yolları',
+    rescueTitle: 'Şu anda ne oldu?', rescueSubtitle: 'Karşı tarafın tam cümlesini yazmayın. Yalnızca durumu seçin.',
+    silence: 'Sessizlik oldu', short_answer: 'Kısa cevap verdi', asks_question: 'Bana soru sordu', topic_ended: 'Konu bitti', interested: 'İlgili görünüyor', leaving: 'Ayrılması gerekiyor', joined_group: 'Gruba biri katıldı',
+    doThis: 'Şimdi bunu yapın', alternative: 'Alternatif',
+    practiceTitle: 'Kısa pratik', chooseScenario: 'Bir senaryo seçin', chooseOpener: 'En uygun başlangıcı seçin',
+    correct: 'Güçlü seçim', improve: 'Daha iyi bir seçenek vardı', response: 'Karşı tarafın olası cevabı', feedback: 'Neden', retry: 'Başka senaryo',
+    noFavorites: 'Henüz favori öneriniz yok.', clearFavorites: 'Favorileri temizle',
+    privacyTitle: 'Gizlilik Merkezi', privacyBody: 'Bu beta tüm önerileri cihazda üretir. GPS yalnızca siz düğmeye bastığınızda kullanılır. Konum ve kişi bilgileri kalıcı olarak saklanmaz.',
+    stored: 'Cihazda saklananlar', storedItems: 'Dil tercihi ve favori cümleler.',
+    clearAll: 'Tüm yerel verileri sil', cleared: 'Yerel veriler silindi.',
+    online: 'Çevrimiçi', offline: 'Çevrimdışı', install: 'Yükle',
+    geoDenied: 'Konum alınamadı. İzinleri kontrol edin veya manuel giriş yapın.',
+    geoError: 'Konum veya açık mekân verisi alınamadı. Manuel giriş her zaman kullanılabilir.',
+    noPlaces: 'Yakında uygun bir mekân bulunamadı. Manuel giriş yapabilirsiniz.',
+    placeSelected: 'Mekân seçildi', voiceUnsupported: 'Bu tarayıcı sesli girişi desteklemiyor.',
+    listening: 'Dinliyorum…', typeRequired: 'Lütfen bir mekân türü seçin.',
+    nameOrLocationRequired: 'Mekân adı veya konum bilgisinden en az birini girin.',
+    installHint: 'Telefonunuzda tarayıcı menüsünden “Ana ekrana ekle” seçeneğini kullanabilirsiniz.',
+    openSource: 'Mekân araması: OpenStreetMap / Nominatim / Overpass. Sonuçlar kullanıcı tarafından doğrulanır.',
+    disclaimer: 'Kısa, saygılı ve bağlama dayalı başlayın. İlgisizlik veya sınır sinyalinde ısrar etmeyin.',
+    quotePolicy: 'Film ve dizi temaları sohbet konusu olabilir; telifli diyaloglar kopyalanmaz.'
+  },
+  en: {
+    tagline: 'The right first step, in the real setting.',
+    homeIntro: 'Do not fill in a long form to start a conversation. Choose the path you need.',
+    spontaneous: 'Start Spontaneously',
+    spontaneousDesc: 'Get help in 3–5 seconds for someone or a group you just noticed.',
+    atVenue: 'I’m at a Venue',
+    atVenueDesc: 'Use the venue and surroundings to create a more contextual opener.',
+    rescue: 'Quick Rescue',
+    rescueDesc: 'One-tap help for silence, short answers or a topic that ended.',
+    practice: 'Practice',
+    practiceDesc: 'Build reflexes with short scenarios before using them in real life.',
+    privacyNote: 'No account. No hidden listening. Conversations are not sent to a server.',
+    person: 'Who would you like to speak with?',
+    anchor: 'Which real, visible detail will you use to open the conversation?',
+    queueDetail: 'What is the queue for?',
+    single: 'One person', pair: 'Two people', group: 'Group',
+    ordering: 'Menu / ordering', queue: 'A specific queue', live_music: 'Live music', event: 'Event / programme', screen: 'Match / shared screen', book: 'Book', venue_advice: 'Venue recommendation', no_anchor: 'No clear shared context',
+    order_service: 'Order / service', entrance: 'Entrance / check-in', transport_wait: 'Transport', event_entry: 'Event entrance',
+    sa
