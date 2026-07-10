@@ -1,0 +1,122 @@
+you used this route before?', 'Were you able to understand the platform or stop information?', 'Do you also find the directions here a little confusing?'],
+    other: ['Hi, what do you think of the setting here?', 'Is there anything about this place that you particularly recommend?', 'Has anything in this setting caught your attention?']
+  }
+};
+
+function contextualSuggestion({
+  type = 'other', venueName = '', location = '', group = 'single', activity = 'eating', openness = 'neutral', lang = 'tr', variant = 0
+}) {
+  if (openness === 'closed') {
+    return lang === 'tr'
+      ? 'Şu anda yaklaşmamak en saygılı seçenek. Doğal bir fırsat oluşursa kısa bir selam yeterlidir.'
+      : 'Not approaching now is the most respectful option. If a natural opportunity appears, a brief greeting is enough.';
+  }
+  if (openness === 'busy') {
+    return lang === 'tr'
+      ? 'Doğal bir ara oluşmasını bekleyin. Ara oluşmazsa konuşmayı başlatmayın.'
+      : 'Wait for a natural pause. If no pause appears, do not start the conversation.';
+  }
+
+  const base = venueOpeners[lang]?.[type] || venueOpeners.tr.other;
+  const seed = simpleSeed(type, venueName, location, group, activity, variant);
+  let text = choose(base, seed + variant);
+
+  if (activity === 'reading' && group === 'single') {
+    text = lang === 'tr'
+      ? 'Merhaba, elinizdeki kitabı gördüm. Okuduğunuz kadarıyla nasıl buldunuz?'
+      : 'Hi, I noticed the book you are holding. How are you finding it so far?';
+  } else if (activity === 'ordering') {
+    text = lang === 'tr'
+      ? 'Merhaba, menüde kararsız kaldım. Denediğiniz bir şey varsa tavsiye eder misiniz?'
+      : 'Hi, I am deciding between the menu options. If you have tried something here, would you recommend it?';
+  } else if (activity === 'eating') {
+    text = lang === 'tr'
+      ? 'Merhaba, sipariş ettiğiniz şeyi nasıl buldunuz? Tavsiye eder misiniz?'
+      : 'Hi, how is what you ordered? Would you recommend it?';
+  } else if (activity === 'live_music') {
+    text = lang === 'tr'
+      ? 'Merhaba, sahnedeki grubu daha önce dinlediniz mi?'
+      : 'Hi, have you heard the band on stage before?';
+  } else if (activity === 'screen') {
+    text = lang === 'tr'
+      ? 'Merhaba, ekrandaki yayını siz de takip ediyor musunuz?'
+      : 'Hi, are you following the broadcast on the screen too?';
+  } else if (activity === 'shared_event') {
+    text = lang === 'tr'
+      ? 'Merhaba, etkinliği şu ana kadar nasıl buldunuz?'
+      : 'Hi, how are you finding the event so far?';
+  } else if (activity === 'phone') {
+    text = lang === 'tr'
+      ? 'Kişi telefonla ilgileniyor. Doğal bir ara oluşmadan konuşmayı başlatmayın.'
+      : 'The person is using their phone. Do not start until a natural pause appears.';
+  } else if (activity === 'group_talking') {
+    text = lang === 'tr'
+      ? 'Grup aktif biçimde konuşuyor. Ortak bir olay veya doğal bir ara olmadıkça konuşmaya girmeyin.'
+      : 'The group is actively talking. Do not enter unless there is a shared event or a natural pause.';
+  }
+
+  return text;
+}
+
+function topicIdeas({ type = 'other', lang = 'tr' }) {
+  const data = {
+    tr: {
+      cafe: ['Mekândaki kahve veya tatlı', 'Semtteki başka sakin yerler', 'Son izlenen ve tavsiye edilen bir film'],
+      restaurant: ['Menüden tavsiye', 'Şehirdeki başka yemek yerleri', 'Yerel yemekler veya seyahat'],
+      bar: ['Müzik veya canlı performans', 'Mekânın atmosferi', 'Yakındaki etkinlikler'],
+      pub: ['Maç, müzik veya ortak etkinlik', 'Mekânın atmosferi', 'Şehirdeki sosyal etkinlikler'],
+      event: ['Etkinliğin en iyi bölümü', 'Konuşmacı veya performans', 'Benzer etkinlik önerileri'],
+      park: ['Yürüyüş rotaları', 'Şehirdeki açık alanlar', 'Hafta sonu etkinlikleri'],
+      mall: ['Mağaza veya ürün tavsiyesi', 'Kafe veya dinlenme alanı', 'Yakındaki etkinlikler'],
+      transport: ['Güzergâh veya varış noktası', 'Şehirde gezilecek yerler', 'Yolculuk deneyimi'],
+      other: ['Ortak ortam', 'Şehir veya semt', 'Son izlenen film, müzik veya etkinlik']
+    },
+    en: {
+      cafe: ['Coffee or dessert at the venue', 'Other calm places nearby', 'A recent film worth recommending'],
+      restaurant: ['A recommendation from the menu', 'Other places to eat in the city', 'Local food or travel'],
+      bar: ['Music or live performance', 'The atmosphere', 'Nearby events'],
+      pub: ['Sport, music or a shared event', 'The atmosphere', 'Social events in the city'],
+      event: ['The best part of the event', 'A speaker or performance', 'Similar events'],
+      park: ['Walking routes', 'Outdoor places in the city', 'Weekend activities'],
+      mall: ['A shop or product recommendation', 'A café or rest area', 'Nearby events'],
+      transport: ['The route or destination', 'Places to visit in the city', 'Travel experience'],
+      other: ['The shared setting', 'The city or neighbourhood', 'A recent film, music or event']
+    }
+  };
+  return data[lang]?.[type] || data.tr.other;
+}
+
+const rescue = {
+  tr: {
+    silence: ['Bu arada, buraya sık gelir misiniz?', 'Bulunduğumuz yerle ilgili en sevdiğiniz şey ne?'],
+    short_answer: ['Anladım. Peki burada en çok neyi seviyorsunuz?', 'Bu konuda sizi en çok etkileyen şey ne oldu?'],
+    asks_question: ['Kısa ve dürüstçe cevap verin; ardından “Siz nasıl düşünüyorsunuz?” diye sorun.', 'Cevabınızı verip aynı konuyu ona geri yöneltin.'],
+    topic_ended: ['Konuyu ortama bağlayın: “Burayı nasıl buldunuz?”', 'Yeni ama hafif bir konu açın: “Son zamanlarda tavsiye edeceğiniz bir film oldu mu?”'],
+    interested: ['Açık uçlu bir takip sorusu sorun: “Sizin için en iyi kısmı neydi?”', 'Kendi deneyiminizden kısa bir parça paylaşın ve tekrar ona dönün.'],
+    leaving: ['“Tanıştığımıza memnun oldum. İyi vakit geçirmenizi dilerim.”', '“Sizi daha fazla tutmayayım. Güzel bir gün/akşam dilerim.”'],
+    joined_group: ['Yeni gelen kişiye kısa bir bağlam verin ve sohbete dâhil edin.', '“Biz de tam … hakkında konuşuyorduk; siz ne düşünüyorsunuz?”']
+  },
+  en: {
+    silence: ['By the way, do you come here often?', 'What do you like most about this place?'],
+    short_answer: ['I see. What do you like most about it?', 'What affected you most about that?'],
+    asks_question: ['Answer briefly and honestly, then ask, “What do you think?”', 'Give your answer and return the same topic to them.'],
+    topic_ended: ['Connect the topic to the setting: “What do you think of this place?”', 'Open a light new topic: “Have you seen any film lately that you would recommend?”'],
+    interested: ['Ask an open follow-up: “What was the best part for you?”', 'Share one short personal detail, then return the focus to them.'],
+    leaving: ['“It was nice meeting you. Enjoy the rest of your time here.”', '“I will not keep you. Have a good day/evening.”'],
+    joined_group: ['Give the newcomer a brief context and include them.', '“We were just talking about … What do you think?”']
+  }
+};
+
+function rescueSuggestion({ situation = 'silence', lang = 'tr', variant = 0 }) {
+  const options = rescue[lang]?.[situation] || rescue.tr.silence;
+  return options[variant % options.length];
+}
+
+const practiceScenarios = {
+  tr: [
+    { id: 'cafe_queue', title: 'Kafede sıra', scene: 'Yanınızdaki kişi de menüye bakarak karar vermeye çalışıyor.', choices: ['Burada neyin iyi olduğunu biliyor musunuz?', 'Bu sıra çok uzun.', 'Neden karar veremiyorsunuz?'], best: 0, response: 'Ben de ilk kez geldim ama tatlıların iyi olduğunu duydum.', feedback: 'Ortak karar verme durumunu kullanan düşük baskılı bir giriş.' },
+    { id: 'event_break', title: 'Etkinlik arası', scene: 'Etkinlik arasında tek başına duran bir katılımcı programı inceliyor.', choices: ['Etkinliği şu ana kadar nasıl buldunuz?', 'Tek başınıza mı geldiniz?', 'Ne iş yapıyorsunuz?'], best: 0, response: 'Oldukça iyi, özellikle ikinci konuşmayı beğendim.', feedback: 'Ortak bağlamdan başlayıp kişisel alana girmeyen doğal bir giriş.' },
+    { id: 'bar_music', title: 'Canlı müzik', scene: 'Barda yanınızdaki kişi sahnedeki müziği dikkatle dinliyor.', choices: ['Grubu daha önce dinlemiş miydiniz?', 'Buraya kiminle geldiniz?', 'Çok gürültülü değil mi?'], best: 0, response: 'Evet, geçen yıl da burada çalmışlardı.', feedback: 'Gözle görülen ortak etkinlikten başlayan güvenli bir soru.' }
+  ],
+  en: [
+    { id: 'cafe_queue', title: 'Café queue', scene: 'The person beside you is also looking at the menu and trying to decide.', choices: ['Do you know what is good here?', 'This queue is very long.', 'Why can’t you decide?'], best: 0, response: 'It is my first time too, but 
