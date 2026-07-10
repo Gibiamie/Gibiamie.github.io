@@ -1,0 +1,215 @@
+s.variant += 1; render(); });
+
+  $('#venueName')?.addEventListener('input', (e) => { state.venue.name = e.target.value; });
+  $('#locationText')?.addEventListener('input', (e) => { state.venue.location = e.target.value; });
+  $('[data-action="voice-name"]')?.addEventListener('click', () => startVoiceInput('name'));
+  $('[data-action="voice-location"]')?.addEventListener('click', () => startVoiceInput('location'));
+  $('[data-action="locate"]')?.addEventListener('click', locateAndSearch);
+  $('[data-action="manual-place"]')?.addEventListener('click', () => {
+    state.venue.selected = null;
+    state.venue.nearby = [];
+    render();
+    setTimeout(() => $('#venueName')?.focus(), 30);
+  });
+  $$('[data-place-index]').forEach((el) => el.addEventListener('click', () => selectPlace(Number(el.dataset.placeIndex))));
+  $('[data-action="create-context"]')?.addEventListener('click', createVenueContext);
+  $('[data-action="generate-venue"]')?.addEventListener('click', () => { state.venue.resultCreated = true; state.venue.variant = 0; render(); });
+  $('[data-action="venue-next"]')?.addEventListener('click', () => { state.venue.variant += 1; render(); });
+
+  $$('[data-rescue]').forEach((el) => el.addEventListener('click', () => {
+    state.rescue.situation = el.dataset.rescue;
+    state.rescue.variant = 0;
+    render();
+  }));
+  $('[data-action="rescue-next"]')?.addEventListener('click', () => { state.rescue.variant += 1; render(); });
+
+  $$('[data-scenario]').forEach((el) => el.addEventListener('click', () => {
+    state.practice.scenario = el.dataset.scenario;
+    state.practice.selected = null;
+    render();
+  }));
+  $$('[data-practice-choice]').forEach((el) => el.addEventListener('click', () => {
+    state.practice.selected = Number(el.dataset.practiceChoice);
+    render();
+  }));
+  $('[data-action="practice-reset"]')?.addEventListener('click', () => {
+    state.practice.scenario = null;
+    state.practice.selected = null;
+    render();
+  });
+
+  $$('[data-action="save"]').forEach((el) => el.addEventListener('click', () => saveFavorite(el.dataset.saveText, el.dataset.saveMeta)));
+  $$('[data-delete-favorite]').forEach((el) => el.addEventListener('click', () => {
+    state.favorites = state.favorites.filter((item) => item.id !== Number(el.dataset.deleteFavorite));
+    localStorage.setItem('fs_favorites', JSON.stringify(state.favorites));
+    render();
+  }));
+  $('[data-action="clear-favorites"]')?.addEventListener('click', () => {
+    state.favorites = [];
+    localStorage.setItem('fs_favorites', '[]');
+    render();
+  });
+  $('[data-action="clear-all"]')?.addEventListener('click', () => {
+    localStorage.clear();
+    state.favorites = [];
+    toast(t('cleared'));
+    render();
+  });
+}
+
+function createVenueContext() {
+  const name = $('#venueName')?.value.trim() || state.venue.name.trim();
+  const location = $('#locationText')?.value.trim() || state.venue.location.trim();
+  state.venue.name = name;
+  state.venue.location = location;
+  if (!name && !location) return toast(t('nameOrLocationRequired'));
+  if (!state.venue.type) return toast(t('typeRequired'));
+  state.venue.contextCreated = true;
+  state.venue.resultCreated = false;
+  render();
+}
+
+function selectPlace(index) {
+  const place = state.venue.nearby[index];
+  if (!place) return;
+  state.venue.selected = place;
+  state.venue.name = place.name;
+  state.venue.type = place.type;
+  state.venue.lat = place.lat;
+  state.venue.lon = place.lon;
+  toast(t('placeSelected'));
+  render();
+}
+
+async function locateAndSearch() {
+  const button = $('[data-action="locate"]');
+  if (!navigator.geolocation) return toast(t('geoDenied'));
+  if (button) { button.disabled = true; button.innerHTML = `${icon('gps')} ${t('locating')}`; }
+
+  navigator.geolocation.getCurrentPosition(async (position) => {
+    try {
+      const { latitude, longitude } = position.coords;
+      state.venue.lat = latitude;
+      state.venue.lon = longitude;
+      const [location, nearby] = await Promise.all([
+        reverseGeocode(latitude, longitude),
+        findNearbyVenues(latitude, longitude)
+      ]);
+      state.venue.location = location;
+      state.venue.nearby = nearby;
+      if (!nearby.length) toast(t('noPlaces'));
+      render();
+    } catch (error) {
+      console.error(error);
+      toast(t('geoError'));
+      render();
+    }
+  }, (error) => {
+    console.warn(error);
+    toast(t('geoDenied'));
+    render();
+  }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 60000 });
+}
+
+async function reverseGeocode(lat, lon) {
+  const url = new URL('https://nominatim.openstreetmap.org/reverse');
+  url.searchParams.set('format', 'jsonv2');
+  url.searchParams.set('lat', lat);
+  url.searchParams.set('lon', lon);
+  url.searchParams.set('zoom', '16');
+  url.searchParams.set('addressdetails', '1');
+  url.searchParams.set('accept-language', state.lang);
+  const response = await fetch(url, { headers: { Accept: 'application/json' } });
+  if (!response.ok) throw new Error('Reverse geocoding failed');
+  const data = await response.json();
+  const a = data.address || {};
+  return [a.suburb || a.neighbourhood || a.city_district, a.city || a.town || a.village || a.state, a.country].filter(Boolean).filter((v, i, arr) => arr.indexOf(v) === i).join(', ') || data.display_name || '';
+}
+
+async function findNearbyVenues(lat, lon) {
+  const query = `[out:json][timeout:18];(
+    nwr(around:500,${lat},${lon})["amenity"~"cafe|restaurant|bar|pub|fast_food|food_court|nightclub|biergarten"];
+  );out center tags 40;`;
+  const response = await fetch('https://overpass-api.de/api/interpreter', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+    body: new URLSearchParams({ data: query })
+  });
+  if (!response.ok) throw new Error('Overpass failed');
+  const data = await response.json();
+  const seen = new Set();
+  return (data.elements || []).map((el) => {
+    const plat = el.lat ?? el.center?.lat;
+    const plon = el.lon ?? el.center?.lon;
+    const name = el.tags?.name || el.tags?.['name:en'] || el.tags?.brand;
+    if (!name || !plat || !plon) return null;
+    const key = `${name}|${plat.toFixed(5)}|${plon.toFixed(5)}`;
+    if (seen.has(key)) return null;
+    seen.add(key);
+    return {
+      id: `${el.type}-${el.id}`,
+      name,
+      type: mapOsmType(el.tags || {}),
+      lat: plat,
+      lon: plon,
+      distance: haversineMeters(lat, lon, plat, plon)
+    };
+  }).filter(Boolean).sort((a, b) => a.distance - b.distance).slice(0, 12);
+}
+
+function startVoiceInput(target = 'name') {
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Recognition) return toast(t('voiceUnsupported'));
+  const recognition = new Recognition();
+  recognition.lang = state.lang === 'tr' ? 'tr-TR' : 'en-US';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+  toast(t('listening'));
+  recognition.onresult = (event) => {
+    const text = event.results[0][0].transcript.trim();
+    if (target === 'location') state.venue.location = text;
+    else state.venue.name = text;
+    render();
+  };
+  recognition.onerror = () => toast(t('voiceUnsupported'));
+  recognition.start();
+}
+
+function bindGlobalEvents() {
+  $('#brandButton').addEventListener('click', () => routeTo('home'));
+  $('#languageSelect').addEventListener('change', (e) => {
+    state.lang = e.target.value;
+    localStorage.setItem('fs_lang', state.lang);
+    render();
+  });
+  $('#favoritesButton').addEventListener('click', () => routeTo('favorites'));
+  $('#privacyButton').addEventListener('click', () => routeTo('privacy'));
+  $('#installButton').addEventListener('click', async () => {
+    if (state.deferredPrompt) {
+      state.deferredPrompt.prompt();
+      await state.deferredPrompt.userChoice;
+      state.deferredPrompt = null;
+      $('#installButton').classList.add('hidden');
+    } else {
+      toast(t('installHint'));
+    }
+  });
+  window.addEventListener('online', render);
+  window.addEventListener('offline', render);
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    state.deferredPrompt = event;
+    $('#installButton').classList.remove('hidden');
+  });
+}
+
+async function registerServiceWorker() {
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    try { await navigator.serviceWorker.register('./service-worker.js'); }
+    catch (error) { console.warn('Service worker registration failed', error); }
+  }
+}
+
+bindGlobalEvents();
+render();
+registerServiceWorker();
