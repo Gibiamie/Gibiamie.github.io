@@ -1,6 +1,15 @@
-const CACHE = 'firststep-beta-0.3.3';
+const CACHE = 'firststep-beta-0.3.6';
 const ASSETS = [
-  './', './index.html', './styles.css?v=0.3.3', './app-0.3.3.js?v=0.3.3', './manifest.webmanifest?v=0.3.3', './icon.svg'
+  './',
+  './index.html',
+  './styles.css?v=0.3.3',
+  './mobile-fixes-0.3.4.css?v=0.3.4',
+  './smart-venue-0.3.6.css?v=0.3.6',
+  './app-0.3.3.js?v=0.3.3',
+  './app-0.3.5-autotype.js?v=0.3.5',
+  './smart-venue-0.3.6.js?v=0.3.6',
+  './manifest.webmanifest?v=0.3.6',
+  './icon.svg'
 ];
 
 self.addEventListener('install', (event) => {
