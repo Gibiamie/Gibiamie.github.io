@@ -1,5 +1,5 @@
-const CACHE = 'firststep-production-1.1.0';
-const ASSETS = ['./','./index.html','./v1.css?v=1.1.0','./v1.js?v=1.1.0','./manifest.webmanifest?v=1.1.0','./icon.svg'];
+const CACHE = 'firststep-production-1.2.0';
+const ASSETS = ['./','./index.html','./manifest.webmanifest?v=1.2.0','./icon.svg'];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
