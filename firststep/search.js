@@ -3,7 +3,7 @@
    Global fallback / no-location search uses Photon (free, no key).
    Both are free/open, no API key, no paid service. */
 
-import { similarity } from './fuzzy.js?v=3.0.0';
+import { similarity } from './fuzzy.js?v=3.0.1';
 
 const OVERPASS_ENDPOINTS = [
   'https://overpass-api.de/api/interpreter',

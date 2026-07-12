@@ -1,5 +1,5 @@
-import { classifyVenue, CATEGORY_LABEL } from './classify.js?v=3.0.0';
-import { getSentence, INTENT, INTENT_LABEL } from './sentences.js?v=3.0.0';
+import { classifyVenue, CATEGORY_LABEL } from './classify.js?v=3.0.1';
+import { getSentence, INTENT, INTENT_LABEL } from './sentences.js?v=3.0.1';
 import {
   getPosition,
   searchNearby,
@@ -8,7 +8,7 @@ import {
   formatDistance,
   RADIUS_NEAR,
   RADIUS_WIDE,
-} from './search.js?v=3.0.0';
+} from './search.js?v=3.0.1';
 
 const els = {
   q: document.getElementById('q'),
@@ -38,10 +38,38 @@ const state = {
   currentIntent: INTENT.APPROACH,
   lastSentence: null,
   debounceTimer: null,
+  locationPromise: null,
 };
 
 function setStatus(text) {
   els.status.textContent = text;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
+ * Requests geolocation at most once and shares the in-flight/resolved
+ * promise across callers (auto-attempt on load, typing, and the explicit
+ * button), so typing alone can benefit from location without requiring
+ * the user to tap "Konumumu kullan" first.
+ */
+function getPositionOnce() {
+  if (state.position) return Promise.resolve(state.position);
+  if (!state.locationPromise) {
+    state.locationPromise = getPosition()
+      .then((pos) => {
+        state.position = pos;
+        els.loc.textContent = '📍 Konum aktif';
+        return pos;
+      })
+      .catch((err) => {
+        state.locationPromise = null;
+        throw err;
+      });
+  }
+  return state.locationPromise;
 }
 
 function clearResults() {
@@ -183,8 +211,18 @@ function onQueryInput() {
     return;
   }
 
-  state.debounceTimer = setTimeout(() => {
+  state.debounceTimer = setTimeout(async () => {
     const token = ++state.searchToken;
+
+    // Give a just-triggered or already-in-flight location request a short
+    // grace period, so typing right after opening the app still gets
+    // local-first results instead of jumping straight to a global search.
+    if (!state.position && state.locationPromise) {
+      setStatus('Konum kontrol ediliyor…');
+      await Promise.race([state.locationPromise.catch(() => {}), sleep(4000)]);
+      if (token !== state.searchToken) return;
+    }
+
     if (state.position) {
       setStatus('500 m içinde aranıyor…');
       runLocalSearch(query, RADIUS_NEAR, token).catch((err) => handleSearchError(err, token));
@@ -280,9 +318,7 @@ async function useMyLocation() {
   setStatus('Konum isteniyor…');
   els.loc.disabled = true;
   try {
-    const pos = await getPosition();
-    state.position = pos;
-    els.loc.textContent = '📍 Konum aktif';
+    await getPositionOnce();
     setStatus('Konum alındı. Yakındaki mekânlar aranıyor…');
     const token = ++state.searchToken;
     await runLocalSearch(els.q.value, RADIUS_NEAR, token);
@@ -385,6 +421,11 @@ function init() {
   els.privacyTab.addEventListener('click', togglePrivacy);
   setupVoiceInput();
   setupNetworkBadge();
+
+  // Ask for location as early as possible (silently) so that by the time
+  // the user finishes typing 3 characters, local-first search is ready
+  // without requiring an explicit "Konumumu kullan" tap first.
+  getPositionOnce().catch(() => {});
 
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {

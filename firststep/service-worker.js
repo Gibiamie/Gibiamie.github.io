@@ -1,14 +1,14 @@
-const CACHE = 'firststep-production-3.0.0';
+const CACHE = 'firststep-production-3.0.1';
 const ASSETS = [
   './',
   './index.html',
-  './styles.css?v=3.0.0',
-  './app.js?v=3.0.0',
-  './classify.js?v=3.0.0',
-  './fuzzy.js?v=3.0.0',
-  './sentences.js?v=3.0.0',
-  './search.js?v=3.0.0',
-  './manifest.webmanifest?v=3.0.0',
+  './styles.css?v=3.0.1',
+  './app.js?v=3.0.1',
+  './classify.js?v=3.0.1',
+  './fuzzy.js?v=3.0.1',
+  './sentences.js?v=3.0.1',
+  './search.js?v=3.0.1',
+  './manifest.webmanifest?v=3.0.1',
   './icon.svg',
 ];
 

@@ -3,7 +3,7 @@
    Each [category][intent] holds 2-3 specific, low-pressure variants
    so "Başka öneri" can rotate without repeating and without going generic. */
 
-import { CATEGORY } from './classify.js?v=3.0.0';
+import { CATEGORY } from './classify.js?v=3.0.1';
 
 export const INTENT = {
   APPROACH: 'approach',
