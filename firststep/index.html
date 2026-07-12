@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="description" content="FirstStep: mekânı anlayan, hızlı ve saygılı konuşma başlangıçları sunan mobil uygulama." />
-  <link rel="manifest" href="manifest.webmanifest?v=1.0.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.webmanifest?v=1.1.0" />
   <link rel="icon" href="icon.svg" />
   <link rel="apple-touch-icon" href="icon.svg" />
-  <link rel="stylesheet" href="v1.css?v=1.0.0" />
+  <link rel="stylesheet" href="v1.css?v=1.1.0" />
   <title>FirstStep</title>
 </head>
 <body>
@@ -23,46 +26,34 @@
     </header>
 
     <main>
-      <section class="card search-card" aria-labelledby="searchTitle">
-        <div class="section-head">
-          <div>
-            <h2 id="searchTitle">Neredesiniz?</h2>
-            <p>Mekân adı, şehir veya ülke yazın. Birkaç harften sonra öneriler açılır.</p>
-          </div>
+      <section class="card" id="startCard">
+        <h2>Neredesiniz?</h2>
+        <p>Mekân adı, şehir veya ülke yazın. Birkaç harften sonra açık veri önerileri açılır.</p>
+        <div class="search-box">
+          <span aria-hidden="true">🔎</span>
+          <input id="q" type="search" autocomplete="off" inputmode="search" placeholder="Örn. Trader Vic’s Muscat / White Rock Beach Denpasar" aria-label="Mekân, şehir veya ülke" />
+          <button id="clear" class="clear hidden" type="button" aria-label="Temizle">×</button>
         </div>
-
-        <label class="search-box" for="q">
-          <span>🔎</span>
-          <input id="q" type="search" autocomplete="off" inputmode="search" placeholder="Örn. Tradervicks Muscat, White Rock Beach Denpasar" />
-        </label>
-
         <div class="quick-row">
-          <button id="voiceBtn" class="ghost" type="button">🎙️ Söyle</button>
-          <button id="locBtn" class="primary" type="button">📍 Konumumu kullan</button>
+          <button id="voiceBtn" type="button" class="ghost">🎙️ Söyle</button>
+          <button id="locBtn" type="button" class="primary">📍 Konumumu kullan</button>
         </div>
-
-        <div id="status" class="status hidden" role="status"></div>
-        <div id="results" class="results hidden" role="listbox" aria-label="Mekân ve konum önerileri"></div>
+        <div id="status" class="status"></div>
+        <div id="results" class="results hidden"></div>
       </section>
 
-      <section id="selectedCard" class="card selected hidden" aria-live="polite"></section>
-
-      <section id="intentCard" class="card hidden">
-        <h2>Şu anda neye ihtiyacınız var?</h2>
-        <div id="intentChips" class="chips"></div>
-      </section>
-
-      <section id="answerCard" class="card answer-card hidden" aria-live="polite"></section>
+      <section id="selected" class="card hidden"></section>
+      <section id="intent" class="card hidden"></section>
+      <section id="answer" class="card answer-card hidden"></section>
     </main>
   </div>
 
-  <nav class="bottom-tabs" aria-label="Hızlı menü">
-    <button id="tabHome" type="button">⌂<span>Başlat</span></button>
-    <button id="tabRescue" type="button">⚡<span>Kurtarma</span></button>
-    <button id="tabPrivacy" type="button">🔒<span>Gizlilik</span></button>
+  <nav class="bottom-tabs" aria-label="Alt menü">
+    <button id="startTab" type="button">⌂<span>Başlat</span></button>
+    <button id="rescueTab" type="button">⚡<span>Kurtarma</span></button>
+    <button id="privacyBtn" type="button">🔒<span>Gizlilik</span></button>
   </nav>
-
-  <div id="toast" class="toast" role="status"></div>
-  <script src="v1.js?v=1.0.0"></script>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="v1.js?v=1.1.0"></script>
 </body>
 </html>
