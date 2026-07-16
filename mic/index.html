@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#081321">
 <title>MIC Mobile Beta</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="top"><div><div class="brand">MIC</div><div class="sub">Mobil yatırım karar desteği</div></div><div id="dataStatus" class="pill warn">VERİ YÜKLENİYOR</div></header>
@@ -46,8 +46,7 @@
     <div id="performanceSummary" class="performanceSummary hidden"></div>
     <canvas id="chartCanvas" class="chartCanvas"></canvas>
     <div id="chartMessage" class="empty hidden"></div>
-    <button id="loadApiChart" class="primary wide chartApi">Günlük fiyat grafiğini getir</button>
-    <button id="chartSettings" class="ghost wide chartApi hidden">API anahtarını ayarla</button>
+    <button id="loadChartData" class="primary wide chartApi">Günlük fiyat grafiğini yenile</button>
   </div>
 </section>
 
@@ -96,20 +95,14 @@
 
 <section id="settings" class="view">
   <div class="section"><h2>Ayarlar</h2></div>
-  <div class="card">
-    <h3>Günlük fiyat grafiği API’si</h3>
-    <p class="muted">Borsa İstanbul dahil tarihsel fiyat grafiği için Twelve Data API anahtarını gir. Anahtar yalnızca bu telefonda saklanır.</p>
-    <label class="apiLabel">Twelve Data API anahtarı<input id="twelveKey" type="password" autocomplete="off" placeholder="API anahtarını yapıştır"></label>
-    <div class="apiButtons"><button id="saveApiKey" class="primary">Kaydet</button><button id="testApiKey" class="ghost">Test et</button></div>
-    <div id="apiStatus" class="hint"></div>
-  </div>
+  <div class="card"><h3>Grafik verisi</h3><p class="muted">API anahtarı gerekmez. Günlük fiyat serileri GitHub üzerinde hazırlanır ve seçilen varlık açıldığında otomatik yüklenir.</p><div id="historyStatus" class="hint">Henüz grafik verisi istenmedi.</div></div>
   <div class="card"><h3>GitHub piyasa verisi</h3><p class="muted">BIST sembol, son fiyat, performans ve temel oranları GitHub veri akışından okunur.</p><button id="refreshData" class="primary wide">Veriyi şimdi yenile</button><div id="settingsStatus" class="hint"></div></div>
-  <div class="card"><h3>Yerel veriler</h3><p class="muted">Profil, portföy ve API anahtarı yalnızca bu cihazda saklanır.</p><button id="clearData" class="danger wide">Cihaz verilerini temizle</button></div>
+  <div class="card"><h3>Yerel veriler</h3><p class="muted">Profil ve portföy yalnızca bu cihazda saklanır.</p><button id="clearData" class="danger wide">Cihaz verilerini temizle</button></div>
 </section>
 </main>
 <nav class="bottom">
 <button class="nav active" data-view="home"><b>⌂</b>Ana</button><button class="nav" data-view="search"><b>⌕</b>Ara</button><button class="nav" data-view="portfolio"><b>▤</b>Portföy</button><button class="nav" data-view="chart"><b>⌁</b>Grafik</button><button class="nav" data-view="profile"><b>◎</b>Profil</button><button class="nav" data-view="settings"><b>⚙</b>Ayarlar</button>
 </nav><div id="toast" class="toast hidden"></div>
-<script src="app-core.js?v=4" defer></script>
-<script src="app-main.js?v=4" defer></script>
+<script src="app-core.js?v=5" defer></script>
+<script src="app-main.js?v=5" defer></script>
 </body></html>
