@@ -1,5 +1,5 @@
-const CACHE='mic-mobile-v5';
-const CORE=['./','index.html','manifest.webmanifest','style.css?v=5','app-core.js?v=5','app-main.js?v=5'];
+const CACHE='mic-mobile-v6';
+const CORE=['./','index.html','manifest.webmanifest','style.css?v=6','app-core.js?v=6','app-main.js?v=6','virtual.js?v=6'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))]))});
 self.addEventListener('fetch',e=>{
