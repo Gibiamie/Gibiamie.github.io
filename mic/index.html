@@ -34,7 +34,14 @@
 </section>
 <section id="chart" class="view">
   <div class="section"><h2>Grafik</h2><span id="chartTitle" class="muted"></span></div>
-  <div class="card chartCard"><div class="chartHeader"><span id="chartInfo" class="source"></span></div><canvas id="chartCanvas" class="chartCanvas"></canvas><div id="chartMessage" class="empty hidden"></div></div>
+  <div class="card chartCard">
+    <div class="chartHeader"><span id="chartInfo" class="source"></span></div>
+    <div id="chartPeriods" class="periods">
+      <button class="period" data-period="1H">1H</button><button class="period active" data-period="1A">1A</button><button class="period" data-period="3A">3A</button><button class="period" data-period="6A">6A</button><button class="period" data-period="1Y">1Y</button><button class="period" data-period="YTD">YTD</button>
+    </div>
+    <canvas id="chartCanvas" class="chartCanvas"></canvas><div id="chartMessage" class="empty hidden"></div>
+    <button id="loadApiChart" class="ghost wide chartApi">API'den günlük fiyat grafiğini getir</button>
+  </div>
 </section>
 <section id="profile" class="view">
   <div class="section"><h2>Yatırımcı Profili</h2></div>
@@ -51,8 +58,9 @@
 </section>
 <section id="settings" class="view">
   <div class="section"><h2>Ayarlar</h2></div>
-  <div class="card"><h3>Veri sistemi</h3><p class="muted">API anahtarı gerekmez. BIST ve seçili varlık verileri GitHub üzerinden periyodik yenilenen veri dosyasından okunur.</p><button id="refreshData" class="primary wide">Veriyi şimdi yenile</button><div id="settingsStatus" class="hint"></div></div>
-  <div class="card"><h3>Yerel veriler</h3><p class="muted">Profil ve portföy yalnızca bu cihazda saklanır.</p><button id="clearData" class="danger wide">Cihaz verilerini temizle</button></div>
+  <div class="card"><h3>Ücretsiz tarihsel veri API'si</h3><p class="muted">Alpha Vantage anahtarını yalnızca günlük fiyat geçmişi ve desteklenen global sembollerin grafiği için kullan. Anahtar yalnızca bu telefonda saklanır.</p><label class="apiLabel">Alpha Vantage API anahtarı<input id="alphaKey" type="password" autocomplete="off" placeholder="API anahtarını yapıştır"></label><div class="apiButtons"><button id="saveApiKey" class="primary">Kaydet</button><button id="testApiKey" class="ghost">Test et</button></div><div id="apiStatus" class="hint"></div></div>
+  <div class="card"><h3>GitHub piyasa verisi</h3><p class="muted">BIST sembol, fiyat, performans ve temel oranları GitHub veri akışından okunur.</p><button id="refreshData" class="primary wide">Veriyi şimdi yenile</button><div id="settingsStatus" class="hint"></div></div>
+  <div class="card"><h3>Yerel veriler</h3><p class="muted">Profil, portföy ve API anahtarı yalnızca bu cihazda saklanır.</p><button id="clearData" class="danger wide">Cihaz verilerini temizle</button></div>
 </section>
 </main>
 <nav class="bottom">
