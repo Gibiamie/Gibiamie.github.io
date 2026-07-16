@@ -1,6 +1,6 @@
 const $=id=>document.getElementById(id), TYPES=[['all','Tümü'],['stock','Hisse'],['etf','ETF'],['crypto','Kripto'],['fund','Fon'],['index','Endeks'],['fx','Döviz'],['commodity','Emtia']];
-const STORE='mic_mobile_github_v1'; let state={profile:null,portfolio:[],lastDecision:null,lastAsset:null}; try{state={...state,...JSON.parse(localStorage.getItem(STORE)||'{}')}}catch{};
-let market={updated_at:null,assets:[],fx:{USDTRY:40}},selected=null,activeType='all';
+const STORE='mic_mobile_github_v1'; let state={profile:null,portfolio:[],lastDecision:null,lastAsset:null,settings:{alphaKey:'',avSymbols:{},historyCache:{}}}; try{state={...state,...JSON.parse(localStorage.getItem(STORE)||'{}')}}catch{};state.settings={alphaKey:'',avSymbols:{},historyCache:{},...(state.settings||{})};
+let market={updated_at:null,assets:[],fx:{USDTRY:40}},selected=null,activeType='all',chartPeriod='1A';
 function save(){localStorage.setItem(STORE,JSON.stringify(state));renderHome();renderPortfolio()}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function num(n,d=2){return Number(n||0).toLocaleString('tr-TR',{maximumFractionDigits:d})} function money(n,c='TRY'){return new Intl.NumberFormat('tr-TR',{style:'currency',currency:c,maximumFractionDigits:2}).format(n||0)}
