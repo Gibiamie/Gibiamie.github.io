@@ -7,7 +7,7 @@ function scoreAsset(a){
   if(present(a.change)){technical=Math.max(1,Math.min(10,5+(+a.change)*.25));known++}
   if(present(a.volatility)){risk=Math.max(2,Math.min(15,15-(+a.volatility)*.2));known++}
   const macro=6,total=Math.round(business+growth+valuation+technical+macro+risk);
-  return {business:Math.round(business),growth:Math.round(growth),valuation:Math.round(valuation),technical:Math.round(technical),macro,risk:Math.round(risk),score:Math.max(0,Math.min(100,total)),confidence:Math.min(95,35+known*12),known}
+  return {business:Math.round(business),growth:Math.round(growth),valuation:Math.round(valuation),technical:Math.round(technical),macro,risk:Math.round(risk),score:Math.max(0,Math.min(100,total)),confidence:Math.min(95,35+known*12),known};
 }
 function fxRate(c){if(c==='TRY')return 1;if(c==='USD')return +market.fx?.USDTRY||40;if(c==='EUR')return +market.fx?.EURTRY||44;return 1}
 function portfolioStats(){
@@ -134,6 +134,7 @@ function renderProfileResult(){
 }
 
 const PERIOD_DAYS={'1H':7,'1A':31,'3A':93,'6A':186,'1Y':366};
+const historyLoading=new Set();
 function assetKey(a){return `${a.type||'asset'}:${a.symbol}`}
 function renderPeriodButtons(){document.querySelectorAll('.period').forEach(b=>b.classList.toggle('active',b.dataset.period===chartPeriod))}
 $('chartPeriods').onclick=e=>{
@@ -150,9 +151,12 @@ function filterHistory(hist,period){
   const start=startDate(period);
   return [...hist].filter(x=>present(x.close)&&String(x.date)>=start).sort((a,b)=>String(a.date).localeCompare(String(b.date)));
 }
-function openChart(a){state.lastAsset=a;save();nav('chart');drawLastChart()}
 function cachedHistory(a){return state.settings.historyCache?.[assetKey(a)]?.history||[]}
 function performanceValue(a,period){return present(a.performance?.[period])?+a.performance[period]:null}
+function openChart(a){
+  state.lastAsset=a;save();nav('chart');
+  ensureHistory(a,false);
+}
 function drawLastChart(){
   const a=state.lastAsset;renderPeriodButtons();
   if(!a){$('chartTitle').textContent='';showChartMessage('Önce bir varlık seç.');return}
@@ -162,12 +166,12 @@ function drawLastChart(){
   $('chartInfo').textContent=`${live.exchange||''} · ${live.currency||''} · ${chartPeriod}${filtered.length?` · ${filtered.length} günlük veri`:''}`;
   $('performanceSummary').classList.toggle('hidden',perf===null);
   if(perf!==null)$('performanceSummary').innerHTML=`<span>${chartPeriod} özet getirisi</span><strong class="${perf>=0?'positive':'negative'}">${perf>0?'+':''}${num(perf)}%</strong>`;
-  const hasKey=!!twelveKey();
-  $('chartSettings').classList.toggle('hidden',hasKey);
-  $('loadApiChart').classList.toggle('hidden',!hasKey);
-  if(filtered.length>=2){$('chartMessage').classList.add('hidden');$('chartCanvas').classList.remove('hidden');drawLine(filtered);return}
+  if(filtered.length>=2){
+    $('chartMessage').classList.add('hidden');$('chartCanvas').classList.remove('hidden');drawLine(filtered);return;
+  }
   clearCanvas();$('chartCanvas').classList.add('hidden');
-  showChartMessage(hasKey?'Günlük fiyat verisi henüz yüklenmedi. “Günlük fiyat grafiğini getir” düğmesine bas.':'Gerçek fiyat grafiği için Ayarlar bölümüne Twelve Data API anahtarını gir.');
+  const loading=historyLoading.has(assetKey(live));
+  showChartMessage(loading?'Günlük fiyat verisi yükleniyor…':'Günlük fiyat serisi henüz yüklenmedi. Aşağıdaki düğmeye bas.');
 }
 function showChartMessage(t){$('chartMessage').textContent=t;$('chartMessage').classList.remove('hidden')}
 function clearCanvas(){const c=$('chartCanvas'),ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height)}
@@ -183,59 +187,48 @@ function drawLine(hist){
   ctx.textAlign='center';ctx.fillText(String(hist[0].date).slice(5),p,H-9);ctx.fillText(String(hist.at(-1).date).slice(5),W-p,H-9);
   ctx.fillStyle='#f5f8ff';ctx.textAlign='left';ctx.font='bold 14px system-ui';ctx.fillText('Son: '+num(last),p,22);
 }
-function twelveKey(){return String(state.settings.twelveKey||'').trim()}
-async function fetchJson(url,timeout=20000){
-  const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),timeout);
-  try{const r=await fetch(url,{signal:ctl.signal,cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json()}finally{clearTimeout(timer)}
+async function fetchHistoryFile(a){
+  const symbol=encodeURIComponent(String(a.symbol||'').toUpperCase());
+  const response=await fetch(`data/history/${symbol}.json?t=${Date.now()}`,{cache:'no-store'});
+  if(!response.ok){
+    if(response.status===404)throw new Error('Bu varlığın günlük grafik dosyası henüz hazırlanmadı');
+    throw new Error('Grafik verisi HTTP '+response.status);
+  }
+  const data=await response.json();
+  const history=(data.history||[]).filter(x=>present(x.close)).sort((x,y)=>String(x.date).localeCompare(String(y.date)));
+  if(history.length<2)throw new Error('Yeterli günlük fiyat verisi bulunamadı');
+  state.settings.historyCache[assetKey(a)]={updatedAt:data.updated_at||new Date().toISOString(),provider:data.provider||'GitHub history feed',history};
+  save();
+  return history;
 }
-function twelveSymbol(a){
-  if(a.type==='crypto')return `${a.symbol}/USD`;
-  if(a.type==='fx'){const s=a.symbol.replace(/TRY$/,'/TRY').replace(/USD$/,'/USD');return s.includes('/')?s:a.symbol}
-  if(a.type==='commodity'&&a.symbol==='XAUUSD')return 'XAU/USD';
-  return a.symbol;
-}
-async function fetchTwelveHistory(a){
-  const key=twelveKey();if(!key)throw new Error('Twelve Data API anahtarı girilmedi');
-  const params={symbol:twelveSymbol(a),interval:'1day',start_date:startDate('1Y'),end_date:new Date().toISOString().slice(0,10),order:'ASC',apikey:key,timezone:'UTC'};
-  if(a.exchange==='BIST')params.exchange='XIST';
-  const data=await fetchJson('https://api.twelvedata.com/time_series?'+new URLSearchParams(params));
-  if(data.status==='error'||data.code)throw new Error(data.message||'Twelve Data hatası');
-  const hist=(data.values||[]).map(x=>({date:x.datetime,open:+x.open,high:+x.high,low:+x.low,close:+x.close,volume:+x.volume||0})).filter(x=>present(x.close)).sort((x,y)=>x.date.localeCompare(y.date));
-  if(hist.length<2)throw new Error('Yeterli günlük fiyat verisi gelmedi');
-  state.settings.historyCache[assetKey(a)]={updatedAt:new Date().toISOString(),history:hist.slice(-400)};save();return hist;
-}
-$('loadApiChart').onclick=async()=>{
-  const a=state.lastAsset;if(!a)return toast('Önce varlık seç');
-  if(!twelveKey()){nav('settings');toast('Önce Twelve Data API anahtarını gir');return}
-  const b=$('loadApiChart'),old=b.textContent;b.disabled=true;b.textContent='Günlük fiyatlar alınıyor...';
-  try{await fetchTwelveHistory(a);toast('Gerçek fiyat grafiği yüklendi');drawLastChart()}
-  catch(e){showChartMessage('API hatası: '+e.message);toast('API hatası: '+e.message)}
-  finally{b.disabled=false;b.textContent=old}
-};
-$('saveApiKey').onclick=()=>{
-  state.settings.twelveKey=$('twelveKey').value.trim();save();
-  $('apiStatus').textContent=twelveKey()?'Anahtar bu cihazda kaydedildi.':'Anahtar silindi.';
-  toast(twelveKey()?'API anahtarı kaydedildi':'API anahtarı silindi');
-};
-$('testApiKey').onclick=async()=>{
-  state.settings.twelveKey=$('twelveKey').value.trim();save();
-  const b=$('testApiKey'),old=b.textContent;b.disabled=true;b.textContent='Test ediliyor...';
+async function ensureHistory(a,notify=true){
+  if(!a)return;
+  const key=assetKey(a);
+  if(historyLoading.has(key))return;
+  historyLoading.add(key);
+  $('historyStatus').textContent=`${a.symbol} günlük fiyat verisi yükleniyor…`;
+  const button=$('loadChartData'),old=button.textContent;button.disabled=true;button.textContent='Grafik verisi yükleniyor…';
+  drawLastChart();
   try{
-    const params={symbol:'FROTO',exchange:'XIST',interval:'1day',outputsize:'5',apikey:twelveKey()};
-    const d=await fetchJson('https://api.twelvedata.com/time_series?'+new URLSearchParams(params));
-    if(d.status==='error'||d.code||!(d.values||[]).length)throw new Error(d.message||'Test sonucu boş');
-    $('apiStatus').textContent='API bağlantısı başarılı; FROTO günlük verisi alındı.';toast('API bağlantısı başarılı');
-  }catch(e){$('apiStatus').textContent='API testi başarısız: '+e.message;toast('API testi başarısız')}
-  finally{b.disabled=false;b.textContent=old}
-};
+    const history=await fetchHistoryFile(a);
+    $('historyStatus').textContent=`${a.symbol}: ${history.length} günlük veri yüklendi.`;
+    if(notify)toast('Günlük fiyat grafiği yüklendi');
+  }catch(e){
+    $('historyStatus').textContent=`${a.symbol}: ${e.message}`;
+    showChartMessage(e.message+'. Dönemsel özet getiri üstte gösterilmeye devam eder.');
+    if(notify)toast(e.message);
+  }finally{
+    historyLoading.delete(key);button.disabled=false;button.textContent=old;drawLastChart();
+  }
+}
+$('loadChartData').onclick=()=>{const a=state.lastAsset;if(!a)return toast('Önce varlık seç');ensureHistory(a,true)};
+
 $('clearData').onclick=()=>{
-  if(confirm('Profil, portföy ve API anahtarı silinsin mi?')){
+  if(confirm('Profil ve portföy silinsin mi?')){
     localStorage.removeItem(STORE);
-    state={profile:null,portfolio:[],lastDecision:null,lastAsset:null,settings:{twelveKey:'',historyCache:{}}};
-    $('twelveKey').value='';$('apiStatus').textContent='';loadProfileForm();save();toast('Yerel veriler temizlendi');
+    state={profile:null,portfolio:[],lastDecision:null,lastAsset:null,settings:{historyCache:{}}};
+    loadProfileForm();save();toast('Yerel veriler temizlendi');
   }
 };
-if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js?v=4').catch(()=>{});
-$('twelveKey').value=twelveKey();
-$('apiStatus').textContent=twelveKey()?'API anahtarı bu cihazda kayıtlı.':'API anahtarı girilmedi.';
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js?v=5').catch(()=>{});
 loadProfileForm();renderProfileResult();renderPeriodButtons();renderHome();renderPortfolio();loadMarket();
