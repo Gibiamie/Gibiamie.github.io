@@ -1,12 +1,12 @@
 const $=id=>document.getElementById(id);
 const TYPES=[['all','Tümü'],['stock','Hisse'],['etf','ETF'],['crypto','Kripto'],['fund','Fon'],['index','Endeks'],['fx','Döviz'],['commodity','Emtia']];
-const STORE='mic_mobile_github_v2';
+const STORE='mic_mobile_github_v3';
 let state={
   profile:null,portfolio:[],lastDecision:null,lastAsset:null,
-  settings:{twelveKey:'',historyCache:{}}
+  settings:{historyCache:{}}
 };
 try{state={...state,...JSON.parse(localStorage.getItem(STORE)||'{}')}}catch{}
-state.settings={twelveKey:'',historyCache:{},...(state.settings||{})};
+state.settings={historyCache:{},...(state.settings||{})};
 let market={updated_at:null,assets:[],fx:{USDTRY:40}},selected=null,activeType='all',chartPeriod='1A';
 
 function save(){localStorage.setItem(STORE,JSON.stringify(state));renderHome();renderPortfolio();renderProfileResult()}
@@ -22,7 +22,6 @@ function nav(v){
 }
 document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>nav(b.dataset.view));
 $('createProfileCta').onclick=()=>nav('profile');
-$('chartSettings').onclick=()=>nav('settings');
 
 function profileComplete(){
   const p=state.profile;
