@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#081321">
+<title>MIC Mobile Beta</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div><div class="brand">MIC</div><div class="sub">Mobil yatırım karar desteği</div></div><div id="dataStatus" class="pill warn">VERİ YÜKLENİYOR</div></header>
+<main>
+<section id="home" class="view active">
+  <div class="card hero"><div class="source">Karar desteği · yatırım tavsiyesi değildir</div><h1>Ne yapacağın değil, neden ve ne kadar yapacağın görünür olsun.</h1><p>Karar motoru yatırımcı profili, portföy ağırlığı, veri kalitesi ve varlık puanını birlikte kullanır. Profil olmadan AL/AZALT/SAT kararı üretmez.</p></div>
+  <div class="grid2"><div class="card metric"><span>Yatırımcı profili</span><strong id="homeProfile">Eksik</strong></div><div class="card metric"><span>Portföy</span><strong id="homePortfolio">0 varlık</strong></div></div>
+  <div class="card"><h3>Son karar</h3><div id="lastDecision" class="muted" style="margin-top:10px">Henüz analiz yapılmadı.</div></div>
+</section>
+<section id="search" class="view">
+  <div class="section"><h2>Araştırma</h2><span class="source" id="feedTime"></span></div>
+  <div class="card search">
+    <div class="chips" id="chips"></div>
+    <label>Hisse, ETF, kripto veya diğer varlığı ara<input id="searchInput" autocomplete="off" placeholder="En az 3 karakter: FRO, ESEN, BTC..."></label>
+    <div class="hint">Seçtiğin yatırım aracı türüne uymayan sonuçlar gösterilmez.</div>
+    <div id="results" class="dropdown hidden"></div>
+  </div>
+  <div id="selectedCard" class="card hidden"></div>
+  <div id="analysisPanel" class="card hidden"></div>
+</section>
+<section id="portfolio" class="view">
+  <div class="section"><h2>Portföy</h2><button class="ghost" id="samplePortfolio">Örnek yükle</button></div>
+  <div class="grid2"><div class="card metric"><span>Toplam değer</span><strong id="totalValue">₺0</strong></div><div class="card metric"><span>Pozisyon</span><strong id="positionCount">0</strong></div></div>
+  <div id="portfolioList"></div>
+</section>
+<section id="chart" class="view">
+  <div class="section"><h2>Grafik</h2><span id="chartTitle" class="muted"></span></div>
+  <div class="card chartCard"><div class="chartHeader"><span id="chartInfo" class="source"></span></div><canvas id="chartCanvas" class="chartCanvas"></canvas><div id="chartMessage" class="empty hidden"></div></div>
+</section>
+<section id="profile" class="view">
+  <div class="section"><h2>Yatırımcı Profili</h2></div>
+  <div class="card"><div class="form">
+    <label>Yatırım amacı<select id="objective"><option value="">Seç</option><option value="preserve">Sermayeyi koruma</option><option value="income">Gelir</option><option value="balanced">Dengeli büyüme</option><option value="growth">Büyüme</option><option value="speculative">Spekülatif büyüme</option></select></label>
+    <label>Yatırım ufku<select id="horizon"><option value="">Seç</option><option value="1">0–1 yıl</option><option value="3">1–3 yıl</option><option value="5">3–5 yıl</option><option value="10">5+ yıl</option></select></label>
+    <label>Risk toleransı<select id="risk"><option value="">Seç</option><option value="low">Düşük</option><option value="medium">Orta</option><option value="high">Yüksek</option></select></label>
+    <label>Kabul edilen azami düşüş (%)<input id="maxDrawdown" type="number" min="1" max="80" value="20"></label>
+    <label>Tek pozisyon azami ağırlığı (%)<input id="maxPosition" type="number" min="1" max="50" value="10"></label>
+    <label>Rebalance toleransı (%)<input id="rebalanceBand" type="number" min="0.5" max="10" step="0.5" value="2"></label>
+    <label class="full">Aylık yeni yatırım tutarı (TRY)<input id="monthlyContribution" type="number" min="0" value="0"></label>
+    <button id="saveProfile" class="primary full">Profili kaydet</button>
+  </div></div>
+</section>
+<section id="settings" class="view">
+  <div class="section"><h2>Ayarlar</h2></div>
+  <div class="card"><h3>Veri sistemi</h3><p class="muted">API anahtarı gerekmez. BIST ve seçili varlık verileri GitHub üzerinden periyodik yenilenen veri dosyasından okunur.</p><button id="refreshData" class="primary wide">Veriyi şimdi yenile</button><div id="settingsStatus" class="hint"></div></div>
+  <div class="card"><h3>Yerel veriler</h3><p class="muted">Profil ve portföy yalnızca bu cihazda saklanır.</p><button id="clearData" class="danger wide">Cihaz verilerini temizle</button></div>
+</section>
+</main>
+<nav class="bottom">
+<button class="nav active" data-view="home"><b>⌂</b>Ana</button><button class="nav" data-view="search"><b>⌕</b>Ara</button><button class="nav" data-view="portfolio"><b>▤</b>Portföy</button><button class="nav" data-view="chart"><b>⌁</b>Grafik</button><button class="nav" data-view="profile"><b>◎</b>Profil</button><button class="nav" data-view="settings"><b>⚙</b>Ayarlar</button>
+</nav><div id="toast" class="toast hidden"></div>
+<script src="app-core.js" defer></script>
+<script src="app-main.js" defer></script>
+</body></html>
