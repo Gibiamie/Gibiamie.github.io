@@ -74,10 +74,10 @@ async function alpacaBars(symbol, interval, limit) {
     error.status = 503; error.code = 'ALPACA_NOT_CONFIGURED'; throw error;
   }
 
-  const requested = interval === '4h' ? '4Hour' : '1Hour';
+  const requested = interval === '1d' ? '1Day' : interval === '4h' ? '4Hour' : '1Hour';
   const params = new URLSearchParams({
     timeframe: requested,
-    start: isoStart(interval === '4h' ? limit * 6 : limit * 2),
+    start: isoStart(interval === '1d' ? limit * 36 : interval === '4h' ? limit * 6 : limit * 2),
     limit: String(limit),
     adjustment: 'all',
     feed: 'iex',
@@ -155,7 +155,7 @@ async function withCryptoExchange(symbol, operation) {
 async function cryptoBars(symbol, interval, limit) {
   return withCryptoExchange(symbol, async (exchange, pair, exchangeName) => {
     if (!exchange.has.fetchOHLCV) throw new Error(`${exchangeName} does not provide OHLCV through CCXT.`);
-    const requested = interval === '4h' ? '4h' : '1h';
+    const requested = interval === '1d' ? '1d' : interval === '4h' ? '4h' : '1h';
     const rows = await exchange.fetchOHLCV(pair, requested, undefined, limit);
     return {
       bars: (rows || []).map(x => ({
@@ -196,13 +196,13 @@ async function cryptoQuote(symbol) {
 }
 
 app.get('/', (_req, res) => {
-  res.json({ service: 'MIC Market Gateway', version: '1.1.0', health: '/health', bars: '/api/v1/bars', quote: '/api/v1/quote' });
+  res.json({ service: 'MIC Market Gateway', version: '1.2.0', health: '/health', bars: '/api/v1/bars', quote: '/api/v1/quote' });
 });
 
 app.get('/health', requireToken, (_req, res) => {
   res.json({
     service: 'MIC Market Gateway',
-    version: '1.1.0',
+    version: '1.2.0',
     status: 'ok',
     generated_at: new Date().toISOString(),
     providers: {
@@ -236,8 +236,8 @@ app.get('/api/v1/bars', requireToken, async (req, res) => {
 
   if (!['US', 'CRYPTO', 'BIST'].includes(market)) return res.status(400).json({ code: 'MARKET_INVALID', message: 'market must be US, CRYPTO or BIST.' });
   if (!symbol) return res.status(400).json({ code: 'SYMBOL_REQUIRED', message: 'symbol is required.' });
-  if (!['1h', '4h'].includes(interval)) return res.status(400).json({ code: 'INTERVAL_INVALID', message: 'interval must be 1h or 4h.' });
-  if (market === 'BIST') return res.status(501).json({ code: 'BIST_LICENSED_PROVIDER_REQUIRED', message: 'BIST intraday is disabled until a licensed provider is connected.' });
+  if (!['1h', '4h', '1d'].includes(interval)) return res.status(400).json({ code: 'INTERVAL_INVALID', message: 'interval must be 1h, 4h or 1d.' });
+  if (market === 'BIST') return res.status(501).json({ code: 'BIST_LICENSED_PROVIDER_REQUIRED', message: 'BIST gateway data is not enabled.' });
 
   try {
     const result = market === 'US'
