@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#081321">
 <title>MIC Mobile Beta</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <header class="top"><div><div class="brand">MIC</div><div class="sub">Mobil yatırım karar desteği</div></div><div id="dataStatus" class="pill warn">VERİ YÜKLENİYOR</div></header>
@@ -84,6 +84,15 @@
     <div id="chartMessage" class="empty hidden"></div>
     <button id="loadChartData" class="primary wide chartApi">Günlük fiyat grafiğini yenile</button>
   </div>
+
+  <div id="indicatorLab" class="card indicatorLab">
+    <div class="section"><div><h3>Teknik Sinyal Laboratuvarı</h3><span id="indicatorSymbol" class="source">Günlük fiyat verisi</span></div></div>
+    <p class="muted indicatorNotice">Göstergeleri seç. Sonuç, yalnızca seçili teknik göstergelerin kesin sayımlı oyudur; MIC profil ve temel analiz kararının yerine geçmez.</p>
+    <div class="indicatorActions"><button id="indicatorAll" class="ghost">Tümünü seç</button><button id="indicatorClear" class="ghost">Temizle</button></div>
+    <div id="indicatorOptions" class="indicatorOptions"></div>
+    <div id="indicatorConsensus"></div>
+    <div id="indicatorResults" class="indicatorResults"></div>
+  </div>
 </section>
 
 <section id="profile" class="view">
@@ -115,7 +124,8 @@
 <nav class="bottom">
 <button class="nav active" data-view="home"><b>⌂</b>Ana</button><button class="nav" data-view="search"><b>⌕</b>Ara</button><button class="nav" data-view="portfolio"><b>▤</b>Portföy</button><button class="nav" data-view="chart"><b>⌁</b>Grafik</button><button class="nav" data-view="profile"><b>◎</b>Profil</button><button class="nav" data-view="settings"><b>⚙</b>Ayarlar</button>
 </nav><div id="toast" class="toast hidden"></div>
-<script src="app-core.js?v=6" defer></script>
-<script src="app-main.js?v=6" defer></script>
-<script src="virtual.js?v=6" defer></script>
+<script src="app-core.js?v=7" defer></script>
+<script src="app-main.js?v=7" defer></script>
+<script src="virtual.js?v=7" defer></script>
+<script src="indicators.js?v=7" defer></script>
 </body></html>
