@@ -23,6 +23,9 @@ function nav(v){
 document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>nav(b.dataset.view));
 $('createProfileCta').onclick=()=>nav('profile');
 
+const sideNote=document.querySelector('.sideNote');
+if(sideNote)sideNote.textContent='Gerçek portföy ile 100.000 USD sanal portföy ayrı tutulur; ikisi de aynı puanlama, risk limiti ve karar kurallarıyla değerlendirilir.';
+
 function profileComplete(){
   const p=state.profile;
   return !!(p&&p.objective&&p.horizon&&p.liquidity&&p.lossReaction&&p.experience&&p.incomeStability&&p.risk&&p.maxPosition&&p.rebalanceBand);
@@ -35,7 +38,13 @@ function renderHome(){
   $('lastDecision').innerHTML=state.lastDecision?`<div class="decisionTitle">${esc(state.lastDecision.action)}</div><div class="hint">${esc(state.lastDecision.symbol)} · ${esc(state.lastDecision.summary)}</div>`:'Henüz analiz yapılmadı.';
 }
 function renderChips(){$('chips').innerHTML=TYPES.map(([k,l])=>`<button class="chip ${activeType===k?'active':''}" data-type="${k}">${l}</button>`).join('')}
-$('chips').onclick=e=>{const b=e.target.closest('[data-type]');if(!b)return;activeType=b.dataset.type;renderChips();runSearch()};
+$('chips').onclick=e=>{
+  const b=e.target.closest('[data-type]');if(!b)return;
+  activeType=b.dataset.type;renderChips();
+  if(selected&&!matchesType(selected))clearSearchSelection(true);
+  else if(selected)$('results').classList.add('hidden');
+  else runSearch();
+};
 renderChips();
 
 async function loadMarket(){
@@ -48,7 +57,9 @@ async function loadMarket(){
     const d=market.updated_at?new Date(market.updated_at):null;
     $('feedTime').textContent=d?'Güncelleme: '+d.toLocaleString('tr-TR'):'Veri zamanı yok';
     $('settingsStatus').textContent=`${market.assets.length} varlık yüklendi.`;
-    runSearch();renderPortfolio();
+    if(!selected||$('searchInput').value.trim()!==selectedSearchLabel())runSearch();
+    else $('results').classList.add('hidden');
+    renderPortfolio();
     return true;
   }catch(e){
     $('dataStatus').textContent='VERİ HATASI';$('dataStatus').className='pill warn';
@@ -60,21 +71,45 @@ $('refreshData').onclick=async()=>{const ok=await loadMarket();toast(ok?'Veri ye
 
 function norm(s){return String(s||'').toLocaleUpperCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
 function matchesType(a){return activeType==='all'||a.type===activeType}
+function selectedSearchLabel(){return selected?`${selected.symbol} — ${selected.name}`:''}
+function clearSearchSelection(clearInput=false){
+  selected=null;
+  if(clearInput)$('searchInput').value='';
+  $('results').classList.add('hidden');$('results').innerHTML='';
+  $('selectedCard').classList.add('hidden');
+  $('analysisPanel').classList.add('hidden');
+}
+function searchMatches(asset,query){
+  const haystack=norm(`${asset.symbol} ${asset.name}`),clean=norm(query).replace(/[—–-]/g,' ');
+  const terms=clean.split(/\s+/).filter(Boolean);
+  return terms.length>0&&terms.every(term=>haystack.includes(term));
+}
 function runSearch(){
-  const q=$('searchInput').value.trim(),box=$('results');
-  if(q.length<3){box.classList.add('hidden');return}
-  const n=norm(q);
-  const items=(market.assets||[]).filter(a=>matchesType(a)&&norm(a.symbol+' '+a.name).includes(n)).slice(0,30);
+  const input=$('searchInput'),q=input.value.trim(),box=$('results');
+  if(selected&&q===selectedSearchLabel()){box.classList.add('hidden');box.innerHTML='';return}
+  if(q.length<3){box.classList.add('hidden');box.innerHTML='';return}
+  const items=(market.assets||[]).filter(a=>matchesType(a)&&searchMatches(a,q)).slice(0,30);
   box._items=items;
   box.innerHTML=items.length?items.map((a,i)=>`<div class="result" data-i="${i}"><strong>${esc(a.symbol)} — ${esc(a.name)}</strong><small>${label(a.type)} · ${esc(a.exchange||'')} · ${esc(a.currency||'')}</small></div>`).join(''):'<div class="result muted">Eşleşen varlık bulunamadı.</div>';
   box.classList.remove('hidden');
 }
-$('searchInput').addEventListener('input',runSearch);
+$('searchInput').addEventListener('input',()=>{
+  const q=$('searchInput').value.trim();
+  if(selected&&q!==selectedSearchLabel()){
+    selected=null;
+    $('selectedCard').classList.add('hidden');
+    $('analysisPanel').classList.add('hidden');
+  }
+  runSearch();
+});
+$('searchInput').addEventListener('focus',()=>{if(!selected)runSearch()});
+$('searchInput').addEventListener('keydown',e=>{if(e.key==='Escape')$('results').classList.add('hidden')});
+document.addEventListener('click',e=>{if(!e.target.closest('.search'))$('results').classList.add('hidden')});
 $('results').onclick=e=>{
   const r=e.target.closest('[data-i]');if(!r)return;
   selected=$('results')._items[+r.dataset.i];
-  $('results').classList.add('hidden');
-  $('searchInput').value=selected.symbol+' — '+selected.name;
+  $('searchInput').value=selectedSearchLabel();
+  $('results').classList.add('hidden');$('results').innerHTML='';
   renderSelected();
 };
 function label(t){return ({stock:'Hisse',etf:'ETF',crypto:'Kripto',fund:'Fon',index:'Endeks',fx:'Döviz',commodity:'Emtia'})[t]||t}
