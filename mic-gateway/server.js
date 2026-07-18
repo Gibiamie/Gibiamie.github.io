@@ -12,6 +12,7 @@ const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || 'https://gibiamie.
 const ALPACA_KEY = String(process.env.ALPACA_API_KEY_ID || '').trim();
 const ALPACA_SECRET = String(process.env.ALPACA_API_SECRET_KEY || '').trim();
 const CRYPTO_EXCHANGE = String(process.env.CRYPTO_EXCHANGE || 'kraken').trim().toLowerCase();
+const CRYPTO_FALLBACKS = [...new Set([CRYPTO_EXCHANGE, 'kraken', 'coinbase', 'okx', 'binanceus'])];
 const MAX_LIMIT = 2000;
 
 app.disable('x-powered-by');
@@ -104,64 +105,127 @@ async function alpacaBars(symbol, interval, limit) {
   };
 }
 
-function createExchange() {
-  const Exchange = ccxt[CRYPTO_EXCHANGE];
+function createExchange(name = CRYPTO_EXCHANGE) {
+  const Exchange = ccxt[name];
   if (!Exchange) {
-    const error = new Error(`Unsupported CCXT exchange: ${CRYPTO_EXCHANGE}`);
+    const error = new Error(`Unsupported CCXT exchange: ${name}`);
     error.status = 500; error.code = 'CRYPTO_EXCHANGE_INVALID'; throw error;
   }
-  return new Exchange({ enableRateLimit: true });
+  return new Exchange({ enableRateLimit: true, timeout: 15000 });
+}
+
+function pairCandidates(symbol) {
+  const normalized = String(symbol || '').replace('-', '/').toUpperCase();
+  if (!normalized) return [];
+  if (normalized.includes('/')) {
+    const [base] = normalized.split('/');
+    return [...new Set([normalized, `${base}/USD`, `${base}/USDT`, `${base}/USDC`])];
+  }
+  return [`${normalized}/USD`, `${normalized}/USDT`, `${normalized}/USDC`];
+}
+
+function resolvePair(exchange, symbol) {
+  for (const candidate of pairCandidates(symbol)) {
+    const market = exchange.markets?.[candidate];
+    if (market && market.active !== false && market.spot !== false) return candidate;
+  }
+  return '';
+}
+
+async function withCryptoExchange(symbol, operation) {
+  const failures = [];
+  for (const exchangeName of CRYPTO_FALLBACKS) {
+    try {
+      const exchange = createExchange(exchangeName);
+      await exchange.loadMarkets();
+      const pair = resolvePair(exchange, symbol);
+      if (!pair) { failures.push(`${exchangeName}: pair unavailable`); continue; }
+      return await operation(exchange, pair, exchangeName);
+    } catch (error) {
+      failures.push(`${exchangeName}: ${error.message || 'provider error'}`);
+    }
+  }
+  const error = new Error(`${String(symbol).toUpperCase()} could not be resolved on available crypto providers.`);
+  error.status = 404;
+  error.code = 'CRYPTO_SYMBOL_NOT_FOUND';
+  error.details = failures;
+  throw error;
 }
 
 async function cryptoBars(symbol, interval, limit) {
-  const exchange = createExchange();
-  await exchange.loadMarkets();
-  const requested = interval === '4h' ? '4h' : '1h';
-  let pair = symbol.replace('-', '/').toUpperCase();
-  if (!pair.includes('/')) pair = `${pair}/USD`;
-  if (!exchange.markets[pair]) {
-    const usdt = pair.replace('/USD', '/USDT');
-    if (exchange.markets[usdt]) pair = usdt;
-  }
-  if (!exchange.markets[pair]) {
-    const error = new Error(`${pair} is not available on ${CRYPTO_EXCHANGE}.`);
-    error.status = 404; error.code = 'CRYPTO_SYMBOL_NOT_FOUND'; throw error;
-  }
-  if (!exchange.has.fetchOHLCV) {
-    const error = new Error(`${CRYPTO_EXCHANGE} does not provide OHLCV through CCXT.`);
-    error.status = 501; error.code = 'CRYPTO_OHLCV_UNAVAILABLE'; throw error;
-  }
-  const rows = await exchange.fetchOHLCV(pair, requested, undefined, limit);
-  return {
-    bars: (rows || []).map(x => ({
-      timestamp: new Date(x[0]).toISOString(),
-      open: Number(x[1]), high: Number(x[2]), low: Number(x[3]), close: Number(x[4]), volume: Number(x[5] || 0),
-      provider: `CCXT_${CRYPTO_EXCHANGE.toUpperCase()}`
-    })).filter(x => [x.open, x.high, x.low, x.close].every(Number.isFinite)),
-    provider: `CCXT_${CRYPTO_EXCHANGE.toUpperCase()}`,
-    data_class: 'PROVIDER_NATIVE_BAR',
-    source_interval: interval,
-    provider_symbol: pair
-  };
+  return withCryptoExchange(symbol, async (exchange, pair, exchangeName) => {
+    if (!exchange.has.fetchOHLCV) throw new Error(`${exchangeName} does not provide OHLCV through CCXT.`);
+    const requested = interval === '4h' ? '4h' : '1h';
+    const rows = await exchange.fetchOHLCV(pair, requested, undefined, limit);
+    return {
+      bars: (rows || []).map(x => ({
+        timestamp: new Date(x[0]).toISOString(),
+        open: Number(x[1]), high: Number(x[2]), low: Number(x[3]), close: Number(x[4]), volume: Number(x[5] || 0),
+        provider: `CCXT_${exchangeName.toUpperCase()}`
+      })).filter(x => [x.open, x.high, x.low, x.close].every(Number.isFinite)),
+      provider: `CCXT_${exchangeName.toUpperCase()}`,
+      data_class: 'PROVIDER_NATIVE_BAR',
+      source_interval: interval,
+      provider_symbol: pair
+    };
+  });
+}
+
+async function cryptoQuote(symbol) {
+  return withCryptoExchange(symbol, async (exchange, pair, exchangeName) => {
+    let ticker = null;
+    if (exchange.has.fetchTicker) ticker = await exchange.fetchTicker(pair);
+    let price = Number(ticker?.last ?? ticker?.close);
+    if (!Number.isFinite(price)) {
+      const bid = Number(ticker?.bid), ask = Number(ticker?.ask);
+      if (Number.isFinite(bid) && Number.isFinite(ask)) price = (bid + ask) / 2;
+    }
+    if (!Number.isFinite(price) && exchange.has.fetchOHLCV) {
+      const rows = await exchange.fetchOHLCV(pair, '1m', undefined, 2);
+      price = Number(rows?.at(-1)?.[4]);
+    }
+    if (!Number.isFinite(price)) throw new Error(`${exchangeName} returned no valid ticker price.`);
+    return {
+      price,
+      provider: `CCXT_${exchangeName.toUpperCase()}`,
+      provider_symbol: pair,
+      generated_at: ticker?.timestamp ? new Date(ticker.timestamp).toISOString() : new Date().toISOString(),
+      data_class: 'PROVIDER_SPOT_QUOTE'
+    };
+  });
 }
 
 app.get('/', (_req, res) => {
-  res.json({ service: 'MIC Market Gateway', version: '1.0.0', health: '/health', bars: '/api/v1/bars' });
+  res.json({ service: 'MIC Market Gateway', version: '1.1.0', health: '/health', bars: '/api/v1/bars', quote: '/api/v1/quote' });
 });
 
 app.get('/health', requireToken, (_req, res) => {
   res.json({
     service: 'MIC Market Gateway',
-    version: '1.0.0',
+    version: '1.1.0',
     status: 'ok',
     generated_at: new Date().toISOString(),
     providers: {
       us: ALPACA_KEY && ALPACA_SECRET ? 'ALPACA_IEX_READY' : 'ALPACA_NOT_CONFIGURED',
-      crypto: `CCXT_${CRYPTO_EXCHANGE.toUpperCase()}`,
+      crypto: CRYPTO_FALLBACKS.map(x => `CCXT_${x.toUpperCase()}`),
       bist: 'LICENSED_PROVIDER_REQUIRED'
     },
     access_token_required: Boolean(ACCESS_TOKEN)
   });
+});
+
+app.get('/api/v1/quote', requireToken, async (req, res) => {
+  const market = String(req.query.market || 'CRYPTO').trim().toUpperCase();
+  const symbol = String(req.query.symbol || '').trim().toUpperCase();
+  if (market !== 'CRYPTO') return res.status(400).json({ code: 'MARKET_INVALID', message: 'Live quote currently supports CRYPTO only.' });
+  if (!symbol) return res.status(400).json({ code: 'SYMBOL_REQUIRED', message: 'symbol is required.' });
+  try {
+    const result = await cryptoQuote(symbol);
+    res.json({ market, symbol, ...result });
+  } catch (error) {
+    const status = Number(error.status || 502);
+    res.status(status).json({ code: error.code || 'PROVIDER_ERROR', message: error.message || 'Provider request failed.' });
+  }
 });
 
 app.get('/api/v1/bars', requireToken, async (req, res) => {
