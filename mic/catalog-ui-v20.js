@@ -1,12 +1,13 @@
-/* MIC v20 — multi-asset search and title corrections */
+/* MIC v21 — multi-asset search and title corrections without DOM mutation loop */
 (() => {
-  if (window.__MIC_CATALOG_UI_V20) return;
-  window.__MIC_CATALOG_UI_V20 = true;
+  if (window.__MIC_CATALOG_UI_V21) return;
+  window.__MIC_CATALOG_UI_V21 = true;
 
   function correctCommitteeTitle(){
     document.querySelectorAll('.sideTitle').forEach(el=>{
-      el.textContent='MIC Investment Committee';
-      el.setAttribute('aria-label','MIC Investment Committee');
+      const correct='MIC Investment Committee';
+      if(el.textContent!==correct)el.textContent=correct;
+      if(el.getAttribute('aria-label')!==correct)el.setAttribute('aria-label',correct);
     });
   }
 
@@ -33,8 +34,7 @@
   }
 
   correctCommitteeTitle();
-  document.addEventListener('mic:asset-catalog-ready',refreshSearch);
-  const observer=new MutationObserver(correctCommitteeTitle);
-  observer.observe(document.body,{childList:true,subtree:true});
-  setTimeout(refreshSearch,0);
+  document.addEventListener('mic:asset-catalog-ready',refreshSearch,{once:false});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',refreshSearch,{once:true});
+  else setTimeout(refreshSearch,0);
 })();
