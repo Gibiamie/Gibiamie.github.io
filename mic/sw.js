@@ -1,5 +1,5 @@
-const CACHE='mic-mobile-v9';
-const CORE=['./','index.html','manifest.webmanifest','style.css?v=8','indicators.css?v=8','app-core.js?v=8','app-main.js?v=8','virtual.js?v=8','indicators.js?v=8','chart-workspace.css?v=9','chart-workspace.js?v=9'];
+const CACHE='mic-mobile-v10';
+const CORE=['./','index.html','manifest.webmanifest','style.css?v=8','indicators.css?v=8','app-core.js?v=8','app-main.js?v=8','virtual.js?v=8','indicators.js?v=8','chart-workspace-v10.css?v=10','indicators-v10-patch.js?v=10','chart-workspace-v10.js?v=10'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))]))});
 self.addEventListener('fetch',e=>{
@@ -8,7 +8,7 @@ self.addEventListener('fetch',e=>{
   if(u.origin!==location.origin)return;
   const networkFirst=u.pathname.includes('/data/')||e.request.mode==='navigate'||/\.(js|css)$/.test(u.pathname);
   if(networkFirst){
-    e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request)));
+    e.respondWith(fetch(e.request,{cache:'no-store'}).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match(e.request)));
     return;
   }
   e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));
