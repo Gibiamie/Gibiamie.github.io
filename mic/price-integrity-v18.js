@@ -6,11 +6,6 @@
   if (window.__MIC_PRICE_INTEGRITY_V18) return;
   window.__MIC_PRICE_INTEGRITY_V18 = true;
 
-  const desktop=location.pathname.includes('mic-desktop');
-  const sub=document.querySelector('.top .sub');
-  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v18':'Mobil yatırım karar desteği · v18';
-  document.title=desktop?'MIC Laptop Web Beta v18':'MIC Mobile Beta v18';
-
   const valid=v=>v!==null&&v!==undefined&&v!==''&&Number.isFinite(Number(v));
   const parseDate=v=>{const d=v?new Date(v):null;return d&&!Number.isNaN(d.getTime())?d:null};
   const marketDate=()=>parseDate(market?.updated_at);
