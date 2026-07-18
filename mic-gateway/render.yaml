@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: mic-market-gateway
+    runtime: node
+    rootDir: mic-gateway
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ALLOWED_ORIGINS
+        value: https://gibiamie.github.io
+      - key: CRYPTO_EXCHANGE
+        value: kraken
+      - key: ALPACA_API_KEY_ID
+        sync: false
+      - key: ALPACA_API_SECRET_KEY
+        sync: false
+      - key: GATEWAY_ACCESS_TOKEN
+        sync: false
