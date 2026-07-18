@@ -4,6 +4,10 @@
   window.__MIC_CHART_V13_LOADING = true;
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
+  const sub=document.querySelector('.top .sub');
+  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v13':'Mobil yatırım karar desteği · v13';
+  document.title=desktop?'MIC Laptop Web Beta v13':'MIC Mobile Beta v13';
+  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=13').catch(()=>{});
   const addCss=href=>{if(document.querySelector(`link[href*="${href.split('?')[0]}"]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;document.head.appendChild(x)};
   const addScript=(src,onload)=>{if(document.querySelector(`script[src*="${src.split('?')[0]}"]`)){onload?.();return}const x=document.createElement('script');x.src=base+src;if(onload)x.onload=onload;document.body.appendChild(x)};
   addCss('chart-workspace-v13.css?v=13');
