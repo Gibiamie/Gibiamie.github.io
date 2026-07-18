@@ -9,8 +9,13 @@ const INDICATOR_DEFS=[
   {key:'atr',label:'ATR 14 risk',directional:false}
 ];
 const DEFAULT_INDICATORS=INDICATOR_DEFS.map(x=>x.key);
-state.settings.indicators={active:[...DEFAULT_INDICATORS],...(state.settings.indicators||{})};
-if(!Array.isArray(state.settings.indicators.active))state.settings.indicators.active=[...DEFAULT_INDICATORS];
+function ensureIndicatorSettings(){
+  state.settings=state.settings||{};
+  state.settings.indicators={active:[...DEFAULT_INDICATORS],...(state.settings.indicators||{})};
+  if(!Array.isArray(state.settings.indicators.active))state.settings.indicators.active=[...DEFAULT_INDICATORS];
+  return state.settings.indicators;
+}
+ensureIndicatorSettings();
 
 function mean(values){return values.length?values.reduce((s,v)=>s+v,0)/values.length:NaN}
 function stddev(values){if(!values.length)return NaN;const m=mean(values);return Math.sqrt(mean(values.map(v=>(v-m)**2)))}
@@ -65,13 +70,16 @@ function calculateIndicatorSignals(history,activeKeys){
     else results.push(result('rsi','RSI 14','NÖTR',num(r,1),'30–70 aralığında.'));
   }
   if(activeKeys.includes('macd')){
-    const e12=emaSeries(closes,12),e26=emaSeries(closes,26),macd=e12.map((v,i)=>v-e26[i]),sig=emaSeries(macd,9),d=macd.at(-1)-sig.at(-1),pd=macd.at(-2)-sig.at(-2);
-    const val=`${num(macd.at(-1),2)} / ${num(sig.at(-1),2)}`;
-    if(pd<=0&&d>0)results.push(result('macd','MACD','AL',val,'MACD, sinyal çizgisini yukarı kesti.',1));
-    else if(pd>=0&&d<0)results.push(result('macd','MACD','SAT',val,'MACD, sinyal çizgisini aşağı kesti.',-1));
-    else if(d>0&&macd.at(-1)>0)results.push(result('macd','MACD','AL',val,'MACD sinyal üstünde ve sıfırın üzerinde.',1));
-    else if(d<0&&macd.at(-1)<0)results.push(result('macd','MACD','SAT',val,'MACD sinyal altında ve sıfırın altında.',-1));
-    else results.push(result('macd','MACD','NÖTR',val,'Kesin yön teyidi yok.'));
+    if(closes.length<35)results.push(result('macd','MACD','NÖTR','—','MACD 12/26/9 için en az 35 günlük veri gerekir.'));
+    else{
+      const e12=emaSeries(closes,12),e26=emaSeries(closes,26),macd=e12.map((v,i)=>v-e26[i]),sig=emaSeries(macd,9),d=macd.at(-1)-sig.at(-1),pd=macd.at(-2)-sig.at(-2);
+      const val=`${num(macd.at(-1),2)} / ${num(sig.at(-1),2)}`;
+      if(pd<=0&&d>0)results.push(result('macd','MACD','AL',val,'MACD, sinyal çizgisini yukarı kesti.',1));
+      else if(pd>=0&&d<0)results.push(result('macd','MACD','SAT',val,'MACD, sinyal çizgisini aşağı kesti.',-1));
+      else if(d>0&&macd.at(-1)>0)results.push(result('macd','MACD','AL',val,'MACD sinyal üstünde ve sıfırın üzerinde.',1));
+      else if(d<0&&macd.at(-1)<0)results.push(result('macd','MACD','SAT',val,'MACD sinyal altında ve sıfırın altında.',-1));
+      else results.push(result('macd','MACD','NÖTR',val,'Kesin yön teyidi yok.'));
+    }
   }
   if(activeKeys.includes('sma')){
     const s20=smaAt(closes,20),s50=smaAt(closes,50);
@@ -114,8 +122,11 @@ function calculateIndicatorSignals(history,activeKeys){
   }
   return results;
 }
-function indicatorActive(){return state.settings.indicators.active.filter(k=>INDICATOR_DEFS.some(d=>d.key===k))}
-function saveIndicatorSelection(active){state.settings.indicators.active=active;save();renderIndicatorOptions();renderIndicatorPanel()}
+function indicatorActive(){
+  const settings=ensureIndicatorSettings();
+  return settings.active.filter(k=>INDICATOR_DEFS.some(d=>d.key===k));
+}
+function saveIndicatorSelection(active){ensureIndicatorSettings().active=active;save();renderIndicatorOptions();renderIndicatorPanel()}
 function renderIndicatorOptions(){
   const box=$('indicatorOptions');if(!box)return;const active=indicatorActive();
   box.innerHTML=INDICATOR_DEFS.map(d=>`<button class="indicatorToggle ${active.includes(d.key)?'active':''}" data-indicator="${d.key}">${d.label}</button>`).join('');
