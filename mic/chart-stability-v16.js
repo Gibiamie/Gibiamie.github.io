@@ -63,10 +63,10 @@
 
   // The old renderer hid and resized the same canvas immediately before the
   // workspace renderer drew it. Replace it with one stable render dispatcher.
-  window.showChartMessage=stableMessage;
-  window.drawLastChart=function(){
-    try{renderPeriodButtons?.();}catch{}
-    const a=window.state?.lastAsset;
+  showChartMessage=stableMessage;
+  drawLastChart=function(){
+    try{renderPeriodButtons();}catch{}
+    const a=state?.lastAsset;
     const title=document.getElementById('chartTitle');
     if(!a){
       if(title)title.textContent='';
@@ -74,9 +74,9 @@
       requestWorkspaceRender();
       return;
     }
-    const live=(window.market?.assets||[]).find(x=>x.symbol===a.symbol&&x.type===a.type)||a;
+    const live=(market?.assets||[]).find(x=>x.symbol===a.symbol&&x.type===a.type)||a;
     if(title)title.textContent=`${live.symbol} · ${live.name}`;
-    const interval=window.state?.settings?.chartWorkspace?.interval||'1D';
+    const interval=state?.settings?.chartWorkspace?.interval||'1D';
     const intraday=interval==='1H'||interval==='4H';
     if(!intraday){
       const history=typeof cachedHistory==='function'?cachedHistory(live):[];
@@ -87,7 +87,7 @@
       }else hideStableMessage();
     }
     requestWorkspaceRender();
-    setTimeout(()=>{try{renderIndicatorPanel?.();}catch{}},0);
+    setTimeout(()=>{try{renderIndicatorPanel();}catch{}},0);
   };
 
   function allIndicatorKeys(){
