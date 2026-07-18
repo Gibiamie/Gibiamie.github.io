@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#081321">
 <title>MIC Laptop Web Beta</title>
-<link rel="stylesheet" href="../mic/style.css?v=6">
-<link rel="stylesheet" href="desktop.css?v=1">
+<link rel="stylesheet" href="../mic/style.css?v=7">
+<link rel="stylesheet" href="desktop.css?v=2">
 </head>
 <body class="desktopApp">
 <header class="top desktopTop">
@@ -20,7 +20,7 @@
       <button class="nav active" data-view="home"><b>⌂</b><span>Ana Panel</span></button>
       <button class="nav" data-view="search"><b>⌕</b><span>Araştırma</span></button>
       <button class="nav" data-view="portfolio"><b>▤</b><span>Portföyler</span></button>
-      <button class="nav" data-view="chart"><b>⌁</b><span>Grafikler</span></button>
+      <button class="nav" data-view="chart"><b>⌁</b><span>Grafik ve Sinyaller</span></button>
       <button class="nav" data-view="profile"><b>◎</b><span>Yatırımcı Profili</span></button>
       <button class="nav" data-view="settings"><b>⚙</b><span>Ayarlar</span></button>
     </nav>
@@ -82,16 +82,27 @@
     </section>
 
     <section id="chart" class="view">
-      <div class="section"><h2>Grafik</h2><span id="chartTitle" class="muted"></span></div>
-      <div class="card chartCard desktopChart">
-        <div class="chartHeader"><span id="chartInfo" class="source"></span></div>
-        <div id="chartPeriods" class="periods">
-          <button class="period" data-period="1H">1H</button><button class="period active" data-period="1A">1A</button><button class="period" data-period="3A">3A</button><button class="period" data-period="6A">6A</button><button class="period" data-period="1Y">1Y</button><button class="period" data-period="YTD">YTD</button>
+      <div class="section"><h2>Grafik ve Teknik Sinyaller</h2><span id="chartTitle" class="muted"></span></div>
+      <div class="desktopChartGrid">
+        <div class="card chartCard desktopChart">
+          <div class="chartHeader"><span id="chartInfo" class="source"></span></div>
+          <div id="chartPeriods" class="periods">
+            <button class="period" data-period="1H">1H</button><button class="period active" data-period="1A">1A</button><button class="period" data-period="3A">3A</button><button class="period" data-period="6A">6A</button><button class="period" data-period="1Y">1Y</button><button class="period" data-period="YTD">YTD</button>
+          </div>
+          <div id="performanceSummary" class="performanceSummary hidden"></div>
+          <canvas id="chartCanvas" class="chartCanvas"></canvas>
+          <div id="chartMessage" class="empty hidden"></div>
+          <button id="loadChartData" class="primary chartApi">Günlük fiyat grafiğini yenile</button>
         </div>
-        <div id="performanceSummary" class="performanceSummary hidden"></div>
-        <canvas id="chartCanvas" class="chartCanvas"></canvas>
-        <div id="chartMessage" class="empty hidden"></div>
-        <button id="loadChartData" class="primary chartApi">Günlük fiyat grafiğini yenile</button>
+
+        <div id="indicatorLab" class="card indicatorLab desktopIndicatorLab">
+          <div class="section"><div><h3>Teknik Sinyal Laboratuvarı</h3><span id="indicatorSymbol" class="source">Günlük fiyat verisi</span></div></div>
+          <p class="muted indicatorNotice">Göstergeleri seç. Sonuç yalnızca seçili teknik göstergelerin kesin sayımlı oyudur; MIC profil ve temel analiz kararının yerine geçmez.</p>
+          <div class="indicatorActions"><button id="indicatorAll" class="ghost">Tümünü seç</button><button id="indicatorClear" class="ghost">Temizle</button></div>
+          <div id="indicatorOptions" class="indicatorOptions"></div>
+          <div id="indicatorConsensus"></div>
+          <div id="indicatorResults" class="indicatorResults"></div>
+        </div>
       </div>
     </section>
 
@@ -134,7 +145,8 @@
   };
 })();
 </script>
-<script src="../mic/app-core.js?v=6" defer></script>
-<script src="../mic/app-main.js?v=6" defer></script>
-<script src="../mic/virtual.js?v=6" defer></script>
+<script src="../mic/app-core.js?v=7" defer></script>
+<script src="../mic/app-main.js?v=7" defer></script>
+<script src="../mic/virtual.js?v=7" defer></script>
+<script src="../mic/indicators.js?v=7" defer></script>
 </body></html>
