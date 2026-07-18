@@ -1,5 +1,5 @@
-const CACHE='mic-mobile-v14';
-const CORE=['./','index.html','manifest.webmanifest','style.css?v=12','indicators.css?v=12','app-core.js?v=12','app-main.js?v=12','virtual.js?v=12','indicators.js?v=12','chart-workspace-v10.css?v=12','indicators-v10-patch.js?v=12','chart-workspace-v10.js?v=14','chart-workspace-v13.css?v=14','indicators-v13-patch.js?v=14','chart-workspace-v13.js?v=14','profile-risk-v14.css?v=14','profile-risk-v14.js?v=14','data-governance-v11.css?v=12','data-governance-v11.js?v=12'];
+const CACHE='mic-mobile-v15';
+const CORE=['./','index.html','manifest.webmanifest','style.css?v=12','indicators.css?v=12','app-core.js?v=12','app-main.js?v=12','virtual.js?v=12','indicators.js?v=12','chart-workspace-v10.css?v=12','indicators-v10-patch.js?v=12','chart-workspace-v10.js?v=15','chart-workspace-v13.css?v=15','indicators-v13-patch.js?v=15','chart-workspace-v13.js?v=15','profile-risk-v14.css?v=15','profile-risk-v14.js?v=15','asset-catalog-v15.js?v=15','data/supplemental-assets.json','data-governance-v11.css?v=12','data-governance-v11.js?v=12'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))]))});
 self.addEventListener('fetch',e=>{
