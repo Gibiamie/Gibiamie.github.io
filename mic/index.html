@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#081321">
-<title>MIC Mobile Beta</title>
+<title>MIC Mobile Beta v12</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=8">
-<link rel="stylesheet" href="indicators.css?v=8">
+<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="indicators.css?v=12">
+<link rel="stylesheet" href="chart-workspace-v10.css?v=12" data-mic-chart-workspace="1">
+<link rel="stylesheet" href="data-governance-v11.css?v=12" data-mic-data-governance="1">
 </head>
 <body>
-<header class="top"><div><div class="brand">MIC</div><div class="sub">Mobil yatırım karar desteği</div></div><div id="dataStatus" class="pill warn">VERİ YÜKLENİYOR</div></header>
+<header class="top"><div><div class="brand">MIC</div><div class="sub">Mobil yatırım karar desteği · v12</div></div><div id="dataStatus" class="pill warn">VERİ YÜKLENİYOR</div></header>
 <main>
 <section id="home" class="view active">
   <div class="card hero"><div class="source">Karar desteği · yatırım tavsiyesi değildir</div><h1>Ne yapacağın değil, neden ve ne kadar yapacağın görünür olsun.</h1><p>Karar motoru yatırımcı profili, portföy ağırlığı, veri kalitesi ve varlık puanını birlikte kullanır. Profil olmadan AL/AZALT/SAT kararı üretmez.</p></div>
@@ -125,8 +127,12 @@
 <nav class="bottom">
 <button class="nav active" data-view="home"><b>⌂</b>Ana</button><button class="nav" data-view="search"><b>⌕</b>Ara</button><button class="nav" data-view="portfolio"><b>▤</b>Portföy</button><button class="nav" data-view="chart"><b>⌁</b>Grafik</button><button class="nav" data-view="profile"><b>◎</b>Profil</button><button class="nav" data-view="settings"><b>⚙</b>Ayarlar</button>
 </nav><div id="toast" class="toast hidden"></div>
-<script src="app-core.js?v=11" defer></script>
-<script src="app-main.js?v=8" defer></script>
-<script src="virtual.js?v=8" defer></script>
-<script src="indicators.js?v=8" defer></script>
+<script src="app-core.js?v=12" defer></script>
+<script src="app-main.js?v=12" defer></script>
+<script src="virtual.js?v=12" defer></script>
+<script src="indicators.js?v=12" defer></script>
+<script src="indicators-v10-patch.js?v=12" defer data-mic-indicators-patch="1"></script>
+<script src="chart-workspace-v10.js?v=12" defer data-mic-chart-workspace="1"></script>
+<script src="data-governance-v11.js?v=12" defer data-mic-data-governance="1"></script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js?v=12').catch(()=>{});}</script>
 </body></html>
