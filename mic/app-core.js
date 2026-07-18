@@ -126,8 +126,10 @@ function renderSelected(){
 window.addEventListener('load',()=>{
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
-  const css=document.createElement('link');css.rel='stylesheet';css.href=base+'chart-workspace-v10.css?v=10';css.dataset.micChartWorkspace='10';document.head.appendChild(css);
-  const patch=document.createElement('script');patch.src=base+'indicators-v10-patch.js?v=10';patch.dataset.micIndicatorsPatch='10';
-  patch.onload=()=>{const workspace=document.createElement('script');workspace.src=base+'chart-workspace-v10.js?v=10';workspace.dataset.micChartWorkspace='10';document.body.appendChild(workspace);};
-  document.body.appendChild(patch);
+  const addCss=(href,key)=>{if(document.querySelector(`link[data-mic-${key}]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;x.dataset[`mic${key[0].toUpperCase()+key.slice(1)}`]='1';document.head.appendChild(x)};
+  const addScript=(src,key,onload)=>{if(document.querySelector(`script[data-mic-${key}]`))return;const x=document.createElement('script');x.src=base+src;x.dataset[`mic${key[0].toUpperCase()+key.slice(1)}`]='1';if(onload)x.onload=onload;document.body.appendChild(x)};
+  addCss('chart-workspace-v10.css?v=11','chart-workspace');
+  addCss('data-governance-v11.css?v=11','data-governance');
+  addScript('data-governance-v11.js?v=11','data-governance');
+  addScript('indicators-v10-patch.js?v=11','indicators-patch',()=>addScript('chart-workspace-v10.js?v=11','chart-workspace'));
 });
