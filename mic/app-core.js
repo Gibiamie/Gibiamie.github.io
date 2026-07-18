@@ -10,7 +10,7 @@ state.settings={historyCache:{},...(state.settings||{})};
 let market={updated_at:null,assets:[],fx:{USDTRY:40}},selected=null,activeType='all',chartPeriod='1A';
 
 function save(){localStorage.setItem(STORE,JSON.stringify(state));renderHome();renderPortfolio();renderProfileResult()}
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[m]))}
 function num(n,d=2){return Number(n||0).toLocaleString('tr-TR',{maximumFractionDigits:d})}
 function money(n,c='TRY'){return new Intl.NumberFormat('tr-TR',{style:'currency',currency:c,maximumFractionDigits:2}).format(n||0)}
 function toast(t){$('toast').textContent=t;$('toast').classList.remove('hidden');setTimeout(()=>$('toast').classList.add('hidden'),2800)}
@@ -122,3 +122,14 @@ function renderSelected(){
   $('openChart').onclick=()=>openChart(selected);
   $('addPort').onclick=()=>addPortfolio(selected);
 }
+
+window.addEventListener('load',()=>{
+  const desktop=location.pathname.includes('mic-desktop');
+  const base=desktop?'../mic/':'';
+  if(!document.querySelector('link[data-mic-chart-workspace]')){
+    const link=document.createElement('link');link.rel='stylesheet';link.href=base+'chart-workspace.css?v=9';link.dataset.micChartWorkspace='1';document.head.appendChild(link);
+  }
+  if(!document.querySelector('script[data-mic-chart-workspace]')){
+    const script=document.createElement('script');script.src=base+'chart-workspace.js?v=9';script.dataset.micChartWorkspace='1';document.body.appendChild(script);
+  }
+});
