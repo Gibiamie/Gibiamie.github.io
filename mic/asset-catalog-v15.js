@@ -1,4 +1,4 @@
-/* MIC supplemental asset catalog loader v15.
+/* MIC supplemental multi-asset catalog loader.
  * Prevents non-BIST symbols from disappearing when the periodic BIST refresh runs.
  */
 (() => {
@@ -7,14 +7,15 @@
 
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
-  const keyOf=a=>`${String(a.exchange||'').toUpperCase()}:${String(a.symbol||'').toUpperCase()}`;
+  const keyOf=a=>String(a.type||'').toLowerCase()==='crypto'
+    ? `CRYPTO:${String(a.symbol||'').toUpperCase()}`
+    : `${String(a.exchange||'').toUpperCase()}:${String(a.symbol||'').toUpperCase()}`;
 
   function mergeAssets(primary, supplemental){
     const merged=new Map();
     (primary||[]).forEach(a=>merged.set(keyOf(a),a));
     (supplemental||[]).forEach(s=>{
       const key=keyOf(s),current=merged.get(key)||{};
-      // Preserve live fields from the main feed; catalog identity fills missing metadata.
       merged.set(key,{...s,...current,
         symbol:current.symbol||s.symbol,
         name:current.name||s.name,
@@ -22,6 +23,7 @@
         exchange:current.exchange||s.exchange,
         currency:current.currency||s.currency,
         provider_symbol:current.provider_symbol||s.provider_symbol,
+        search_aliases:[...new Set([...(s.search_aliases||[]),...(current.search_aliases||[])])],
         history:Array.isArray(current.history)&&current.history.length?current.history:(s.history||[]),
         performance:Object.keys(current.performance||{}).length?current.performance:(s.performance||{})
       });
@@ -36,10 +38,11 @@
       const catalog=await response.json();
       market.assets=mergeAssets(market.assets,catalog.assets);
       const status=$('settingsStatus');
-      if(status)status.textContent=`${market.assets.length} varlık yüklendi; tamamlayıcı ABD/ETF kataloğu aktif.`;
+      if(status)status.textContent=`${market.assets.length} varlık yüklendi; tamamlayıcı ETF ve kripto kataloğu aktif.`;
       if(typeof runSearch==='function')runSearch();
       if(typeof renderPortfolio==='function')renderPortfolio();
       window.MIC_ASSET_CATALOG_STATUS={ok:true,count:catalog.assets?.length||0,updated_at:catalog.updated_at};
+      document.dispatchEvent(new CustomEvent('mic:asset-catalog-ready',{detail:window.MIC_ASSET_CATALOG_STATUS}));
       return true;
     }catch(error){
       window.MIC_ASSET_CATALOG_STATUS={ok:false,error:error.message};
@@ -57,6 +60,5 @@
     };
   }
 
-  // app-main may already have started its first market request before this patch loads.
   setTimeout(applySupplementalCatalog,0);
 })();
