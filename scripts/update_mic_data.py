@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import requests
 
+# MIC Nasdaq directory synchronizer v1.1
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'mic' / 'data' / 'market.json'
 SUPPLEMENTAL = ROOT / 'mic' / 'data' / 'supplemental-assets.json'
