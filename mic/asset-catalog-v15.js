@@ -39,6 +39,23 @@
     return response.json();
   }
 
+  function renderNasdaqDirectoryCard(catalog){
+    const settings=document.getElementById('settings');
+    if(!settings||!catalog)return;
+    let card=document.getElementById('nasdaqDirectoryCard');
+    if(!card){
+      card=document.createElement('div');card.id='nasdaqDirectoryCard';card.className='card';
+      const first=settings.querySelector('.card');
+      if(first)first.insertAdjacentElement('beforebegin',card);else settings.appendChild(card);
+    }
+    const counts=catalog.counts||{};
+    const updated=catalog.updated_at?new Date(catalog.updated_at).toLocaleString('tr-TR'):'—';
+    card.innerHTML=`<div class="section"><div><h3>NASDAQ Resmî Menkul Kıymet Listesi</h3><span class="source">Nasdaq Trader Symbol Directory</span></div><span class="badge">${Number(catalog.count||0).toLocaleString('tr-TR')}</span></div>
+      <div class="analysis"><div class="cell"><span>Toplam kayıt</span><strong>${Number(catalog.count||0).toLocaleString('tr-TR')}</strong></div><div class="cell"><span>ETF</span><strong>${Number(counts.etf||0).toLocaleString('tr-TR')}</strong></div><div class="cell"><span>Diğer menkul kıymet</span><strong>${Number(counts.other_listed_securities||0).toLocaleString('tr-TR')}</strong></div><div class="cell"><span>Son senkronizasyon</span><strong style="font-size:12px">${updated}</strong></div></div>
+      <p class="hint">Test sembolleri hariç resmî NASDAQ dizini arama kataloğuna otomatik eklenir. Kimlik kaydı bulunması, her sembol için fiyat ve temel veri bulunduğu anlamına gelmez.</p>
+      <a class="ghost wide" style="display:block;text-align:center;text-decoration:none" href="${base}data/nasdaq-listed.csv" target="_blank" rel="noopener">Tam listeyi CSV olarak aç</a>`;
+  }
+
   async function applyAllCatalogs(){
     if(loadingPromise)return loadingPromise;
     loadingPromise=(async()=>{
@@ -51,6 +68,7 @@
         const catalog=nasdaqResult.value;
         market.assets=mergeAssets(market.assets,catalog.assets);
         nasdaqCount=catalog.assets?.length||0;loaded+=nasdaqCount;
+        renderNasdaqDirectoryCard(catalog);
       }else console.error('MIC Nasdaq catalog could not be loaded',nasdaqResult.reason);
       if(supplementalResult.status==='fulfilled'){
         const catalog=supplementalResult.value;
