@@ -1,5 +1,5 @@
 from __future__ import annotations
-# MIC Nasdaq history rotation v25.1
+# MIC Nasdaq history rotation v25.2
 import json
 import math
 import os
@@ -82,7 +82,7 @@ def fetch_one(asset):
                     'volume':volume if volume is not None else 0
                 })
             history.sort(key=lambda x:x['date'])
-            if len(history)<20:
+            if len(history)<2:
                 raise RuntimeError(f'only {len(history)} valid rows')
             payload={
                 'symbol':symbol,
@@ -99,7 +99,7 @@ def fetch_one(asset):
 
 def load_state():
     try:return json.loads(STATE_FILE.read_text(encoding='utf-8'))
-    except Exception:return {'cursor':0,'cycles':0,'last_success':0,'last_failed':0}
+    except Exception:return {'cursor':0,'cycles':0,'last_success':0,'last_failed':0,'failed':[]}
 
 
 def main():
@@ -108,11 +108,22 @@ def main():
     assets.sort(key=lambda a:a.get('symbol',''))
     if not assets:
         raise RuntimeError('Nasdaq catalog is empty')
+    by_symbol={str(a.get('symbol') or '').upper():a for a in assets}
     state=load_state()
     previous_failed=int(state.get('last_failed') or 0)
     previous_success=int(state.get('last_success') or 0)
     cursor=0 if previous_failed>0 and previous_success==0 else int(state.get('cursor') or 0)%len(assets)
-    batch=[assets[(cursor+i)%len(assets)] for i in range(min(BATCH_SIZE,len(assets)))]
+    regular=[assets[(cursor+i)%len(assets)] for i in range(min(BATCH_SIZE,len(assets)))]
+    retry=[]
+    for item in state.get('failed') or []:
+        asset=by_symbol.get(str(item.get('symbol') or '').upper())
+        if asset:
+            retry.append(asset)
+    batch=[];seen=set()
+    for asset in retry+regular:
+        symbol=str(asset.get('symbol') or '').upper()
+        if symbol and symbol not in seen:
+            seen.add(symbol);batch.append(asset)
     HISTORY_DIR.mkdir(parents=True,exist_ok=True)
     successes=0;failures=[]
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
@@ -127,21 +138,23 @@ def main():
                 successes+=1
             else:
                 failures.append({'symbol':symbol,'error':error})
-    next_cursor=(cursor+len(batch))%len(assets)
+    next_cursor=(cursor+len(regular))%len(assets)
     cycles=int(state.get('cycles') or 0)+(1 if next_cursor<=cursor else 0)
     out={
         'cursor':next_cursor,
         'eligible_count':len(assets),
         'batch_size':len(batch),
+        'regular_batch_size':len(regular),
+        'retry_count':len(retry),
         'last_run':datetime.now(timezone.utc).isoformat(timespec='seconds'),
         'last_success':successes,
         'last_failed':len(failures),
-        'failed':failures[:50],
+        'failed':failures[:100],
         'cycles':cycles,
         'provider':'Yahoo Finance chart feed'
     }
     STATE_FILE.write_text(json.dumps(out,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
-    print(f'Nasdaq history batch cursor={cursor}->{next_cursor}; success={successes}; failed={len(failures)}; eligible={len(assets)}')
+    print(f'Nasdaq history batch cursor={cursor}->{next_cursor}; retry={len(retry)}; success={successes}; failed={len(failures)}; eligible={len(assets)}')
     if successes==0:
         raise RuntimeError('Nasdaq history batch produced no successful files')
 
