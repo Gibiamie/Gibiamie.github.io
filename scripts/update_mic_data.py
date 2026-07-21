@@ -16,8 +16,9 @@ NASDAQ_QUOTES_OUT = ROOT / 'mic' / 'data' / 'nasdaq-quotes.json'
 NASDAQ_URL = 'https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt'
 NASDAQ_SCREENER_URL = 'https://api.nasdaq.com/api/screener/stocks'
 COLS = ['name','description','type','subtype','close','change','volume','market_cap_basic','price_earnings_ttm','return_on_equity','revenue_growth_ttm_yoy','Volatility.D','sector','industry','currency','Perf.W','Perf.1M','Perf.3M','Perf.6M','Perf.Y','Perf.YTD']
-HEADERS={
-    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150 Safari/537.36',
+HEADERS={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150 Safari/537.36'}
+NASDAQ_HEADERS={
+    **HEADERS,
     'Accept':'application/json,text/plain,*/*',
     'Accept-Language':'en-US,en;q=0.9',
     'Origin':'https://www.nasdaq.com',
@@ -81,7 +82,7 @@ def instrument_class(name: str, is_etf: bool) -> str:
 
 
 def sync_nasdaq_directory() -> int:
-    response=requests.get(NASDAQ_URL,headers=HEADERS,timeout=45)
+    response=requests.get(NASDAQ_URL,headers=NASDAQ_HEADERS,timeout=45)
     response.raise_for_status()
     text=response.content.decode('utf-8-sig',errors='replace')
     rows=list(csv.DictReader(io.StringIO(text),delimiter='|'))
@@ -170,7 +171,7 @@ def sync_nasdaq_quotes() -> int:
         response=requests.get(
             NASDAQ_SCREENER_URL,
             params={'tableonly':'true','limit':'10000','offset':'0','exchange':'NASDAQ','download':'true'},
-            headers=HEADERS,
+            headers=NASDAQ_HEADERS,
             timeout=75
         )
         response.raise_for_status()
