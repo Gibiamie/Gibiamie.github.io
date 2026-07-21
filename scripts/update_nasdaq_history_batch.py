@@ -1,4 +1,5 @@
 from __future__ import annotations
+# MIC Nasdaq history rotation v25
 import json
 import math
 import os
