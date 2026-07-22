@@ -1,13 +1,13 @@
-/* Compatibility loader: existing MIC pages are upgraded to MIC v25. */
+/* Compatibility loader: existing MIC pages are upgraded to MIC v26. */
 (() => {
-  if (window.__MIC_V25_LOADING) return;
-  window.__MIC_V25_LOADING = true;
+  if (window.__MIC_V26_LOADING) return;
+  window.__MIC_V26_LOADING = true;
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
   const sub=document.querySelector('.top .sub');
-  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v25':'Mobil yatırım karar desteği · v25';
-  document.title=desktop?'MIC Laptop Web Beta v25':'MIC Mobile Beta v25';
-  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=25').catch(()=>{});
+  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v26':'Mobil yatırım karar desteği · v26';
+  document.title=desktop?'MIC Laptop Web Beta v26':'MIC Mobile Beta v26';
+  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=26').catch(()=>{});
   const addCss=href=>{if(document.querySelector(`link[href*="${href.split('?')[0]}"]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;document.head.appendChild(x)};
   const addScript=(src,onload)=>{if(document.querySelector(`script[src*="${src.split('?')[0]}"]`)){onload?.();return}const x=document.createElement('script');x.src=base+src;if(onload)x.onload=onload;document.body.appendChild(x)};
   addCss('chart-workspace-v13.css?v=25');
@@ -17,6 +17,8 @@
   addCss('price-integrity-v18.css?v=25');
   addCss('gateway-tutorial-v19.css?v=25');
   addCss('catalog-ui-v20.css?v=25');
+  addCss('ipo-calendar-v26.css?v=26');
+  addScript('ipo-calendar-v26.js?v=26');
   addScript('asset-catalog-v15.js?v=25',()=>addScript('catalog-ui-v20.js?v=25',()=>addScript('crypto-quotes-v22.js?v=25')));
   addScript('profile-risk-v14.js?v=25');
   addScript('indicators-v13-patch.js?v=25',()=>
