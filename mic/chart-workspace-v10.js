@@ -22,7 +22,7 @@
   addCss('fakeout-v28.css?v=28');
   addCss('advanced-methods-v29.css?v=29');
   addScript('ipo-calendar-v26.js?v=26');
-  addScript('technical-methods-v27.js?v=27',()=>addScript('fakeout-v28.js?v=28',()=>addScript('advanced-methods-v29.js?v=29')));
+  addScript('technical-methods-v27.js?v=27',()=>addScript('fakeout-v28.js?v=28',()=>addScript('advanced-methods-v29.js?v=29',()=>addScript('advanced-methods-v29-guard.js?v=29'))));
   addScript('asset-catalog-v15.js?v=25',()=>addScript('catalog-ui-v20.js?v=25',()=>addScript('crypto-quotes-v22.js?v=25')));
   addScript('profile-risk-v14.js?v=25');
   addScript('indicators-v13-patch.js?v=25',()=>
