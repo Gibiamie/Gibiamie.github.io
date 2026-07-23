@@ -1,13 +1,13 @@
-/* Compatibility loader: existing MIC pages are upgraded to MIC v27. */
+/* Compatibility loader: existing MIC pages are upgraded to MIC v28. */
 (() => {
-  if (window.__MIC_V27_LOADING) return;
-  window.__MIC_V27_LOADING = true;
+  if (window.__MIC_V28_LOADING) return;
+  window.__MIC_V28_LOADING = true;
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
   const sub=document.querySelector('.top .sub');
-  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v27':'Mobil yatırım karar desteği · v27';
-  document.title=desktop?'MIC Laptop Web Beta v27':'MIC Mobile Beta v27';
-  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=27').catch(()=>{});
+  if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v28':'Mobil yatırım karar desteği · v28';
+  document.title=desktop?'MIC Laptop Web Beta v28':'MIC Mobile Beta v28';
+  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=28').catch(()=>{});
   const addCss=href=>{if(document.querySelector(`link[href*="${href.split('?')[0]}"]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;document.head.appendChild(x)};
   const addScript=(src,onload)=>{if(document.querySelector(`script[src*="${src.split('?')[0]}"]`)){onload?.();return}const x=document.createElement('script');x.src=base+src;if(onload)x.onload=onload;document.body.appendChild(x)};
   addCss('chart-workspace-v13.css?v=25');
@@ -19,8 +19,9 @@
   addCss('catalog-ui-v20.css?v=25');
   addCss('ipo-calendar-v26.css?v=26');
   addCss('technical-methods-v27.css?v=27');
+  addCss('fakeout-v28.css?v=28');
   addScript('ipo-calendar-v26.js?v=26');
-  addScript('technical-methods-v27.js?v=27');
+  addScript('technical-methods-v27.js?v=27',()=>addScript('fakeout-v28.js?v=28'));
   addScript('asset-catalog-v15.js?v=25',()=>addScript('catalog-ui-v20.js?v=25',()=>addScript('crypto-quotes-v22.js?v=25')));
   addScript('profile-risk-v14.js?v=25');
   addScript('indicators-v13-patch.js?v=25',()=>
