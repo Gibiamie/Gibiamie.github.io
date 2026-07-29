@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-29T11:45:00Z",
+  "market": "BIST",
+  "title": "BIST Sabah Makro Kontrolü",
+  "description": "Teknik grafiği açmadan önce yerel para politikası ve küresel risk iştahını kontrol eder.",
+  "items": [
+    {
+      "id": "tcmb",
+      "label": "TCMB Politika Faizi",
+      "value": 37.0,
+      "unit": "%",
+      "as_of": "2026-07-23",
+      "change_label": "Sabit tutuldu",
+      "signal": "caution",
+      "short": "Sıkı TL finansman koşulları devam ediyor.",
+      "detail": "Faizin seviyesi tek başına BIST yönü vermez; şirket finansman maliyeti, mevduat alternatifi ve değerleme çarpanları üzerinde baskı oluşturabilir.",
+      "sources": [
+        {
+          "label": "TCMB faiz kararı",
+          "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB%2BTR/Main%2BMenu/Duyurular/Basin/2026/DUY2026-28"
+        }
+      ]
+    },
+    {
+      "id": "us10y",
+      "label": "ABD 10 Yıllık Tahvil",
+      "value": 4.61,
+      "unit": "%",
+      "as_of": "2026-07-28",
+      "change_label": "Günlük -4 bp",
+      "signal": "pressure",
+      "short": "Getiri hâlâ yüksek; küresel hisse değerlemeleri için baskı unsuru.",
+      "detail": "Yüksek ABD tahvil getirisi küresel yatırımcıya daha güçlü risksiz getiri alternatifi sunabilir. Tek günlük düşüş, yüksek seviye riskini ortadan kaldırmaz.",
+      "sources": [
+        {
+          "label": "U.S. Treasury günlük faizler",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202607&type=daily_treasury_yield_curve"
+        }
+      ]
+    },
+    {
+      "id": "dxy",
+      "label": "Dolar Endeksi (DXY)",
+      "value": 101.36,
+      "unit": "",
+      "as_of": "2026-07-29",
+      "change_label": "Gün içi yaklaşık -%0,1",
+      "signal": "caution",
+      "short": "Dolar güçlü bölgede; gelişen piyasalar için seçicilik gerektiriyor.",
+      "detail": "DXY yükselişi tek başına BIST düşüşü anlamına gelmez. Ancak dolar talebi, yabancı fon akımları ve gelişen piyasa risk iştahı için bağlam sağlar.",
+      "sources": [
+        {
+          "label": "ICE DXY tanımı",
+          "url": "https://www.ice.com/fixed-income-data-services/index-solutions/currency-indices"
+        },
+        {
+          "label": "29 Temmuz piyasa değeri",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-072926/card/u-s-treasury-yields-rise-on-higher-oil-prices-dollar-eases-ahead-of-fed-gBU5wUCaLESAfClmQx0n"
+        }
+      ]
+    },
+    {
+      "id": "vix",
+      "label": "VIX",
+      "value": 18.62,
+      "unit": "",
+      "as_of": "2026-07-29",
+      "change_label": "-0,04",
+      "signal": "support",
+      "short": "20 seviyesinin altında; belirgin panik rejimi görünmüyor.",
+      "detail": "VIX düşükken risk tamamen ortadan kalkmaz. Bu veri yalnızca ABD hisse opsiyonlarının kısa vadeli oynaklık beklentisini gösterir.",
+      "sources": [
+        {
+          "label": "Cboe VIX verisi",
+          "url": "https://www.cboe.com/tradable-products/vix/vix-futures"
+        }
+      ]
+    }
+  ],
+  "next_events": [
+    {
+      "date": "2026-07-30",
+      "label": "TCMB PPK toplantı özeti"
+    },
+    {
+      "date": "2026-09-10",
+      "label": "Sonraki TCMB faiz kararı"
+    }
+  ],
+  "disclaimer": "Bu ekran piyasa bağlamı sağlar; tek başına AL, SAT veya pozisyon büyüklüğü kararı üretmez."
+}
