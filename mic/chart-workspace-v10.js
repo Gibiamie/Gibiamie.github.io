@@ -1,16 +1,16 @@
-/* Compatibility loader: MIC v33 complete analysis. */
+/* Compatibility loader: MIC v34 complete daily + intraday analysis. */
 (() => {
-  if (window.__MIC_V33_LOADING) return;
-  window.__MIC_V33_LOADING = true;
+  if (window.__MIC_V34_LOADING) return;
+  window.__MIC_V34_LOADING = true;
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
   const setVersion=()=>{
     const sub=document.querySelector('.top .sub');
-    if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v33':'Mobil yatırım karar desteği · v33';
-    document.title=desktop?'MIC Laptop Web Beta v33':'MIC Mobile Beta v33';
+    if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v34':'Mobil yatırım karar desteği · v34';
+    document.title=desktop?'MIC Laptop Web Beta v34':'MIC Mobile Beta v34';
   };
   setVersion();
-  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=33').catch(()=>{});
+  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=34').catch(()=>{});
   const addCss=href=>{if(document.querySelector(`link[href*="${href.split('?')[0]}"]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;document.head.appendChild(x)};
   const addScript=(src,onload)=>{if(document.querySelector(`script[src*="${src.split('?')[0]}"]`)){onload?.();return}const x=document.createElement('script');x.src=base+src;if(onload)x.onload=onload;document.body.appendChild(x)};
   addCss('chart-workspace-v13.css?v=25');
@@ -22,8 +22,10 @@
   addCss('catalog-ui-v20.css?v=25');
   addCss('ipo-calendar-v26.css?v=26');
   addCss('analysis-suite-v33.css?v=33');
+  addCss('intraday-suite-v34.css?v=34');
   addScript('ipo-calendar-v26.js?v=26');
-  addScript('analysis-engine-v33.js?v=33',()=>addScript('analysis-suite-v33.js?v=33',setVersion));
+  addScript('analysis-engine-v33.js?v=33',()=>addScript('analysis-suite-v33.js?v=33'));
+  addScript('intraday-engine-v34.js?v=34',()=>addScript('intraday-suite-v34.js?v=34',setVersion));
   addScript('asset-catalog-v15.js?v=25',()=>addScript('catalog-ui-v20.js?v=25',()=>addScript('crypto-quotes-v22.js?v=25')));
   addScript('profile-risk-v14.js?v=25');
   addScript('indicators-v13-patch.js?v=25',()=>
