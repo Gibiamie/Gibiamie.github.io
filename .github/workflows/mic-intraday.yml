@@ -1,0 +1,41 @@
+name: MIC intraday data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch_mic_intraday.py
+      - .github/workflows/mic-intraday.yml
+  schedule:
+    - cron: '*/15 5-21 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mic-intraday-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch 5-minute bars
+        run: python scripts/fetch_mic_intraday.py
+      - name: Commit changed snapshots
+        run: |
+          if git diff --quiet -- mic/data/intraday; then
+            echo "No new bars"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mic/data/intraday
+          git commit -m "data: refresh MIC intraday bars"
+          git push
