@@ -144,20 +144,25 @@ def market_enrichment(tickers):
         t=reverse[ys]
         try:
             frame=data[ys] if data is not None and len(symbols)>1 else data; closes=series_values(frame,'Close'); highs=series_values(frame,'High'); lows=series_values(frame,'Low'); vols=series_values(frame,'Volume')
+            if closes:
+                out[t]['price']=round(closes[-1],4)
             if len(closes)>=55 and len(highs)==len(closes) and len(lows)==len(closes):
                 last=closes[-1]; sma20=sum(closes[-20:])/20; sma50=sum(closes[-50:])/50; sma20_prev=sum(closes[-25:-5])/20 if len(closes)>=25 else sma20; trs=[]
                 for i in range(max(1,len(closes)-14),len(closes)):trs.append(max(highs[i]-lows[i],abs(highs[i]-closes[i-1]),abs(lows[i]-closes[i-1])))
                 atr14=sum(trs)/len(trs) if trs else None; dv=[closes[i]*vols[i] for i in range(max(0,len(closes)-20),len(closes)) if i<len(vols)]; avg_dollar=sum(dv)/len(dv) if dv else None; volume20=sum(vols[-20:])/min(20,len(vols)) if vols else None; volume_ratio=vols[-1]/volume20 if volume20 and vols else None
                 trend='bullish' if last>sma20>sma50 and sma20>sma20_prev else 'bearish' if last<sma20<sma50 and sma20<sma20_prev else 'neutral'; technical='confirmed' if trend=='bullish' and volume_ratio is not None and volume_ratio>=1 else 'watch' if last>sma20 else 'unconfirmed'
-                out[t].update({'price':round(last,4),'sma20':round(sma20,4),'sma50':round(sma50,4),'atr14_pct':round(atr14/last*100,2) if atr14 and last else None,'avg_dollar_volume_20d':round(avg_dollar,2) if avg_dollar else None,'volume_ratio_20d':round(volume_ratio,2) if volume_ratio is not None else None,'trend':trend,'technical_confirmation':technical})
+                out[t].update({'sma20':round(sma20,4),'sma50':round(sma50,4),'atr14_pct':round(atr14/last*100,2) if atr14 and last else None,'avg_dollar_volume_20d':round(avg_dollar,2) if avg_dollar else None,'volume_ratio_20d':round(volume_ratio,2) if volume_ratio is not None else None,'trend':trend,'technical_confirmation':technical})
         except Exception as exc:print(f'WARN bars {t}: {exc}')
     for ys in symbols[:30]:
         t=reverse[ys]
         try:
             tk=yf.Ticker(ys); fi=dict(tk.fast_info or {}); mc=safe_float(fi.get('market_cap') or fi.get('marketCap'))
             if mc:out[t]['market_cap']=round(mc,2)
+            if not out[t].get('price'):
+                px=safe_float(fi.get('last_price') or fi.get('lastPrice'))
+                if px:out[t]['price']=round(px,4)
             info=tk.get_info() or {}; bid=safe_float(info.get('bid')); ask=safe_float(info.get('ask')); mid=(bid+ask)/2 if bid and ask and ask>=bid else None; spread=(ask-bid)/mid*100 if mid else None; short=safe_float(info.get('shortPercentOfFloat')); short=short*100 if short is not None and short<=1 else short
-            out[t].update({'spread_pct':round(spread,3) if spread is not None else None,'short_float_pct':round(short,2) if short is not None else None})
+            out[t].update({'name':info.get('shortName') or info.get('longName') or t,'spread_pct':round(spread,3) if spread is not None else None,'short_float_pct':round(short,2) if short is not None else None})
             if not out[t].get('market_cap'):
                 mc=safe_float(info.get('marketCap'))
                 if mc:out[t]['market_cap']=round(mc,2)
