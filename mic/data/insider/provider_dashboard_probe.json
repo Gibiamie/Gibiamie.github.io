@@ -1,0 +1,19 @@
+{
+  "https://api.ai-analytics.org/api/v1/sec/insider-dashboard?days=10": {
+    "window_days": 10,
+    "generated_at": "2026-08-09T06:54:56.184Z",
+    "note": "One-call insider snapshot. Cluster buys/sells require ≥3 distinct named persons in the window. Form 144 pressure is forward-looking (approx_sale_date in the future or filed within window).",
+    "cluster_buys": [],
+    "cluster_sells": [],
+    "biggest_individual_sells": [],
+    "biggest_individual_buys": [],
+    "upcoming_sale_pressure_form144": [],
+    "weekly_net_flow": []
+  },
+  "https://api.ai-analytics.org/api/v1/sec/insider-leaderboard?days=10&direction=buys&limit=20": {
+    "window_days": 10,
+    "direction": "buys",
+    "count": 0,
+    "insiders": []
+  }
+}
