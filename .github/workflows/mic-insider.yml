@@ -7,6 +7,7 @@ on:
     paths:
       - scripts/fetch_mic_insiders.py
       - scripts/fetch_mic_insiders_v2.py
+      - scripts/fetch_mic_insiders_v3.py
       - .github/workflows/mic-insider.yml
   schedule:
     - cron: '*/30 * * * 1-5'
@@ -30,13 +31,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install market-data dependencies
-        run: python -m pip install --disable-pip-version-check requests yfinance
-      - name: Scan SEC Form 4 purchases and enrich market data
-        run: python scripts/fetch_mic_insiders_v2.py
+      - name: Install scanner dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4 yfinance
+      - name: Scan Form 4 purchases and enrich market data
+        run: python scripts/fetch_mic_insiders_v3.py
       - name: Commit changed scanner data
         run: |
-          if git diff --quiet -- mic/data/insider; then
+          if [ -z "$(git status --porcelain -- mic/data/insider)" ]; then
             echo "No insider scanner changes"
             exit 0
           fi
