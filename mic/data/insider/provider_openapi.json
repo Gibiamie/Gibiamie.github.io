@@ -1,0 +1,320 @@
+{
+  "/api/v1/sec/form-4/recent": {
+    "get": {
+      "tags": [
+        "datasets"
+      ],
+      "summary": "SEC Form 4 insider transactions (recent)",
+      "parameters": [
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 25,
+            "maximum": 100
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "ItemList JSON-LD"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/companies/{cik_or_ticker}/insider-transactions": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Form 4 transactions for this company",
+      "parameters": [
+        {
+          "name": "cik_or_ticker",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "since",
+          "in": "query",
+          "schema": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 200,
+            "maximum": 1000
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/companies/{cik_or_ticker}/insider-summary": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Aggregated insider activity for this company across 7/30/90/365d windows",
+      "parameters": [
+        {
+          "name": "cik_or_ticker",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/insider-leaderboard": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Top insiders by total $ activity across all companies",
+      "parameters": [
+        {
+          "name": "days",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 30,
+            "maximum": 365
+          }
+        },
+        {
+          "name": "direction",
+          "in": "query",
+          "schema": {
+            "type": "string",
+            "enum": [
+              "sells",
+              "buys",
+              "both"
+            ]
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 20,
+            "maximum": 200
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/companies/{cik_or_ticker}/insider-network": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Other companies sharing insiders with this one (interlocking directorates)",
+      "description": "Surfaces board interlock, multi-company executives, and activist-investor portfolio overlap by joining Form 4 reporting_owner_name across companies.",
+      "parameters": [
+        {
+          "name": "cik_or_ticker",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 20,
+            "maximum": 100
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/companies/{cik_or_ticker}/insider-pulse": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Unified insider timeline — Form 4 trades + Form 144 proposed-sale notices",
+      "description": "Returns a single time-ordered feed for the company. Each event has kind=form4 (executed) or kind=form144 (notice of proposed sale). Tally section gives quick summary stats.",
+      "parameters": [
+        {
+          "name": "cik_or_ticker",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "days",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 90,
+            "maximum": 365
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 50,
+            "maximum": 200
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/insider-dashboard": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "One-call cross-company insider snapshot — cluster buys/sells + biggest trades + 144 pressure + weekly trend",
+      "description": "Saves agents from 4-5 separate calls when they just want 'what's happening with insiders today'.",
+      "parameters": [
+        {
+          "name": "days",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 30,
+            "maximum": 90
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/insider-trends": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Insider buy/sell time-series — daily/weekly/monthly aggregates",
+      "description": "Open-market Form 4 transactions only (codes P, S), non-derivative, deduped per (txn × all reporters). Returns net_usd = bought_usd - sold_usd per bucket.",
+      "parameters": [
+        {
+          "name": "days",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 90,
+            "maximum": 730
+          }
+        },
+        {
+          "name": "bucket",
+          "in": "query",
+          "schema": {
+            "type": "string",
+            "enum": [
+              "day",
+              "week",
+              "month"
+            ],
+            "default": "week"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  },
+  "/api/v1/sec/insider-transactions/recent": {
+    "get": {
+      "tags": [
+        "sec.insider"
+      ],
+      "summary": "Cross-company recent insider transactions",
+      "parameters": [
+        {
+          "name": "days",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 7,
+            "maximum": 90
+          }
+        },
+        {
+          "name": "min_usd",
+          "in": "query",
+          "schema": {
+            "type": "number"
+          }
+        },
+        {
+          "name": "code",
+          "in": "query",
+          "schema": {
+            "type": "string",
+            "description": "Transaction code (P, S, etc.)"
+          }
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "schema": {
+            "type": "integer",
+            "default": 100,
+            "maximum": 500
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "OK"
+        }
+      }
+    }
+  }
+}
