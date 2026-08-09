@@ -1,19 +1,705 @@
 {
-  "https://api.ai-analytics.org/api/v1/sec/insider-dashboard?days=10": {
-    "window_days": 10,
-    "generated_at": "2026-08-09T06:54:56.184Z",
+  "https://api.ai-analytics.org/api/v1/sec/insider-dashboard?days=30": {
+    "window_days": 30,
+    "generated_at": "2026-08-09T06:56:21.446Z",
     "note": "One-call insider snapshot. Cluster buys/sells require ≥3 distinct named persons in the window. Form 144 pressure is forward-looking (approx_sale_date in the future or filed within window).",
-    "cluster_buys": [],
-    "cluster_sells": [],
-    "biggest_individual_sells": [],
-    "biggest_individual_buys": [],
+    "cluster_buys": [
+      {
+        "issuer_name": "TORTOISE ENERGY INFRASTRUCTURE CORP",
+        "ticker": "TYG",
+        "unique_buyers": 3,
+        "total_bought_usd": 90000000
+      },
+      {
+        "issuer_name": "John Hancock GA Mortgage Trust",
+        "ticker": null,
+        "unique_buyers": 4,
+        "total_bought_usd": 78583782
+      },
+      {
+        "issuer_name": "CRESCENT BIOPHARMA, INC.",
+        "ticker": "CBIO",
+        "unique_buyers": 4,
+        "total_bought_usd": 49500100
+      },
+      {
+        "issuer_name": "ENERGIZER HOLDINGS, INC.",
+        "ticker": "ENR",
+        "unique_buyers": 6,
+        "total_bought_usd": 39156828
+      },
+      {
+        "issuer_name": "Parabilis Medicines, Inc.",
+        "ticker": null,
+        "unique_buyers": 5,
+        "total_bought_usd": 34597756
+      }
+    ],
+    "cluster_sells": [
+      {
+        "issuer_name": "Celcuity Inc.",
+        "ticker": "CELC",
+        "unique_sellers": 4,
+        "total_sold_usd": 1271000000
+      },
+      {
+        "issuer_name": "SharkNinja, Inc.",
+        "ticker": "SN",
+        "unique_sellers": 3,
+        "total_sold_usd": 841133604
+      },
+      {
+        "issuer_name": "Arista Networks, Inc.",
+        "ticker": "ANET",
+        "unique_sellers": 3,
+        "total_sold_usd": 98623015
+      },
+      {
+        "issuer_name": "Snowflake Inc.",
+        "ticker": "SNOW",
+        "unique_sellers": 3,
+        "total_sold_usd": 96837691
+      },
+      {
+        "issuer_name": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "unique_sellers": 3,
+        "total_sold_usd": 70333976
+      }
+    ],
+    "biggest_individual_sells": [
+      {
+        "issuer_name": "Phillips 66",
+        "ticker": "PSX",
+        "transaction_date": "2026-07-21",
+        "reporter": "Sutherland Vanessa Allen",
+        "officer_title": "EVP, GC and Secretary",
+        "shares": 3523,
+        "price_per_share": 2110482,
+        "usd_value": 7435228086
+      },
+      {
+        "issuer_name": "Scorpio Tankers Inc.",
+        "ticker": "STNG",
+        "transaction_date": "2026-07-10",
+        "reporter": "Camerana Niccolo",
+        "officer_title": null,
+        "shares": 2500,
+        "price_per_share": 191325,
+        "usd_value": 478312500
+      },
+      {
+        "issuer_name": "SharkNinja, Inc.",
+        "ticker": "SN",
+        "transaction_date": "2026-07-10",
+        "reporter": "JS&W Group Holdings Limited Partnership",
+        "officer_title": "",
+        "shares": 2668200,
+        "price_per_share": 150.36,
+        "usd_value": 401190552
+      },
+      {
+        "issuer_name": "UNITED MICROELECTRONICS CORP",
+        "ticker": "UMC",
+        "transaction_date": "2026-07-13",
+        "reporter": "Liu Chitung",
+        "officer_title": "CFO & SVP",
+        "shares": 1900000,
+        "price_per_share": 154.89,
+        "usd_value": 294291000
+      },
+      {
+        "issuer_name": "Celcuity Inc.",
+        "ticker": "CELC",
+        "transaction_date": "2026-07-14",
+        "reporter": "BAKER BROS. ADVISORS LP",
+        "officer_title": null,
+        "shares": 2838632,
+        "price_per_share": 102.5,
+        "usd_value": 290959780
+      }
+    ],
+    "biggest_individual_buys": [
+      {
+        "issuer_name": "Jefferies Financial Group Inc.",
+        "ticker": "JEF",
+        "transaction_date": "2026-07-15",
+        "reporter": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+        "officer_title": null,
+        "shares": 5906542,
+        "price_per_share": 53.96,
+        "usd_value": 318717006
+      },
+      {
+        "issuer_name": "John Hancock GA Mortgage Trust",
+        "ticker": null,
+        "transaction_date": "2026-07-15",
+        "reporter": "Manufacturers Life Insurance Co (Bermuda Branch)",
+        "officer_title": null,
+        "shares": 2000000,
+        "price_per_share": 18.293,
+        "usd_value": 36586000
+      },
+      {
+        "issuer_name": "TORTOISE ENERGY INFRASTRUCTURE CORP",
+        "ticker": "TYG",
+        "transaction_date": "2026-07-15",
+        "reporter": "PRUCO LIFE INSURANCE CO",
+        "officer_title": null,
+        "shares": 3000000,
+        "price_per_share": 10,
+        "usd_value": 30000000
+      },
+      {
+        "issuer_name": "Lincoln Bain Capital Total Credit Fund",
+        "ticker": null,
+        "transaction_date": "2026-07-16",
+        "reporter": "Lincoln Financial Investments Corp",
+        "officer_title": null,
+        "shares": 2460629.92,
+        "price_per_share": 10.16,
+        "usd_value": 25000000
+      },
+      {
+        "issuer_name": "John Hancock GA Mortgage Trust",
+        "ticker": null,
+        "transaction_date": "2026-07-15",
+        "reporter": "Manulife (International) Ltd",
+        "officer_title": null,
+        "shares": 1202582.3159,
+        "price_per_share": 18.293,
+        "usd_value": 21998838
+      }
+    ],
     "upcoming_sale_pressure_form144": [],
-    "weekly_net_flow": []
+    "weekly_net_flow": [
+      {
+        "week_start": "2026-07-20",
+        "transactions": 424,
+        "net_usd": -7737222895
+      },
+      {
+        "week_start": "2026-07-13",
+        "transactions": 1506,
+        "net_usd": -1313779239
+      },
+      {
+        "week_start": "2026-07-06",
+        "transactions": 145,
+        "net_usd": -980067961
+      },
+      {
+        "week_start": null,
+        "transactions": 1,
+        "net_usd": -325
+      }
+    ]
   },
-  "https://api.ai-analytics.org/api/v1/sec/insider-leaderboard?days=10&direction=buys&limit=20": {
-    "window_days": 10,
+  "https://api.ai-analytics.org/api/v1/sec/insider-leaderboard?days=30&direction=buys&limit=50": {
+    "window_days": 30,
     "direction": "buys",
-    "count": 0,
-    "insiders": []
+    "count": 50,
+    "insiders": [
+      {
+        "reporting_owner_name": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 318717006,
+        "gross_activity_usd": 318717006
+      },
+      {
+        "reporting_owner_name": "Manufacturers Life Insurance Co (Bermuda Branch)",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 36586000,
+        "gross_activity_usd": 36586000
+      },
+      {
+        "reporting_owner_name": "PRUDENTIAL FINANCIAL INC",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 30000000,
+        "gross_activity_usd": 30000000
+      },
+      {
+        "reporting_owner_name": "Lincoln Financial Investments Corp",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 25000000,
+        "gross_activity_usd": 25000000
+      },
+      {
+        "reporting_owner_name": "Manulife (International) Ltd",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 21998838,
+        "gross_activity_usd": 21998838
+      },
+      {
+        "reporting_owner_name": "Decisive Point Group, LLC",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 19132440,
+        "gross_activity_usd": 19132440
+      },
+      {
+        "reporting_owner_name": "Manufacturers Life Reinsurance Ltd",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 12999314,
+        "gross_activity_usd": 12999314
+      },
+      {
+        "reporting_owner_name": "Fairmount Funds Management LLC",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 12375025,
+        "gross_activity_usd": 12375025
+      },
+      {
+        "reporting_owner_name": "Kang Andrew Kai",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 9999988,
+        "gross_activity_usd": 9999988
+      },
+      {
+        "reporting_owner_name": "RA CAPITAL MANAGEMENT, L.P.",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 2,
+        "transactions": 10,
+        "total_sold_usd": 0,
+        "total_bought_usd": 8545710,
+        "gross_activity_usd": 8545710
+      },
+      {
+        "reporting_owner_name": "Manulife (Singapore) Pte. Ltd.",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 6999630,
+        "gross_activity_usd": 6999630
+      },
+      {
+        "reporting_owner_name": "Aqua Capital, Ltd.",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 15,
+        "total_sold_usd": 0,
+        "total_bought_usd": 6526138,
+        "gross_activity_usd": 6526138
+      },
+      {
+        "reporting_owner_name": "Huang Jack Jiajia",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 5268514,
+        "gross_activity_usd": 5268514
+      },
+      {
+        "reporting_owner_name": "THRIVENT FINANCIAL FOR LUTHERANS",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 4000000,
+        "gross_activity_usd": 4000000
+      },
+      {
+        "reporting_owner_name": "ICONIQ Strategic Partners VIII Holdings, L.P.",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 3765698,
+        "gross_activity_usd": 3765698
+      },
+      {
+        "reporting_owner_name": "Griffith William J.G.",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 3765698,
+        "gross_activity_usd": 3765698
+      },
+      {
+        "reporting_owner_name": "Heinrich Michael",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 3479013,
+        "gross_activity_usd": 3479013
+      },
+      {
+        "reporting_owner_name": "COLUMBUS CIRCLE 3 SPONSOR Corp LLC",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 2650000,
+        "gross_activity_usd": 2650000
+      },
+      {
+        "reporting_owner_name": "Batista de Lima Filho Pedro",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1934000,
+        "gross_activity_usd": 1934000
+      },
+      {
+        "reporting_owner_name": "Hannigan Todd",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1881165,
+        "gross_activity_usd": 1881165
+      },
+      {
+        "reporting_owner_name": "TANG KEVIN",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 2,
+        "transactions": 14,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1875306,
+        "gross_activity_usd": 1875306
+      },
+      {
+        "reporting_owner_name": "STRACKE THIBAULT CHRISTIAN",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1640000,
+        "gross_activity_usd": 1640000
+      },
+      {
+        "reporting_owner_name": "Goodwin Scott Kreitler",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1250000,
+        "gross_activity_usd": 1250000
+      },
+      {
+        "reporting_owner_name": "BOUDREAUX GAIL",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1002230,
+        "gross_activity_usd": 1002230
+      },
+      {
+        "reporting_owner_name": "PACE GARY W",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 1000000,
+        "gross_activity_usd": 1000000
+      },
+      {
+        "reporting_owner_name": "Williams Gregg",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 999999,
+        "gross_activity_usd": 999999
+      },
+      {
+        "reporting_owner_name": "Frangou Angeliki",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 9,
+        "total_sold_usd": 0,
+        "total_bought_usd": 752642,
+        "gross_activity_usd": 752642
+      },
+      {
+        "reporting_owner_name": "Saba Capital Management, L.P.",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 2,
+        "transactions": 7,
+        "total_sold_usd": 0,
+        "total_bought_usd": 582284,
+        "gross_activity_usd": 582284
+      },
+      {
+        "reporting_owner_name": "Rieder Richard M",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 566648,
+        "gross_activity_usd": 566648
+      },
+      {
+        "reporting_owner_name": "Kemly Thomas J.",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 530570,
+        "gross_activity_usd": 530570
+      },
+      {
+        "reporting_owner_name": "Brase John P",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 510633,
+        "gross_activity_usd": 510633
+      },
+      {
+        "reporting_owner_name": "MATT PETER R",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 504499,
+        "gross_activity_usd": 504499
+      },
+      {
+        "reporting_owner_name": "Gaffney Charles",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 502705,
+        "gross_activity_usd": 502705
+      },
+      {
+        "reporting_owner_name": "Splaine Thomas Jr",
+        "is_director": 0,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 500000,
+        "gross_activity_usd": 500000
+      },
+      {
+        "reporting_owner_name": "Schlesinger Allyson Katz",
+        "is_director": 0,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 500000,
+        "gross_activity_usd": 500000
+      },
+      {
+        "reporting_owner_name": "Klein Steven M",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 500000,
+        "gross_activity_usd": 500000
+      },
+      {
+        "reporting_owner_name": "Randall Elizabeth E.",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 3,
+        "total_sold_usd": 0,
+        "total_bought_usd": 499800,
+        "gross_activity_usd": 499800
+      },
+      {
+        "reporting_owner_name": "Arima Anastasios",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 497228,
+        "gross_activity_usd": 497228
+      },
+      {
+        "reporting_owner_name": "Livingston III Homer John",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 494967,
+        "gross_activity_usd": 494967
+      },
+      {
+        "reporting_owner_name": "Gibney Dennis E.",
+        "is_director": 1,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 3,
+        "total_sold_usd": 0,
+        "total_bought_usd": 445000,
+        "gross_activity_usd": 445000
+      },
+      {
+        "reporting_owner_name": "HARARI ELIYAHOU ET AL",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 410988,
+        "gross_activity_usd": 410988
+      },
+      {
+        "reporting_owner_name": "Englander Daniel J",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 397910,
+        "gross_activity_usd": 397910
+      },
+      {
+        "reporting_owner_name": "Hartree Partners, LP",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 392602,
+        "gross_activity_usd": 392602
+      },
+      {
+        "reporting_owner_name": "PERU RAMIRO G",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 366050,
+        "gross_activity_usd": 366050
+      },
+      {
+        "reporting_owner_name": "Lin Shyue-Shyh",
+        "is_director": 0,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 5,
+        "total_sold_usd": 0,
+        "total_bought_usd": 362140,
+        "gross_activity_usd": 362140
+      },
+      {
+        "reporting_owner_name": "Klimowich John",
+        "is_director": 0,
+        "is_officer": 1,
+        "companies_traded": 1,
+        "transactions": 2,
+        "total_sold_usd": 0,
+        "total_bought_usd": 350000,
+        "gross_activity_usd": 350000
+      },
+      {
+        "reporting_owner_name": "Feidakis Georgios",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 315607,
+        "gross_activity_usd": 315607
+      },
+      {
+        "reporting_owner_name": "WINMILL & CO. INC",
+        "is_director": 0,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 4,
+        "total_sold_usd": 0,
+        "total_bought_usd": 306298,
+        "gross_activity_usd": 306298
+      },
+      {
+        "reporting_owner_name": "Filius Bart",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 257925,
+        "gross_activity_usd": 257925
+      },
+      {
+        "reporting_owner_name": "Van Dyk Robert",
+        "is_director": 1,
+        "is_officer": 0,
+        "companies_traded": 1,
+        "transactions": 1,
+        "total_sold_usd": 0,
+        "total_bought_usd": 250000,
+        "gross_activity_usd": 250000
+      }
+    ]
   }
 }
