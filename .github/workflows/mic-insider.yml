@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - scripts/probe_mic_insider_dashboard.py
+      - scripts/probe_mic_insider_company.py
       - .github/workflows/mic-insider.yml
 
 permissions:
@@ -21,13 +21,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install --disable-pip-version-check requests
-      - name: Inspect insider dashboard API
-        run: python scripts/probe_mic_insider_dashboard.py
+      - name: Cross-check discovered tickers
+        run: python scripts/probe_mic_insider_company.py
       - name: Commit probe
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+Gibiamie@users.noreply.github.com"
-          git add mic/data/insider/provider_dashboard_probe.json
-          git commit -m "data: inspect insider dashboard provider" || exit 0
+          git add mic/data/insider/provider_company_probe.json
+          git commit -m "data: cross-check insider company transactions" || exit 0
           git pull --rebase origin main
           git push
