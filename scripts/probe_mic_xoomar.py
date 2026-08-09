@@ -1,0 +1,4 @@
+import json,pathlib,requests
+u='https://xoomar.com/api/markets/insiders?type=buys&window=30d'
+r=requests.get(u,timeout=30,headers={'User-Agent':'MIC/1.0 (+https://gibiamie.github.io/mic/)'})
+print('STATUS',r.status_code,'TYPE',r.headers.get('content-type'));r.raise_for_status();j=r.json();print('KEYS',j.keys() if isinstance(j,dict) else type(j));print('UPDATED',j.get('updatedAt') if isinstance(j,dict) else None);print('COUNT',len(j.get('data',[])) if isinstance(j,dict) else len(j));print('FIRST',json.dumps((j.get('data') or [None])[0],ensure_ascii=False)[:5000] if isinstance(j,dict) else json.dumps(j[0],ensure_ascii=False)[:5000]);p=pathlib.Path('mic/data/insider/xoomar_probe.json');p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(j,ensure_ascii=False,indent=2)+'\n','utf-8')
