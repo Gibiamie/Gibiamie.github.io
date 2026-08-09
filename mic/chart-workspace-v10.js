@@ -1,16 +1,16 @@
-/* Compatibility loader: MIC v34 complete daily + intraday analysis. */
+/* Compatibility loader: MIC v35 daily + intraday + insider conviction. */
 (() => {
-  if (window.__MIC_V34_LOADING) return;
-  window.__MIC_V34_LOADING = true;
+  if (window.__MIC_V35_LOADING) return;
+  window.__MIC_V35_LOADING = true;
   const desktop=location.pathname.includes('mic-desktop');
   const base=desktop?'../mic/':'';
   const setVersion=()=>{
     const sub=document.querySelector('.top .sub');
-    if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v34':'Mobil yatırım karar desteği · v34';
-    document.title=desktop?'MIC Laptop Web Beta v34':'MIC Mobile Beta v34';
+    if(sub)sub.textContent=desktop?'Laptop web · yatırım karar desteği · v35':'Mobil yatırım karar desteği · v35';
+    document.title=desktop?'MIC Laptop Web Beta v35':'MIC Mobile Beta v35';
   };
   setVersion();
-  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=34').catch(()=>{});
+  if('serviceWorker' in navigator&&!desktop)navigator.serviceWorker.register('sw.js?v=35').catch(()=>{});
   const addCss=href=>{if(document.querySelector(`link[href*="${href.split('?')[0]}"]`))return;const x=document.createElement('link');x.rel='stylesheet';x.href=base+href;document.head.appendChild(x)};
   const addScript=(src,onload)=>{if(document.querySelector(`script[src*="${src.split('?')[0]}"]`)){onload?.();return}const x=document.createElement('script');x.src=base+src;if(onload)x.onload=onload;document.body.appendChild(x)};
   addCss('chart-workspace-v13.css?v=25');
@@ -23,9 +23,11 @@
   addCss('ipo-calendar-v26.css?v=26');
   addCss('analysis-suite-v33.css?v=33');
   addCss('intraday-suite-v34.css?v=34');
+  addCss('insider-scanner-v35.css?v=35');
   addScript('ipo-calendar-v26.js?v=26');
   addScript('analysis-engine-v33.js?v=33',()=>addScript('analysis-suite-v33.js?v=33'));
-  addScript('intraday-engine-v34.js?v=34',()=>addScript('intraday-suite-v34.js?v=34',setVersion));
+  addScript('intraday-engine-v34.js?v=34',()=>addScript('intraday-suite-v34.js?v=34'));
+  addScript('insider-scanner-v35.js?v=35',setVersion);
   addScript('asset-catalog-v15.js?v=25',()=>addScript('catalog-ui-v20.js?v=25',()=>addScript('crypto-quotes-v22.js?v=25')));
   addScript('profile-risk-v14.js?v=25');
   addScript('indicators-v13-patch.js?v=25',()=>
@@ -36,4 +38,6 @@
             addScript('gateway-tutorial-v19.js?v=25',()=>
               addScript('crypto-history-v23.js?v=25',()=>
                 addScript('nasdaq-data-v25.js?v=25'))))))));
+  setTimeout(setVersion,900);
+  setTimeout(setVersion,2200);
 })();
