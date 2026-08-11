@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-11T22:37:50Z",
+  "generated_at": "2026-08-11T23:36:03Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-11T22:37:51.227Z",
+  "provider_updated_at": "2026-08-11T23:36:04.294Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -106,7 +106,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -206,7 +206,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -306,7 +306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -406,7 +406,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -417,110 +417,6 @@
           "Fiyat insider alımından sonra %39 yükselmiş"
         ],
         "price_vs_insider_pct": 38.94,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
-      "source_key": "BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Mahoney Michael F",
-      "insider_cik": "Mahoney Michael F",
-      "role": "CEO / President",
-      "officer_title": "Chairman, President & CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-03",
-      "filed_at": null,
-      "shares": 186240.0,
-      "avg_price": 48.3323,
-      "value_usd": 9001407.55,
-      "post_shares": 1590024.0,
-      "prior_shares_est": 1403784.0,
-      "position_increase_pct": 13.27,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.19,
-        "sma20": 46.2655,
-        "sma50": 45.9798,
-        "atr14_pct": 3.71,
-        "avg_dollar_volume_20d": 925437060.0,
-        "volume_ratio_20d": 0.59,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74186057445.73,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": 0.019,
-        "short_float_pct": 1.9
-      },
-      "conviction": {
-        "score": 71,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 214.6,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 5.91,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -610,7 +506,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -621,6 +517,110 @@
           "Fiyat insider alımından sonra %39 yükselmiş"
         ],
         "price_vs_insider_pct": 38.94,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
+      "source_key": "BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Mahoney Michael F",
+      "insider_cik": "Mahoney Michael F",
+      "role": "CEO / President",
+      "officer_title": "Chairman, President & CEO",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-03",
+      "filed_at": null,
+      "shares": 186240.0,
+      "avg_price": 48.3323,
+      "value_usd": 9001407.55,
+      "post_shares": 1590024.0,
+      "prior_shares_est": 1403784.0,
+      "position_increase_pct": 13.27,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.19,
+        "sma20": 46.2655,
+        "sma50": 45.9798,
+        "atr14_pct": 3.71,
+        "avg_dollar_volume_20d": 925437060.0,
+        "volume_ratio_20d": 0.59,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74186057445.73,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.41,
+        "short_float_pct": 1.9
+      },
+      "conviction": {
+        "score": 69,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 5.91,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -710,7 +710,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -810,7 +810,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -914,7 +914,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1018,7 +1018,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1117,7 +1117,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -1221,7 +1221,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1327,7 +1327,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1433,7 +1433,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1539,7 +1539,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -1645,7 +1645,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1656,110 +1656,6 @@
         ],
         "price_vs_insider_pct": 8.19,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-05",
-      "filed_at": null,
-      "shares": 2100.0,
-      "avg_price": 47.589,
-      "value_usd": 99936.9,
-      "post_shares": 17160.0,
-      "prior_shares_est": 15060.0,
-      "position_increase_pct": 13.94,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.19,
-        "sma20": 46.2655,
-        "sma50": 45.9798,
-        "atr14_pct": 3.71,
-        "avg_dollar_volume_20d": 925437060.0,
-        "volume_ratio_20d": 0.59,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74186057445.73,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": 0.019,
-        "short_float_pct": 1.9
-      },
-      "conviction": {
-        "score": 53,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 166.6,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 7.57,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -1855,7 +1751,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1866,6 +1762,110 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 4.83,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-05",
+      "filed_at": null,
+      "shares": 2100.0,
+      "avg_price": 47.589,
+      "value_usd": 99936.9,
+      "post_shares": 17160.0,
+      "prior_shares_est": 15060.0,
+      "position_increase_pct": 13.94,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.19,
+        "sma20": 46.2655,
+        "sma50": 45.9798,
+        "atr14_pct": 3.71,
+        "avg_dollar_volume_20d": 925437060.0,
+        "volume_ratio_20d": 0.59,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74186057445.73,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.41,
+        "short_float_pct": 1.9
+      },
+      "conviction": {
+        "score": 51,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 7.57,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1955,7 +1955,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -2062,7 +2062,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2161,7 +2161,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -2265,7 +2265,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2371,7 +2371,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2477,7 +2477,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2583,7 +2583,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2689,7 +2689,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -2699,110 +2699,6 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": -6.56,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-03",
-      "filed_at": null,
-      "shares": 1042.0,
-      "avg_price": 48.0655,
-      "value_usd": 50084.25,
-      "post_shares": 14920.0,
-      "prior_shares_est": 13878.0,
-      "position_increase_pct": 7.51,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.19,
-        "sma20": 46.2655,
-        "sma50": 45.9798,
-        "atr14_pct": 3.71,
-        "avg_dollar_volume_20d": 925437060.0,
-        "volume_ratio_20d": 0.59,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74186057445.73,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": 0.019,
-        "short_float_pct": 1.9
-      },
-      "conviction": {
-        "score": 48,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 214.6,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 6.5,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2899,7 +2795,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3005,7 +2901,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3104,7 +3000,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -3204,7 +3100,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3295,7 +3191,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3399,7 +3295,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3410,6 +3306,110 @@
         ],
         "price_vs_insider_pct": 5.93,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-03",
+      "filed_at": null,
+      "shares": 1042.0,
+      "avg_price": 48.0655,
+      "value_usd": 50084.25,
+      "post_shares": 14920.0,
+      "prior_shares_est": 13878.0,
+      "position_increase_pct": 7.51,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.19,
+        "sma20": 46.2655,
+        "sma50": 45.9798,
+        "atr14_pct": 3.71,
+        "avg_dollar_volume_20d": 925437060.0,
+        "volume_ratio_20d": 0.59,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74186057445.73,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.41,
+        "short_float_pct": 1.9
+      },
+      "conviction": {
+        "score": 46,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 6.5,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -3505,7 +3505,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3611,7 +3611,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -3717,7 +3717,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3823,7 +3823,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3929,7 +3929,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4035,7 +4035,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4141,7 +4141,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4152,110 +4152,6 @@
         ],
         "price_vs_insider_pct": 0.21,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-04",
-      "filed_at": null,
-      "shares": 140.0,
-      "avg_price": 48.5879,
-      "value_usd": 6802.31,
-      "post_shares": 15060.0,
-      "prior_shares_est": 14920.0,
-      "position_increase_pct": 0.94,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.19,
-        "sma20": 46.2655,
-        "sma50": 45.9798,
-        "atr14_pct": 3.71,
-        "avg_dollar_volume_20d": 925437060.0,
-        "volume_ratio_20d": 0.59,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74186057445.73,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": 0.019,
-        "short_float_pct": 1.9
-      },
-      "conviction": {
-        "score": 42,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 190.6,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 5.36,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4351,7 +4247,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4457,7 +4353,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4550,7 +4446,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4558,6 +4454,110 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": null,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-04",
+      "filed_at": null,
+      "shares": 140.0,
+      "avg_price": 48.5879,
+      "value_usd": 6802.31,
+      "post_shares": 15060.0,
+      "prior_shares_est": 14920.0,
+      "position_increase_pct": 0.94,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.19,
+        "sma20": 46.2655,
+        "sma50": 45.9798,
+        "atr14_pct": 3.71,
+        "avg_dollar_volume_20d": 925437060.0,
+        "volume_ratio_20d": 0.59,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74186057445.73,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.41,
+        "short_float_pct": 1.9
+      },
+      "conviction": {
+        "score": 40,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 191.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 5.36,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -4654,7 +4654,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4758,7 +4758,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4864,7 +4864,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4970,7 +4970,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5076,7 +5076,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5182,7 +5182,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5288,7 +5288,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5394,7 +5394,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5500,7 +5500,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5606,7 +5606,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -5712,7 +5712,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5820,7 +5820,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5913,7 +5913,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6017,7 +6017,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6123,7 +6123,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6218,7 +6218,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6322,7 +6322,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6430,7 +6430,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6538,7 +6538,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6644,7 +6644,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6752,7 +6752,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6860,7 +6860,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6955,7 +6955,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7046,7 +7046,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.6,
+        "freshness_hours": 47.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7150,7 +7150,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.6,
+        "freshness_hours": 215.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7243,7 +7243,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.6,
+        "freshness_hours": 191.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7334,7 +7334,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7425,7 +7425,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7516,7 +7516,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7607,7 +7607,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7711,7 +7711,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.6,
+        "freshness_hours": 143.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7819,7 +7819,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7927,7 +7927,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8022,7 +8022,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8113,7 +8113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 118.6,
+        "freshness_hours": 119.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8204,7 +8204,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.6,
+        "freshness_hours": 167.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
