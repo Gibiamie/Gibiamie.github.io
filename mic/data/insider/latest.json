@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-11T21:42:30Z",
+  "generated_at": "2026-08-11T22:37:50Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-11T21:42:30.852Z",
+  "provider_updated_at": "2026-08-11T22:37:51.227Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -17,7 +17,7 @@
     "cluster_events": 28,
     "management_cluster_events": 12,
     "high_conviction": 0,
-    "risk_blocked": 41
+    "risk_blocked": 44
   },
   "events": [
     {
@@ -106,7 +106,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -206,7 +206,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -306,7 +306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -406,7 +406,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -513,7 +513,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -610,7 +610,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -710,7 +710,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -810,7 +810,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -914,7 +914,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -922,112 +922,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 4.56,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:HLI|ALLEY J LINDSEY|2026-08-03|4020.0000|124.5200",
-      "source_key": "HLI|ALLEY J LINDSEY|2026-08-03|4020.0000|124.5200",
-      "accession": null,
-      "ticker": "HLI",
-      "issuer": "Houlihan Lokey, Inc.",
-      "issuer_cik": null,
-      "insider": "ALLEY J LINDSEY",
-      "insider_cik": "ALLEY J LINDSEY",
-      "role": "CFO",
-      "officer_title": "Chief Financial Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-03",
-      "filed_at": null,
-      "shares": 4020.0,
-      "avg_price": 124.52,
-      "value_usd": 500570.4,
-      "post_shares": 4020.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/hli",
-      "sec_url": "https://xoomar.com/markets/insiders/hli",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 125.45,
-        "sma20": 134.517,
-        "sma50": 136.7686,
-        "atr14_pct": 4.95,
-        "avg_dollar_volume_20d": 134264718.56,
-        "volume_ratio_20d": 0.62,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 8767261211.72,
-        "name": "Houlihan Lokey, Inc.",
-        "spread_pct": 0.024,
-        "short_float_pct": 3.29
-      },
-      "conviction": {
-        "score": 60,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 500570.4,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": 0.75,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1124,7 +1018,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1223,7 +1117,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -1274,7 +1168,7 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 4320574001.59,
         "name": "SiteOne Landscape Supply, Inc.",
-        "spread_pct": 50.411,
+        "spread_pct": 23.098,
         "short_float_pct": 7.98
       },
       "conviction": {
@@ -1327,7 +1221,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1337,6 +1231,112 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -2.91,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:HLI|ALLEY J LINDSEY|2026-08-03|4020.0000|124.5200",
+      "source_key": "HLI|ALLEY J LINDSEY|2026-08-03|4020.0000|124.5200",
+      "accession": null,
+      "ticker": "HLI",
+      "issuer": "Houlihan Lokey, Inc.",
+      "issuer_cik": null,
+      "insider": "ALLEY J LINDSEY",
+      "insider_cik": "ALLEY J LINDSEY",
+      "role": "CFO",
+      "officer_title": "Chief Financial Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-03",
+      "filed_at": null,
+      "shares": 4020.0,
+      "avg_price": 124.52,
+      "value_usd": 500570.4,
+      "post_shares": 4020.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/hli",
+      "sec_url": "https://xoomar.com/markets/insiders/hli",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 125.45,
+        "sma20": 134.517,
+        "sma50": 136.7686,
+        "atr14_pct": 4.95,
+        "avg_dollar_volume_20d": 134264718.56,
+        "volume_ratio_20d": 0.62,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 8767261211.72,
+        "name": "Houlihan Lokey, Inc.",
+        "spread_pct": 4.851,
+        "short_float_pct": 3.29
+      },
+      "conviction": {
+        "score": 55,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 214.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 500570.4,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 0.75,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1433,7 +1433,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1539,7 +1539,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -1549,113 +1549,6 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": -8.57,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:CLVT|CORNICK KENNETH L.|2026-08-06|650000.0000|1.8600",
-      "source_key": "CLVT|CORNICK KENNETH L.|2026-08-06|650000.0000|1.8600",
-      "accession": null,
-      "ticker": "CLVT",
-      "issuer": "Clarivate Plc",
-      "issuer_cik": null,
-      "insider": "Cornick Kenneth L.",
-      "insider_cik": "Cornick Kenneth L.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-06",
-      "filed_at": null,
-      "shares": 650000.0,
-      "avg_price": 1.86,
-      "value_usd": 1209000.0,
-      "post_shares": 1750000.0,
-      "prior_shares_est": 1100000.0,
-      "position_increase_pct": 59.09,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/clvt",
-      "sec_url": "https://xoomar.com/markets/insiders/clvt",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 1.91,
-        "sma20": 2.0835,
-        "sma50": 2.1916,
-        "atr14_pct": 10.04,
-        "avg_dollar_volume_20d": 11828099.27,
-        "volume_ratio_20d": 0.57,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1221758224.38,
-        "name": "Clarivate Plc",
-        "spread_pct": 0.514,
-        "short_float_pct": 15.7
-      },
-      "conviction": {
-        "score": 53,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 141.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 1671500.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": 2.69,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1752,7 +1645,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1858,7 +1751,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -1962,7 +1855,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2062,7 +1955,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -2074,6 +1967,112 @@
         ],
         "price_vs_insider_pct": 38.94,
         "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:CLVT|CORNICK KENNETH L.|2026-08-06|650000.0000|1.8600",
+      "source_key": "CLVT|CORNICK KENNETH L.|2026-08-06|650000.0000|1.8600",
+      "accession": null,
+      "ticker": "CLVT",
+      "issuer": "Clarivate Plc",
+      "issuer_cik": null,
+      "insider": "Cornick Kenneth L.",
+      "insider_cik": "Cornick Kenneth L.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-06",
+      "filed_at": null,
+      "shares": 650000.0,
+      "avg_price": 1.86,
+      "value_usd": 1209000.0,
+      "post_shares": 1750000.0,
+      "prior_shares_est": 1100000.0,
+      "position_increase_pct": 59.09,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/clvt",
+      "sec_url": "https://xoomar.com/markets/insiders/clvt",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 1.91,
+        "sma20": 2.0835,
+        "sma50": 2.1916,
+        "atr14_pct": 10.04,
+        "avg_dollar_volume_20d": 11828099.27,
+        "volume_ratio_20d": 0.57,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1220903512.76,
+        "name": "Clarivate Plc",
+        "spread_pct": 2.545,
+        "short_float_pct": 15.7
+      },
+      "conviction": {
+        "score": 50,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 142.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 1671500.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 2.69,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -2162,7 +2161,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -2266,7 +2265,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2372,7 +2371,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2478,7 +2477,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2584,7 +2583,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2690,7 +2689,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -2796,7 +2795,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2900,7 +2899,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3006,7 +3005,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3105,7 +3104,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -3205,7 +3204,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3213,113 +3212,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 4.56,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:CLVT|CORNICK KENNETH L.|2026-08-07|250000.0000|1.8500",
-      "source_key": "CLVT|CORNICK KENNETH L.|2026-08-07|250000.0000|1.8500",
-      "accession": null,
-      "ticker": "CLVT",
-      "issuer": "Clarivate Plc",
-      "issuer_cik": null,
-      "insider": "Cornick Kenneth L.",
-      "insider_cik": "Cornick Kenneth L.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-07",
-      "filed_at": null,
-      "shares": 250000.0,
-      "avg_price": 1.85,
-      "value_usd": 462500.0,
-      "post_shares": 2000000.0,
-      "prior_shares_est": 1750000.0,
-      "position_increase_pct": 14.29,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/clvt",
-      "sec_url": "https://xoomar.com/markets/insiders/clvt",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 1.91,
-        "sma20": 2.0835,
-        "sma50": 2.1916,
-        "atr14_pct": 10.04,
-        "avg_dollar_volume_20d": 11828099.27,
-        "volume_ratio_20d": 0.57,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1221758224.38,
-        "name": "Clarivate Plc",
-        "spread_pct": 0.514,
-        "short_float_pct": 15.7
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 117.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 1671500.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": 3.24,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3403,7 +3295,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3507,7 +3399,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3613,7 +3505,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3719,7 +3611,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -3825,7 +3717,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3876,9 +3768,9 @@
         "volume_ratio_20d": 0.83,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1370542015.42,
+        "market_cap": 1370245672.78,
         "name": "American Assets Trust, Inc.",
-        "spread_pct": 14.064,
+        "spread_pct": 2.572,
         "short_float_pct": 5.33
       },
       "conviction": {
@@ -3931,7 +3823,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4037,7 +3929,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4047,6 +3939,112 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 2.06,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:CLVT|CORNICK KENNETH L.|2026-08-07|250000.0000|1.8500",
+      "source_key": "CLVT|CORNICK KENNETH L.|2026-08-07|250000.0000|1.8500",
+      "accession": null,
+      "ticker": "CLVT",
+      "issuer": "Clarivate Plc",
+      "issuer_cik": null,
+      "insider": "Cornick Kenneth L.",
+      "insider_cik": "Cornick Kenneth L.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-07",
+      "filed_at": null,
+      "shares": 250000.0,
+      "avg_price": 1.85,
+      "value_usd": 462500.0,
+      "post_shares": 2000000.0,
+      "prior_shares_est": 1750000.0,
+      "position_increase_pct": 14.29,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/clvt",
+      "sec_url": "https://xoomar.com/markets/insiders/clvt",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 1.91,
+        "sma20": 2.0835,
+        "sma50": 2.1916,
+        "atr14_pct": 10.04,
+        "avg_dollar_volume_20d": 11828099.27,
+        "volume_ratio_20d": 0.57,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1220903512.76,
+        "name": "Clarivate Plc",
+        "spread_pct": 2.545,
+        "short_float_pct": 15.7
+      },
+      "conviction": {
+        "score": 43,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 118.6,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 1671500.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 3.24,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4143,7 +4141,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4249,7 +4247,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4353,7 +4351,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4459,7 +4457,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4552,7 +4550,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4656,7 +4654,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4705,9 +4703,9 @@
         "volume_ratio_20d": 0.83,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1370542015.42,
+        "market_cap": 1370245672.78,
         "name": "American Assets Trust, Inc.",
-        "spread_pct": 14.064,
+        "spread_pct": 2.572,
         "short_float_pct": 5.33
       },
       "conviction": {
@@ -4760,7 +4758,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4866,7 +4864,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4972,7 +4970,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5078,7 +5076,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5184,7 +5182,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5290,7 +5288,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5396,7 +5394,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5502,7 +5500,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5608,7 +5606,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -5714,7 +5712,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5822,7 +5820,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5915,7 +5913,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6019,7 +6017,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6125,7 +6123,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6220,7 +6218,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6324,7 +6322,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6432,7 +6430,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6540,7 +6538,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6646,7 +6644,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6754,7 +6752,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6862,7 +6860,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6957,7 +6955,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7048,7 +7046,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.7,
+        "freshness_hours": 46.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7152,7 +7150,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.7,
+        "freshness_hours": 214.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7245,7 +7243,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.7,
+        "freshness_hours": 190.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7336,7 +7334,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7427,7 +7425,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7518,7 +7516,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7609,7 +7607,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7713,7 +7711,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.7,
+        "freshness_hours": 142.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7821,7 +7819,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7929,7 +7927,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8024,7 +8022,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8115,7 +8113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 117.7,
+        "freshness_hours": 118.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8206,7 +8204,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.7,
+        "freshness_hours": 166.6,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
