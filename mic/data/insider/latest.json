@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-12T22:10:04Z",
+  "generated_at": "2026-08-12T23:09:25Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-12T22:10:04.828Z",
+  "provider_updated_at": "2026-08-12T23:09:25.897Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -106,7 +106,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -206,7 +206,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -306,7 +306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -406,7 +406,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -513,7 +513,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 238.2,
+        "freshness_hours": 239.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -610,7 +610,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -710,7 +710,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -810,7 +810,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -818,6 +818,112 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 1.5,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
+      "source_key": "APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
+      "accession": null,
+      "ticker": "APTV",
+      "issuer": "Aptiv PLC",
+      "issuer_cik": null,
+      "insider": "CLARK KEVIN P",
+      "insider_cik": "CLARK KEVIN P",
+      "role": "CEO / President",
+      "officer_title": "Chair and CEO",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-10",
+      "filed_at": null,
+      "shares": 51190.0,
+      "avg_price": 48.8901,
+      "value_usd": 2502684.22,
+      "post_shares": 651016.0,
+      "prior_shares_est": 599826.0,
+      "position_increase_pct": 8.53,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aptv",
+      "sec_url": "https://xoomar.com/markets/insiders/aptv",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 48.48,
+        "sma20": 54.396,
+        "sma50": 59.985,
+        "atr14_pct": 5.2,
+        "avg_dollar_volume_20d": 208562662.62,
+        "volume_ratio_20d": 0.76,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 10066063791.83,
+        "name": "Aptiv PLC",
+        "spread_pct": 0.266,
+        "short_float_pct": 7.3
+      },
+      "conviction": {
+        "score": 61,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 71.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 7502643.1,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -0.84,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -914,7 +1020,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1013,7 +1119,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -1117,7 +1223,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1126,113 +1232,6 @@
         "risk_flags": [],
         "price_vs_insider_pct": 3.34,
         "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
-      "source_key": "APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
-      "accession": null,
-      "ticker": "APTV",
-      "issuer": "Aptiv PLC",
-      "issuer_cik": null,
-      "insider": "CLARK KEVIN P",
-      "insider_cik": "CLARK KEVIN P",
-      "role": "CEO / President",
-      "officer_title": "Chair and CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-10",
-      "filed_at": null,
-      "shares": 51190.0,
-      "avg_price": 48.8901,
-      "value_usd": 2502684.22,
-      "post_shares": 651016.0,
-      "prior_shares_est": 599826.0,
-      "position_increase_pct": 8.53,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aptv",
-      "sec_url": "https://xoomar.com/markets/insiders/aptv",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 48.48,
-        "sma20": 54.396,
-        "sma50": 59.985,
-        "atr14_pct": 5.2,
-        "avg_dollar_volume_20d": 208562662.62,
-        "volume_ratio_20d": 0.76,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 10066063791.83,
-        "name": "Aptiv PLC",
-        "spread_pct": 1.854,
-        "short_float_pct": 7.3
-      },
-      "conviction": {
-        "score": 57,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 70.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 7502643.1,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -0.84,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -1328,7 +1327,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -1434,7 +1433,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1445,6 +1444,112 @@
         ],
         "price_vs_insider_pct": -5.24,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
+      "source_key": "APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
+      "accession": null,
+      "ticker": "APTV",
+      "issuer": "Aptiv PLC",
+      "issuer_cik": null,
+      "insider": "MEISTER PAUL M",
+      "insider_cik": "MEISTER PAUL M",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-05",
+      "filed_at": null,
+      "shares": 105631.0,
+      "avg_price": 47.3342,
+      "value_usd": 4999958.88,
+      "post_shares": 105631.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aptv",
+      "sec_url": "https://xoomar.com/markets/insiders/aptv",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 48.48,
+        "sma20": 54.396,
+        "sma50": 59.985,
+        "atr14_pct": 5.2,
+        "avg_dollar_volume_20d": 208562662.62,
+        "volume_ratio_20d": 0.76,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 10066063791.83,
+        "name": "Aptiv PLC",
+        "spread_pct": 0.266,
+        "short_float_pct": 7.3
+      },
+      "conviction": {
+        "score": 56,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 191.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 7502643.1,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": 2.42,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -1540,7 +1645,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1646,7 +1751,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1752,7 +1857,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1763,113 +1868,6 @@
         ],
         "price_vs_insider_pct": 2.63,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
-      "source_key": "APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
-      "accession": null,
-      "ticker": "APTV",
-      "issuer": "Aptiv PLC",
-      "issuer_cik": null,
-      "insider": "MEISTER PAUL M",
-      "insider_cik": "MEISTER PAUL M",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-05",
-      "filed_at": null,
-      "shares": 105631.0,
-      "avg_price": 47.3342,
-      "value_usd": 4999958.88,
-      "post_shares": 105631.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aptv",
-      "sec_url": "https://xoomar.com/markets/insiders/aptv",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 48.48,
-        "sma20": 54.396,
-        "sma50": 59.985,
-        "atr14_pct": 5.2,
-        "avg_dollar_volume_20d": 208562662.62,
-        "volume_ratio_20d": 0.76,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 10066063791.83,
-        "name": "Aptiv PLC",
-        "spread_pct": 1.854,
-        "short_float_pct": 7.3
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 190.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 7502643.1,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": 2.42,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -1965,7 +1963,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2071,7 +2069,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2164,7 +2162,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.2,
+        "freshness_hours": 47.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2268,7 +2266,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -2374,7 +2372,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2471,7 +2469,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -2578,7 +2576,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2684,7 +2682,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2783,7 +2781,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -2887,7 +2885,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 238.2,
+        "freshness_hours": 239.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2994,7 +2992,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3100,7 +3098,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -3206,7 +3204,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 238.2,
+        "freshness_hours": 239.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3310,7 +3308,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3409,7 +3407,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3513,7 +3511,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.2,
+        "freshness_hours": 47.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3619,7 +3617,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3718,7 +3716,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -3825,7 +3823,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3931,7 +3929,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4038,7 +4036,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4145,7 +4143,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -4251,7 +4249,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4357,7 +4355,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4450,7 +4448,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4554,7 +4552,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4660,7 +4658,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4766,7 +4764,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4872,7 +4870,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4976,7 +4974,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5069,7 +5067,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 238.2,
+        "freshness_hours": 239.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5173,7 +5171,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -5279,7 +5277,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5385,7 +5383,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -5491,7 +5489,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5597,7 +5595,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5703,7 +5701,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5809,7 +5807,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -5915,7 +5913,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -6021,7 +6019,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6127,7 +6125,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6233,7 +6231,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6339,7 +6337,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6445,7 +6443,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6553,7 +6551,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6658,7 +6656,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6764,7 +6762,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -6857,7 +6855,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6948,7 +6946,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7039,7 +7037,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 238.2,
+        "freshness_hours": 239.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7143,7 +7141,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7251,7 +7249,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7346,7 +7344,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7450,7 +7448,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.2,
+        "freshness_hours": 191.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7558,7 +7556,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7652,7 +7650,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.2,
+        "freshness_hours": 167.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7743,7 +7741,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 214.2,
+        "freshness_hours": 215.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7834,7 +7832,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.2,
+        "freshness_hours": 71.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7925,7 +7923,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8016,7 +8014,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.2,
+        "freshness_hours": 143.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8107,7 +8105,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.2,
+        "freshness_hours": 47.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8198,7 +8196,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.2,
+        "freshness_hours": 47.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
