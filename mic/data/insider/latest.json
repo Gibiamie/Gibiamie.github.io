@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-12T20:09:35Z",
+  "generated_at": "2026-08-12T21:13:32Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-12T20:09:35.973Z",
+  "provider_updated_at": "2026-08-12T21:13:32.594Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -17,7 +17,7 @@
     "cluster_events": 35,
     "management_cluster_events": 12,
     "high_conviction": 0,
-    "risk_blocked": 33
+    "risk_blocked": 42
   },
   "events": [
     {
@@ -106,7 +106,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -206,7 +206,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -306,7 +306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -406,7 +406,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -417,6 +417,110 @@
           "Fiyat insider alımından sonra %45 yükselmiş"
         ],
         "price_vs_insider_pct": 45.28,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
+      "source_key": "BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Mahoney Michael F",
+      "insider_cik": "Mahoney Michael F",
+      "role": "CEO / President",
+      "officer_title": "Chairman, President & CEO",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-03",
+      "filed_at": null,
+      "shares": 186240.0,
+      "avg_price": 48.3323,
+      "value_usd": 9001407.55,
+      "post_shares": 1590024.0,
+      "prior_shares_est": 1403784.0,
+      "position_increase_pct": 13.27,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.42,
+        "sma20": 46.6845,
+        "sma50": 46.0486,
+        "atr14_pct": 3.76,
+        "avg_dollar_volume_20d": 943706872.88,
+        "volume_ratio_20d": 0.87,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74519379573.3,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.019,
+        "short_float_pct": 1.54
+      },
+      "conviction": {
+        "score": 71,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 237.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 6.39,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -506,7 +610,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -517,110 +621,6 @@
           "Fiyat insider alımından sonra %45 yükselmiş"
         ],
         "price_vs_insider_pct": 45.28,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
-      "source_key": "BSX|MAHONEY MICHAEL F|2026-08-03|186240.0000|48.3323",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Mahoney Michael F",
-      "insider_cik": "Mahoney Michael F",
-      "role": "CEO / President",
-      "officer_title": "Chairman, President & CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-03",
-      "filed_at": null,
-      "shares": 186240.0,
-      "avg_price": 48.3323,
-      "value_usd": 9001407.55,
-      "post_shares": 1590024.0,
-      "prior_shares_est": 1403784.0,
-      "position_increase_pct": 13.27,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.41,
-        "sma20": 46.684,
-        "sma50": 46.0484,
-        "atr14_pct": 3.76,
-        "avg_dollar_volume_20d": 943698094.58,
-        "volume_ratio_20d": 0.87,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74504889710.53,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": null,
-        "short_float_pct": 1.54
-      },
-      "conviction": {
-        "score": 69,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 236.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 6.37,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -710,7 +710,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -810,7 +810,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -851,21 +851,21 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 30.175,
-        "sma20": 29.4582,
-        "sma50": 28.8839,
+        "price": 30.11,
+        "sma20": 29.455,
+        "sma50": 28.8826,
         "atr14_pct": 2.94,
-        "avg_dollar_volume_20d": 11313478.55,
+        "avg_dollar_volume_20d": 11312643.15,
         "volume_ratio_20d": 0.67,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 1422637092.18,
+        "market_cap": 1419572652.76,
         "name": "Del Monte Corporation",
-        "spread_pct": 0.396,
+        "spread_pct": 7.11,
         "short_float_pct": 9.53
       },
       "conviction": {
-        "score": 63,
+        "score": 60,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -898,7 +898,7 @@
             "max": 8
           },
           "spread": {
-            "points": 3,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -914,331 +914,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
         "cluster_value_10d": 358705.2,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.95,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
-      "source_key": "APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
-      "accession": null,
-      "ticker": "APTV",
-      "issuer": "Aptiv PLC",
-      "issuer_cik": null,
-      "insider": "CLARK KEVIN P",
-      "insider_cik": "CLARK KEVIN P",
-      "role": "CEO / President",
-      "officer_title": "Chair and CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-10",
-      "filed_at": null,
-      "shares": 51190.0,
-      "avg_price": 48.8901,
-      "value_usd": 2502684.22,
-      "post_shares": 651016.0,
-      "prior_shares_est": 599826.0,
-      "position_increase_pct": 8.53,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aptv",
-      "sec_url": "https://xoomar.com/markets/insiders/aptv",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 48.48,
-        "sma20": 54.396,
-        "sma50": 59.985,
-        "atr14_pct": 5.2,
-        "avg_dollar_volume_20d": 208562662.62,
-        "volume_ratio_20d": 0.76,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 10066063791.83,
-        "name": "Aptiv PLC",
-        "spread_pct": 0.083,
-        "short_float_pct": 7.3
-      },
-      "conviction": {
-        "score": 62,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 7502643.1,
-        "risk_status": "WARN",
+        "risk_status": "BLOCK",
         "risk_flags": [
-          "Mevcut trend aşağı"
+          "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -0.84,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:SITE|BLACK DOUG|2026-08-04|4000.0000|101.9400",
-      "source_key": "SITE|BLACK DOUG|2026-08-04|4000.0000|101.9400",
-      "accession": null,
-      "ticker": "SITE",
-      "issuer": "SiteOne Landscape Supply, Inc.",
-      "issuer_cik": null,
-      "insider": "BLACK DOUG",
-      "insider_cik": "BLACK DOUG",
-      "role": "CEO / President",
-      "officer_title": "CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-04",
-      "filed_at": null,
-      "shares": 4000.0,
-      "avg_price": 101.94,
-      "value_usd": 407760.0,
-      "post_shares": 4000.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/site",
-      "sec_url": "https://xoomar.com/markets/insiders/site",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 96.615,
-        "sma20": 100.5823,
-        "sma50": 105.0061,
-        "atr14_pct": 5.37,
-        "avg_dollar_volume_20d": 94839392.6,
-        "volume_ratio_20d": 0.55,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 4217765411.59,
-        "name": "SiteOne Landscape Supply, Inc.",
-        "spread_pct": 0.124,
-        "short_float_pct": 8.22
-      },
-      "conviction": {
-        "score": 62,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 212.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 407760.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -5.22,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:AMRC|COX BRIAN C|2026-08-10|39700.0000|25.0700",
-      "source_key": "AMRC|COX BRIAN C|2026-08-10|39700.0000|25.0700",
-      "accession": null,
-      "ticker": "AMRC",
-      "issuer": "Ameresco, Inc.",
-      "issuer_cik": null,
-      "insider": "Cox Brian C",
-      "insider_cik": "Cox Brian C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-10",
-      "filed_at": null,
-      "shares": 39700.0,
-      "avg_price": 25.07,
-      "value_usd": 995279.0,
-      "post_shares": 39700.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrc",
-      "sec_url": "https://xoomar.com/markets/insiders/amrc",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 27.56,
-        "sma20": 23.4165,
-        "sma50": 25.8686,
-        "atr14_pct": 8.85,
-        "avg_dollar_volume_20d": 16851448.3,
-        "volume_ratio_20d": 0.52,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 1462504746.82,
-        "name": "Ameresco, Inc.",
-        "spread_pct": 0.432,
-        "short_float_pct": 16.52
-      },
-      "conviction": {
-        "score": 60,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 1176199.0,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 9.93,
-        "verdict": "İZLE / TEYİT BEKLE"
+        "price_vs_insider_pct": 0.73,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -1327,7 +1013,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -1431,7 +1117,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1443,27 +1129,27 @@
       }
     },
     {
-      "id": "xoomar:APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
-      "source_key": "APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
+      "id": "xoomar:APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
+      "source_key": "APTV|CLARK KEVIN P|2026-08-10|51190.0000|48.8901",
       "accession": null,
       "ticker": "APTV",
       "issuer": "Aptiv PLC",
       "issuer_cik": null,
-      "insider": "MEISTER PAUL M",
-      "insider_cik": "MEISTER PAUL M",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
+      "insider": "CLARK KEVIN P",
+      "insider_cik": "CLARK KEVIN P",
+      "role": "CEO / President",
+      "officer_title": "Chair and CEO",
+      "role_points": 12,
       "is_entity": false,
-      "transaction_date": "2026-08-05",
+      "transaction_date": "2026-08-10",
       "filed_at": null,
-      "shares": 105631.0,
-      "avg_price": 47.3342,
-      "value_usd": 4999958.88,
-      "post_shares": 105631.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
+      "shares": 51190.0,
+      "avg_price": 48.8901,
+      "value_usd": 2502684.22,
+      "post_shares": 651016.0,
+      "prior_shares_est": 599826.0,
+      "position_increase_pct": 8.53,
+      "new_position": false,
       "transaction_count": 1,
       "source_url": "https://xoomar.com/markets/insiders/aptv",
       "sec_url": "https://xoomar.com/markets/insiders/aptv",
@@ -1482,7 +1168,7 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 10066063791.83,
         "name": "Aptiv PLC",
-        "spread_pct": 0.083,
+        "spread_pct": 1.854,
         "short_float_pct": 7.3
       },
       "conviction": {
@@ -1490,7 +1176,7 @@
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
-            "points": 3,
+            "points": 12,
             "max": 12
           },
           "purchase_value": {
@@ -1498,7 +1184,7 @@
             "max": 15
           },
           "position_increase": {
-            "points": 12,
+            "points": 5,
             "max": 12
           },
           "cluster_buying": {
@@ -1506,7 +1192,7 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 3,
+            "points": 6,
             "max": 10,
             "proxy": true
           },
@@ -1519,7 +1205,7 @@
             "max": 8
           },
           "spread": {
-            "points": 5,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -1535,17 +1221,230 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
         "cluster_value_10d": 7502643.1,
         "risk_status": "WARN",
         "risk_flags": [
+          "Spread geniş",
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": 2.42,
+        "price_vs_insider_pct": -0.84,
         "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMRC|COX BRIAN C|2026-08-10|39700.0000|25.0700",
+      "source_key": "AMRC|COX BRIAN C|2026-08-10|39700.0000|25.0700",
+      "accession": null,
+      "ticker": "AMRC",
+      "issuer": "Ameresco, Inc.",
+      "issuer_cik": null,
+      "insider": "Cox Brian C",
+      "insider_cik": "Cox Brian C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-10",
+      "filed_at": null,
+      "shares": 39700.0,
+      "avg_price": 25.07,
+      "value_usd": 995279.0,
+      "post_shares": 39700.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrc",
+      "sec_url": "https://xoomar.com/markets/insiders/amrc",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 27.61,
+        "sma20": 23.419,
+        "sma50": 25.8696,
+        "atr14_pct": 8.83,
+        "avg_dollar_volume_20d": 17048866.01,
+        "volume_ratio_20d": 0.72,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 1465158118.1,
+        "name": "Ameresco, Inc.",
+        "spread_pct": 7.605,
+        "short_float_pct": 16.52
+      },
+      "conviction": {
+        "score": 57,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 69.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 1176199.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 10.13,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:SITE|BLACK DOUG|2026-08-04|4000.0000|101.9400",
+      "source_key": "SITE|BLACK DOUG|2026-08-04|4000.0000|101.9400",
+      "accession": null,
+      "ticker": "SITE",
+      "issuer": "SiteOne Landscape Supply, Inc.",
+      "issuer_cik": null,
+      "insider": "BLACK DOUG",
+      "insider_cik": "BLACK DOUG",
+      "role": "CEO / President",
+      "officer_title": "CEO",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-04",
+      "filed_at": null,
+      "shares": 4000.0,
+      "avg_price": 101.94,
+      "value_usd": 407760.0,
+      "post_shares": 4000.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/site",
+      "sec_url": "https://xoomar.com/markets/insiders/site",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 96.6,
+        "sma20": 100.5815,
+        "sma50": 105.0058,
+        "atr14_pct": 5.37,
+        "avg_dollar_volume_20d": 95500137.52,
+        "volume_ratio_20d": 0.68,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 4217110607.39,
+        "name": "SiteOne Landscape Supply, Inc.",
+        "spread_pct": 12.902,
+        "short_float_pct": 8.22
+      },
+      "conviction": {
+        "score": 57,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 213.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 407760.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -5.24,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -1578,15 +1477,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 1.865,
-        "sma20": 2.0813,
-        "sma50": 2.1907,
-        "atr14_pct": 9.86,
-        "avg_dollar_volume_20d": 11686138.34,
+        "price": 1.86,
+        "sma20": 2.081,
+        "sma50": 2.1906,
+        "atr14_pct": 9.89,
+        "avg_dollar_volume_20d": 11685688.82,
         "volume_ratio_20d": 0.32,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1192138797.25,
+        "market_cap": 1188942717.74,
         "name": "Clarivate Plc",
         "spread_pct": 0.533,
         "short_float_pct": 14.97
@@ -1641,7 +1540,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1650,111 +1549,7 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": 0.27,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-07|5000.0000|25.9500",
-      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-07|5000.0000|25.9500",
-      "accession": null,
-      "ticker": "AMRC",
-      "issuer": "Ameresco, Inc.",
-      "issuer_cik": null,
-      "insider": "Sakellaris George P",
-      "insider_cik": "Sakellaris George P",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-07",
-      "filed_at": null,
-      "shares": 5000.0,
-      "avg_price": 25.95,
-      "value_usd": 129750.0,
-      "post_shares": 993597.0,
-      "prior_shares_est": 988597.0,
-      "position_increase_pct": 0.51,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrc",
-      "sec_url": "https://xoomar.com/markets/insiders/amrc",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 27.56,
-        "sma20": 23.4165,
-        "sma50": 25.8686,
-        "atr14_pct": 8.85,
-        "avg_dollar_volume_20d": 16851448.3,
-        "volume_ratio_20d": 0.52,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 1462504746.82,
-        "name": "Ameresco, Inc.",
-        "spread_pct": 0.432,
-        "short_float_pct": 16.52
-      },
-      "conviction": {
-        "score": 55,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 140.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 1176199.0,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 6.2,
+        "price_vs_insider_pct": 0.0,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1792,7 +1587,7 @@
         "sma20": 6.0565,
         "sma50": 8.7147,
         "atr14_pct": 8.88,
-        "avg_dollar_volume_20d": 8004006.05,
+        "avg_dollar_volume_20d": 8004588.17,
         "volume_ratio_20d": 0.66,
         "trend": "neutral",
         "technical_confirmation": "watch",
@@ -1851,7 +1646,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1957,7 +1752,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1967,6 +1762,219 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 2.63,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
+      "source_key": "APTV|MEISTER PAUL M|2026-08-05|105631.0000|47.3342",
+      "accession": null,
+      "ticker": "APTV",
+      "issuer": "Aptiv PLC",
+      "issuer_cik": null,
+      "insider": "MEISTER PAUL M",
+      "insider_cik": "MEISTER PAUL M",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-05",
+      "filed_at": null,
+      "shares": 105631.0,
+      "avg_price": 47.3342,
+      "value_usd": 4999958.88,
+      "post_shares": 105631.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aptv",
+      "sec_url": "https://xoomar.com/markets/insiders/aptv",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 48.48,
+        "sma20": 54.396,
+        "sma50": 59.985,
+        "atr14_pct": 5.2,
+        "avg_dollar_volume_20d": 208562662.62,
+        "volume_ratio_20d": 0.76,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 10066063791.83,
+        "name": "Aptiv PLC",
+        "spread_pct": 1.854,
+        "short_float_pct": 7.3
+      },
+      "conviction": {
+        "score": 52,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 189.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 7502643.1,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş",
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": 2.42,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-07|5000.0000|25.9500",
+      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-07|5000.0000|25.9500",
+      "accession": null,
+      "ticker": "AMRC",
+      "issuer": "Ameresco, Inc.",
+      "issuer_cik": null,
+      "insider": "Sakellaris George P",
+      "insider_cik": "Sakellaris George P",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-07",
+      "filed_at": null,
+      "shares": 5000.0,
+      "avg_price": 25.95,
+      "value_usd": 129750.0,
+      "post_shares": 993597.0,
+      "prior_shares_est": 988597.0,
+      "position_increase_pct": 0.51,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrc",
+      "sec_url": "https://xoomar.com/markets/insiders/amrc",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 27.61,
+        "sma20": 23.419,
+        "sma50": 25.8696,
+        "atr14_pct": 8.83,
+        "avg_dollar_volume_20d": 17048866.01,
+        "volume_ratio_20d": 0.72,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 1465158118.1,
+        "name": "Ameresco, Inc.",
+        "spread_pct": 7.605,
+        "short_float_pct": 16.52
+      },
+      "conviction": {
+        "score": 52,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 141.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 1176199.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 6.4,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2004,7 +2012,7 @@
         "sma20": 6.0565,
         "sma50": 8.7147,
         "atr14_pct": 8.88,
-        "avg_dollar_volume_20d": 8004006.05,
+        "avg_dollar_volume_20d": 8004588.17,
         "volume_ratio_20d": 0.66,
         "trend": "neutral",
         "technical_confirmation": "watch",
@@ -2063,7 +2071,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2156,7 +2164,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.2,
+        "freshness_hours": 45.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2197,15 +2205,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.24,
-        "sma20": 4.937,
-        "sma50": 5.4842,
-        "atr14_pct": 8.66,
-        "avg_dollar_volume_20d": 12164940.11,
+        "price": 4.23,
+        "sma20": 4.9365,
+        "sma50": 5.484,
+        "atr14_pct": 8.68,
+        "avg_dollar_volume_20d": 12163728.24,
         "volume_ratio_20d": 0.97,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 404200785.14,
+        "market_cap": 403247504.99,
         "name": "Bed Bath & Beyond, Inc.",
         "spread_pct": null,
         "short_float_pct": null
@@ -2260,7 +2268,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -2269,67 +2277,67 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -9.21,
+        "price_vs_insider_pct": -9.42,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
-      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-11|1000.0000|25.9000",
-      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-11|1000.0000|25.9000",
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
       "accession": null,
-      "ticker": "AMRC",
-      "issuer": "Ameresco, Inc.",
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
       "issuer_cik": null,
-      "insider": "Sakellaris George P",
-      "insider_cik": "Sakellaris George P",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
       "is_entity": false,
-      "transaction_date": "2026-08-11",
+      "transaction_date": "2026-08-05",
       "filed_at": null,
-      "shares": 1000.0,
-      "avg_price": 25.9,
-      "value_usd": 25900.0,
-      "post_shares": 995597.0,
-      "prior_shares_est": 994597.0,
-      "position_increase_pct": 0.1,
+      "shares": 2100.0,
+      "avg_price": 47.589,
+      "value_usd": 99936.9,
+      "post_shares": 17160.0,
+      "prior_shares_est": 15060.0,
+      "position_increase_pct": 13.94,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrc",
-      "sec_url": "https://xoomar.com/markets/insiders/amrc",
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 27.56,
-        "sma20": 23.4165,
-        "sma50": 25.8686,
-        "atr14_pct": 8.85,
-        "avg_dollar_volume_20d": 16851448.3,
-        "volume_ratio_20d": 0.52,
-        "trend": "neutral",
+        "price": 51.42,
+        "sma20": 46.6845,
+        "sma50": 46.0486,
+        "atr14_pct": 3.76,
+        "avg_dollar_volume_20d": 943706872.88,
+        "volume_ratio_20d": 0.87,
+        "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 1462504746.82,
-        "name": "Ameresco, Inc.",
-        "spread_pct": 0.432,
-        "short_float_pct": 16.52
+        "market_cap": 74519379573.3,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.019,
+        "short_float_pct": 1.54
       },
       "conviction": {
         "score": 51,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
-            "points": 12,
+            "points": 3,
             "max": 12
           },
           "purchase_value": {
-            "points": 1,
+            "points": 4,
             "max": 15
           },
           "position_increase": {
-            "points": 2,
+            "points": 8,
             "max": 12
           },
           "cluster_buying": {
@@ -2337,20 +2345,20 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 7,
+            "points": 3,
             "max": 10,
             "proxy": true
           },
           "market_cap": {
-            "points": 7,
+            "points": 5,
             "max": 7
           },
           "dollar_volume": {
-            "points": 7,
+            "points": 8,
             "max": 8
           },
           "spread": {
-            "points": 3,
+            "points": 5,
             "max": 5
           },
           "short_interest": {
@@ -2358,7 +2366,7 @@
             "max": 5
           },
           "trend": {
-            "points": 3,
+            "points": 6,
             "max": 6
           },
           "technical_confirmation": {
@@ -2366,14 +2374,14 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
-        "cluster_value_10d": 1176199.0,
+        "cluster_value_10d": 9158231.01,
         "risk_status": "PASS",
         "risk_flags": [],
-        "price_vs_insider_pct": 6.41,
+        "price_vs_insider_pct": 8.05,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2463,7 +2471,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -2474,216 +2482,6 @@
           "Fiyat insider alımından sonra %45 yükselmiş"
         ],
         "price_vs_insider_pct": 45.28,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-10|1000.0000|25.2700",
-      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-10|1000.0000|25.2700",
-      "accession": null,
-      "ticker": "AMRC",
-      "issuer": "Ameresco, Inc.",
-      "issuer_cik": null,
-      "insider": "Sakellaris George P",
-      "insider_cik": "Sakellaris George P",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-10",
-      "filed_at": null,
-      "shares": 1000.0,
-      "avg_price": 25.27,
-      "value_usd": 25270.0,
-      "post_shares": 994597.0,
-      "prior_shares_est": 993597.0,
-      "position_increase_pct": 0.1,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrc",
-      "sec_url": "https://xoomar.com/markets/insiders/amrc",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 27.56,
-        "sma20": 23.4165,
-        "sma50": 25.8686,
-        "atr14_pct": 8.85,
-        "avg_dollar_volume_20d": 16851448.3,
-        "volume_ratio_20d": 0.52,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 1462504746.82,
-        "name": "Ameresco, Inc.",
-        "spread_pct": 0.432,
-        "short_float_pct": 16.52
-      },
-      "conviction": {
-        "score": 50,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 1176199.0,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 9.06,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:PSN|BALL GEORGE L.|2026-08-07|20000.0000|47.9700",
-      "source_key": "PSN|BALL GEORGE L.|2026-08-07|20000.0000|47.9700",
-      "accession": null,
-      "ticker": "PSN",
-      "issuer": "Parsons Corporation",
-      "issuer_cik": null,
-      "insider": "Ball George L.",
-      "insider_cik": "Ball George L.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-07",
-      "filed_at": null,
-      "shares": 20000.0,
-      "avg_price": 47.97,
-      "value_usd": 959400.0,
-      "post_shares": 170383.0,
-      "prior_shares_est": 150383.0,
-      "position_increase_pct": 13.3,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/psn",
-      "sec_url": "https://xoomar.com/markets/insiders/psn",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 48.27,
-        "sma20": 51.951,
-        "sma50": 53.8726,
-        "atr14_pct": 8.59,
-        "avg_dollar_volume_20d": 94420130.39,
-        "volume_ratio_20d": 0.36,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 5155496417.27,
-        "name": "Parsons Corporation",
-        "spread_pct": 0.104,
-        "short_float_pct": 17.14
-      },
-      "conviction": {
-        "score": 49,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 140.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 959400.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": 0.63,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2780,7 +2578,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2886,7 +2684,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2985,7 +2783,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3026,17 +2824,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 20.34,
-        "sma20": 17.5105,
-        "sma50": 18.0586,
-        "atr14_pct": 5.79,
-        "avg_dollar_volume_20d": 358982.26,
+        "price": 20.21,
+        "sma20": 17.504,
+        "sma50": 18.056,
+        "atr14_pct": 5.83,
+        "avg_dollar_volume_20d": 358789.49,
         "volume_ratio_20d": 1.5,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 122188788.02,
+        "market_cap": 121407830.65,
         "name": "51Talk Online Education Group",
-        "spread_pct": 1.584,
+        "spread_pct": 3.047,
         "short_float_pct": 0.76
       },
       "conviction": {
@@ -3089,16 +2887,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 236.2,
+        "freshness_hours": 237.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
         "cluster_value_10d": 11611068.0,
         "risk_status": "BLOCK",
         "risk_flags": [
-          "20g dolar hacmi $0.5M altında"
+          "20g dolar hacmi $0.5M altında",
+          "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 10.06,
+        "price_vs_insider_pct": 9.36,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3132,15 +2931,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 1.865,
-        "sma20": 2.0813,
-        "sma50": 2.1907,
-        "atr14_pct": 9.86,
-        "avg_dollar_volume_20d": 11686138.34,
+        "price": 1.86,
+        "sma20": 2.081,
+        "sma50": 2.1906,
+        "atr14_pct": 9.89,
+        "avg_dollar_volume_20d": 11685688.82,
         "volume_ratio_20d": 0.32,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1192138797.25,
+        "market_cap": 1188942717.74,
         "name": "Clarivate Plc",
         "spread_pct": 0.533,
         "short_float_pct": 14.97
@@ -3195,7 +2994,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3204,111 +3003,7 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": 0.81,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-05|2100.0000|47.5890",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-05",
-      "filed_at": null,
-      "shares": 2100.0,
-      "avg_price": 47.589,
-      "value_usd": 99936.9,
-      "post_shares": 17160.0,
-      "prior_shares_est": 15060.0,
-      "position_increase_pct": 13.94,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.41,
-        "sma20": 46.684,
-        "sma50": 46.0484,
-        "atr14_pct": 3.76,
-        "avg_dollar_volume_20d": 943698094.58,
-        "volume_ratio_20d": 0.87,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74504889710.53,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": null,
-        "short_float_pct": 1.54
-      },
-      "conviction": {
-        "score": 48,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 188.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 8.03,
+        "price_vs_insider_pct": 0.54,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3342,15 +3037,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.24,
-        "sma20": 4.937,
-        "sma50": 5.4842,
-        "atr14_pct": 8.66,
-        "avg_dollar_volume_20d": 12164940.11,
+        "price": 4.23,
+        "sma20": 4.9365,
+        "sma50": 5.484,
+        "atr14_pct": 8.68,
+        "avg_dollar_volume_20d": 12163728.24,
         "volume_ratio_20d": 0.97,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 404200785.14,
+        "market_cap": 403247504.99,
         "name": "Bed Bath & Beyond, Inc.",
         "spread_pct": null,
         "short_float_pct": null
@@ -3405,7 +3100,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -3414,7 +3109,111 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -7.22,
+        "price_vs_insider_pct": -7.44,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-03",
+      "filed_at": null,
+      "shares": 1042.0,
+      "avg_price": 48.0655,
+      "value_usd": 50084.25,
+      "post_shares": 14920.0,
+      "prior_shares_est": 13878.0,
+      "position_increase_pct": 7.51,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.42,
+        "sma20": 46.6845,
+        "sma50": 46.0486,
+        "atr14_pct": 3.76,
+        "avg_dollar_volume_20d": 943706872.88,
+        "volume_ratio_20d": 0.87,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74519379573.3,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.019,
+        "short_float_pct": 1.54
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 237.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 6.98,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3511,7 +3310,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3610,7 +3409,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3619,6 +3418,112 @@
         "risk_flags": [],
         "price_vs_insider_pct": 2.78,
         "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-11|1000.0000|25.9000",
+      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-11|1000.0000|25.9000",
+      "accession": null,
+      "ticker": "AMRC",
+      "issuer": "Ameresco, Inc.",
+      "issuer_cik": null,
+      "insider": "Sakellaris George P",
+      "insider_cik": "Sakellaris George P",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-11",
+      "filed_at": null,
+      "shares": 1000.0,
+      "avg_price": 25.9,
+      "value_usd": 25900.0,
+      "post_shares": 995597.0,
+      "prior_shares_est": 994597.0,
+      "position_increase_pct": 0.1,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrc",
+      "sec_url": "https://xoomar.com/markets/insiders/amrc",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 27.61,
+        "sma20": 23.419,
+        "sma50": 25.8696,
+        "atr14_pct": 8.83,
+        "avg_dollar_volume_20d": 17048866.01,
+        "volume_ratio_20d": 0.72,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 1465158118.1,
+        "name": "Ameresco, Inc.",
+        "spread_pct": 7.605,
+        "short_float_pct": 16.52
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 45.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 1176199.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 6.6,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -3714,7 +3619,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3813,7 +3718,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 7,
         "management_cluster_10d": 3,
@@ -3825,6 +3730,112 @@
         ],
         "price_vs_insider_pct": 45.28,
         "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMRC|SAKELLARIS GEORGE P|2026-08-10|1000.0000|25.2700",
+      "source_key": "AMRC|SAKELLARIS GEORGE P|2026-08-10|1000.0000|25.2700",
+      "accession": null,
+      "ticker": "AMRC",
+      "issuer": "Ameresco, Inc.",
+      "issuer_cik": null,
+      "insider": "Sakellaris George P",
+      "insider_cik": "Sakellaris George P",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-10",
+      "filed_at": null,
+      "shares": 1000.0,
+      "avg_price": 25.27,
+      "value_usd": 25270.0,
+      "post_shares": 994597.0,
+      "prior_shares_est": 993597.0,
+      "position_increase_pct": 0.1,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrc",
+      "sec_url": "https://xoomar.com/markets/insiders/amrc",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 27.61,
+        "sma20": 23.419,
+        "sma50": 25.8696,
+        "atr14_pct": 8.83,
+        "avg_dollar_volume_20d": 17048866.01,
+        "volume_ratio_20d": 0.72,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 1465158118.1,
+        "name": "Ameresco, Inc.",
+        "spread_pct": 7.605,
+        "short_float_pct": 16.52
+      },
+      "conviction": {
+        "score": 47,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 69.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 1176199.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 9.26,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -3857,17 +3868,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 20.34,
-        "sma20": 17.5105,
-        "sma50": 18.0586,
-        "atr14_pct": 5.79,
-        "avg_dollar_volume_20d": 358982.26,
+        "price": 20.21,
+        "sma20": 17.504,
+        "sma50": 18.056,
+        "atr14_pct": 5.83,
+        "avg_dollar_volume_20d": 358789.49,
         "volume_ratio_20d": 1.5,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 122188788.02,
+        "market_cap": 121407830.65,
         "name": "51Talk Online Education Group",
-        "spread_pct": 1.584,
+        "spread_pct": 3.047,
         "short_float_pct": 0.76
       },
       "conviction": {
@@ -3920,16 +3931,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
         "cluster_value_10d": 11611068.0,
         "risk_status": "BLOCK",
         "risk_flags": [
-          "20g dolar hacmi $0.5M altında"
+          "20g dolar hacmi $0.5M altında",
+          "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 5.94,
+        "price_vs_insider_pct": 5.26,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3963,17 +3975,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 20.34,
-        "sma20": 17.5105,
-        "sma50": 18.0586,
-        "atr14_pct": 5.79,
-        "avg_dollar_volume_20d": 358982.26,
+        "price": 20.21,
+        "sma20": 17.504,
+        "sma50": 18.056,
+        "atr14_pct": 5.83,
+        "avg_dollar_volume_20d": 358789.49,
         "volume_ratio_20d": 1.5,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 122188788.02,
+        "market_cap": 121407830.65,
         "name": "51Talk Online Education Group",
-        "spread_pct": 1.584,
+        "spread_pct": 3.047,
         "short_float_pct": 0.76
       },
       "conviction": {
@@ -4026,123 +4038,18 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
         "cluster_value_10d": 11611068.0,
         "risk_status": "BLOCK",
         "risk_flags": [
-          "20g dolar hacmi $0.5M altında"
+          "20g dolar hacmi $0.5M altında",
+          "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 6.72,
+        "price_vs_insider_pct": 6.03,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:AAT|RADY ERNEST S|2026-08-07|32763.0000|22.8200",
-      "source_key": "AAT|RADY ERNEST S|2026-08-07|32763.0000|22.8200",
-      "accession": null,
-      "ticker": "AAT",
-      "issuer": "American Assets Trust, Inc.",
-      "issuer_cik": null,
-      "insider": "RADY ERNEST S",
-      "insider_cik": "RADY ERNEST S",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-08-07",
-      "filed_at": null,
-      "shares": 32763.0,
-      "avg_price": 22.82,
-      "value_usd": 747651.66,
-      "post_shares": 8459288.0,
-      "prior_shares_est": 8426525.0,
-      "position_increase_pct": 0.39,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aat",
-      "sec_url": "https://xoomar.com/markets/insiders/aat",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 22.55,
-        "sma20": 23.8685,
-        "sma50": 24.2814,
-        "atr14_pct": 2.42,
-        "avg_dollar_volume_20d": 9925161.82,
-        "volume_ratio_20d": 0.49,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1384365559.96,
-        "name": "American Assets Trust, Inc.",
-        "spread_pct": 0.222,
-        "short_float_pct": 4.21
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 140.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 816771.66,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -1.18,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4238,7 +4145,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -4252,75 +4159,75 @@
       }
     },
     {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-03|1042.0000|48.0655",
+      "id": "xoomar:PSN|BALL GEORGE L.|2026-08-07|20000.0000|47.9700",
+      "source_key": "PSN|BALL GEORGE L.|2026-08-07|20000.0000|47.9700",
       "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
+      "ticker": "PSN",
+      "issuer": "Parsons Corporation",
       "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
+      "insider": "Ball George L.",
+      "insider_cik": "Ball George L.",
       "role": "Reporting person",
       "officer_title": null,
       "role_points": 3,
       "is_entity": false,
-      "transaction_date": "2026-08-03",
+      "transaction_date": "2026-08-07",
       "filed_at": null,
-      "shares": 1042.0,
-      "avg_price": 48.0655,
-      "value_usd": 50084.25,
-      "post_shares": 14920.0,
-      "prior_shares_est": 13878.0,
-      "position_increase_pct": 7.51,
+      "shares": 20000.0,
+      "avg_price": 47.97,
+      "value_usd": 959400.0,
+      "post_shares": 170383.0,
+      "prior_shares_est": 150383.0,
+      "position_increase_pct": 13.3,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_url": "https://xoomar.com/markets/insiders/psn",
+      "sec_url": "https://xoomar.com/markets/insiders/psn",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 51.41,
-        "sma20": 46.684,
-        "sma50": 46.0484,
-        "atr14_pct": 3.76,
-        "avg_dollar_volume_20d": 943698094.58,
-        "volume_ratio_20d": 0.87,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74504889710.53,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": null,
-        "short_float_pct": 1.54
+        "price": 48.28,
+        "sma20": 51.9515,
+        "sma50": 53.8728,
+        "atr14_pct": 8.59,
+        "avg_dollar_volume_20d": 94420492.81,
+        "volume_ratio_20d": 0.36,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 5156564291.94,
+        "name": "Parsons Corporation",
+        "spread_pct": 4.698,
+        "short_float_pct": 17.14
       },
       "conviction": {
-        "score": 45,
-        "data_completeness_pct": 90,
+        "score": 44,
+        "data_completeness_pct": 95,
         "components": {
           "insider_role": {
             "points": 3,
             "max": 12
           },
           "purchase_value": {
-            "points": 4,
+            "points": 10,
             "max": 15
           },
           "position_increase": {
-            "points": 5,
+            "points": 8,
             "max": 12
           },
           "cluster_buying": {
-            "points": 3,
+            "points": 0,
             "max": 14
           },
           "filing_freshness": {
-            "points": 3,
+            "points": 5,
             "max": 10,
             "proxy": true
           },
           "market_cap": {
-            "points": 5,
+            "points": 7,
             "max": 7
           },
           "dollar_volume": {
@@ -4328,7 +4235,7 @@
             "max": 8
           },
           "spread": {
-            "points": null,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -4336,23 +4243,25 @@
             "max": 5
           },
           "trend": {
-            "points": 6,
+            "points": 0,
             "max": 6
           },
           "technical_confirmation": {
-            "points": 3,
+            "points": 0,
             "max": 6
           }
         },
-        "freshness_hours": 236.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 6.96,
-        "verdict": "DÜŞÜK ÖNCELİK"
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 959400.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 0.65,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -4448,7 +4357,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4541,7 +4450,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4645,7 +4554,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4655,6 +4564,112 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 6.75,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AAT|RADY ERNEST S|2026-08-07|32763.0000|22.8200",
+      "source_key": "AAT|RADY ERNEST S|2026-08-07|32763.0000|22.8200",
+      "accession": null,
+      "ticker": "AAT",
+      "issuer": "American Assets Trust, Inc.",
+      "issuer_cik": null,
+      "insider": "RADY ERNEST S",
+      "insider_cik": "RADY ERNEST S",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-08-07",
+      "filed_at": null,
+      "shares": 32763.0,
+      "avg_price": 22.82,
+      "value_usd": 747651.66,
+      "post_shares": 8459288.0,
+      "prior_shares_est": 8426525.0,
+      "position_increase_pct": 0.39,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aat",
+      "sec_url": "https://xoomar.com/markets/insiders/aat",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 22.56,
+        "sma20": 23.869,
+        "sma50": 24.2816,
+        "atr14_pct": 2.42,
+        "avg_dollar_volume_20d": 9925263.51,
+        "volume_ratio_20d": 0.49,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1384979483.37,
+        "name": "American Assets Trust, Inc.",
+        "spread_pct": 26.244,
+        "short_float_pct": 4.21
+      },
+      "conviction": {
+        "score": 42,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 141.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 816771.66,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -1.14,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4692,8 +4707,8 @@
         "sma20": 26.448,
         "sma50": 28.7935,
         "atr14_pct": 9.58,
-        "avg_dollar_volume_20d": 2810002.93,
-        "volume_ratio_20d": 0.7,
+        "avg_dollar_volume_20d": 2810402.74,
+        "volume_ratio_20d": 0.71,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
         "market_cap": 306916152.67,
@@ -4751,7 +4766,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4762,6 +4777,110 @@
         ],
         "price_vs_insider_pct": -1.37,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
+      "source_key": "BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
+      "accession": null,
+      "ticker": "BSX",
+      "issuer": "Boston Scientific Corporation",
+      "issuer_cik": null,
+      "insider": "Habiger David C",
+      "insider_cik": "Habiger David C",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-04",
+      "filed_at": null,
+      "shares": 140.0,
+      "avg_price": 48.5879,
+      "value_usd": 6802.31,
+      "post_shares": 15060.0,
+      "prior_shares_est": 14920.0,
+      "position_increase_pct": 0.94,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 51.42,
+        "sma20": 46.6845,
+        "sma50": 46.0486,
+        "atr14_pct": 3.76,
+        "avg_dollar_volume_20d": 943706872.88,
+        "volume_ratio_20d": 0.87,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 74519379573.3,
+        "name": "Boston Scientific Corporation",
+        "spread_pct": 0.019,
+        "short_float_pct": 1.54
+      },
+      "conviction": {
+        "score": 42,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 213.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 9158231.01,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 5.83,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4857,7 +4976,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4950,7 +5069,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 236.2,
+        "freshness_hours": 237.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4995,8 +5114,8 @@
         "sma20": 26.448,
         "sma50": 28.7935,
         "atr14_pct": 9.58,
-        "avg_dollar_volume_20d": 2810002.93,
-        "volume_ratio_20d": 0.7,
+        "avg_dollar_volume_20d": 2810402.74,
+        "volume_ratio_20d": 0.71,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
         "market_cap": 306916152.67,
@@ -5054,7 +5173,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -5160,7 +5279,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5171,110 +5290,6 @@
         ],
         "price_vs_insider_pct": 1.14,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
-      "source_key": "BSX|HABIGER DAVID C|2026-08-04|140.0000|48.5879",
-      "accession": null,
-      "ticker": "BSX",
-      "issuer": "Boston Scientific Corporation",
-      "issuer_cik": null,
-      "insider": "Habiger David C",
-      "insider_cik": "Habiger David C",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-04",
-      "filed_at": null,
-      "shares": 140.0,
-      "avg_price": 48.5879,
-      "value_usd": 6802.31,
-      "post_shares": 15060.0,
-      "prior_shares_est": 14920.0,
-      "position_increase_pct": 0.94,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bsx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 51.41,
-        "sma20": 46.684,
-        "sma50": 46.0484,
-        "atr14_pct": 3.76,
-        "avg_dollar_volume_20d": 943698094.58,
-        "volume_ratio_20d": 0.87,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 74504889710.53,
-        "name": "Boston Scientific Corporation",
-        "spread_pct": null,
-        "short_float_pct": 1.54
-      },
-      "conviction": {
-        "score": 39,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 212.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 9158231.01,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 5.81,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -5370,7 +5385,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -5381,112 +5396,6 @@
         ],
         "price_vs_insider_pct": 1.08,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:AAT|RADY ERNEST S|2026-08-05|3000.0000|23.0400",
-      "source_key": "AAT|RADY ERNEST S|2026-08-05|3000.0000|23.0400",
-      "accession": null,
-      "ticker": "AAT",
-      "issuer": "American Assets Trust, Inc.",
-      "issuer_cik": null,
-      "insider": "RADY ERNEST S",
-      "insider_cik": "RADY ERNEST S",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-08-05",
-      "filed_at": null,
-      "shares": 3000.0,
-      "avg_price": 23.04,
-      "value_usd": 69120.0,
-      "post_shares": 107859.0,
-      "prior_shares_est": 104859.0,
-      "position_increase_pct": 2.86,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aat",
-      "sec_url": "https://xoomar.com/markets/insiders/aat",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 22.55,
-        "sma20": 23.8685,
-        "sma50": 24.2814,
-        "atr14_pct": 2.42,
-        "avg_dollar_volume_20d": 9925161.82,
-        "volume_ratio_20d": 0.49,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1384365559.96,
-        "name": "American Assets Trust, Inc.",
-        "spread_pct": 0.222,
-        "short_float_pct": 4.21
-      },
-      "conviction": {
-        "score": 38,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 188.2,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 816771.66,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -2.13,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -5582,7 +5491,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5688,7 +5597,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5794,7 +5703,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5900,7 +5809,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -6006,7 +5915,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 0,
@@ -6053,7 +5962,7 @@
         "sma20": 61.5555,
         "sma50": 69.2128,
         "atr14_pct": 10.84,
-        "avg_dollar_volume_20d": 19615678.21,
+        "avg_dollar_volume_20d": 19619932.06,
         "volume_ratio_20d": 0.55,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
@@ -6112,7 +6021,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6218,7 +6127,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6228,6 +6137,112 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 2.01,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AAT|RADY ERNEST S|2026-08-05|3000.0000|23.0400",
+      "source_key": "AAT|RADY ERNEST S|2026-08-05|3000.0000|23.0400",
+      "accession": null,
+      "ticker": "AAT",
+      "issuer": "American Assets Trust, Inc.",
+      "issuer_cik": null,
+      "insider": "RADY ERNEST S",
+      "insider_cik": "RADY ERNEST S",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-08-05",
+      "filed_at": null,
+      "shares": 3000.0,
+      "avg_price": 23.04,
+      "value_usd": 69120.0,
+      "post_shares": 107859.0,
+      "prior_shares_est": 104859.0,
+      "position_increase_pct": 2.86,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aat",
+      "sec_url": "https://xoomar.com/markets/insiders/aat",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 22.56,
+        "sma20": 23.869,
+        "sma50": 24.2816,
+        "atr14_pct": 2.42,
+        "avg_dollar_volume_20d": 9925263.51,
+        "volume_ratio_20d": 0.49,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1384979483.37,
+        "name": "American Assets Trust, Inc.",
+        "spread_pct": 26.244,
+        "short_float_pct": 4.21
+      },
+      "conviction": {
+        "score": 34,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 189.2,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 816771.66,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -2.08,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6324,7 +6339,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6371,7 +6386,7 @@
         "sma20": 2.1372,
         "sma50": 2.2386,
         "atr14_pct": 7.61,
-        "avg_dollar_volume_20d": 19643.22,
+        "avg_dollar_volume_20d": 19639.73,
         "volume_ratio_20d": 0.46,
         "trend": "neutral",
         "technical_confirmation": "watch",
@@ -6430,7 +6445,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6538,7 +6553,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6581,11 +6596,11 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 26.5,
-        "sma20": 26.8965,
-        "sma50": 26.8456,
-        "atr14_pct": 0.59,
-        "avg_dollar_volume_20d": 508802.32,
+        "price": 26.53,
+        "sma20": 26.898,
+        "sma50": 26.8462,
+        "atr14_pct": 0.6,
+        "avg_dollar_volume_20d": 508802.6,
         "volume_ratio_20d": 0.01,
         "trend": "neutral",
         "technical_confirmation": "unconfirmed",
@@ -6643,7 +6658,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6652,7 +6667,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -1.19,
+        "price_vs_insider_pct": -1.08,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6686,15 +6701,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.24,
-        "sma20": 4.937,
-        "sma50": 5.4842,
-        "atr14_pct": 8.66,
-        "avg_dollar_volume_20d": 12164940.11,
+        "price": 4.23,
+        "sma20": 4.9365,
+        "sma50": 5.484,
+        "atr14_pct": 8.68,
+        "avg_dollar_volume_20d": 12163728.24,
         "volume_ratio_20d": 0.97,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 404200785.14,
+        "market_cap": 403247504.99,
         "name": "Bed Bath & Beyond, Inc.",
         "spread_pct": null,
         "short_float_pct": null
@@ -6749,7 +6764,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -6758,7 +6773,7 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -5.99,
+        "price_vs_insider_pct": -6.21,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -6842,7 +6857,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6933,7 +6948,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7024,7 +7039,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 236.2,
+        "freshness_hours": 237.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7069,7 +7084,7 @@
         "sma20": 2.1372,
         "sma50": 2.2386,
         "atr14_pct": 7.61,
-        "avg_dollar_volume_20d": 19643.22,
+        "avg_dollar_volume_20d": 19639.73,
         "volume_ratio_20d": 0.46,
         "trend": "neutral",
         "technical_confirmation": "watch",
@@ -7128,7 +7143,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7236,7 +7251,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7331,7 +7346,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7435,7 +7450,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.2,
+        "freshness_hours": 189.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7480,15 +7495,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.4428,
-        "sma20": 0.4214,
-        "sma50": 0.4546,
-        "atr14_pct": 10.9,
-        "avg_dollar_volume_20d": 39302.31,
-        "volume_ratio_20d": 0.18,
+        "price": 0.4512,
+        "sma20": 0.4219,
+        "sma50": 0.4548,
+        "atr14_pct": 10.69,
+        "avg_dollar_volume_20d": 39419.87,
+        "volume_ratio_20d": 0.23,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 88426387.94,
+        "market_cap": 90103857.94,
         "name": "Jushi Holdings Inc.",
         "spread_pct": 1.88,
         "short_float_pct": null
@@ -7543,7 +7558,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7553,7 +7568,7 @@
           "Fiyat $1 altında",
           "20g dolar hacmi $0.5M altında"
         ],
-        "price_vs_insider_pct": 2.98,
+        "price_vs_insider_pct": 4.93,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -7637,7 +7652,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 164.2,
+        "freshness_hours": 165.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7728,7 +7743,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 212.2,
+        "freshness_hours": 213.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7819,7 +7834,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.2,
+        "freshness_hours": 69.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7910,7 +7925,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8001,7 +8016,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 140.2,
+        "freshness_hours": 141.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -8092,7 +8107,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.2,
+        "freshness_hours": 45.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8183,7 +8198,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.2,
+        "freshness_hours": 45.2,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
