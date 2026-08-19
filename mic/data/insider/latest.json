@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-19T22:50:38Z",
+  "generated_at": "2026-08-19T23:19:43Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-19T22:50:38.762Z",
+  "provider_updated_at": "2026-08-19T23:19:43.809Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -16,7 +16,7 @@
     "tickers": 55,
     "cluster_events": 33,
     "management_cluster_events": 23,
-    "high_conviction": 3,
+    "high_conviction": 0,
     "risk_blocked": 28
   },
   "events": [
@@ -60,11 +60,11 @@
         "technical_confirmation": "confirmed",
         "market_cap": 859079049.59,
         "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
+        "spread_pct": 1.507,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 76,
+        "score": 72,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -97,7 +97,7 @@
             "max": 8
           },
           "spread": {
-            "points": 4,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -113,15 +113,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
         "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
         "price_vs_insider_pct": 12.67,
-        "verdict": "YÜKSEK İNANÇ ADAYI"
+        "verdict": "İZLE / TEYİT BEKLE"
       }
     },
     {
@@ -164,11 +166,11 @@
         "technical_confirmation": "confirmed",
         "market_cap": 859079049.59,
         "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
+        "spread_pct": 1.507,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 76,
+        "score": 72,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -201,7 +203,7 @@
             "max": 8
           },
           "spread": {
-            "points": 4,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -217,15 +219,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
         "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
         "price_vs_insider_pct": 6.85,
-        "verdict": "YÜKSEK İNANÇ ADAYI"
+        "verdict": "İZLE / TEYİT BEKLE"
       }
     },
     {
@@ -268,11 +272,11 @@
         "technical_confirmation": "confirmed",
         "market_cap": 859079049.59,
         "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
+        "spread_pct": 1.507,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 76,
+        "score": 72,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -305,7 +309,7 @@
             "max": 8
           },
           "spread": {
-            "points": 4,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -321,118 +325,16 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
         "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
         "price_vs_insider_pct": 7.43,
-        "verdict": "YÜKSEK İNANÇ ADAYI"
-      }
-    },
-    {
-      "id": "xoomar:ANGX|HARMON JEFFREY|2026-08-14|51380.0000|4.2646",
-      "source_key": "ANGX|HARMON JEFFREY|2026-08-14|51380.0000|4.2646",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Harmon Jeffrey",
-      "insider_cik": "Harmon Jeffrey",
-      "role": "Officer",
-      "officer_title": "Chief Content Officer",
-      "role_points": 9,
-      "is_entity": false,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 51380.0,
-      "avg_price": 4.2646,
-      "value_usd": 219115.15,
-      "post_shares": 256404.0,
-      "prior_shares_est": 205024.0,
-      "position_increase_pct": 25.06,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.6,
-        "sma20": 4.2425,
-        "sma50": 3.8012,
-        "atr14_pct": 7.69,
-        "avg_dollar_volume_20d": 7088132.5,
-        "volume_ratio_20d": 1.16,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 859079049.59,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 71,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 9,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 10,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 142.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 7.86,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -529,7 +431,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -637,7 +539,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -746,7 +648,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -855,7 +757,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -872,26 +774,26 @@
       }
     },
     {
-      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
-      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
+      "id": "xoomar:ANGX|HARMON JEFFREY|2026-08-14|51380.0000|4.2646",
+      "source_key": "ANGX|HARMON JEFFREY|2026-08-14|51380.0000|4.2646",
       "accession": null,
       "ticker": "ANGX",
       "issuer": "Angel Studios, Inc.",
       "issuer_cik": null,
-      "insider": "Sarowitz Steven I",
-      "insider_cik": "Sarowitz Steven I",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
+      "insider": "Harmon Jeffrey",
+      "insider_cik": "Harmon Jeffrey",
+      "role": "Officer",
+      "officer_title": "Chief Content Officer",
+      "role_points": 9,
       "is_entity": false,
-      "transaction_date": "2026-08-13",
+      "transaction_date": "2026-08-14",
       "filed_at": null,
-      "shares": 107662.0,
-      "avg_price": 4.1173,
-      "value_usd": 443276.75,
-      "post_shares": 683303.0,
-      "prior_shares_est": 575641.0,
-      "position_increase_pct": 18.7,
+      "shares": 51380.0,
+      "avg_price": 4.2646,
+      "value_usd": 219115.15,
+      "post_shares": 256404.0,
+      "prior_shares_est": 205024.0,
+      "position_increase_pct": 25.06,
       "new_position": false,
       "transaction_count": 1,
       "source_url": "https://xoomar.com/markets/insiders/angx",
@@ -911,23 +813,23 @@
         "technical_confirmation": "confirmed",
         "market_cap": 859079049.59,
         "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
+        "spread_pct": 1.507,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 66,
+        "score": 67,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
-            "points": 3,
+            "points": 9,
             "max": 12
           },
           "purchase_value": {
-            "points": 10,
+            "points": 7,
             "max": 15
           },
           "position_increase": {
-            "points": 8,
+            "points": 10,
             "max": 12
           },
           "cluster_buying": {
@@ -948,7 +850,7 @@
             "max": 8
           },
           "spread": {
-            "points": 4,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -964,14 +866,16 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
         "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 11.72,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 7.86,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1068,7 +972,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1172,7 +1076,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -1183,6 +1087,112 @@
         ],
         "price_vs_insider_pct": 16.38,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
+      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Sarowitz Steven I",
+      "insider_cik": "Sarowitz Steven I",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-13",
+      "filed_at": null,
+      "shares": 107662.0,
+      "avg_price": 4.1173,
+      "value_usd": 443276.75,
+      "post_shares": 683303.0,
+      "prior_shares_est": 575641.0,
+      "position_increase_pct": 18.7,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.6,
+        "sma20": 4.2425,
+        "sma50": 3.8012,
+        "atr14_pct": 7.69,
+        "avg_dollar_volume_20d": 7088132.5,
+        "volume_ratio_20d": 1.16,
+        "trend": "bullish",
+        "technical_confirmation": "confirmed",
+        "market_cap": 859079049.59,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.507,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 62,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 6,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 11.72,
+        "verdict": "İZLE / TEYİT BEKLE"
       }
     },
     {
@@ -1278,7 +1288,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -1387,7 +1397,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -1491,7 +1501,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -1499,110 +1509,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 9.64,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-14|57922.0000|4.2610",
-      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-14|57922.0000|4.2610",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Sarowitz Steven I",
-      "insider_cik": "Sarowitz Steven I",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 57922.0,
-      "avg_price": 4.261,
-      "value_usd": 246805.64,
-      "post_shares": 741225.0,
-      "prior_shares_est": 683303.0,
-      "position_increase_pct": 8.48,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.6,
-        "sma20": 4.2425,
-        "sma50": 3.8012,
-        "atr14_pct": 7.69,
-        "avg_dollar_volume_20d": 7088132.5,
-        "volume_ratio_20d": 1.16,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 859079049.59,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 0.214,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 60,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 142.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 7.96,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1699,7 +1605,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1806,7 +1712,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1912,7 +1818,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -2018,7 +1924,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -2125,7 +2031,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2133,6 +2039,112 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 0.63,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-14|57922.0000|4.2610",
+      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-14|57922.0000|4.2610",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Sarowitz Steven I",
+      "insider_cik": "Sarowitz Steven I",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 57922.0,
+      "avg_price": 4.261,
+      "value_usd": 246805.64,
+      "post_shares": 741225.0,
+      "prior_shares_est": 683303.0,
+      "position_increase_pct": 8.48,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.6,
+        "sma20": 4.2425,
+        "sma50": 3.8012,
+        "atr14_pct": 7.69,
+        "avg_dollar_volume_20d": 7088132.5,
+        "volume_ratio_20d": 1.16,
+        "trend": "bullish",
+        "technical_confirmation": "confirmed",
+        "market_cap": 859079049.59,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.507,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 56,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 6,
+            "max": 6
+          }
+        },
+        "freshness_hours": 143.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 7.96,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2229,7 +2241,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2333,7 +2345,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2439,7 +2451,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2483,11 +2495,11 @@
       "possible_private_placement": false,
       "market": {
         "price": 85.0,
-        "sma20": 66.3585,
-        "sma50": 62.4268,
-        "atr14_pct": 5.42,
-        "avg_dollar_volume_20d": 57662172.42,
-        "volume_ratio_20d": 2.16,
+        "sma20": 66.1335,
+        "sma50": 62.8398,
+        "atr14_pct": 5.48,
+        "avg_dollar_volume_20d": 56873161.02,
+        "volume_ratio_20d": 2.19,
         "trend": "bullish",
         "technical_confirmation": "confirmed",
         "market_cap": 7126131655.0,
@@ -2545,7 +2557,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2651,7 +2663,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.8,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2757,7 +2769,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2865,7 +2877,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2971,7 +2983,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3075,7 +3087,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3181,7 +3193,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3287,7 +3299,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3393,7 +3405,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3499,7 +3511,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -3545,10 +3557,10 @@
       "possible_private_placement": false,
       "market": {
         "price": 2.82,
-        "sma20": 4.075,
-        "sma50": 4.7925,
-        "atr14_pct": 19.11,
-        "avg_dollar_volume_20d": 4084698.36,
+        "sma20": 4.0952,
+        "sma50": 4.764,
+        "atr14_pct": 18.99,
+        "avg_dollar_volume_20d": 4026504.36,
         "volume_ratio_20d": 0.4,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
@@ -3607,7 +3619,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3713,7 +3725,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -3820,7 +3832,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3926,7 +3938,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3971,7 +3983,7 @@
       "market": {
         "price": 9.11,
         "sma20": 9.4585,
-        "sma50": 11.7908,
+        "sma50": 12.0046,
         "atr14_pct": 11.22,
         "avg_dollar_volume_20d": 48521194.62,
         "volume_ratio_20d": 0.77,
@@ -4032,7 +4044,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4140,7 +4152,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -4247,7 +4259,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4292,11 +4304,11 @@
       "possible_private_placement": false,
       "market": {
         "price": 34.0,
-        "sma20": 32.637,
-        "sma50": 28.322,
-        "atr14_pct": 2.59,
-        "avg_dollar_volume_20d": 121564.3,
-        "volume_ratio_20d": 0.53,
+        "sma20": 32.7245,
+        "sma50": 28.7638,
+        "atr14_pct": 2.45,
+        "avg_dollar_volume_20d": 113851.05,
+        "volume_ratio_20d": 0.57,
         "trend": "bullish",
         "technical_confirmation": "watch",
         "market_cap": 73191902.0,
@@ -4354,7 +4366,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4461,7 +4473,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -4568,7 +4580,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -4663,7 +4675,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4767,7 +4779,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4873,7 +4885,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -4981,7 +4993,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5087,7 +5099,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -5182,7 +5194,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5286,7 +5298,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5377,7 +5389,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5419,11 +5431,11 @@
       "possible_private_placement": false,
       "market": {
         "price": 1.61,
-        "sma20": 2.4965,
-        "sma50": 2.9182,
-        "atr14_pct": 18.86,
-        "avg_dollar_volume_20d": 2267271.35,
-        "volume_ratio_20d": 1.02,
+        "sma20": 2.4845,
+        "sma50": 2.915,
+        "atr14_pct": 19.08,
+        "avg_dollar_volume_20d": 2237519.85,
+        "volume_ratio_20d": 1.03,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
         "market_cap": 207138072.91,
@@ -5481,7 +5493,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5576,7 +5588,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5619,7 +5631,7 @@
       "market": {
         "price": 9.11,
         "sma20": 9.4585,
-        "sma50": 11.7908,
+        "sma50": 12.0046,
         "atr14_pct": 11.22,
         "avg_dollar_volume_20d": 48521194.62,
         "volume_ratio_20d": 0.77,
@@ -5680,7 +5692,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -5788,7 +5800,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5892,7 +5904,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5999,7 +6011,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -6107,7 +6119,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6154,11 +6166,11 @@
       "possible_private_placement": false,
       "market": {
         "price": 1.61,
-        "sma20": 2.4965,
-        "sma50": 2.9182,
-        "atr14_pct": 18.86,
-        "avg_dollar_volume_20d": 2267271.35,
-        "volume_ratio_20d": 1.02,
+        "sma20": 2.4845,
+        "sma50": 2.915,
+        "atr14_pct": 19.08,
+        "avg_dollar_volume_20d": 2237519.85,
+        "volume_ratio_20d": 1.03,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
         "market_cap": 207138072.91,
@@ -6216,7 +6228,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6311,7 +6323,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6402,7 +6414,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6506,7 +6518,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6602,7 +6614,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6693,7 +6705,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.8,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6784,7 +6796,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6888,7 +6900,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -6982,7 +6994,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7073,7 +7085,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7164,7 +7176,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7268,7 +7280,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -7362,7 +7374,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7466,7 +7478,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -7560,7 +7572,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7651,7 +7663,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 190.8,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7742,7 +7754,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7833,7 +7845,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 166.8,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7924,7 +7936,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 142.8,
+        "freshness_hours": 143.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8015,7 +8027,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 46.8,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8106,7 +8118,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8197,7 +8209,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 70.8,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
