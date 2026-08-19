@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-19T12:39:15Z",
+  "generated_at": "2026-08-19T13:41:21Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-19T12:39:16.551Z",
+  "provider_updated_at": "2026-08-19T13:41:22.396Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -20,324 +20,6 @@
     "risk_blocked": 33
   },
   "events": [
-    {
-      "id": "xoomar:ANGX|HARMON JEFFREY|2026-08-13|178700.0000|4.0828",
-      "source_key": "ANGX|HARMON JEFFREY|2026-08-13|178700.0000|4.0828",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Harmon Jeffrey",
-      "insider_cik": "Harmon Jeffrey",
-      "role": "Officer",
-      "officer_title": "Chief Content Officer",
-      "role_points": 9,
-      "is_entity": false,
-      "transaction_date": "2026-08-13",
-      "filed_at": null,
-      "shares": 178700.0,
-      "avg_price": 4.0828,
-      "value_usd": 729596.36,
-      "post_shares": 205024.0,
-      "prior_shares_est": 26324.0,
-      "position_increase_pct": 678.85,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 1.663,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 72,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 9,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 156.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş"
-        ],
-        "price_vs_insider_pct": 18.79,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:ANGX|HARMON NEAL|2026-08-13|29035.6590|4.3053",
-      "source_key": "ANGX|HARMON NEAL|2026-08-13|29035.6590|4.3053",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Harmon Neal",
-      "insider_cik": "Harmon Neal",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-13",
-      "filed_at": null,
-      "shares": 29035.659,
-      "avg_price": 4.3053,
-      "value_usd": 125007.22,
-      "post_shares": 55530.659,
-      "prior_shares_est": 26495.0,
-      "position_increase_pct": 109.59,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 1.663,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 72,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 156.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş"
-        ],
-        "price_vs_insider_pct": 12.65,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:ANGX|HARMON NEAL|2026-08-14|29193.1000|4.2820",
-      "source_key": "ANGX|HARMON NEAL|2026-08-14|29193.1000|4.2820",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Harmon Neal",
-      "insider_cik": "Harmon Neal",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 29193.1,
-      "avg_price": 4.282,
-      "value_usd": 125004.85,
-      "post_shares": 84723.759,
-      "prior_shares_est": 55530.659,
-      "position_increase_pct": 52.57,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 1.663,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 72,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 132.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş"
-        ],
-        "price_vs_insider_pct": 13.26,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
     {
       "id": "xoomar:APLM|CHEN HUNG-WEN|2026-08-14|166667.0000|12.0000",
       "source_key": "APLM|CHEN HUNG-WEN|2026-08-14|166667.0000|12.0000",
@@ -368,15 +50,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 23.92,
-        "sma20": 18.6405,
-        "sma50": 18.0057,
-        "atr14_pct": 6.41,
-        "avg_dollar_volume_20d": 588105.44,
-        "volume_ratio_20d": 0.57,
+        "price": 21.0,
+        "sma20": 18.7645,
+        "sma50": 18.1473,
+        "atr14_pct": 8.02,
+        "avg_dollar_volume_20d": 572115.44,
+        "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 69273587.98,
+        "market_cap": 60817113.0,
         "name": "Apollomics Inc.",
         "spread_pct": 1.921,
         "short_float_pct": 0.6
@@ -431,7 +113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -440,9 +122,327 @@
         "risk_flags": [
           "Micro/small cap riski",
           "Spread geniş",
-          "Fiyat insider alımından sonra %99 yükselmiş"
+          "Fiyat insider alımından sonra %75 yükselmiş"
         ],
-        "price_vs_insider_pct": 99.33,
+        "price_vs_insider_pct": 75.0,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|HARMON JEFFREY|2026-08-13|178700.0000|4.0828",
+      "source_key": "ANGX|HARMON JEFFREY|2026-08-13|178700.0000|4.0828",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Harmon Jeffrey",
+      "insider_cik": "Harmon Jeffrey",
+      "role": "Officer",
+      "officer_title": "Chief Content Officer",
+      "role_points": 9,
+      "is_entity": false,
+      "transaction_date": "2026-08-13",
+      "filed_at": null,
+      "shares": 178700.0,
+      "avg_price": 4.0828,
+      "value_usd": 729596.36,
+      "post_shares": 205024.0,
+      "prior_shares_est": 26324.0,
+      "position_increase_pct": 678.85,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.663,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 69,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 9,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 157.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 13.53,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|HARMON NEAL|2026-08-13|29035.6590|4.3053",
+      "source_key": "ANGX|HARMON NEAL|2026-08-13|29035.6590|4.3053",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Harmon Neal",
+      "insider_cik": "Harmon Neal",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-13",
+      "filed_at": null,
+      "shares": 29035.659,
+      "avg_price": 4.3053,
+      "value_usd": 125007.22,
+      "post_shares": 55530.659,
+      "prior_shares_est": 26495.0,
+      "position_increase_pct": 109.59,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.663,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 69,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 157.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 7.66,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|HARMON NEAL|2026-08-14|29193.1000|4.2820",
+      "source_key": "ANGX|HARMON NEAL|2026-08-14|29193.1000|4.2820",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Harmon Neal",
+      "insider_cik": "Harmon Neal",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 29193.1,
+      "avg_price": 4.282,
+      "value_usd": 125004.85,
+      "post_shares": 84723.759,
+      "prior_shares_est": 55530.659,
+      "position_increase_pct": 52.57,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.663,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 69,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 133.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 8.24,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -476,15 +476,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": true,
       "market": {
-        "price": 23.92,
-        "sma20": 18.6405,
-        "sma50": 18.0057,
-        "atr14_pct": 6.41,
-        "avg_dollar_volume_20d": 588105.44,
-        "volume_ratio_20d": 0.57,
+        "price": 21.0,
+        "sma20": 18.7645,
+        "sma50": 18.1473,
+        "atr14_pct": 8.02,
+        "avg_dollar_volume_20d": 572115.44,
+        "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 69273587.98,
+        "market_cap": 60817113.0,
         "name": "Apollomics Inc.",
         "spread_pct": 1.921,
         "short_float_pct": 0.6
@@ -539,7 +539,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -549,9 +549,9 @@
           "Micro/small cap riski",
           "Spread geniş",
           "Aynı gün/aynı fiyat çoklu P alımı: private placement veya finansman olabilir",
-          "Fiyat insider alımından sonra %59 yükselmiş"
+          "Fiyat insider alımından sonra %40 yükselmiş"
         ],
-        "price_vs_insider_pct": 59.47,
+        "price_vs_insider_pct": 40.0,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -585,15 +585,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": true,
       "market": {
-        "price": 23.92,
-        "sma20": 18.6405,
-        "sma50": 18.0057,
-        "atr14_pct": 6.41,
-        "avg_dollar_volume_20d": 588105.44,
-        "volume_ratio_20d": 0.57,
+        "price": 21.0,
+        "sma20": 18.7645,
+        "sma50": 18.1473,
+        "atr14_pct": 8.02,
+        "avg_dollar_volume_20d": 572115.44,
+        "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 69273587.98,
+        "market_cap": 60817113.0,
         "name": "Apollomics Inc.",
         "spread_pct": 1.921,
         "short_float_pct": 0.6
@@ -648,7 +648,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -658,9 +658,9 @@
           "Micro/small cap riski",
           "Spread geniş",
           "Aynı gün/aynı fiyat çoklu P alımı: private placement veya finansman olabilir",
-          "Fiyat insider alımından sonra %59 yükselmiş"
+          "Fiyat insider alımından sonra %40 yükselmiş"
         ],
-        "price_vs_insider_pct": 59.47,
+        "price_vs_insider_pct": 40.0,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -694,15 +694,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": true,
       "market": {
-        "price": 23.92,
-        "sma20": 18.6405,
-        "sma50": 18.0057,
-        "atr14_pct": 6.41,
-        "avg_dollar_volume_20d": 588105.44,
-        "volume_ratio_20d": 0.57,
+        "price": 21.0,
+        "sma20": 18.7645,
+        "sma50": 18.1473,
+        "atr14_pct": 8.02,
+        "avg_dollar_volume_20d": 572115.44,
+        "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 69273587.98,
+        "market_cap": 60817113.0,
         "name": "Apollomics Inc.",
         "spread_pct": 1.921,
         "short_float_pct": 0.6
@@ -757,7 +757,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -767,9 +767,9 @@
           "Micro/small cap riski",
           "Spread geniş",
           "Aynı gün/aynı fiyat çoklu P alımı: private placement veya finansman olabilir",
-          "Fiyat insider alımından sonra %59 yükselmiş"
+          "Fiyat insider alımından sonra %40 yükselmiş"
         ],
-        "price_vs_insider_pct": 59.47,
+        "price_vs_insider_pct": 40.0,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -803,21 +803,21 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
         "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
         "name": "Angel Studios, Inc.",
         "spread_pct": 1.663,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 67,
+        "score": 64,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -862,11 +862,11 @@
             "max": 6
           },
           "technical_confirmation": {
-            "points": 6,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -875,7 +875,113 @@
         "risk_flags": [
           "Spread geniş"
         ],
-        "price_vs_insider_pct": 13.73,
+        "price_vs_insider_pct": 8.69,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:AMRZ|ORAN BARIS|2026-08-12|3000.0000|47.1300",
+      "source_key": "AMRZ|ORAN BARIS|2026-08-12|3000.0000|47.1300",
+      "accession": null,
+      "ticker": "AMRZ",
+      "issuer": "Amrize Ltd",
+      "issuer_cik": null,
+      "insider": "Oran Baris",
+      "insider_cik": "Oran Baris",
+      "role": "CFO",
+      "officer_title": "Chief Financial Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-12",
+      "filed_at": null,
+      "shares": 3000.0,
+      "avg_price": 47.13,
+      "value_usd": 141390.0,
+      "post_shares": 6000.0,
+      "prior_shares_est": 3000.0,
+      "position_increase_pct": 100.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrz",
+      "sec_url": "https://xoomar.com/markets/insiders/amrz",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 45.45,
+        "sma20": 48.448,
+        "sma50": 50.9428,
+        "atr14_pct": 3.44,
+        "avg_dollar_volume_20d": 168763349.95,
+        "volume_ratio_20d": 0.07,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 24890585140.44,
+        "name": "Amrize Ltd",
+        "spread_pct": 0.177,
+        "short_float_pct": 1.47
+      },
+      "conviction": {
+        "score": 63,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 181.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 259159.2,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -3.56,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -909,21 +1015,21 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 27.25,
-        "sma20": 25.813,
-        "sma50": 25.2174,
+        "price": 28.035,
+        "sma20": 25.9738,
+        "sma50": 25.2657,
         "atr14_pct": 2.14,
-        "avg_dollar_volume_20d": 1016317098.93,
-        "volume_ratio_20d": 0.88,
+        "avg_dollar_volume_20d": 984643288.06,
+        "volume_ratio_20d": 0.17,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 155316105300.25,
+        "market_cap": 159704856572.88,
         "name": "Pfizer, Inc.",
-        "spread_pct": 0.109,
+        "spread_pct": 0.182,
         "short_float_pct": 2.83
       },
       "conviction": {
-        "score": 63,
+        "score": 62,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -956,7 +1062,7 @@
             "max": 8
           },
           "spread": {
-            "points": 5,
+            "points": 4,
             "max": 5
           },
           "short_interest": {
@@ -972,120 +1078,14 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
         "cluster_value_10d": 1000920.0,
         "risk_status": "PASS",
         "risk_flags": [],
-        "price_vs_insider_pct": 3.45,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
-      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
-      "accession": null,
-      "ticker": "ANGX",
-      "issuer": "Angel Studios, Inc.",
-      "issuer_cik": null,
-      "insider": "Sarowitz Steven I",
-      "insider_cik": "Sarowitz Steven I",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-13",
-      "filed_at": null,
-      "shares": 107662.0,
-      "avg_price": 4.1173,
-      "value_usd": 443276.75,
-      "post_shares": 683303.0,
-      "prior_shares_est": 575641.0,
-      "position_increase_pct": 18.7,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/angx",
-      "sec_url": "https://xoomar.com/markets/insiders/angx",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
-        "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
-        "name": "Angel Studios, Inc.",
-        "spread_pct": 1.663,
-        "short_float_pct": 4.62
-      },
-      "conviction": {
-        "score": 62,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 6,
-            "max": 6
-          }
-        },
-        "freshness_hours": 156.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 3,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 1888805.97,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş"
-        ],
-        "price_vs_insider_pct": 17.8,
+        "price_vs_insider_pct": 6.44,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1119,17 +1119,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 11.12,
-        "sma20": 7.4733,
-        "sma50": 6.8274,
-        "atr14_pct": 8.31,
-        "avg_dollar_volume_20d": 84100338.84,
-        "volume_ratio_20d": 0.85,
+        "price": 11.78,
+        "sma20": 7.7757,
+        "sma50": 6.9546,
+        "atr14_pct": 8.1,
+        "avg_dollar_volume_20d": 84016182.47,
+        "volume_ratio_20d": 0.12,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 3409519466.83,
+        "market_cap": 3624147434.55,
         "name": "AbCellera Biologics Inc.",
-        "spread_pct": 49.523,
+        "spread_pct": 54.452,
         "short_float_pct": 20.41
       },
       "conviction": {
@@ -1182,7 +1182,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -1191,7 +1191,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 7.75,
+        "price_vs_insider_pct": 14.15,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1225,15 +1225,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": true,
       "market": {
-        "price": 23.92,
-        "sma20": 18.6405,
-        "sma50": 18.0057,
-        "atr14_pct": 6.41,
-        "avg_dollar_volume_20d": 588105.44,
-        "volume_ratio_20d": 0.57,
+        "price": 21.0,
+        "sma20": 18.7645,
+        "sma50": 18.1473,
+        "atr14_pct": 8.02,
+        "avg_dollar_volume_20d": 572115.44,
+        "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 69273587.98,
+        "market_cap": 60817113.0,
         "name": "Apollomics Inc.",
         "spread_pct": 1.921,
         "short_float_pct": 0.6
@@ -1288,7 +1288,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 3,
@@ -1298,115 +1298,9 @@
           "Micro/small cap riski",
           "Spread geniş",
           "Aynı gün/aynı fiyat çoklu P alımı: private placement veya finansman olabilir",
-          "Fiyat insider alımından sonra %59 yükselmiş"
+          "Fiyat insider alımından sonra %40 yükselmiş"
         ],
-        "price_vs_insider_pct": 59.47,
-        "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:AMRZ|ORAN BARIS|2026-08-12|3000.0000|47.1300",
-      "source_key": "AMRZ|ORAN BARIS|2026-08-12|3000.0000|47.1300",
-      "accession": null,
-      "ticker": "AMRZ",
-      "issuer": "Amrize Ltd",
-      "issuer_cik": null,
-      "insider": "Oran Baris",
-      "insider_cik": "Oran Baris",
-      "role": "CFO",
-      "officer_title": "Chief Financial Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-12",
-      "filed_at": null,
-      "shares": 3000.0,
-      "avg_price": 47.13,
-      "value_usd": 141390.0,
-      "post_shares": 6000.0,
-      "prior_shares_est": 3000.0,
-      "position_increase_pct": 100.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrz",
-      "sec_url": "https://xoomar.com/markets/insiders/amrz",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 44.63,
-        "sma20": 48.6625,
-        "sma50": 51.1108,
-        "atr14_pct": 3.57,
-        "avg_dollar_volume_20d": 172982588.67,
-        "volume_ratio_20d": 1.14,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 24409292075.9,
-        "name": "Amrize Ltd",
-        "spread_pct": null,
-        "short_float_pct": 1.47
-      },
-      "conviction": {
-        "score": 62,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 180.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 259159.2,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -5.3,
+        "price_vs_insider_pct": 40.0,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1440,22 +1334,22 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 44.63,
-        "sma20": 48.6625,
-        "sma50": 51.1108,
-        "atr14_pct": 3.57,
-        "avg_dollar_volume_20d": 172982588.67,
-        "volume_ratio_20d": 1.14,
+        "price": 45.45,
+        "sma20": 48.448,
+        "sma50": 50.9428,
+        "atr14_pct": 3.44,
+        "avg_dollar_volume_20d": 168763349.95,
+        "volume_ratio_20d": 0.07,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 24409292075.9,
+        "market_cap": 24890585140.44,
         "name": "Amrize Ltd",
-        "spread_pct": null,
+        "spread_pct": 0.177,
         "short_float_pct": 1.47
       },
       "conviction": {
-        "score": 60,
-        "data_completeness_pct": 90,
+        "score": 61,
+        "data_completeness_pct": 95,
         "components": {
           "insider_role": {
             "points": 9,
@@ -1487,7 +1381,7 @@
             "max": 8
           },
           "spread": {
-            "points": null,
+            "points": 4,
             "max": 5
           },
           "short_interest": {
@@ -1503,7 +1397,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1512,7 +1406,113 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -4.88,
+        "price_vs_insider_pct": -3.13,
+        "verdict": "İZLE / TEYİT BEKLE"
+      }
+    },
+    {
+      "id": "xoomar:ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
+      "source_key": "ANGX|SAROWITZ STEVEN I|2026-08-13|107662.0000|4.1173",
+      "accession": null,
+      "ticker": "ANGX",
+      "issuer": "Angel Studios, Inc.",
+      "issuer_cik": null,
+      "insider": "Sarowitz Steven I",
+      "insider_cik": "Sarowitz Steven I",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-13",
+      "filed_at": null,
+      "shares": 107662.0,
+      "avg_price": 4.1173,
+      "value_usd": 443276.75,
+      "post_shares": 683303.0,
+      "prior_shares_est": 575641.0,
+      "position_increase_pct": 18.7,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/angx",
+      "sec_url": "https://xoomar.com/markets/insiders/angx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
+        "name": "Angel Studios, Inc.",
+        "spread_pct": 1.663,
+        "short_float_pct": 4.62
+      },
+      "conviction": {
+        "score": 59,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 157.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 3,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 1888805.97,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 12.57,
         "verdict": "İZLE / TEYİT BEKLE"
       }
     },
@@ -1546,17 +1546,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 9.0,
-        "sma20": 10.3018,
-        "sma50": 13.2573,
-        "atr14_pct": 13.27,
-        "avg_dollar_volume_20d": 139878475.16,
-        "volume_ratio_20d": 1.48,
+        "price": 8.54,
+        "sma20": 10.1158,
+        "sma50": 13.0583,
+        "atr14_pct": 12.35,
+        "avg_dollar_volume_20d": 137725071.74,
+        "volume_ratio_20d": 0.09,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 2446040205.0,
+        "market_cap": 2318302477.28,
         "name": "Bitdeer Technologies Group",
-        "spread_pct": 52.775,
+        "spread_pct": 51.97,
         "short_float_pct": 31.59
       },
       "conviction": {
@@ -1609,7 +1609,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1618,7 +1618,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -0.44,
+        "price_vs_insider_pct": -5.53,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1652,17 +1652,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 9.0,
-        "sma20": 10.3018,
-        "sma50": 13.2573,
-        "atr14_pct": 13.27,
-        "avg_dollar_volume_20d": 139878475.16,
-        "volume_ratio_20d": 1.48,
+        "price": 8.54,
+        "sma20": 10.1158,
+        "sma50": 13.0583,
+        "atr14_pct": 12.35,
+        "avg_dollar_volume_20d": 137725071.74,
+        "volume_ratio_20d": 0.09,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 2446040205.0,
+        "market_cap": 2318302477.28,
         "name": "Bitdeer Technologies Group",
-        "spread_pct": 52.775,
+        "spread_pct": 51.97,
         "short_float_pct": 31.59
       },
       "conviction": {
@@ -1715,7 +1715,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1724,7 +1724,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 1.81,
+        "price_vs_insider_pct": -3.39,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1758,22 +1758,22 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 12.91,
-        "sma20": 11.02,
-        "sma50": 11.8828,
-        "atr14_pct": 6.8,
-        "avg_dollar_volume_20d": 108660908.34,
-        "volume_ratio_20d": 0.77,
+        "price": 12.35,
+        "sma20": 11.1255,
+        "sma50": 11.8336,
+        "atr14_pct": 6.76,
+        "avg_dollar_volume_20d": 102807013.1,
+        "volume_ratio_20d": 0.1,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 2909359506.93,
+        "market_cap": 2792489450.15,
         "name": "Infleqtion, Inc.",
-        "spread_pct": null,
+        "spread_pct": 0.468,
         "short_float_pct": null
       },
       "conviction": {
         "score": 57,
-        "data_completeness_pct": 85,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 3,
@@ -1805,7 +1805,7 @@
             "max": 8
           },
           "spread": {
-            "points": null,
+            "points": 3,
             "max": 5
           },
           "short_interest": {
@@ -1821,14 +1821,14 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 646836.38,
         "risk_status": "PASS",
         "risk_flags": [],
-        "price_vs_insider_pct": 3.93,
+        "price_vs_insider_pct": -0.58,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1862,17 +1862,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.43,
-        "sma20": 4.101,
-        "sma50": 4.3008,
-        "atr14_pct": 5.57,
-        "avg_dollar_volume_20d": 24266774.3,
-        "volume_ratio_20d": 1.33,
+        "price": 4.47,
+        "sma20": 4.1235,
+        "sma50": 4.2892,
+        "atr14_pct": 5.27,
+        "avg_dollar_volume_20d": 23746731.09,
+        "volume_ratio_20d": 0.09,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 1366711389.67,
+        "market_cap": 1379051887.54,
         "name": "Borr Drilling Limited",
-        "spread_pct": 3.548,
+        "spread_pct": 2.673,
         "short_float_pct": 12.45
       },
       "conviction": {
@@ -1925,7 +1925,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -1934,7 +1934,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 10.08,
+        "price_vs_insider_pct": 11.07,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1968,17 +1968,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.43,
-        "sma20": 4.101,
-        "sma50": 4.3008,
-        "atr14_pct": 5.57,
-        "avg_dollar_volume_20d": 24266774.3,
-        "volume_ratio_20d": 1.33,
+        "price": 4.47,
+        "sma20": 4.1235,
+        "sma50": 4.2892,
+        "atr14_pct": 5.27,
+        "avg_dollar_volume_20d": 23746731.09,
+        "volume_ratio_20d": 0.09,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 1366711389.67,
+        "market_cap": 1379051887.54,
         "name": "Borr Drilling Limited",
-        "spread_pct": 3.548,
+        "spread_pct": 2.673,
         "short_float_pct": 12.45
       },
       "conviction": {
@@ -2031,7 +2031,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2040,7 +2040,113 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 10.39,
+        "price_vs_insider_pct": 11.39,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:ASND|BIENAIME JEAN JACQUES|2026-08-14|1100.0000|245.8500",
+      "source_key": "ASND|BIENAIME JEAN JACQUES|2026-08-14|1100.0000|245.8500",
+      "accession": null,
+      "ticker": "ASND",
+      "issuer": "Ascendis Pharma A/S",
+      "issuer_cik": null,
+      "insider": "BIENAIME JEAN JACQUES",
+      "insider_cik": "BIENAIME JEAN JACQUES",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 1100.0,
+      "avg_price": 245.85,
+      "value_usd": 270435.0,
+      "post_shares": 2000.0,
+      "prior_shares_est": 900.0,
+      "position_increase_pct": 122.22,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/asnd",
+      "sec_url": "https://xoomar.com/markets/insiders/asnd",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 256.48,
+        "sma20": 250.601,
+        "sma50": 250.4362,
+        "atr14_pct": 3.1,
+        "avg_dollar_volume_20d": 127184070.69,
+        "volume_ratio_20d": 0.07,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 16823249759.02,
+        "name": "Ascendis Pharma A/S",
+        "spread_pct": 18.174,
+        "short_float_pct": 6.15
+      },
+      "conviction": {
+        "score": 54,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 133.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 492654.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 4.32,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2074,21 +2180,21 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.85,
-        "sma20": 4.2285,
-        "sma50": 3.764,
-        "atr14_pct": 7.33,
-        "avg_dollar_volume_20d": 6964242.37,
-        "volume_ratio_20d": 2.51,
+        "price": 4.635,
+        "sma20": 4.2378,
+        "sma50": 3.8273,
+        "atr14_pct": 7.45,
+        "avg_dollar_volume_20d": 6708868.02,
+        "volume_ratio_20d": 0.28,
         "trend": "bullish",
-        "technical_confirmation": "confirmed",
-        "market_cap": 905768129.34,
+        "technical_confirmation": "watch",
+        "market_cap": 865615581.31,
         "name": "Angel Studios, Inc.",
         "spread_pct": 1.663,
         "short_float_pct": 4.62
       },
       "conviction": {
-        "score": 56,
+        "score": 53,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -2133,11 +2239,11 @@
             "max": 6
           },
           "technical_confirmation": {
-            "points": 6,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -2146,7 +2252,7 @@
         "risk_flags": [
           "Spread geniş"
         ],
-        "price_vs_insider_pct": 13.82,
+        "price_vs_insider_pct": 8.78,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2180,15 +2286,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.97,
-        "sma20": 2.9535,
-        "sma50": 2.9054,
-        "atr14_pct": 4.56,
-        "avg_dollar_volume_20d": 14522623.16,
-        "volume_ratio_20d": 0.5,
+        "price": 3.0401,
+        "sma20": 2.965,
+        "sma50": 2.9116,
+        "atr14_pct": 4.37,
+        "avg_dollar_volume_20d": 14276940.23,
+        "volume_ratio_20d": 0.1,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 577717577.54,
+        "market_cap": 591353281.81,
         "name": "Altimmune, Inc.",
         "spread_pct": 54.545,
         "short_float_pct": 26.74
@@ -2243,7 +2349,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2252,7 +2358,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 0.68,
+        "price_vs_insider_pct": 3.05,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2286,17 +2392,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.43,
-        "sma20": 4.101,
-        "sma50": 4.3008,
-        "atr14_pct": 5.57,
-        "avg_dollar_volume_20d": 24266774.3,
-        "volume_ratio_20d": 1.33,
+        "price": 4.47,
+        "sma20": 4.1235,
+        "sma50": 4.2892,
+        "atr14_pct": 5.27,
+        "avg_dollar_volume_20d": 23746731.09,
+        "volume_ratio_20d": 0.09,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 1366711389.67,
+        "market_cap": 1379051887.54,
         "name": "Borr Drilling Limited",
-        "spread_pct": 3.548,
+        "spread_pct": 2.673,
         "short_float_pct": 12.45
       },
       "conviction": {
@@ -2349,7 +2455,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -2358,52 +2464,52 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 0.98,
+        "price_vs_insider_pct": 1.9,
         "verdict": "RİSKLİ / ELE"
       }
     },
     {
-      "id": "xoomar:ASND|BIENAIME JEAN JACQUES|2026-08-14|1100.0000|245.8500",
-      "source_key": "ASND|BIENAIME JEAN JACQUES|2026-08-14|1100.0000|245.8500",
+      "id": "xoomar:MDXH|MVM PARTNERS, LLC|2026-08-13|2202643.0000|0.4540",
+      "source_key": "MDXH|MVM PARTNERS, LLC|2026-08-13|2202643.0000|0.4540",
       "accession": null,
-      "ticker": "ASND",
-      "issuer": "Ascendis Pharma A/S",
+      "ticker": "MDXH",
+      "issuer": "MDxHealth SA",
       "issuer_cik": null,
-      "insider": "BIENAIME JEAN JACQUES",
-      "insider_cik": "BIENAIME JEAN JACQUES",
-      "role": "Reporting person",
+      "insider": "MVM Partners, LLC",
+      "insider_cik": "MVM Partners, LLC",
+      "role": "Entity / beneficial owner",
       "officer_title": null,
       "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-14",
+      "is_entity": true,
+      "transaction_date": "2026-08-13",
       "filed_at": null,
-      "shares": 1100.0,
-      "avg_price": 245.85,
-      "value_usd": 270435.0,
-      "post_shares": 2000.0,
-      "prior_shares_est": 900.0,
-      "position_increase_pct": 122.22,
+      "shares": 2202643.0,
+      "avg_price": 0.454,
+      "value_usd": 999999.92,
+      "post_shares": 6903100.0,
+      "prior_shares_est": 4700457.0,
+      "position_increase_pct": 46.86,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/asnd",
-      "sec_url": "https://xoomar.com/markets/insiders/asnd",
+      "source_url": "https://xoomar.com/markets/insiders/mdxh",
+      "sec_url": "https://xoomar.com/markets/insiders/mdxh",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 248.85,
-        "sma20": 251.2195,
-        "sma50": 247.3236,
-        "atr14_pct": 3.32,
-        "avg_dollar_volume_20d": 135736841.11,
-        "volume_ratio_20d": 0.84,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 16322776145.85,
-        "name": "Ascendis Pharma A/S",
-        "spread_pct": 14.908,
-        "short_float_pct": 6.15
+        "price": 0.7897,
+        "sma20": 0.5077,
+        "sma50": 0.4966,
+        "atr14_pct": 13.08,
+        "avg_dollar_volume_20d": 14020093.94,
+        "volume_ratio_20d": 0.01,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 75351103.86,
+        "name": "MDxHealth SA",
+        "spread_pct": 44.843,
+        "short_float_pct": 2.74
       },
       "conviction": {
         "score": 51,
@@ -2418,7 +2524,7 @@
             "max": 15
           },
           "position_increase": {
-            "points": 12,
+            "points": 10,
             "max": 12
           },
           "cluster_buying": {
@@ -2431,11 +2537,11 @@
             "proxy": true
           },
           "market_cap": {
-            "points": 5,
+            "points": 4,
             "max": 7
           },
           "dollar_volume": {
-            "points": 8,
+            "points": 7,
             "max": 8
           },
           "spread": {
@@ -2443,28 +2549,30 @@
             "max": 5
           },
           "short_interest": {
-            "points": 5,
+            "points": 3,
             "max": 5
           },
           "trend": {
-            "points": 3,
+            "points": 6,
             "max": 6
           },
           "technical_confirmation": {
-            "points": 0,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
-        "cluster_value_10d": 492654.0,
+        "cluster_value_10d": 999999.92,
         "risk_status": "BLOCK",
         "risk_flags": [
-          "Spread %2.5 üzerinde"
+          "Fiyat $1 altında",
+          "Spread %2.5 üzerinde",
+          "Fiyat insider alımından sonra %74 yükselmiş"
         ],
-        "price_vs_insider_pct": 1.22,
+        "price_vs_insider_pct": 73.94,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2498,17 +2606,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 76.24,
-        "sma20": 64.3945,
-        "sma50": 62.4244,
-        "atr14_pct": 5.59,
-        "avg_dollar_volume_20d": 51090710.07,
-        "volume_ratio_20d": 0.72,
+        "price": 81.47,
+        "sma20": 66.182,
+        "sma50": 62.3562,
+        "atr14_pct": 5.32,
+        "avg_dollar_volume_20d": 50477291.61,
+        "volume_ratio_20d": 0.2,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 6391720731.23,
+        "market_cap": 6857023780.84,
         "name": "Aura Minerals Inc.",
-        "spread_pct": 15.135,
+        "spread_pct": 39.88,
         "short_float_pct": 14.8
       },
       "conviction": {
@@ -2561,7 +2669,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2570,7 +2678,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -3.41,
+        "price_vs_insider_pct": 3.22,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2604,15 +2712,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 216.97,
-        "sma20": 214.7755,
-        "sma50": 213.804,
-        "atr14_pct": 2.07,
-        "avg_dollar_volume_20d": 309943271.59,
-        "volume_ratio_20d": 1.18,
+        "price": 218.72,
+        "sma20": 214.596,
+        "sma50": 214.0944,
+        "atr14_pct": 1.96,
+        "avg_dollar_volume_20d": 290604200.64,
+        "volume_ratio_20d": 0.02,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 66439030210.46,
+        "market_cap": 66974902921.96,
         "name": "Republic Services, Inc.",
         "spread_pct": null,
         "short_float_pct": 1.97
@@ -2667,14 +2775,14 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 40671945.4,
         "risk_status": "PASS",
         "risk_flags": [],
-        "price_vs_insider_pct": 0.59,
+        "price_vs_insider_pct": 1.4,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2708,15 +2816,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 216.97,
-        "sma20": 214.7755,
-        "sma50": 213.804,
-        "atr14_pct": 2.07,
-        "avg_dollar_volume_20d": 309943271.59,
-        "volume_ratio_20d": 1.18,
+        "price": 218.72,
+        "sma20": 214.596,
+        "sma50": 214.0944,
+        "atr14_pct": 1.96,
+        "avg_dollar_volume_20d": 290604200.64,
+        "volume_ratio_20d": 0.02,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 66439030210.46,
+        "market_cap": 66974902921.96,
         "name": "Republic Services, Inc.",
         "spread_pct": null,
         "short_float_pct": 1.97
@@ -2771,59 +2879,59 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 40671945.4,
         "risk_status": "PASS",
         "risk_flags": [],
-        "price_vs_insider_pct": 0.27,
+        "price_vs_insider_pct": 1.08,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
-      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|400.0000|512.5200",
-      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|400.0000|512.5200",
+      "id": "xoomar:ASND|BIENAIME JEAN JACQUES|2026-08-14|900.0000|246.9100",
+      "source_key": "ASND|BIENAIME JEAN JACQUES|2026-08-14|900.0000|246.9100",
       "accession": null,
-      "ticker": "BRK.B",
-      "issuer": "Berkshire Hathaway Inc. New",
+      "ticker": "ASND",
+      "issuer": "Ascendis Pharma A/S",
       "issuer_cik": null,
-      "insider": "O'Sullivan Michael J.",
-      "insider_cik": "O'Sullivan Michael J.",
+      "insider": "BIENAIME JEAN JACQUES",
+      "insider_cik": "BIENAIME JEAN JACQUES",
       "role": "Reporting person",
-      "officer_title": "See Remarks",
+      "officer_title": null,
       "role_points": 3,
       "is_entity": false,
-      "transaction_date": "2026-08-12",
+      "transaction_date": "2026-08-14",
       "filed_at": null,
-      "shares": 400.0,
-      "avg_price": 512.52,
-      "value_usd": 205008.0,
-      "post_shares": 1108.0,
-      "prior_shares_est": 708.0,
-      "position_increase_pct": 56.5,
+      "shares": 900.0,
+      "avg_price": 246.91,
+      "value_usd": 222219.0,
+      "post_shares": 2900.0,
+      "prior_shares_est": 2000.0,
+      "position_increase_pct": 45.0,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/brk.b",
-      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
+      "source_url": "https://xoomar.com/markets/insiders/asnd",
+      "sec_url": "https://xoomar.com/markets/insiders/asnd",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 502.96,
-        "sma20": 508.9335,
-        "sma50": 499.7162,
-        "atr14_pct": 1.72,
-        "avg_dollar_volume_20d": 2191454893.81,
-        "volume_ratio_20d": 0.79,
+        "price": 256.48,
+        "sma20": 250.601,
+        "sma50": 250.4362,
+        "atr14_pct": 3.1,
+        "avg_dollar_volume_20d": 127184070.69,
+        "volume_ratio_20d": 0.07,
         "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1076691379698.04,
-        "name": "Berkshire Hathaway Inc. New",
-        "spread_pct": 0.149,
-        "short_float_pct": 0.96
+        "technical_confirmation": "watch",
+        "market_cap": 16823249759.02,
+        "name": "Ascendis Pharma A/S",
+        "spread_pct": 18.174,
+        "short_float_pct": 6.15
       },
       "conviction": {
         "score": 49,
@@ -2838,7 +2946,7 @@
             "max": 15
           },
           "position_increase": {
-            "points": 12,
+            "points": 10,
             "max": 12
           },
           "cluster_buying": {
@@ -2846,7 +2954,7 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 3,
+            "points": 5,
             "max": 10,
             "proxy": true
           },
@@ -2859,11 +2967,11 @@
             "max": 8
           },
           "spread": {
-            "points": 5,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
-            "points": 3,
+            "points": 5,
             "max": 5
           },
           "trend": {
@@ -2871,19 +2979,21 @@
             "max": 6
           },
           "technical_confirmation": {
-            "points": 0,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
-        "cluster_value_10d": 250072.03,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -1.87,
-        "verdict": "DÜŞÜK ÖNCELİK"
+        "cluster_value_10d": 492654.0,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 3.88,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -2916,17 +3026,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 11.12,
-        "sma20": 7.4733,
-        "sma50": 6.8274,
-        "atr14_pct": 8.31,
-        "avg_dollar_volume_20d": 84100338.84,
-        "volume_ratio_20d": 0.85,
+        "price": 11.78,
+        "sma20": 7.7757,
+        "sma50": 6.9546,
+        "atr14_pct": 8.1,
+        "avg_dollar_volume_20d": 84016182.47,
+        "volume_ratio_20d": 0.12,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 3409519466.83,
+        "market_cap": 3624147434.55,
         "name": "AbCellera Biologics Inc.",
-        "spread_pct": 49.523,
+        "spread_pct": 54.452,
         "short_float_pct": 20.41
       },
       "conviction": {
@@ -2979,7 +3089,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 36.7,
+        "freshness_hours": 37.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2988,52 +3098,52 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 0.82,
+        "price_vs_insider_pct": 6.8,
         "verdict": "RİSKLİ / ELE"
       }
     },
     {
-      "id": "xoomar:MDXH|MVM PARTNERS, LLC|2026-08-13|2202643.0000|0.4540",
-      "source_key": "MDXH|MVM PARTNERS, LLC|2026-08-13|2202643.0000|0.4540",
+      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|400.0000|512.5200",
+      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|400.0000|512.5200",
       "accession": null,
-      "ticker": "MDXH",
-      "issuer": "MDxHealth SA",
+      "ticker": "BRK.B",
+      "issuer": "Berkshire Hathaway Inc. New",
       "issuer_cik": null,
-      "insider": "MVM Partners, LLC",
-      "insider_cik": "MVM Partners, LLC",
-      "role": "Entity / beneficial owner",
-      "officer_title": null,
+      "insider": "O'Sullivan Michael J.",
+      "insider_cik": "O'Sullivan Michael J.",
+      "role": "Reporting person",
+      "officer_title": "See Remarks",
       "role_points": 3,
-      "is_entity": true,
-      "transaction_date": "2026-08-13",
+      "is_entity": false,
+      "transaction_date": "2026-08-12",
       "filed_at": null,
-      "shares": 2202643.0,
-      "avg_price": 0.454,
-      "value_usd": 999999.92,
-      "post_shares": 6903100.0,
-      "prior_shares_est": 4700457.0,
-      "position_increase_pct": 46.86,
+      "shares": 400.0,
+      "avg_price": 512.52,
+      "value_usd": 205008.0,
+      "post_shares": 1108.0,
+      "prior_shares_est": 708.0,
+      "position_increase_pct": 56.5,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/mdxh",
-      "sec_url": "https://xoomar.com/markets/insiders/mdxh",
+      "source_url": "https://xoomar.com/markets/insiders/brk.b",
+      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.751,
-        "sma20": 0.4891,
-        "sma50": 0.4928,
-        "atr14_pct": 13.57,
-        "avg_dollar_volume_20d": 14019800.36,
-        "volume_ratio_20d": 0.15,
+        "price": 504.7,
+        "sma20": 509.699,
+        "sma50": 500.0702,
+        "atr14_pct": 1.64,
+        "avg_dollar_volume_20d": 2118295386.32,
+        "volume_ratio_20d": 0.04,
         "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 71658452.65,
-        "name": "MDxHealth SA",
-        "spread_pct": 44.843,
-        "short_float_pct": 2.74
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1079966663069.69,
+        "name": "Berkshire Hathaway Inc. New",
+        "spread_pct": 0.207,
+        "short_float_pct": 0.96
       },
       "conviction": {
         "score": 48,
@@ -3044,11 +3154,11 @@
             "max": 12
           },
           "purchase_value": {
-            "points": 10,
+            "points": 7,
             "max": 15
           },
           "position_increase": {
-            "points": 10,
+            "points": 12,
             "max": 12
           },
           "cluster_buying": {
@@ -3056,20 +3166,20 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 5,
+            "points": 3,
             "max": 10,
             "proxy": true
           },
           "market_cap": {
-            "points": 4,
+            "points": 5,
             "max": 7
           },
           "dollar_volume": {
-            "points": 7,
+            "points": 8,
             "max": 8
           },
           "spread": {
-            "points": 0,
+            "points": 4,
             "max": 5
           },
           "short_interest": {
@@ -3081,23 +3191,19 @@
             "max": 6
           },
           "technical_confirmation": {
-            "points": 3,
+            "points": 0,
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
-        "cluster_value_10d": 999999.92,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Spread %2.5 üzerinde",
-          "Fiyat insider alımından sonra %65 yükselmiş"
-        ],
-        "price_vs_insider_pct": 65.42,
-        "verdict": "RİSKLİ / ELE"
+        "cluster_value_10d": 250072.03,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -1.53,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -3130,15 +3236,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 17.27,
-        "sma20": 18.23,
-        "sma50": 17.9839,
-        "atr14_pct": 8.26,
-        "avg_dollar_volume_20d": 386733.05,
-        "volume_ratio_20d": 1.66,
+        "price": 17.005,
+        "sma20": 18.2813,
+        "sma50": 17.8292,
+        "atr14_pct": 8.21,
+        "avg_dollar_volume_20d": 381544.06,
+        "volume_ratio_20d": 0.05,
         "trend": "neutral",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 103746332.8,
+        "market_cap": 102154386.53,
         "name": "51Talk Online Education Group",
         "spread_pct": null,
         "short_float_pct": 0.76
@@ -3193,7 +3299,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3202,113 +3308,7 @@
         "risk_flags": [
           "20g dolar hacmi $0.5M altında"
         ],
-        "price_vs_insider_pct": -14.38,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:ASND|BIENAIME JEAN JACQUES|2026-08-14|900.0000|246.9100",
-      "source_key": "ASND|BIENAIME JEAN JACQUES|2026-08-14|900.0000|246.9100",
-      "accession": null,
-      "ticker": "ASND",
-      "issuer": "Ascendis Pharma A/S",
-      "issuer_cik": null,
-      "insider": "BIENAIME JEAN JACQUES",
-      "insider_cik": "BIENAIME JEAN JACQUES",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 900.0,
-      "avg_price": 246.91,
-      "value_usd": 222219.0,
-      "post_shares": 2900.0,
-      "prior_shares_est": 2000.0,
-      "position_increase_pct": 45.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/asnd",
-      "sec_url": "https://xoomar.com/markets/insiders/asnd",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 248.85,
-        "sma20": 251.2195,
-        "sma50": 247.3236,
-        "atr14_pct": 3.32,
-        "avg_dollar_volume_20d": 135736841.11,
-        "volume_ratio_20d": 0.84,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 16322776145.85,
-        "name": "Ascendis Pharma A/S",
-        "spread_pct": 14.908,
-        "short_float_pct": 6.15
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 10,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 132.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 492654.0,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Spread %2.5 üzerinde"
-        ],
-        "price_vs_insider_pct": 0.79,
+        "price_vs_insider_pct": -15.69,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3342,15 +3342,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 22.6,
-        "sma20": 23.468,
-        "sma50": 24.1714,
-        "atr14_pct": 2.33,
-        "avg_dollar_volume_20d": 9517616.5,
-        "volume_ratio_20d": 0.5,
+        "price": 22.69,
+        "sma20": 23.327,
+        "sma50": 24.1588,
+        "atr14_pct": 2.02,
+        "avg_dollar_volume_20d": 9080532.96,
+        "volume_ratio_20d": 0.01,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1387735237.22,
+        "market_cap": 1393261625.76,
         "name": "American Assets Trust, Inc.",
         "spread_pct": 26.753,
         "short_float_pct": 4.21
@@ -3405,7 +3405,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3414,7 +3414,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -1.14,
+        "price_vs_insider_pct": -0.74,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3448,15 +3448,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 22.6,
-        "sma20": 23.468,
-        "sma50": 24.1714,
-        "atr14_pct": 2.33,
-        "avg_dollar_volume_20d": 9517616.5,
-        "volume_ratio_20d": 0.5,
+        "price": 22.69,
+        "sma20": 23.327,
+        "sma50": 24.1588,
+        "atr14_pct": 2.02,
+        "avg_dollar_volume_20d": 9080532.96,
+        "volume_ratio_20d": 0.01,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1387735237.22,
+        "market_cap": 1393261625.76,
         "name": "American Assets Trust, Inc.",
         "spread_pct": 26.753,
         "short_float_pct": 4.21
@@ -3511,7 +3511,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3520,115 +3520,8 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -0.83,
+        "price_vs_insider_pct": -0.44,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:BW|YOUNG KENNETH M|2026-08-12|7000.0000|9.6500",
-      "source_key": "BW|YOUNG KENNETH M|2026-08-12|7000.0000|9.6500",
-      "accession": null,
-      "ticker": "BW",
-      "issuer": "Babcock & Wilcox Enterprises, I",
-      "issuer_cik": null,
-      "insider": "Young Kenneth M",
-      "insider_cik": "Young Kenneth M",
-      "role": "CEO / President",
-      "officer_title": "Chief Executive Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-08-12",
-      "filed_at": null,
-      "shares": 7000.0,
-      "avg_price": 9.65,
-      "value_usd": 67550.0,
-      "post_shares": 1709254.0,
-      "prior_shares_est": 1702254.0,
-      "position_increase_pct": 0.41,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bw",
-      "sec_url": "https://xoomar.com/markets/insiders/bw",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 9.14,
-        "sma20": 9.5195,
-        "sma50": 12.1952,
-        "atr14_pct": 12.04,
-        "avg_dollar_volume_20d": 48088851.95,
-        "volume_ratio_20d": 1.03,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1361540754.38,
-        "name": "Babcock & Wilcox Enterprises, I",
-        "spread_pct": null,
-        "short_float_pct": 13.48
-      },
-      "conviction": {
-        "score": 45,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 180.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 115050.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -5.28,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -3661,17 +3554,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.6,
-        "sma20": 2.3697,
-        "sma50": 2.7567,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 137952.45,
-        "volume_ratio_20d": 1.4,
+        "price": 2.54,
+        "sma20": 2.3487,
+        "sma50": 2.6753,
+        "atr14_pct": 7.32,
+        "avg_dollar_volume_20d": 140152.69,
+        "volume_ratio_20d": 0.34,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 7494164.33,
+        "market_cap": 7321222.23,
         "name": "Aclarion, Inc.",
-        "spread_pct": 52.514,
+        "spread_pct": 55.823,
         "short_float_pct": 1.31
       },
       "conviction": {
@@ -3724,7 +3617,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -3735,7 +3628,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 6.12,
+        "price_vs_insider_pct": 3.67,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3769,17 +3662,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 31.03,
-        "sma20": 35.5,
-        "sma50": 36.5616,
-        "atr14_pct": 5.8,
-        "avg_dollar_volume_20d": 282913200.97,
-        "volume_ratio_20d": 1.14,
+        "price": 31.56,
+        "sma20": 35.216,
+        "sma50": 36.4512,
+        "atr14_pct": 5.48,
+        "avg_dollar_volume_20d": 279122232.23,
+        "volume_ratio_20d": 0.05,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 10370682463.58,
+        "market_cap": 10552829502.21,
         "name": "On Holding AG",
-        "spread_pct": 0.579,
+        "spread_pct": 0.575,
         "short_float_pct": 7.89
       },
       "conviction": {
@@ -3832,7 +3725,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3841,7 +3734,7 @@
         "risk_flags": [
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": 1.16,
+        "price_vs_insider_pct": 2.89,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3875,17 +3768,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.75,
-        "sma20": 4.1795,
-        "sma50": 4.8439,
-        "atr14_pct": 19.99,
-        "avg_dollar_volume_20d": 4070073.74,
-        "volume_ratio_20d": 0.44,
+        "price": 2.83,
+        "sma20": 4.0755,
+        "sma50": 4.7927,
+        "atr14_pct": 19.0,
+        "avg_dollar_volume_20d": 4004795.32,
+        "volume_ratio_20d": 0.01,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 73264391.75,
+        "market_cap": 75395717.48,
         "name": "CVRx, Inc.",
-        "spread_pct": 35.798,
+        "spread_pct": 22.785,
         "short_float_pct": 10.56
       },
       "conviction": {
@@ -3938,7 +3831,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3947,8 +3840,116 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -5.65,
+        "price_vs_insider_pct": -2.91,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BW|YOUNG KENNETH M|2026-08-12|7000.0000|9.6500",
+      "source_key": "BW|YOUNG KENNETH M|2026-08-12|7000.0000|9.6500",
+      "accession": null,
+      "ticker": "BW",
+      "issuer": "Babcock & Wilcox Enterprises, I",
+      "issuer_cik": null,
+      "insider": "Young Kenneth M",
+      "insider_cik": "Young Kenneth M",
+      "role": "CEO / President",
+      "officer_title": "Chief Executive Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-08-12",
+      "filed_at": null,
+      "shares": 7000.0,
+      "avg_price": 9.65,
+      "value_usd": 67550.0,
+      "post_shares": 1709254.0,
+      "prior_shares_est": 1702254.0,
+      "position_increase_pct": 0.41,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bw",
+      "sec_url": "https://xoomar.com/markets/insiders/bw",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 8.635,
+        "sma20": 9.4348,
+        "sma50": 11.7813,
+        "atr14_pct": 11.81,
+        "avg_dollar_volume_20d": 46880080.18,
+        "volume_ratio_20d": 0.08,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1284376760.41,
+        "name": "Babcock & Wilcox Enterprises, I",
+        "spread_pct": 1.087,
+        "short_float_pct": 13.48
+      },
+      "conviction": {
+        "score": 44,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 1,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 181.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 115050.0,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "ATR yüksek",
+          "Spread geniş",
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -10.52,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -3981,15 +3982,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 3.44,
-        "sma20": 2.8405,
-        "sma50": 3.0541,
-        "atr14_pct": 4.4,
-        "avg_dollar_volume_20d": 296888.1,
-        "volume_ratio_20d": 2.39,
+        "price": 3.51,
+        "sma20": 2.8735,
+        "sma50": 3.0016,
+        "atr14_pct": 4.32,
+        "avg_dollar_volume_20d": 277336.93,
+        "volume_ratio_20d": 0.11,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 77991402.66,
+        "market_cap": 79578435.47,
         "name": "Advanced Flower Capital Inc.",
         "spread_pct": 57.639,
         "short_float_pct": 6.43
@@ -4044,7 +4045,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -4054,7 +4055,7 @@
           "20g dolar hacmi $0.5M altında",
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 14.67,
+        "price_vs_insider_pct": 17.0,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4088,15 +4089,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 3.44,
-        "sma20": 2.8405,
-        "sma50": 3.0541,
-        "atr14_pct": 4.4,
-        "avg_dollar_volume_20d": 296888.1,
-        "volume_ratio_20d": 2.39,
+        "price": 3.51,
+        "sma20": 2.8735,
+        "sma50": 3.0016,
+        "atr14_pct": 4.32,
+        "avg_dollar_volume_20d": 277336.93,
+        "volume_ratio_20d": 0.11,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 77991402.66,
+        "market_cap": 79578435.47,
         "name": "Advanced Flower Capital Inc.",
         "spread_pct": 57.639,
         "short_float_pct": 6.43
@@ -4151,7 +4152,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -4161,7 +4162,7 @@
           "20g dolar hacmi $0.5M altında",
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 9.21,
+        "price_vs_insider_pct": 11.43,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4196,10 +4197,10 @@
       "possible_private_placement": false,
       "market": {
         "price": 34.25,
-        "sma20": 32.417,
-        "sma50": 28.082,
-        "atr14_pct": 2.5,
-        "avg_dollar_volume_20d": 121388.0,
+        "sma20": 32.5145,
+        "sma50": 28.5438,
+        "atr14_pct": 2.48,
+        "avg_dollar_volume_20d": 118166.75,
         "volume_ratio_20d": 0.05,
         "trend": "bullish",
         "technical_confirmation": "watch",
@@ -4258,7 +4259,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4301,15 +4302,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 3.44,
-        "sma20": 2.8405,
-        "sma50": 3.0541,
-        "atr14_pct": 4.4,
-        "avg_dollar_volume_20d": 296888.1,
-        "volume_ratio_20d": 2.39,
+        "price": 3.51,
+        "sma20": 2.8735,
+        "sma50": 3.0016,
+        "atr14_pct": 4.32,
+        "avg_dollar_volume_20d": 277336.93,
+        "volume_ratio_20d": 0.11,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 77991402.66,
+        "market_cap": 79578435.47,
         "name": "Advanced Flower Capital Inc.",
         "spread_pct": 57.639,
         "short_float_pct": 6.43
@@ -4364,7 +4365,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 2,
@@ -4374,7 +4375,7 @@
           "20g dolar hacmi $0.5M altında",
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": 12.42,
+        "price_vs_insider_pct": 14.71,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4408,17 +4409,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.6,
-        "sma20": 2.3697,
-        "sma50": 2.7567,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 137952.45,
-        "volume_ratio_20d": 1.4,
+        "price": 2.54,
+        "sma20": 2.3487,
+        "sma50": 2.6753,
+        "atr14_pct": 7.32,
+        "avg_dollar_volume_20d": 140152.69,
+        "volume_ratio_20d": 0.34,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 7494164.33,
+        "market_cap": 7321222.23,
         "name": "Aclarion, Inc.",
-        "spread_pct": 52.514,
+        "spread_pct": 55.823,
         "short_float_pct": 1.31
       },
       "conviction": {
@@ -4471,7 +4472,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -4482,7 +4483,113 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 9.7,
+        "price_vs_insider_pct": 7.17,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BDSX|SCHULER JACK W|2026-08-12|15000.0000|24.4661",
+      "source_key": "BDSX|SCHULER JACK W|2026-08-12|15000.0000|24.4661",
+      "accession": null,
+      "ticker": "BDSX",
+      "issuer": "Biodesix, Inc.",
+      "issuer_cik": null,
+      "insider": "SCHULER JACK W",
+      "insider_cik": "SCHULER JACK W",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-12",
+      "filed_at": null,
+      "shares": 15000.0,
+      "avg_price": 24.4661,
+      "value_usd": 366991.5,
+      "post_shares": 555810.0,
+      "prior_shares_est": 540810.0,
+      "position_increase_pct": 2.77,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bdsx",
+      "sec_url": "https://xoomar.com/markets/insiders/bdsx",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 23.34,
+        "sma20": 22.6185,
+        "sma50": 20.4698,
+        "atr14_pct": 8.05,
+        "avg_dollar_volume_20d": 1770458.27,
+        "volume_ratio_20d": 0.05,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 246263095.73,
+        "name": "Biodesix, Inc.",
+        "spread_pct": 55.636,
+        "short_float_pct": 2.58
+      },
+      "conviction": {
+        "score": 40,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 3,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 181.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 366991.5,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -4.6,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4566,7 +4673,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4608,14 +4715,14 @@
       "possible_private_placement": false,
       "market": {
         "price": 4.26,
-        "sma20": 4.7845,
-        "sma50": 5.3498,
+        "sma20": 4.782,
+        "sma50": 5.336,
         "atr14_pct": 8.35,
-        "avg_dollar_volume_20d": 12201403.7,
-        "volume_ratio_20d": 0.59,
+        "avg_dollar_volume_20d": 12047398.23,
+        "volume_ratio_20d": 0.6,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 406107436.36,
+        "market_cap": 414687148.65,
         "name": "Bed Bath & Beyond, Inc.",
         "spread_pct": null,
         "short_float_pct": null
@@ -4670,7 +4777,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4713,17 +4820,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.6,
-        "sma20": 2.3697,
-        "sma50": 2.7567,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 137952.45,
-        "volume_ratio_20d": 1.4,
+        "price": 2.54,
+        "sma20": 2.3487,
+        "sma50": 2.6753,
+        "atr14_pct": 7.32,
+        "avg_dollar_volume_20d": 140152.69,
+        "volume_ratio_20d": 0.34,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 7494164.33,
+        "market_cap": 7321222.23,
         "name": "Aclarion, Inc.",
-        "spread_pct": 52.514,
+        "spread_pct": 55.823,
         "short_float_pct": 1.31
       },
       "conviction": {
@@ -4776,7 +4883,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -4787,7 +4894,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 12.55,
+        "price_vs_insider_pct": 9.96,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4821,15 +4928,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.59,
-        "sma20": 2.4365,
-        "sma50": 2.7422,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 705526.84,
-        "volume_ratio_20d": 0.43,
+        "price": 2.62,
+        "sma20": 2.4485,
+        "sma50": 2.7496,
+        "atr14_pct": 5.22,
+        "avg_dollar_volume_20d": 696523.78,
+        "volume_ratio_20d": 0.05,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 44160327.34,
+        "market_cap": 44671836.45,
         "name": "Veru Inc.",
         "spread_pct": 54.264,
         "short_float_pct": 8.96
@@ -4884,7 +4991,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4893,7 +5000,7 @@
         "risk_flags": [
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -3.71,
+        "price_vs_insider_pct": -2.6,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4927,17 +5034,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.6,
-        "sma20": 2.3697,
-        "sma50": 2.7567,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 137952.45,
-        "volume_ratio_20d": 1.4,
+        "price": 2.54,
+        "sma20": 2.3487,
+        "sma50": 2.6753,
+        "atr14_pct": 7.32,
+        "avg_dollar_volume_20d": 140152.69,
+        "volume_ratio_20d": 0.34,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 7494164.33,
+        "market_cap": 7321222.23,
         "name": "Aclarion, Inc.",
-        "spread_pct": 52.514,
+        "spread_pct": 55.823,
         "short_float_pct": 1.31
       },
       "conviction": {
@@ -4990,7 +5097,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -5001,7 +5108,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 8.33,
+        "price_vs_insider_pct": 5.83,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5085,7 +5192,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5093,431 +5200,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": null,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-17|200000.0000|1.6521",
-      "source_key": "ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-17|200000.0000|1.6521",
-      "accession": null,
-      "ticker": "ENHA",
-      "issuer": "Enhanced Group Inc.",
-      "issuer_cik": null,
-      "insider": "Apeiron Investment Group Ltd.",
-      "insider_cik": "Apeiron Investment Group Ltd.",
-      "role": "Entity / beneficial owner",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": true,
-      "transaction_date": "2026-08-17",
-      "filed_at": null,
-      "shares": 200000.0,
-      "avg_price": 1.6521,
-      "value_usd": 330420.0,
-      "post_shares": 33062812.0,
-      "prior_shares_est": 32862812.0,
-      "position_increase_pct": 0.61,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/enha",
-      "sec_url": "https://xoomar.com/markets/insiders/enha",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 1.63,
-        "sma20": 2.57,
-        "sma50": 2.9386,
-        "atr14_pct": 19.15,
-        "avg_dollar_volume_20d": 2264575.87,
-        "volume_ratio_20d": 1.59,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 209711214.2,
-        "name": "Enhanced Group Inc.",
-        "spread_pct": 0.612,
-        "short_float_pct": null
-      },
-      "conviction": {
-        "score": 36,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 3,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 60.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 626040.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -1.34,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|45.0000|510.6400",
-      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|45.0000|510.6400",
-      "accession": null,
-      "ticker": "BRK.B",
-      "issuer": "Berkshire Hathaway Inc. New",
-      "issuer_cik": null,
-      "insider": "O'Sullivan Michael J.",
-      "insider_cik": "O'Sullivan Michael J.",
-      "role": "Reporting person",
-      "officer_title": "See Remarks",
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-12",
-      "filed_at": null,
-      "shares": 45.0,
-      "avg_price": 510.64,
-      "value_usd": 22978.8,
-      "post_shares": 708.0,
-      "prior_shares_est": 663.0,
-      "position_increase_pct": 6.79,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/brk.b",
-      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 502.96,
-        "sma20": 508.9335,
-        "sma50": 499.7162,
-        "atr14_pct": 1.72,
-        "avg_dollar_volume_20d": 2191454893.81,
-        "volume_ratio_20d": 0.79,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1076691379698.04,
-        "name": "Berkshire Hathaway Inc. New",
-        "spread_pct": 0.149,
-        "short_float_pct": 0.96
-      },
-      "conviction": {
-        "score": 36,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 180.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 250072.03,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -1.5,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-14|150000.0000|1.9708",
-      "source_key": "ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-14|150000.0000|1.9708",
-      "accession": null,
-      "ticker": "ENHA",
-      "issuer": "Enhanced Group Inc.",
-      "issuer_cik": null,
-      "insider": "Apeiron Investment Group Ltd.",
-      "insider_cik": "Apeiron Investment Group Ltd.",
-      "role": "Entity / beneficial owner",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": true,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 150000.0,
-      "avg_price": 1.9708,
-      "value_usd": 295620.0,
-      "post_shares": 32862812.0,
-      "prior_shares_est": 32712812.0,
-      "position_increase_pct": 0.46,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/enha",
-      "sec_url": "https://xoomar.com/markets/insiders/enha",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 1.63,
-        "sma20": 2.57,
-        "sma50": 2.9386,
-        "atr14_pct": 19.15,
-        "avg_dollar_volume_20d": 2264575.87,
-        "volume_ratio_20d": 1.59,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 209711214.2,
-        "name": "Enhanced Group Inc.",
-        "spread_pct": 0.612,
-        "short_float_pct": null
-      },
-      "conviction": {
-        "score": 35,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 3,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 132.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 626040.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -17.29,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BW|MOELLER PHILIP D|2026-08-13|5000.0000|9.5000",
-      "source_key": "BW|MOELLER PHILIP D|2026-08-13|5000.0000|9.5000",
-      "accession": null,
-      "ticker": "BW",
-      "issuer": "Babcock & Wilcox Enterprises, I",
-      "issuer_cik": null,
-      "insider": "Moeller Philip D",
-      "insider_cik": "Moeller Philip D",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-13",
-      "filed_at": null,
-      "shares": 5000.0,
-      "avg_price": 9.5,
-      "value_usd": 47500.0,
-      "post_shares": 240809.0,
-      "prior_shares_est": 235809.0,
-      "position_increase_pct": 2.12,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bw",
-      "sec_url": "https://xoomar.com/markets/insiders/bw",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 9.14,
-        "sma20": 9.5195,
-        "sma50": 12.1952,
-        "atr14_pct": 12.04,
-        "avg_dollar_volume_20d": 48088851.95,
-        "volume_ratio_20d": 1.03,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1361540754.38,
-        "name": "Babcock & Wilcox Enterprises, I",
-        "spread_pct": null,
-        "short_float_pct": 13.48
-      },
-      "conviction": {
-        "score": 35,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 156.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 115050.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "ATR yüksek",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -3.79,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -5601,7 +5283,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5613,51 +5295,263 @@
       }
     },
     {
-      "id": "xoomar:BDSX|SCHULER JACK W|2026-08-12|15000.0000|24.4661",
-      "source_key": "BDSX|SCHULER JACK W|2026-08-12|15000.0000|24.4661",
+      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|45.0000|510.6400",
+      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|45.0000|510.6400",
       "accession": null,
-      "ticker": "BDSX",
-      "issuer": "Biodesix, Inc.",
+      "ticker": "BRK.B",
+      "issuer": "Berkshire Hathaway Inc. New",
       "issuer_cik": null,
-      "insider": "SCHULER JACK W",
-      "insider_cik": "SCHULER JACK W",
+      "insider": "O'Sullivan Michael J.",
+      "insider_cik": "O'Sullivan Michael J.",
       "role": "Reporting person",
-      "officer_title": null,
+      "officer_title": "See Remarks",
       "role_points": 3,
       "is_entity": false,
       "transaction_date": "2026-08-12",
       "filed_at": null,
-      "shares": 15000.0,
-      "avg_price": 24.4661,
-      "value_usd": 366991.5,
-      "post_shares": 555810.0,
-      "prior_shares_est": 540810.0,
-      "position_increase_pct": 2.77,
+      "shares": 45.0,
+      "avg_price": 510.64,
+      "value_usd": 22978.8,
+      "post_shares": 708.0,
+      "prior_shares_est": 663.0,
+      "position_increase_pct": 6.79,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/bdsx",
-      "sec_url": "https://xoomar.com/markets/insiders/bdsx",
+      "source_url": "https://xoomar.com/markets/insiders/brk.b",
+      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 22.34,
-        "sma20": 22.461,
-        "sma50": 20.325,
-        "atr14_pct": 8.47,
-        "avg_dollar_volume_20d": 1807301.13,
-        "volume_ratio_20d": 1.34,
+        "price": 504.7,
+        "sma20": 509.699,
+        "sma50": 500.0702,
+        "atr14_pct": 1.64,
+        "avg_dollar_volume_20d": 2118295386.32,
+        "volume_ratio_20d": 0.04,
         "trend": "neutral",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 235711977.73,
-        "name": "Biodesix, Inc.",
-        "spread_pct": 55.636,
-        "short_float_pct": 2.58
+        "market_cap": 1079966663069.69,
+        "name": "Berkshire Hathaway Inc. New",
+        "spread_pct": 0.207,
+        "short_float_pct": 0.96
+      },
+      "conviction": {
+        "score": 35,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 181.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 250072.03,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -1.16,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:BW|MOELLER PHILIP D|2026-08-13|5000.0000|9.5000",
+      "source_key": "BW|MOELLER PHILIP D|2026-08-13|5000.0000|9.5000",
+      "accession": null,
+      "ticker": "BW",
+      "issuer": "Babcock & Wilcox Enterprises, I",
+      "issuer_cik": null,
+      "insider": "Moeller Philip D",
+      "insider_cik": "Moeller Philip D",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-13",
+      "filed_at": null,
+      "shares": 5000.0,
+      "avg_price": 9.5,
+      "value_usd": 47500.0,
+      "post_shares": 240809.0,
+      "prior_shares_est": 235809.0,
+      "position_increase_pct": 2.12,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/bw",
+      "sec_url": "https://xoomar.com/markets/insiders/bw",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 8.635,
+        "sma20": 9.4348,
+        "sma50": 11.7813,
+        "atr14_pct": 11.81,
+        "avg_dollar_volume_20d": 46880080.18,
+        "volume_ratio_20d": 0.08,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1284376760.41,
+        "name": "Babcock & Wilcox Enterprises, I",
+        "spread_pct": 1.087,
+        "short_float_pct": 13.48
       },
       "conviction": {
         "score": 34,
         "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 1,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 157.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 115050.0,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "ATR yüksek",
+          "Spread geniş",
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -9.11,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-17|200000.0000|1.6521",
+      "source_key": "ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-17|200000.0000|1.6521",
+      "accession": null,
+      "ticker": "ENHA",
+      "issuer": "Enhanced Group Inc.",
+      "issuer_cik": null,
+      "insider": "Apeiron Investment Group Ltd.",
+      "insider_cik": "Apeiron Investment Group Ltd.",
+      "role": "Entity / beneficial owner",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": true,
+      "transaction_date": "2026-08-17",
+      "filed_at": null,
+      "shares": 200000.0,
+      "avg_price": 1.6521,
+      "value_usd": 330420.0,
+      "post_shares": 33062812.0,
+      "prior_shares_est": 32862812.0,
+      "position_increase_pct": 0.61,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/enha",
+      "sec_url": "https://xoomar.com/markets/insiders/enha",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 1.659,
+        "sma20": 2.499,
+        "sma50": 2.9192,
+        "atr14_pct": 18.16,
+        "avg_dollar_volume_20d": 2195725.17,
+        "volume_ratio_20d": 0.16,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 216015419.55,
+        "name": "Enhanced Group Inc.",
+        "spread_pct": 1.749,
+        "short_float_pct": null
+      },
+      "conviction": {
+        "score": 33,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 3,
@@ -5676,7 +5570,7 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 3,
+            "points": 6,
             "max": 10,
             "proxy": true
           },
@@ -5693,11 +5587,11 @@
             "max": 5
           },
           "short_interest": {
-            "points": 3,
+            "points": null,
             "max": 5
           },
           "trend": {
-            "points": 3,
+            "points": 0,
             "max": 6
           },
           "technical_confirmation": {
@@ -5705,17 +5599,19 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
-        "cluster_value_10d": 366991.5,
-        "risk_status": "BLOCK",
+        "cluster_value_10d": 626040.0,
+        "risk_status": "WARN",
         "risk_flags": [
-          "Spread %2.5 üzerinde"
+          "ATR yüksek",
+          "Spread geniş",
+          "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -8.69,
-        "verdict": "RİSKLİ / ELE"
+        "price_vs_insider_pct": 0.42,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -5798,7 +5694,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5806,110 +5702,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": null,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|43.0000|513.6100",
-      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|43.0000|513.6100",
-      "accession": null,
-      "ticker": "BRK.B",
-      "issuer": "Berkshire Hathaway Inc. New",
-      "issuer_cik": null,
-      "insider": "O'Sullivan Michael J.",
-      "insider_cik": "O'Sullivan Michael J.",
-      "role": "Reporting person",
-      "officer_title": "See Remarks",
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-12",
-      "filed_at": null,
-      "shares": 43.0,
-      "avg_price": 513.61,
-      "value_usd": 22085.23,
-      "post_shares": 1151.0,
-      "prior_shares_est": 1108.0,
-      "position_increase_pct": 3.88,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/brk.b",
-      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 502.96,
-        "sma20": 508.9335,
-        "sma50": 499.7162,
-        "atr14_pct": 1.72,
-        "avg_dollar_volume_20d": 2191454893.81,
-        "volume_ratio_20d": 0.79,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1076691379698.04,
-        "name": "Berkshire Hathaway Inc. New",
-        "spread_pct": 0.149,
-        "short_float_pct": 0.96
-      },
-      "conviction": {
-        "score": 33,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 180.7,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 250072.03,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -2.07,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -5943,17 +5735,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.822,
-        "sma20": 0.9773,
-        "sma50": 1.1273,
-        "atr14_pct": 12.66,
-        "avg_dollar_volume_20d": 1150567.54,
-        "volume_ratio_20d": 0.76,
+        "price": 0.8468,
+        "sma20": 0.9596,
+        "sma50": 1.1186,
+        "atr14_pct": 12.04,
+        "avg_dollar_volume_20d": 1101828.63,
+        "volume_ratio_20d": 0.05,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 205736301.27,
+        "market_cap": 211943431.0,
         "name": "BRC Inc.",
-        "spread_pct": 10.526,
+        "spread_pct": 4.194,
         "short_float_pct": 4.53
       },
       "conviction": {
@@ -6006,7 +5798,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6016,7 +5808,7 @@
           "Fiyat $1 altında",
           "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -3.17,
+        "price_vs_insider_pct": -0.25,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6050,17 +5842,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 2.6,
-        "sma20": 2.3697,
-        "sma50": 2.7567,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 137952.45,
-        "volume_ratio_20d": 1.4,
+        "price": 2.54,
+        "sma20": 2.3487,
+        "sma50": 2.6753,
+        "atr14_pct": 7.32,
+        "avg_dollar_volume_20d": 140152.69,
+        "volume_ratio_20d": 0.34,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 7494164.33,
+        "market_cap": 7321222.23,
         "name": "Aclarion, Inc.",
-        "spread_pct": 52.514,
+        "spread_pct": 55.823,
         "short_float_pct": 1.31
       },
       "conviction": {
@@ -6113,7 +5905,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 2,
@@ -6124,7 +5916,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 11.11,
+        "price_vs_insider_pct": 8.55,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6158,15 +5950,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.98,
-        "sma20": 0.8925,
-        "sma50": 0.9414,
-        "atr14_pct": 7.07,
-        "avg_dollar_volume_20d": 226279.05,
-        "volume_ratio_20d": 1.12,
+        "price": 0.97,
+        "sma20": 0.895,
+        "sma50": 0.9402,
+        "atr14_pct": 6.79,
+        "avg_dollar_volume_20d": 219243.04,
+        "volume_ratio_20d": 0.13,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 14586641.72,
+        "market_cap": 14437798.59,
         "name": "BioCardia, Inc.",
         "spread_pct": 58.555,
         "short_float_pct": 8.5
@@ -6221,7 +6013,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6233,8 +6025,116 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 5.38,
+        "price_vs_insider_pct": 4.3,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-14|150000.0000|1.9708",
+      "source_key": "ENHA|APEIRON INVESTMENT GROUP LTD.|2026-08-14|150000.0000|1.9708",
+      "accession": null,
+      "ticker": "ENHA",
+      "issuer": "Enhanced Group Inc.",
+      "issuer_cik": null,
+      "insider": "Apeiron Investment Group Ltd.",
+      "insider_cik": "Apeiron Investment Group Ltd.",
+      "role": "Entity / beneficial owner",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": true,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 150000.0,
+      "avg_price": 1.9708,
+      "value_usd": 295620.0,
+      "post_shares": 32862812.0,
+      "prior_shares_est": 32712812.0,
+      "position_increase_pct": 0.46,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/enha",
+      "sec_url": "https://xoomar.com/markets/insiders/enha",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 1.659,
+        "sma20": 2.499,
+        "sma50": 2.9192,
+        "atr14_pct": 18.16,
+        "avg_dollar_volume_20d": 2195725.17,
+        "volume_ratio_20d": 0.16,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 216015419.55,
+        "name": "Enhanced Group Inc.",
+        "spread_pct": 1.749,
+        "short_float_pct": null
+      },
+      "conviction": {
+        "score": 32,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 3,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": null,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 133.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 626040.0,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "ATR yüksek",
+          "Spread geniş",
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -15.82,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -6317,7 +6217,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6325,6 +6225,110 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": null,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|43.0000|513.6100",
+      "source_key": "BRK.B|O'SULLIVAN MICHAEL J.|2026-08-12|43.0000|513.6100",
+      "accession": null,
+      "ticker": "BRK.B",
+      "issuer": "Berkshire Hathaway Inc. New",
+      "issuer_cik": null,
+      "insider": "O'Sullivan Michael J.",
+      "insider_cik": "O'Sullivan Michael J.",
+      "role": "Reporting person",
+      "officer_title": "See Remarks",
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-12",
+      "filed_at": null,
+      "shares": 43.0,
+      "avg_price": 513.61,
+      "value_usd": 22085.23,
+      "post_shares": 1151.0,
+      "prior_shares_est": 1108.0,
+      "position_increase_pct": 3.88,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/brk.b",
+      "sec_url": "https://xoomar.com/markets/insiders/brk.b",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 504.7,
+        "sma20": 509.699,
+        "sma50": 500.0702,
+        "atr14_pct": 1.64,
+        "avg_dollar_volume_20d": 2118295386.32,
+        "volume_ratio_20d": 0.04,
+        "trend": "neutral",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1079966663069.69,
+        "name": "Berkshire Hathaway Inc. New",
+        "spread_pct": 0.207,
+        "short_float_pct": 0.96
+      },
+      "conviction": {
+        "score": 32,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 181.7,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 250072.03,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -1.73,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -6408,7 +6412,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6449,15 +6453,15 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.98,
-        "sma20": 0.8925,
-        "sma50": 0.9414,
-        "atr14_pct": 7.07,
-        "avg_dollar_volume_20d": 226279.05,
-        "volume_ratio_20d": 1.12,
+        "price": 0.97,
+        "sma20": 0.895,
+        "sma50": 0.9402,
+        "atr14_pct": 6.79,
+        "avg_dollar_volume_20d": 219243.04,
+        "volume_ratio_20d": 0.13,
         "trend": "neutral",
         "technical_confirmation": "watch",
-        "market_cap": 14586641.72,
+        "market_cap": 14437798.59,
         "name": "BioCardia, Inc.",
         "spread_pct": 58.555,
         "short_float_pct": 8.5
@@ -6512,7 +6516,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6524,7 +6528,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": 6.52,
+        "price_vs_insider_pct": 5.43,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6608,7 +6612,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6699,7 +6703,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 36.7,
+        "freshness_hours": 37.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6790,7 +6794,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6831,17 +6835,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.94,
-        "sma20": 6.227,
-        "sma50": 6.4208,
-        "atr14_pct": 12.39,
-        "avg_dollar_volume_20d": 142437.95,
-        "volume_ratio_20d": 1.47,
+        "price": 5.2543,
+        "sma20": 6.1737,
+        "sma50": 6.4347,
+        "atr14_pct": 11.16,
+        "avg_dollar_volume_20d": 142189.53,
+        "volume_ratio_20d": 0.12,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 18906881.98,
+        "market_cap": 20109803.86,
         "name": "ACCESS Newswire Inc.",
-        "spread_pct": 9.524,
+        "spread_pct": 7.547,
         "short_float_pct": 0.42
       },
       "conviction": {
@@ -6894,7 +6898,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -6905,7 +6909,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": -0.2,
+        "price_vs_insider_pct": 6.15,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6989,7 +6993,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7080,7 +7084,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7171,7 +7175,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7212,17 +7216,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.94,
-        "sma20": 6.227,
-        "sma50": 6.4208,
-        "atr14_pct": 12.39,
-        "avg_dollar_volume_20d": 142437.95,
-        "volume_ratio_20d": 1.47,
+        "price": 5.2543,
+        "sma20": 6.1737,
+        "sma50": 6.4347,
+        "atr14_pct": 11.16,
+        "avg_dollar_volume_20d": 142189.53,
+        "volume_ratio_20d": 0.12,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 18906881.98,
+        "market_cap": 20109803.86,
         "name": "ACCESS Newswire Inc.",
-        "spread_pct": 9.524,
+        "spread_pct": 7.547,
         "short_float_pct": 0.42
       },
       "conviction": {
@@ -7275,7 +7279,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -7286,7 +7290,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": -3.14,
+        "price_vs_insider_pct": 3.03,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -7370,7 +7374,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7411,17 +7415,17 @@
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 4.94,
-        "sma20": 6.227,
-        "sma50": 6.4208,
-        "atr14_pct": 12.39,
-        "avg_dollar_volume_20d": 142437.95,
-        "volume_ratio_20d": 1.47,
+        "price": 5.2543,
+        "sma20": 6.1737,
+        "sma50": 6.4347,
+        "atr14_pct": 11.16,
+        "avg_dollar_volume_20d": 142189.53,
+        "volume_ratio_20d": 0.12,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 18906881.98,
+        "market_cap": 20109803.86,
         "name": "ACCESS Newswire Inc.",
-        "spread_pct": 9.524,
+        "spread_pct": 7.547,
         "short_float_pct": 0.42
       },
       "conviction": {
@@ -7474,7 +7478,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 3,
         "management_cluster_10d": 1,
@@ -7485,7 +7489,7 @@
           "Spread %2.5 üzerinde",
           "Piyasa değeri $30M altında"
         ],
-        "price_vs_insider_pct": -1.0,
+        "price_vs_insider_pct": 5.3,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -7569,7 +7573,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7660,7 +7664,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 180.7,
+        "freshness_hours": 181.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7751,7 +7755,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7842,7 +7846,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 156.7,
+        "freshness_hours": 157.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7933,7 +7937,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 132.7,
+        "freshness_hours": 133.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8024,7 +8028,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 36.7,
+        "freshness_hours": 37.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8115,7 +8119,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8206,7 +8210,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 60.7,
+        "freshness_hours": 61.7,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
