@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-21T23:19:50Z",
+  "generated_at": "2026-08-21T23:48:26Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-21T23:19:50.926Z",
+  "provider_updated_at": "2026-08-21T23:48:26.893Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -113,7 +113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 191.3,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -219,7 +219,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -228,110 +228,6 @@
         "risk_flags": [],
         "price_vs_insider_pct": 0.28,
         "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
-      "source_key": "INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
-      "accession": null,
-      "ticker": "INFQ",
-      "issuer": "Infleqtion, Inc.",
-      "issuer_cik": null,
-      "insider": "MAVERICK CAPITAL LTD",
-      "insider_cik": "MAVERICK CAPITAL LTD",
-      "role": "Entity / beneficial owner",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": true,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 52071.0,
-      "avg_price": 12.4222,
-      "value_usd": 646836.38,
-      "post_shares": 0.0,
-      "prior_shares_est": -52071.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/infq",
-      "sec_url": "https://xoomar.com/markets/insiders/infq",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 14.12,
-        "sma20": 11.5335,
-        "sma50": 11.8242,
-        "atr14_pct": 6.26,
-        "avg_dollar_volume_20d": 114770574.06,
-        "volume_ratio_20d": 1.56,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 3182041548.45,
-        "name": "Infleqtion, Inc.",
-        "spread_pct": 0.142,
-        "short_float_pct": null
-      },
-      "conviction": {
-        "score": 57,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 191.3,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 646836.38,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 13.67,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -427,7 +323,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -435,6 +331,110 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": 20.65,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
+      "source_key": "INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
+      "accession": null,
+      "ticker": "INFQ",
+      "issuer": "Infleqtion, Inc.",
+      "issuer_cik": null,
+      "insider": "MAVERICK CAPITAL LTD",
+      "insider_cik": "MAVERICK CAPITAL LTD",
+      "role": "Entity / beneficial owner",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": true,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 52071.0,
+      "avg_price": 12.4222,
+      "value_usd": 646836.38,
+      "post_shares": 0.0,
+      "prior_shares_est": -52071.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/infq",
+      "sec_url": "https://xoomar.com/markets/insiders/infq",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 14.12,
+        "sma20": 11.5335,
+        "sma50": 11.8242,
+        "atr14_pct": 6.26,
+        "avg_dollar_volume_20d": 114770574.06,
+        "volume_ratio_20d": 1.56,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 3182041548.45,
+        "name": "Infleqtion, Inc.",
+        "spread_pct": 0.285,
+        "short_float_pct": null
+      },
+      "conviction": {
+        "score": 56,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 4,
+            "max": 5
+          },
+          "short_interest": {
+            "points": null,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 191.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 646836.38,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 13.67,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -531,7 +531,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -635,7 +635,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -741,7 +741,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -845,7 +845,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -949,7 +949,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1053,7 +1053,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1157,7 +1157,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1261,7 +1261,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1369,7 +1369,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1475,7 +1475,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1579,7 +1579,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1687,7 +1687,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1795,7 +1795,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1901,7 +1901,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2007,7 +2007,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2113,7 +2113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2219,7 +2219,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 191.3,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2325,7 +2325,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2429,7 +2429,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2533,7 +2533,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2637,7 +2637,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2741,7 +2741,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2845,7 +2845,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2952,7 +2952,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3045,7 +3045,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3149,7 +3149,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3255,7 +3255,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3361,7 +3361,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3465,7 +3465,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3571,7 +3571,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3677,7 +3677,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3783,7 +3783,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3889,7 +3889,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3996,7 +3996,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4103,7 +4103,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4209,7 +4209,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4317,7 +4317,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -4425,7 +4425,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4531,7 +4531,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4622,7 +4622,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -4726,7 +4726,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4830,7 +4830,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4934,7 +4934,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5040,7 +5040,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5146,7 +5146,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5252,7 +5252,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 191.3,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5358,7 +5358,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5464,7 +5464,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5571,7 +5571,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5679,7 +5679,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -5785,7 +5785,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -5891,7 +5891,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5984,7 +5984,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -6088,7 +6088,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6196,7 +6196,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6304,7 +6304,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6397,7 +6397,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6501,7 +6501,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6595,7 +6595,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6686,7 +6686,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6777,7 +6777,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6881,7 +6881,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 71.3,
+        "freshness_hours": 71.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6988,7 +6988,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7096,7 +7096,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7191,7 +7191,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7282,7 +7282,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7386,7 +7386,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7495,7 +7495,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7604,7 +7604,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7700,7 +7700,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7804,7 +7804,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7912,7 +7912,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8021,7 +8021,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 95.3,
+        "freshness_hours": 95.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8129,7 +8129,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8224,7 +8224,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 119.3,
+        "freshness_hours": 119.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8315,7 +8315,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 47.3,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
