@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-08-21T20:21:48Z",
+  "generated_at": "2026-08-21T20:49:23Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-08-21T20:21:49.291Z",
+  "provider_updated_at": "2026-08-21T20:49:24.283Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -17,7 +17,7 @@
     "cluster_events": 12,
     "management_cluster_events": 4,
     "high_conviction": 0,
-    "risk_blocked": 35
+    "risk_blocked": 39
   },
   "events": [
     {
@@ -113,7 +113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.4,
+        "freshness_hours": 188.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -219,7 +219,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -228,110 +228,6 @@
         "risk_flags": [],
         "price_vs_insider_pct": 0.28,
         "verdict": "İZLE / TEYİT BEKLE"
-      }
-    },
-    {
-      "id": "xoomar:INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
-      "source_key": "INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
-      "accession": null,
-      "ticker": "INFQ",
-      "issuer": "Infleqtion, Inc.",
-      "issuer_cik": null,
-      "insider": "MAVERICK CAPITAL LTD",
-      "insider_cik": "MAVERICK CAPITAL LTD",
-      "role": "Entity / beneficial owner",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": true,
-      "transaction_date": "2026-08-14",
-      "filed_at": null,
-      "shares": 52071.0,
-      "avg_price": 12.4222,
-      "value_usd": 646836.38,
-      "post_shares": 0.0,
-      "prior_shares_est": -52071.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/infq",
-      "sec_url": "https://xoomar.com/markets/insiders/infq",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 14.12,
-        "sma20": 11.5335,
-        "sma50": 11.8242,
-        "atr14_pct": 6.26,
-        "avg_dollar_volume_20d": 113278415.54,
-        "volume_ratio_20d": 1.36,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 3182041548.45,
-        "name": "Infleqtion, Inc.",
-        "spread_pct": 0.143,
-        "short_float_pct": null
-      },
-      "conviction": {
-        "score": 57,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 188.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 646836.38,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 13.67,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -427,7 +323,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -478,7 +374,7 @@
         "technical_confirmation": "watch",
         "market_cap": 9205376655.59,
         "name": "Alexandria Real Estate Equities",
-        "spread_pct": 0.019,
+        "spread_pct": 0.0,
         "short_float_pct": 5.56
       },
       "conviction": {
@@ -531,7 +427,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -635,7 +531,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -646,6 +542,632 @@
         ],
         "price_vs_insider_pct": -14.8,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|166858.0000|217.8728",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|166858.0000|217.8728",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-18",
+      "filed_at": null,
+      "shares": 166858.0,
+      "avg_price": 217.8728,
+      "value_usd": 36353819.66,
+      "post_shares": 112197704.0,
+      "prior_shares_est": 112030846.0,
+      "position_increase_pct": 0.15,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 92.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 1.28,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|68569.0000|223.4480",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|68569.0000|223.4480",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 68569.0,
+      "avg_price": 223.448,
+      "value_usd": 15321605.91,
+      "post_shares": 112400847.0,
+      "prior_shares_est": 112332278.0,
+      "position_increase_pct": 0.06,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -1.24,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|57464.0000|222.6553",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|57464.0000|222.6553",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 57464.0,
+      "avg_price": 222.6553,
+      "value_usd": 12794664.16,
+      "post_shares": 112332278.0,
+      "prior_shares_est": 112274814.0,
+      "position_increase_pct": 0.05,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -0.89,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|39272.0000|221.4089",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|39272.0000|221.4089",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 39272.0,
+      "avg_price": 221.4089,
+      "value_usd": 8695170.32,
+      "post_shares": 112274814.0,
+      "prior_shares_est": 112235542.0,
+      "position_increase_pct": 0.03,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -0.33,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|27077.0000|218.3258",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|27077.0000|218.3258",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-18",
+      "filed_at": null,
+      "shares": 27077.0,
+      "avg_price": 218.3258,
+      "value_usd": 5911607.69,
+      "post_shares": 112224781.0,
+      "prior_shares_est": 112197704.0,
+      "position_increase_pct": 0.02,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 15,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 92.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 1.07,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
+      "source_key": "INFQ|MAVERICK CAPITAL LTD|2026-08-14|52071.0000|12.4222",
+      "accession": null,
+      "ticker": "INFQ",
+      "issuer": "Infleqtion, Inc.",
+      "issuer_cik": null,
+      "insider": "MAVERICK CAPITAL LTD",
+      "insider_cik": "MAVERICK CAPITAL LTD",
+      "role": "Entity / beneficial owner",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": true,
+      "transaction_date": "2026-08-14",
+      "filed_at": null,
+      "shares": 52071.0,
+      "avg_price": 12.4222,
+      "value_usd": 646836.38,
+      "post_shares": 0.0,
+      "prior_shares_est": -52071.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/infq",
+      "sec_url": "https://xoomar.com/markets/insiders/infq",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 14.12,
+        "sma20": 11.5335,
+        "sma50": 11.8242,
+        "atr14_pct": 6.26,
+        "avg_dollar_volume_20d": 113278415.54,
+        "volume_ratio_20d": 1.36,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 3182041548.45,
+        "name": "Infleqtion, Inc.",
+        "spread_pct": 1.07,
+        "short_float_pct": null
+      },
+      "conviction": {
+        "score": 53,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 1,
+            "max": 5
+          },
+          "short_interest": {
+            "points": null,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 188.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 646836.38,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 13.67,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -741,7 +1263,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -754,734 +1276,6 @@
         ],
         "price_vs_insider_pct": 6.4,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|166858.0000|217.8728",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|166858.0000|217.8728",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-18",
-      "filed_at": null,
-      "shares": 166858.0,
-      "avg_price": 217.8728,
-      "value_usd": 36353819.66,
-      "post_shares": 112197704.0,
-      "prior_shares_est": 112030846.0,
-      "position_increase_pct": 0.15,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 92.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.28,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|68569.0000|223.4480",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|68569.0000|223.4480",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 68569.0,
-      "avg_price": 223.448,
-      "value_usd": 15321605.91,
-      "post_shares": 112400847.0,
-      "prior_shares_est": 112332278.0,
-      "position_increase_pct": 0.06,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -1.24,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|57464.0000|222.6553",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|57464.0000|222.6553",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 57464.0,
-      "avg_price": 222.6553,
-      "value_usd": 12794664.16,
-      "post_shares": 112332278.0,
-      "prior_shares_est": 112274814.0,
-      "position_increase_pct": 0.05,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -0.89,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|39272.0000|221.4089",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|39272.0000|221.4089",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 39272.0,
-      "avg_price": 221.4089,
-      "value_usd": 8695170.32,
-      "post_shares": 112274814.0,
-      "prior_shares_est": 112235542.0,
-      "position_increase_pct": 0.03,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -0.33,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|27077.0000|218.3258",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|27077.0000|218.3258",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-18",
-      "filed_at": null,
-      "shares": 27077.0,
-      "avg_price": 218.3258,
-      "value_usd": 5911607.69,
-      "post_shares": 112224781.0,
-      "prior_shares_est": 112197704.0,
-      "position_increase_pct": 0.02,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 15,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 92.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.07,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|5976.0000|193.6800",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|5976.0000|193.6800",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, ",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-20",
-      "filed_at": null,
-      "shares": 5976.0,
-      "avg_price": 193.68,
-      "value_usd": 1157431.68,
-      "post_shares": 995031.0,
-      "prior_shares_est": 989055.0,
-      "position_increase_pct": 0.6,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 210.01,
-        "sma20": 158.294,
-        "sma50": 160.3578,
-        "atr14_pct": 4.6,
-        "avg_dollar_volume_20d": 58930940.24,
-        "volume_ratio_20d": 1.26,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 2662726170.8,
-        "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
-        "short_float_pct": 19.15
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 44.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 8.43,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|5363.0000|194.4800",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|5363.0000|194.4800",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, ",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-20",
-      "filed_at": null,
-      "shares": 5363.0,
-      "avg_price": 194.48,
-      "value_usd": 1042996.24,
-      "post_shares": 1000394.0,
-      "prior_shares_est": 995031.0,
-      "position_increase_pct": 0.54,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 210.01,
-        "sma20": 158.294,
-        "sma50": 160.3578,
-        "atr14_pct": 4.6,
-        "avg_dollar_volume_20d": 58930940.24,
-        "volume_ratio_20d": 1.26,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 2662726170.8,
-        "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
-        "short_float_pct": 19.15
-      },
-      "conviction": {
-        "score": 52,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 44.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 7.99,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -1577,7 +1371,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1591,62 +1385,62 @@
       }
     },
     {
-      "id": "xoomar:AMRZ|POLETTI SAMUEL JONAS|2026-08-17|2510.0000|46.9200",
-      "source_key": "AMRZ|POLETTI SAMUEL JONAS|2026-08-17|2510.0000|46.9200",
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|6190.0000|216.8390",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|6190.0000|216.8390",
       "accession": null,
-      "ticker": "AMRZ",
-      "issuer": "Amrize Ltd",
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
       "issuer_cik": null,
-      "insider": "Poletti Samuel Jonas",
-      "insider_cik": "Poletti Samuel Jonas",
-      "role": "Officer",
-      "officer_title": "Chief Strategy & M&A Officer",
-      "role_points": 9,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
       "is_entity": false,
-      "transaction_date": "2026-08-17",
+      "transaction_date": "2026-08-18",
       "filed_at": null,
-      "shares": 2510.0,
-      "avg_price": 46.92,
-      "value_usd": 117769.2,
-      "post_shares": 10155.0,
-      "prior_shares_est": 7645.0,
-      "position_increase_pct": 32.83,
+      "shares": 6190.0,
+      "avg_price": 216.839,
+      "value_usd": 1342233.41,
+      "post_shares": 112030846.0,
+      "prior_shares_est": 112024656.0,
+      "position_increase_pct": 0.01,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amrz",
-      "sec_url": "https://xoomar.com/markets/insiders/amrz",
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 45.68,
-        "sma20": 48.0795,
-        "sma50": 50.4494,
-        "atr14_pct": 3.37,
-        "avg_dollar_volume_20d": 177266617.87,
-        "volume_ratio_20d": 0.78,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 24983563584.83,
-        "name": "Amrize Ltd",
-        "spread_pct": 0.022,
-        "short_float_pct": 1.47
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
       },
       "conviction": {
-        "score": 52,
+        "score": 51,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
-            "points": 9,
+            "points": 3,
             "max": 12
           },
           "purchase_value": {
-            "points": 7,
+            "points": 13,
             "max": 15
           },
           "position_increase": {
-            "points": 10,
+            "points": 2,
             "max": 12
           },
           "cluster_buying": {
@@ -1654,7 +1448,7 @@
             "max": 14
           },
           "filing_freshness": {
-            "points": 5,
+            "points": 6,
             "max": 10,
             "proxy": true
           },
@@ -1675,24 +1469,22 @@
             "max": 5
           },
           "trend": {
-            "points": 0,
+            "points": 3,
             "max": 6
           },
           "technical_confirmation": {
-            "points": 0,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 117769.2,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -2.64,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 1.77,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1789,7 +1581,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1897,7 +1689,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1910,110 +1702,6 @@
         ],
         "price_vs_insider_pct": 5.56,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|6190.0000|216.8390",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-18|6190.0000|216.8390",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-18",
-      "filed_at": null,
-      "shares": 6190.0,
-      "avg_price": 216.839,
-      "value_usd": 1342233.41,
-      "post_shares": 112030846.0,
-      "prior_shares_est": 112024656.0,
-      "position_increase_pct": 0.01,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 50,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 92.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.77,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -2109,7 +1797,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2119,6 +1807,218 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 1.24,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|5976.0000|193.6800",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|5976.0000|193.6800",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-20",
+      "filed_at": null,
+      "shares": 5976.0,
+      "avg_price": 193.68,
+      "value_usd": 1157431.68,
+      "post_shares": 995031.0,
+      "prior_shares_est": 989055.0,
+      "position_increase_pct": 0.6,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 210.01,
+        "sma20": 158.294,
+        "sma50": 160.3578,
+        "atr14_pct": 4.6,
+        "avg_dollar_volume_20d": 58930940.24,
+        "volume_ratio_20d": 1.26,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 2662726170.8,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 2.182,
+        "short_float_pct": 19.15
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 44.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2902551.54,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 8.43,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|5363.0000|194.4800",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|5363.0000|194.4800",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-20",
+      "filed_at": null,
+      "shares": 5363.0,
+      "avg_price": 194.48,
+      "value_usd": 1042996.24,
+      "post_shares": 1000394.0,
+      "prior_shares_est": 995031.0,
+      "position_increase_pct": 0.54,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 210.01,
+        "sma20": 158.294,
+        "sma50": 160.3578,
+        "atr14_pct": 4.6,
+        "avg_dollar_volume_20d": 58930940.24,
+        "volume_ratio_20d": 1.26,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 2662726170.8,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 2.182,
+        "short_float_pct": 19.15
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 44.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2902551.54,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 7.99,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2215,7 +2115,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2321,7 +2221,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.4,
+        "freshness_hours": 188.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2331,6 +2231,633 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 0.18,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|4432.0000|220.8164",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|4432.0000|220.8164",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 4432.0,
+      "avg_price": 220.8164,
+      "value_usd": 978658.28,
+      "post_shares": 112235542.0,
+      "prior_shares_est": 112231110.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -0.07,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2778.0000|224.0853",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2778.0000|224.0853",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 2778.0,
+      "avg_price": 224.0853,
+      "value_usd": 622508.96,
+      "post_shares": 112403625.0,
+      "prior_shares_est": 112400847.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": -1.52,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2175.0000|219.4929",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2175.0000|219.4929",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 2175.0,
+      "avg_price": 219.4929,
+      "value_usd": 477397.06,
+      "post_shares": 112231110.0,
+      "prior_shares_est": 112228935.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 0.54,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2049.0000|218.6433",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2049.0000|218.6433",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 2049.0,
+      "avg_price": 218.6433,
+      "value_usd": 448000.12,
+      "post_shares": 112228935.0,
+      "prior_shares_est": 112226886.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 0.93,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|1400.0000|217.5244",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|1400.0000|217.5244",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 1400.0,
+      "avg_price": 217.5244,
+      "value_usd": 304534.16,
+      "post_shares": 112226886.0,
+      "prior_shares_est": 112225486.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 1.45,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMRZ|POLETTI SAMUEL JONAS|2026-08-17|2510.0000|46.9200",
+      "source_key": "AMRZ|POLETTI SAMUEL JONAS|2026-08-17|2510.0000|46.9200",
+      "accession": null,
+      "ticker": "AMRZ",
+      "issuer": "Amrize Ltd",
+      "issuer_cik": null,
+      "insider": "Poletti Samuel Jonas",
+      "insider_cik": "Poletti Samuel Jonas",
+      "role": "Officer",
+      "officer_title": "Chief Strategy & M&A Officer",
+      "role_points": 9,
+      "is_entity": false,
+      "transaction_date": "2026-08-17",
+      "filed_at": null,
+      "shares": 2510.0,
+      "avg_price": 46.92,
+      "value_usd": 117769.2,
+      "post_shares": 10155.0,
+      "prior_shares_est": 7645.0,
+      "position_increase_pct": 32.83,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amrz",
+      "sec_url": "https://xoomar.com/markets/insiders/amrz",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 45.68,
+        "sma20": 48.0795,
+        "sma50": 50.4494,
+        "atr14_pct": 3.37,
+        "avg_dollar_volume_20d": 177266617.87,
+        "volume_ratio_20d": 0.78,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 24983563584.83,
+        "name": "Amrize Ltd",
+        "spread_pct": 1.186,
+        "short_float_pct": 1.47
+      },
+      "conviction": {
+        "score": 48,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 9,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 10,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 1,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 116.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 117769.2,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş",
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -2.64,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -2427,7 +2954,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -2520,7 +3047,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2528,838 +3055,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": null,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|4432.0000|220.8164",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|4432.0000|220.8164",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 4432.0,
-      "avg_price": 220.8164,
-      "value_usd": 978658.28,
-      "post_shares": 112235542.0,
-      "prior_shares_est": 112231110.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -0.07,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2778.0000|224.0853",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2778.0000|224.0853",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 2778.0,
-      "avg_price": 224.0853,
-      "value_usd": 622508.96,
-      "post_shares": 112403625.0,
-      "prior_shares_est": 112400847.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -1.52,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2175.0000|219.4929",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2175.0000|219.4929",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 2175.0,
-      "avg_price": 219.4929,
-      "value_usd": 477397.06,
-      "post_shares": 112231110.0,
-      "prior_shares_est": 112228935.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.54,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2049.0000|218.6433",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|2049.0000|218.6433",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 2049.0,
-      "avg_price": 218.6433,
-      "value_usd": 448000.12,
-      "post_shares": 112228935.0,
-      "prior_shares_est": 112226886.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.93,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|1400.0000|217.5244",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|1400.0000|217.5244",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 1400.0,
-      "avg_price": 217.5244,
-      "value_usd": 304534.16,
-      "post_shares": 112226886.0,
-      "prior_shares_est": 112225486.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.45,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|1234.0000|192.8000",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|1234.0000|192.8000",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, ",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-20",
-      "filed_at": null,
-      "shares": 1234.0,
-      "avg_price": 192.8,
-      "value_usd": 237915.2,
-      "post_shares": 989055.0,
-      "prior_shares_est": 987821.0,
-      "position_increase_pct": 0.12,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 210.01,
-        "sma20": 158.294,
-        "sma50": 160.3578,
-        "atr14_pct": 4.6,
-        "avg_dollar_volume_20d": 58930940.24,
-        "volume_ratio_20d": 1.26,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 2662726170.8,
-        "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
-        "short_float_pct": 19.15
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 44.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 8.93,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|1151.0000|192.0900",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|1151.0000|192.0900",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, ",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-20",
-      "filed_at": null,
-      "shares": 1151.0,
-      "avg_price": 192.09,
-      "value_usd": 221095.59,
-      "post_shares": 987821.0,
-      "prior_shares_est": 986670.0,
-      "position_increase_pct": 0.12,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 210.01,
-        "sma20": 158.294,
-        "sma50": 160.3578,
-        "atr14_pct": 4.6,
-        "avg_dollar_volume_20d": 58930940.24,
-        "volume_ratio_20d": 1.26,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 2662726170.8,
-        "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
-        "short_float_pct": 19.15
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 44.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 9.33,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|943.0000|190.7700",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|943.0000|190.7700",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "Alpha Metallurgical Resources, ",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-20",
-      "filed_at": null,
-      "shares": 943.0,
-      "avg_price": 190.77,
-      "value_usd": 179896.11,
-      "post_shares": 986670.0,
-      "prior_shares_est": 985727.0,
-      "position_increase_pct": 0.1,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 210.01,
-        "sma20": 158.294,
-        "sma50": 160.3578,
-        "atr14_pct": 4.6,
-        "avg_dollar_volume_20d": 58930940.24,
-        "volume_ratio_20d": 1.26,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 2662726170.8,
-        "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
-        "short_float_pct": 19.15
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 3,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 44.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 10.09,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3456,7 +3151,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3562,7 +3257,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3572,6 +3267,110 @@
           "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 0.26,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|705.0000|216.6491",
+      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|705.0000|216.6491",
+      "accession": null,
+      "ticker": "RSG",
+      "issuer": "Republic Services, Inc.",
+      "issuer_cik": null,
+      "insider": "CASCADE INVESTMENT, L.L.C.",
+      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 705.0,
+      "avg_price": 216.6491,
+      "value_usd": 152737.62,
+      "post_shares": 112225486.0,
+      "prior_shares_est": 112224781.0,
+      "position_increase_pct": 0.0,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/rsg",
+      "sec_url": "https://xoomar.com/markets/insiders/rsg",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 220.67,
+        "sma20": 214.505,
+        "sma50": 214.8652,
+        "atr14_pct": 1.86,
+        "avg_dollar_volume_20d": 302372745.95,
+        "volume_ratio_20d": 0.55,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 67572017294.57,
+        "name": "Republic Services, Inc.",
+        "spread_pct": 0.032,
+        "short_float_pct": 1.97
+      },
+      "conviction": {
+        "score": 45,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 83402937.35,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 1.86,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3668,7 +3467,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -3682,112 +3481,8 @@
       }
     },
     {
-      "id": "xoomar:RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|705.0000|216.6491",
-      "source_key": "RSG|CASCADE INVESTMENT, L.L.C.|2026-08-19|705.0000|216.6491",
-      "accession": null,
-      "ticker": "RSG",
-      "issuer": "Republic Services, Inc.",
-      "issuer_cik": null,
-      "insider": "CASCADE INVESTMENT, L.L.C.",
-      "insider_cik": "CASCADE INVESTMENT, L.L.C.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 705.0,
-      "avg_price": 216.6491,
-      "value_usd": 152737.62,
-      "post_shares": 112225486.0,
-      "prior_shares_est": 112224781.0,
-      "position_increase_pct": 0.0,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/rsg",
-      "sec_url": "https://xoomar.com/markets/insiders/rsg",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 220.67,
-        "sma20": 214.505,
-        "sma50": 214.8652,
-        "atr14_pct": 1.86,
-        "avg_dollar_volume_20d": 302372745.95,
-        "volume_ratio_20d": 0.55,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 67572017294.57,
-        "name": "Republic Services, Inc.",
-        "spread_pct": 0.181,
-        "short_float_pct": 1.97
-      },
-      "conviction": {
-        "score": 44,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 7,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 83402937.35,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.86,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|333.0000|189.8400",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|333.0000|189.8400",
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|1234.0000|192.8000",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|1234.0000|192.8000",
       "accession": null,
       "ticker": "AMR",
       "issuer": "Alpha Metallurgical Resources, ",
@@ -3800,12 +3495,12 @@
       "is_entity": false,
       "transaction_date": "2026-08-20",
       "filed_at": null,
-      "shares": 333.0,
-      "avg_price": 189.84,
-      "value_usd": 63216.72,
-      "post_shares": 985727.0,
-      "prior_shares_est": 985394.0,
-      "position_increase_pct": 0.03,
+      "shares": 1234.0,
+      "avg_price": 192.8,
+      "value_usd": 237915.2,
+      "post_shares": 989055.0,
+      "prior_shares_est": 987821.0,
+      "position_increase_pct": 0.12,
       "new_position": false,
       "transaction_count": 1,
       "source_url": "https://xoomar.com/markets/insiders/amr",
@@ -3825,7 +3520,7 @@
         "technical_confirmation": "watch",
         "market_cap": 2662726170.8,
         "name": "Alpha Metallurgical Resources, ",
-        "spread_pct": 0.411,
+        "spread_pct": 2.182,
         "short_float_pct": 19.15
       },
       "conviction": {
@@ -3837,7 +3532,7 @@
             "max": 12
           },
           "purchase_value": {
-            "points": 4,
+            "points": 7,
             "max": 15
           },
           "position_increase": {
@@ -3862,7 +3557,7 @@
             "max": 8
           },
           "spread": {
-            "points": 3,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
@@ -3878,14 +3573,228 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 2902551.54,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 10.62,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 8.93,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|1151.0000|192.0900",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|1151.0000|192.0900",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-20",
+      "filed_at": null,
+      "shares": 1151.0,
+      "avg_price": 192.09,
+      "value_usd": 221095.59,
+      "post_shares": 987821.0,
+      "prior_shares_est": 986670.0,
+      "position_increase_pct": 0.12,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 210.01,
+        "sma20": 158.294,
+        "sma50": 160.3578,
+        "atr14_pct": 4.6,
+        "avg_dollar_volume_20d": 58930940.24,
+        "volume_ratio_20d": 1.26,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 2662726170.8,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 2.182,
+        "short_float_pct": 19.15
+      },
+      "conviction": {
+        "score": 43,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 44.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2902551.54,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 9.33,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|943.0000|190.7700",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|943.0000|190.7700",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-20",
+      "filed_at": null,
+      "shares": 943.0,
+      "avg_price": 190.77,
+      "value_usd": 179896.11,
+      "post_shares": 986670.0,
+      "prior_shares_est": 985727.0,
+      "position_increase_pct": 0.1,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 210.01,
+        "sma20": 158.294,
+        "sma50": 160.3578,
+        "atr14_pct": 4.6,
+        "avg_dollar_volume_20d": 58930940.24,
+        "volume_ratio_20d": 1.26,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 2662726170.8,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 2.182,
+        "short_float_pct": 19.15
+      },
+      "conviction": {
+        "score": 43,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 7,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 44.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2902551.54,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 10.09,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3982,7 +3891,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4089,7 +3998,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4196,7 +4105,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4302,7 +4211,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4315,110 +4224,6 @@
         ],
         "price_vs_insider_pct": -23.23,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:AVBC|DOANE THOMAS|2026-08-17|1726.0000|22.3100",
-      "source_key": "AVBC|DOANE THOMAS|2026-08-17|1726.0000|22.3100",
-      "accession": null,
-      "ticker": "AVBC",
-      "issuer": "Avidia Bancorp, Inc.",
-      "issuer_cik": null,
-      "insider": "Doane Thomas",
-      "insider_cik": "Doane Thomas",
-      "role": "Officer",
-      "officer_title": "EVP- Human Resources",
-      "role_points": 9,
-      "is_entity": false,
-      "transaction_date": "2026-08-17",
-      "filed_at": null,
-      "shares": 1726.0,
-      "avg_price": 22.31,
-      "value_usd": 38507.06,
-      "post_shares": 19422.0,
-      "prior_shares_est": 17696.0,
-      "position_increase_pct": 9.75,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/avbc",
-      "sec_url": "https://xoomar.com/markets/insiders/avbc",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 21.75,
-        "sma20": 21.887,
-        "sma50": 21.0244,
-        "atr14_pct": 2.08,
-        "avg_dollar_volume_20d": 3568589.64,
-        "volume_ratio_20d": 0.48,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 401755125.0,
-        "name": "Avidia Bancorp, Inc.",
-        "spread_pct": 0.091,
-        "short_float_pct": 2.07
-      },
-      "conviction": {
-        "score": 41,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 9,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 3,
-            "max": 8
-          },
-          "spread": {
-            "points": 5,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 116.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 38507.06,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -2.51,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4514,7 +4319,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -4527,6 +4332,112 @@
         ],
         "price_vs_insider_pct": 5.56,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-08-20|333.0000|189.8400",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-08-20|333.0000|189.8400",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-20",
+      "filed_at": null,
+      "shares": 333.0,
+      "avg_price": 189.84,
+      "value_usd": 63216.72,
+      "post_shares": 985727.0,
+      "prior_shares_est": 985394.0,
+      "position_increase_pct": 0.03,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 210.01,
+        "sma20": 158.294,
+        "sma50": 160.3578,
+        "atr14_pct": 4.6,
+        "avg_dollar_volume_20d": 58930940.24,
+        "volume_ratio_20d": 1.26,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 2662726170.8,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 2.182,
+        "short_float_pct": 19.15
+      },
+      "conviction": {
+        "score": 40,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 44.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2902551.54,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Spread geniş"
+        ],
+        "price_vs_insider_pct": 10.62,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4622,7 +4533,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4713,7 +4624,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -4817,7 +4728,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4921,7 +4832,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5025,7 +4936,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5131,7 +5042,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5141,6 +5052,112 @@
           "20g dolar hacmi $0.5M altında"
         ],
         "price_vs_insider_pct": -0.17,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AVBC|DOANE THOMAS|2026-08-17|1726.0000|22.3100",
+      "source_key": "AVBC|DOANE THOMAS|2026-08-17|1726.0000|22.3100",
+      "accession": null,
+      "ticker": "AVBC",
+      "issuer": "Avidia Bancorp, Inc.",
+      "issuer_cik": null,
+      "insider": "Doane Thomas",
+      "insider_cik": "Doane Thomas",
+      "role": "Officer",
+      "officer_title": "EVP- Human Resources",
+      "role_points": 9,
+      "is_entity": false,
+      "transaction_date": "2026-08-17",
+      "filed_at": null,
+      "shares": 1726.0,
+      "avg_price": 22.31,
+      "value_usd": 38507.06,
+      "post_shares": 19422.0,
+      "prior_shares_est": 17696.0,
+      "position_increase_pct": 9.75,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/avbc",
+      "sec_url": "https://xoomar.com/markets/insiders/avbc",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 21.75,
+        "sma20": 21.887,
+        "sma50": 21.0244,
+        "atr14_pct": 2.08,
+        "avg_dollar_volume_20d": 3568589.64,
+        "volume_ratio_20d": 0.48,
+        "trend": "neutral",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 401755125.0,
+        "name": "Avidia Bancorp, Inc.",
+        "spread_pct": 21.333,
+        "short_float_pct": 2.07
+      },
+      "conviction": {
+        "score": 36,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 9,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 3,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 116.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 38507.06,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -2.51,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5237,7 +5254,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 188.4,
+        "freshness_hours": 188.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5343,7 +5360,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5449,7 +5466,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5461,214 +5478,6 @@
         ],
         "price_vs_insider_pct": 4.55,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:BY|HERSETH MARY JO S.|2026-08-19|300.0000|38.3950",
-      "source_key": "BY|HERSETH MARY JO S.|2026-08-19|300.0000|38.3950",
-      "accession": null,
-      "ticker": "BY",
-      "issuer": "Byline Bancorp, Inc.",
-      "issuer_cik": null,
-      "insider": "HERSETH MARY JO S.",
-      "insider_cik": "HERSETH MARY JO S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 300.0,
-      "avg_price": 38.395,
-      "value_usd": 11518.5,
-      "post_shares": 19100.0,
-      "prior_shares_est": 18800.0,
-      "position_increase_pct": 1.6,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/by",
-      "sec_url": "https://xoomar.com/markets/insiders/by",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 38.25,
-        "sma20": 39.0325,
-        "sma50": 37.7818,
-        "atr14_pct": 1.62,
-        "avg_dollar_volume_20d": 8833946.84,
-        "volume_ratio_20d": 0.76,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1728380565.0,
-        "name": "Byline Bancorp, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 4.32
-      },
-      "conviction": {
-        "score": 35,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 15348.5,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -0.38,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:BY|KISTNER WILLIAM G|2026-08-19|100.0000|38.3000",
-      "source_key": "BY|KISTNER WILLIAM G|2026-08-19|100.0000|38.3000",
-      "accession": null,
-      "ticker": "BY",
-      "issuer": "Byline Bancorp, Inc.",
-      "issuer_cik": null,
-      "insider": "KISTNER WILLIAM G",
-      "insider_cik": "KISTNER WILLIAM G",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-08-19",
-      "filed_at": null,
-      "shares": 100.0,
-      "avg_price": 38.3,
-      "value_usd": 3830.0,
-      "post_shares": 14289.0,
-      "prior_shares_est": 14189.0,
-      "position_increase_pct": 0.7,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/by",
-      "sec_url": "https://xoomar.com/markets/insiders/by",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 38.25,
-        "sma20": 39.0325,
-        "sma50": 37.7818,
-        "atr14_pct": 1.62,
-        "avg_dollar_volume_20d": 8833946.84,
-        "volume_ratio_20d": 0.76,
-        "trend": "neutral",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 1728380565.0,
-        "name": "Byline Bancorp, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 4.32
-      },
-      "conviction": {
-        "score": 35,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 3,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 68.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 15348.5,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -0.13,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -5764,7 +5573,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5776,6 +5585,112 @@
           "Piyasa değeri $30M altında"
         ],
         "price_vs_insider_pct": 11.32,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BY|HERSETH MARY JO S.|2026-08-19|300.0000|38.3950",
+      "source_key": "BY|HERSETH MARY JO S.|2026-08-19|300.0000|38.3950",
+      "accession": null,
+      "ticker": "BY",
+      "issuer": "Byline Bancorp, Inc.",
+      "issuer_cik": null,
+      "insider": "HERSETH MARY JO S.",
+      "insider_cik": "HERSETH MARY JO S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 300.0,
+      "avg_price": 38.395,
+      "value_usd": 11518.5,
+      "post_shares": 19100.0,
+      "prior_shares_est": 18800.0,
+      "position_increase_pct": 1.6,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/by",
+      "sec_url": "https://xoomar.com/markets/insiders/by",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 38.25,
+        "sma20": 39.0325,
+        "sma50": 37.7818,
+        "atr14_pct": 1.62,
+        "avg_dollar_volume_20d": 8833946.84,
+        "volume_ratio_20d": 0.76,
+        "trend": "neutral",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1728380565.0,
+        "name": "Byline Bancorp, Inc.",
+        "spread_pct": 4.676,
+        "short_float_pct": 4.32
+      },
+      "conviction": {
+        "score": 33,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 15348.5,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -0.38,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5872,7 +5787,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5884,6 +5799,112 @@
           "Fiyat insider alımından sonra %41 yükselmiş"
         ],
         "price_vs_insider_pct": 41.28,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:BY|KISTNER WILLIAM G|2026-08-19|100.0000|38.3000",
+      "source_key": "BY|KISTNER WILLIAM G|2026-08-19|100.0000|38.3000",
+      "accession": null,
+      "ticker": "BY",
+      "issuer": "Byline Bancorp, Inc.",
+      "issuer_cik": null,
+      "insider": "KISTNER WILLIAM G",
+      "insider_cik": "KISTNER WILLIAM G",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-08-19",
+      "filed_at": null,
+      "shares": 100.0,
+      "avg_price": 38.3,
+      "value_usd": 3830.0,
+      "post_shares": 14289.0,
+      "prior_shares_est": 14189.0,
+      "position_increase_pct": 0.7,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/by",
+      "sec_url": "https://xoomar.com/markets/insiders/by",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 38.25,
+        "sma20": 39.0325,
+        "sma50": 37.7818,
+        "atr14_pct": 1.62,
+        "avg_dollar_volume_20d": 8833946.84,
+        "volume_ratio_20d": 0.76,
+        "trend": "neutral",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 1728380565.0,
+        "name": "Byline Bancorp, Inc.",
+        "spread_pct": 4.676,
+        "short_float_pct": 4.32
+      },
+      "conviction": {
+        "score": 33,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 3,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 68.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 15348.5,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": -0.13,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5927,7 +5948,7 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 667033374.5,
         "name": "Enhanced Group Inc.",
-        "spread_pct": 2.312,
+        "spread_pct": 3.448,
         "short_float_pct": null
       },
       "conviction": {
@@ -5980,19 +6001,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 330420.0,
-        "risk_status": "WARN",
+        "risk_status": "BLOCK",
         "risk_flags": [
-          "ATR yüksek",
-          "Spread geniş",
-          "Mevcut trend aşağı"
+          "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 4.11,
-        "verdict": "DÜŞÜK ÖNCELİK"
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -6075,7 +6094,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -6179,7 +6198,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6287,7 +6306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6394,7 +6413,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6501,7 +6520,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6609,7 +6628,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6702,7 +6721,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6806,7 +6825,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6901,7 +6920,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6992,7 +7011,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7083,7 +7102,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 68.4,
+        "freshness_hours": 68.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7187,7 +7206,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7296,7 +7315,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7405,7 +7424,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7501,7 +7520,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7592,7 +7611,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7696,7 +7715,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7791,7 +7810,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7895,7 +7914,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 92.4,
+        "freshness_hours": 92.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8003,7 +8022,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8111,7 +8130,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8207,7 +8226,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 116.4,
+        "freshness_hours": 116.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8298,7 +8317,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 44.4,
+        "freshness_hours": 44.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
