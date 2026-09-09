@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-09-09T21:48:51Z",
+  "generated_at": "2026-09-09T23:48:16Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-09-09T21:48:51.603Z",
+  "provider_updated_at": "2026-09-09T23:48:17.399Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -17,7 +17,7 @@
     "cluster_events": 11,
     "management_cluster_events": 7,
     "high_conviction": 0,
-    "risk_blocked": 31
+    "risk_blocked": 35
   },
   "events": [
     {
@@ -60,11 +60,11 @@
         "technical_confirmation": "watch",
         "market_cap": 8924468827.87,
         "name": "GameStop Corporation",
-        "spread_pct": 1.146,
+        "spread_pct": 0.25,
         "short_float_pct": 13.2
       },
       "conviction": {
-        "score": 62,
+        "score": 65,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
@@ -97,7 +97,7 @@
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": 4,
             "max": 5
           },
           "short_interest": {
@@ -113,15 +113,13 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.8,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 1033956.0,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş"
-        ],
+        "risk_status": "PASS",
+        "risk_flags": [],
         "price_vs_insider_pct": 5.8,
         "verdict": "İZLE / TEYİT BEKLE"
       }
@@ -219,7 +217,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -272,7 +270,7 @@
         "technical_confirmation": "watch",
         "market_cap": 1201241828.39,
         "name": "Donnelley Financial Solutions, ",
-        "spread_pct": 0.267,
+        "spread_pct": 0.288,
         "short_float_pct": 5.53
       },
       "conviction": {
@@ -325,7 +323,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -429,7 +427,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -533,7 +531,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -637,7 +635,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -741,7 +739,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -845,7 +843,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -896,7 +894,7 @@
         "technical_confirmation": "watch",
         "market_cap": 1201241828.39,
         "name": "Donnelley Financial Solutions, ",
-        "spread_pct": 0.267,
+        "spread_pct": 0.288,
         "short_float_pct": 5.53
       },
       "conviction": {
@@ -949,7 +947,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1000,7 +998,7 @@
         "technical_confirmation": "watch",
         "market_cap": 1201241828.39,
         "name": "Donnelley Financial Solutions, ",
-        "spread_pct": 0.267,
+        "spread_pct": 0.288,
         "short_float_pct": 5.53
       },
       "conviction": {
@@ -1053,7 +1051,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1157,7 +1155,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1165,110 +1163,6 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": -0.5,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:VST|BURKE JAMES A|2026-09-01|4465.0000|135.2500",
-      "source_key": "VST|BURKE JAMES A|2026-09-01|4465.0000|135.2500",
-      "accession": null,
-      "ticker": "VST",
-      "issuer": "Vistra Corp.",
-      "issuer_cik": null,
-      "insider": "BURKE JAMES A",
-      "insider_cik": "BURKE JAMES A",
-      "role": "CEO / President",
-      "officer_title": "President and CEO",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-09-01",
-      "filed_at": null,
-      "shares": 4465.0,
-      "avg_price": 135.25,
-      "value_usd": 603891.25,
-      "post_shares": 1146352.0,
-      "prior_shares_est": 1141887.0,
-      "position_increase_pct": 0.39,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/vst",
-      "sec_url": "https://xoomar.com/markets/insiders/vst",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 151.1,
-        "sma20": 142.628,
-        "sma50": 149.1812,
-        "atr14_pct": 3.06,
-        "avg_dollar_volume_20d": 583570488.29,
-        "volume_ratio_20d": 0.95,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 50714480013.05,
-        "name": "Vistra Corp.",
-        "spread_pct": 0.35,
-        "short_float_pct": 3.32
-      },
-      "conviction": {
-        "score": 53,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 603891.25,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 11.72,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1312,12 +1206,12 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 28348612.83,
         "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
+        "spread_pct": null,
         "short_float_pct": 83.47
       },
       "conviction": {
-        "score": 53,
-        "data_completeness_pct": 95,
+        "score": 55,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 10,
@@ -1349,7 +1243,7 @@
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -1365,7 +1259,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -1464,7 +1358,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1472,6 +1366,110 @@
         "risk_status": "PASS",
         "risk_flags": [],
         "price_vs_insider_pct": -1.57,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:VST|BURKE JAMES A|2026-09-01|4465.0000|135.2500",
+      "source_key": "VST|BURKE JAMES A|2026-09-01|4465.0000|135.2500",
+      "accession": null,
+      "ticker": "VST",
+      "issuer": "Vistra Corp.",
+      "issuer_cik": null,
+      "insider": "BURKE JAMES A",
+      "insider_cik": "BURKE JAMES A",
+      "role": "CEO / President",
+      "officer_title": "President and CEO",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-09-01",
+      "filed_at": null,
+      "shares": 4465.0,
+      "avg_price": 135.25,
+      "value_usd": 603891.25,
+      "post_shares": 1146352.0,
+      "prior_shares_est": 1141887.0,
+      "position_increase_pct": 0.39,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/vst",
+      "sec_url": "https://xoomar.com/markets/insiders/vst",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 151.1,
+        "sma20": 142.628,
+        "sma50": 149.1812,
+        "atr14_pct": 3.06,
+        "avg_dollar_volume_20d": 583570488.29,
+        "volume_ratio_20d": 0.95,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 50714480013.05,
+        "name": "Vistra Corp.",
+        "spread_pct": 0.357,
+        "short_float_pct": 3.32
+      },
+      "conviction": {
+        "score": 52,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 603891.25,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 11.72,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -1568,7 +1566,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1674,7 +1672,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1685,410 +1683,6 @@
         ],
         "price_vs_insider_pct": 3.23,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2891.0000|226.9200",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2891.0000|226.9200",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "AMR",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 2891.0,
-      "avg_price": 226.92,
-      "value_usd": 656025.72,
-      "post_shares": 1034990.0,
-      "prior_shares_est": 1032099.0,
-      "position_increase_pct": 0.28,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 226.94,
-        "sma20": 205.5555,
-        "sma50": 171.2124,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 74955289.89,
-        "volume_ratio_20d": 0.73,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
-      },
-      "conviction": {
-        "score": 51,
-        "data_completeness_pct": 85,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 45.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.01,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2749.0000|226.1300",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2749.0000|226.1300",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "AMR",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 2749.0,
-      "avg_price": 226.13,
-      "value_usd": 621631.37,
-      "post_shares": 1032099.0,
-      "prior_shares_est": 1029350.0,
-      "position_increase_pct": 0.27,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 226.94,
-        "sma20": 205.5555,
-        "sma50": 171.2124,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 74955289.89,
-        "volume_ratio_20d": 0.73,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
-      },
-      "conviction": {
-        "score": 51,
-        "data_completeness_pct": 85,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 45.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.36,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2109.0000|225.2100",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2109.0000|225.2100",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "AMR",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 2109.0,
-      "avg_price": 225.21,
-      "value_usd": 474967.89,
-      "post_shares": 1029350.0,
-      "prior_shares_est": 1027241.0,
-      "position_increase_pct": 0.21,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 226.94,
-        "sma20": 205.5555,
-        "sma50": 171.2124,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 74955289.89,
-        "volume_ratio_20d": 0.73,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
-      },
-      "conviction": {
-        "score": 51,
-        "data_completeness_pct": 85,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 45.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 0.77,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|1847.0000|223.8500",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|1847.0000|223.8500",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "AMR",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 1847.0,
-      "avg_price": 223.85,
-      "value_usd": 413450.95,
-      "post_shares": 1027241.0,
-      "prior_shares_est": 1025394.0,
-      "position_increase_pct": 0.18,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 226.94,
-        "sma20": 205.5555,
-        "sma50": 171.2124,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 74955289.89,
-        "volume_ratio_20d": 0.73,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
-      },
-      "conviction": {
-        "score": 51,
-        "data_completeness_pct": 85,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 45.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 1.38,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -2184,7 +1778,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2193,6 +1787,430 @@
         "risk_flags": [],
         "price_vs_insider_pct": -0.89,
         "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2891.0000|226.9200",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2891.0000|226.9200",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-08",
+      "filed_at": null,
+      "shares": 2891.0,
+      "avg_price": 226.92,
+      "value_usd": 656025.72,
+      "post_shares": 1034990.0,
+      "prior_shares_est": 1032099.0,
+      "position_increase_pct": 0.28,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 226.94,
+        "sma20": 205.5555,
+        "sma50": 171.2124,
+        "atr14_pct": 5.43,
+        "avg_dollar_volume_20d": 74955289.89,
+        "volume_ratio_20d": 0.73,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 47.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2258288.94,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 0.01,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2749.0000|226.1300",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2749.0000|226.1300",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-08",
+      "filed_at": null,
+      "shares": 2749.0,
+      "avg_price": 226.13,
+      "value_usd": 621631.37,
+      "post_shares": 1032099.0,
+      "prior_shares_est": 1029350.0,
+      "position_increase_pct": 0.27,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 226.94,
+        "sma20": 205.5555,
+        "sma50": 171.2124,
+        "atr14_pct": 5.43,
+        "avg_dollar_volume_20d": 74955289.89,
+        "volume_ratio_20d": 0.73,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 47.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2258288.94,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 0.36,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|2109.0000|225.2100",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|2109.0000|225.2100",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-08",
+      "filed_at": null,
+      "shares": 2109.0,
+      "avg_price": 225.21,
+      "value_usd": 474967.89,
+      "post_shares": 1029350.0,
+      "prior_shares_est": 1027241.0,
+      "position_increase_pct": 0.21,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 226.94,
+        "sma20": 205.5555,
+        "sma50": 171.2124,
+        "atr14_pct": 5.43,
+        "avg_dollar_volume_20d": 74955289.89,
+        "volume_ratio_20d": 0.73,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 47.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2258288.94,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 0.77,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|1847.0000|223.8500",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|1847.0000|223.8500",
+      "accession": null,
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
+      "issuer_cik": null,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-08",
+      "filed_at": null,
+      "shares": 1847.0,
+      "avg_price": 223.85,
+      "value_usd": 413450.95,
+      "post_shares": 1027241.0,
+      "prior_shares_est": 1025394.0,
+      "position_increase_pct": 0.18,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 226.94,
+        "sma20": 205.5555,
+        "sma50": 171.2124,
+        "atr14_pct": 5.43,
+        "avg_dollar_volume_20d": 74955289.89,
+        "volume_ratio_20d": 0.73,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
+      },
+      "conviction": {
+        "score": 49,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 7,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 0,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 6,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 47.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2258288.94,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
+        "price_vs_insider_pct": 1.38,
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -2233,7 +2251,7 @@
         "volume_ratio_20d": 1.11,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1325102911.86,
+        "market_cap": 1324816394.2,
         "name": "American Assets Trust, Inc.",
         "spread_pct": 0.093,
         "short_float_pct": 4.68
@@ -2288,7 +2306,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2339,7 +2357,7 @@
         "volume_ratio_20d": 1.11,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 1325102911.86,
+        "market_cap": 1324816394.2,
         "name": "American Assets Trust, Inc.",
         "spread_pct": 0.093,
         "short_float_pct": 4.68
@@ -2394,7 +2412,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2500,7 +2518,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2510,6 +2528,113 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -2.12,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
+      "source_key": "GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "CRAGUN KENNETH S",
+      "insider_cik": "CRAGUN KENNETH S",
+      "role": "CFO",
+      "officer_title": "Chief Financial Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 100000.0,
+      "avg_price": 0.1865,
+      "value_usd": 18650.0,
+      "post_shares": 100000.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.2014,
+        "sma20": 0.3576,
+        "sma50": 0.526,
+        "atr14_pct": 18.34,
+        "avg_dollar_volume_20d": 6959370.41,
+        "volume_ratio_20d": 1.47,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 28348612.83,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": null,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 47,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": null,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 143.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 485760.62,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": 7.99,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2606,7 +2731,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2617,113 +2742,6 @@
         ],
         "price_vs_insider_pct": -2.83,
         "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
-      "source_key": "GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "CRAGUN KENNETH S",
-      "insider_cik": "CRAGUN KENNETH S",
-      "role": "CFO",
-      "officer_title": "Chief Financial Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 100000.0,
-      "avg_price": 0.1865,
-      "value_usd": 18650.0,
-      "post_shares": 100000.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.2014,
-        "sma20": 0.3576,
-        "sma50": 0.526,
-        "atr14_pct": 18.34,
-        "avg_dollar_volume_20d": 6959370.41,
-        "volume_ratio_20d": 1.47,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 28348612.83,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 46,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 1,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 141.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 485760.62,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": 7.99,
-        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -2819,7 +2837,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2925,7 +2943,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3031,7 +3049,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3137,7 +3155,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3241,7 +3259,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3253,115 +3271,11 @@
       }
     },
     {
-      "id": "xoomar:UAMY|BARDSWICH LLOYD|2026-09-01|20000.0000|4.6350",
-      "source_key": "UAMY|BARDSWICH LLOYD|2026-09-01|20000.0000|4.6350",
-      "accession": null,
-      "ticker": "UAMY",
-      "issuer": "United States Antimony Corporat",
-      "issuer_cik": null,
-      "insider": "Bardswich Lloyd",
-      "insider_cik": "Bardswich Lloyd",
-      "role": "Officer",
-      "officer_title": "Dir, EVP & Chief Mining Eng",
-      "role_points": 9,
-      "is_entity": false,
-      "transaction_date": "2026-09-01",
-      "filed_at": null,
-      "shares": 20000.0,
-      "avg_price": 4.635,
-      "value_usd": 92700.0,
-      "post_shares": 932881.0,
-      "prior_shares_est": 912881.0,
-      "position_increase_pct": 2.19,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/uamy",
-      "sec_url": "https://xoomar.com/markets/insiders/uamy",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 5.31,
-        "sma20": 5.2215,
-        "sma50": 5.7564,
-        "atr14_pct": 7.4,
-        "avg_dollar_volume_20d": 41635831.48,
-        "volume_ratio_20d": 0.58,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 786865644.34,
-        "name": "United States Antimony Corporat",
-        "spread_pct": 0.19,
-        "short_float_pct": 23.18
-      },
-      "conviction": {
-        "score": 45,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 9,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 4,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 7,
-            "max": 8
-          },
-          "spread": {
-            "points": 4,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 1,
-        "cluster_value_10d": 92700.0,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 14.56,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
       "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|305.0000|227.8800",
       "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|305.0000|227.8800",
       "accession": null,
       "ticker": "AMR",
-      "issuer": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
       "issuer_cik": null,
       "insider": "Courtis Kenneth S.",
       "insider_cik": "Courtis Kenneth S.",
@@ -3394,11 +3308,14 @@
         "volume_ratio_20d": 0.73,
         "trend": "bullish",
         "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
       },
       "conviction": {
-        "score": 44,
-        "data_completeness_pct": 85,
+        "score": 43,
+        "data_completeness_pct": 95,
         "components": {
           "insider_role": {
             "points": 3,
@@ -3430,11 +3347,11 @@
             "max": 8
           },
           "spread": {
-            "points": null,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
-            "points": null,
+            "points": 3,
             "max": 5
           },
           "trend": {
@@ -3446,15 +3363,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.8,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Spread %2.5 üzerinde"
+        ],
         "price_vs_insider_pct": -0.41,
-        "verdict": "DÜŞÜK ÖNCELİK"
+        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -3497,12 +3416,12 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 28348612.83,
         "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
+        "spread_pct": null,
         "short_float_pct": 83.47
       },
       "conviction": {
-        "score": 42,
-        "data_completeness_pct": 95,
+        "score": 43,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 10,
@@ -3534,7 +3453,7 @@
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -3550,7 +3469,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -3561,6 +3480,324 @@
           "Piyasa değeri $30M altında"
         ],
         "price_vs_insider_pct": 4.57,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:UAMY|BARDSWICH LLOYD|2026-09-01|20000.0000|4.6350",
+      "source_key": "UAMY|BARDSWICH LLOYD|2026-09-01|20000.0000|4.6350",
+      "accession": null,
+      "ticker": "UAMY",
+      "issuer": "United States Antimony Corporat",
+      "issuer_cik": null,
+      "insider": "Bardswich Lloyd",
+      "insider_cik": "Bardswich Lloyd",
+      "role": "Officer",
+      "officer_title": "Dir, EVP & Chief Mining Eng",
+      "role_points": 9,
+      "is_entity": false,
+      "transaction_date": "2026-09-01",
+      "filed_at": null,
+      "shares": 20000.0,
+      "avg_price": 4.635,
+      "value_usd": 92700.0,
+      "post_shares": 932881.0,
+      "prior_shares_est": 912881.0,
+      "position_increase_pct": 2.19,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/uamy",
+      "sec_url": "https://xoomar.com/markets/insiders/uamy",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 5.31,
+        "sma20": 5.2215,
+        "sma50": 5.7564,
+        "atr14_pct": 7.4,
+        "avg_dollar_volume_20d": 41635831.48,
+        "volume_ratio_20d": 0.58,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 786865644.34,
+        "name": "United States Antimony Corporat",
+        "spread_pct": 0.944,
+        "short_float_pct": 23.18
+      },
+      "conviction": {
+        "score": 42,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 9,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 4,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 7,
+            "max": 8
+          },
+          "spread": {
+            "points": 1,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 1,
+        "cluster_value_10d": 92700.0,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 14.56,
+        "verdict": "DÜŞÜK ÖNCELİK"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-01|107999.0000|0.2470",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-01|107999.0000|0.2470",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-01",
+      "filed_at": null,
+      "shares": 107999.0,
+      "avg_price": 0.247,
+      "value_usd": 26675.75,
+      "post_shares": 402500.0,
+      "prior_shares_est": 294501.0,
+      "position_increase_pct": 36.67,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.2014,
+        "sma20": 0.3576,
+        "sma50": 0.526,
+        "atr14_pct": 18.34,
+        "avg_dollar_volume_20d": 6959370.41,
+        "volume_ratio_20d": 1.47,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 28348612.83,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": null,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 41,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 10,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": null,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 485760.62,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -18.46,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-08-31|89000.0000|0.2703",
+      "source_key": "GPUS|AULT MILTON C III|2026-08-31|89000.0000|0.2703",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-08-31",
+      "filed_at": null,
+      "shares": 89000.0,
+      "avg_price": 0.2703,
+      "value_usd": 24056.7,
+      "post_shares": 294501.0,
+      "prior_shares_est": 205501.0,
+      "position_increase_pct": 43.31,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.2014,
+        "sma20": 0.3576,
+        "sma50": 0.526,
+        "atr14_pct": 18.34,
+        "avg_dollar_volume_20d": 6959370.41,
+        "volume_ratio_20d": 1.47,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 28348612.83,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": null,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 41,
+        "data_completeness_pct": 90,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 10,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": null,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 239.8,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 485760.62,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -25.49,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3657,7 +3894,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3668,107 +3905,6 @@
           "Fiyat insider alımından sonra %92 yükselmiş"
         ],
         "price_vs_insider_pct": 92.11,
-        "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|99.0000|229.3900",
-      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|99.0000|229.3900",
-      "accession": null,
-      "ticker": "AMR",
-      "issuer": "AMR",
-      "issuer_cik": null,
-      "insider": "Courtis Kenneth S.",
-      "insider_cik": "Courtis Kenneth S.",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 99.0,
-      "avg_price": 229.39,
-      "value_usd": 22709.61,
-      "post_shares": 1035394.0,
-      "prior_shares_est": 1035295.0,
-      "position_increase_pct": 0.01,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/amr",
-      "sec_url": "https://xoomar.com/markets/insiders/amr",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 226.94,
-        "sma20": 205.5555,
-        "sma50": 171.2124,
-        "atr14_pct": 5.43,
-        "avg_dollar_volume_20d": 74955289.89,
-        "volume_ratio_20d": 0.73,
-        "trend": "bullish",
-        "technical_confirmation": "watch",
-        "market_cap": 2877382503.25
-      },
-      "conviction": {
-        "score": 41,
-        "data_completeness_pct": 85,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 7,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": null,
-            "max": 5
-          },
-          "trend": {
-            "points": 6,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 45.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2258288.94,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": -1.07,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -3865,7 +4001,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3971,7 +4107,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4077,7 +4213,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4093,54 +4229,54 @@
       }
     },
     {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-01|107999.0000|0.2470",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-01|107999.0000|0.2470",
+      "id": "xoomar:AMR|COURTIS KENNETH S.|2026-09-08|99.0000|229.3900",
+      "source_key": "AMR|COURTIS KENNETH S.|2026-09-08|99.0000|229.3900",
       "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
+      "ticker": "AMR",
+      "issuer": "Alpha Metallurgical Resources, ",
       "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
+      "insider": "Courtis Kenneth S.",
+      "insider_cik": "Courtis Kenneth S.",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
       "is_entity": false,
-      "transaction_date": "2026-09-01",
+      "transaction_date": "2026-09-08",
       "filed_at": null,
-      "shares": 107999.0,
-      "avg_price": 0.247,
-      "value_usd": 26675.75,
-      "post_shares": 402500.0,
-      "prior_shares_est": 294501.0,
-      "position_increase_pct": 36.67,
+      "shares": 99.0,
+      "avg_price": 229.39,
+      "value_usd": 22709.61,
+      "post_shares": 1035394.0,
+      "prior_shares_est": 1035295.0,
+      "position_increase_pct": 0.01,
       "new_position": false,
       "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_url": "https://xoomar.com/markets/insiders/amr",
+      "sec_url": "https://xoomar.com/markets/insiders/amr",
       "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
       "discovery_source": "Xoomar",
       "freshness_basis": "transaction_date_proxy",
       "possible_private_placement": false,
       "market": {
-        "price": 0.2014,
-        "sma20": 0.3576,
-        "sma50": 0.526,
-        "atr14_pct": 18.34,
-        "avg_dollar_volume_20d": 6959370.41,
-        "volume_ratio_20d": 1.47,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 28348612.83,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
-        "short_float_pct": 83.47
+        "price": 226.94,
+        "sma20": 205.5555,
+        "sma50": 171.2124,
+        "atr14_pct": 5.43,
+        "avg_dollar_volume_20d": 74955289.89,
+        "volume_ratio_20d": 0.73,
+        "trend": "bullish",
+        "technical_confirmation": "watch",
+        "market_cap": 2877382503.25,
+        "name": "Alpha Metallurgical Resources, ",
+        "spread_pct": 5.187,
+        "short_float_pct": 19.12
       },
       "conviction": {
         "score": 40,
         "data_completeness_pct": 95,
         "components": {
           "insider_role": {
-            "points": 10,
+            "points": 3,
             "max": 12
           },
           "purchase_value": {
@@ -4148,161 +4284,53 @@
             "max": 15
           },
           "position_increase": {
-            "points": 10,
+            "points": 2,
             "max": 12
           },
           "cluster_buying": {
-            "points": 9,
+            "points": 0,
             "max": 14
           },
           "filing_freshness": {
-            "points": 3,
+            "points": 7,
             "max": 10,
             "proxy": true
           },
           "market_cap": {
-            "points": 1,
+            "points": 7,
             "max": 7
           },
           "dollar_volume": {
-            "points": 5,
+            "points": 8,
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": 0,
             "max": 5
           },
           "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.8,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 485760.62,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -18.46,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-08-31|89000.0000|0.2703",
-      "source_key": "GPUS|AULT MILTON C III|2026-08-31|89000.0000|0.2703",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-08-31",
-      "filed_at": null,
-      "shares": 89000.0,
-      "avg_price": 0.2703,
-      "value_usd": 24056.7,
-      "post_shares": 294501.0,
-      "prior_shares_est": 205501.0,
-      "position_increase_pct": 43.31,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.2014,
-        "sma20": 0.3576,
-        "sma50": 0.526,
-        "atr14_pct": 18.34,
-        "avg_dollar_volume_20d": 6959370.41,
-        "volume_ratio_20d": 1.47,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 28348612.83,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 40,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 10,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
             "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": 1,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
             "max": 5
           },
           "trend": {
-            "points": 0,
+            "points": 6,
             "max": 6
           },
           "technical_confirmation": {
-            "points": 0,
+            "points": 3,
             "max": 6
           }
         },
-        "freshness_hours": 237.8,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 485760.62,
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2258288.94,
         "risk_status": "BLOCK",
         "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
+          "Spread %2.5 üzerinde"
         ],
-        "price_vs_insider_pct": -25.49,
+        "price_vs_insider_pct": -1.07,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4399,7 +4427,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -4505,7 +4533,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -4612,7 +4640,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4718,7 +4746,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4824,7 +4852,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4930,7 +4958,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5036,7 +5064,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 1,
@@ -5143,7 +5171,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5197,12 +5225,12 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 28348612.83,
         "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
+        "spread_pct": null,
         "short_float_pct": 83.47
       },
       "conviction": {
-        "score": 38,
-        "data_completeness_pct": 95,
+        "score": 39,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 10,
@@ -5234,7 +5262,7 @@
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -5250,7 +5278,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -5304,12 +5332,12 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 28348612.83,
         "name": "Hyperscale Data, Inc.",
-        "spread_pct": 0.841,
+        "spread_pct": null,
         "short_float_pct": 83.47
       },
       "conviction": {
-        "score": 37,
-        "data_completeness_pct": 95,
+        "score": 38,
+        "data_completeness_pct": 90,
         "components": {
           "insider_role": {
             "points": 10,
@@ -5341,7 +5369,7 @@
             "max": 8
           },
           "spread": {
-            "points": 1,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -5357,7 +5385,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -5464,7 +5492,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5570,7 +5598,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5676,7 +5704,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5783,7 +5811,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5889,7 +5917,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5997,7 +6025,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6103,7 +6131,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6210,7 +6238,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6316,7 +6344,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6422,7 +6450,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6529,7 +6557,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6636,7 +6664,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6742,7 +6770,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -6849,7 +6877,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.8,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6943,7 +6971,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6992,14 +7020,14 @@
         "volume_ratio_20d": 2.12,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 221191769.63,
+        "market_cap": 628252355.75,
         "name": "Enhanced Group Inc.",
-        "spread_pct": 6.811,
+        "spread_pct": null,
         "short_float_pct": null
       },
       "conviction": {
-        "score": 26,
-        "data_completeness_pct": 90,
+        "score": 28,
+        "data_completeness_pct": 85,
         "components": {
           "insider_role": {
             "points": 3,
@@ -7031,7 +7059,7 @@
             "max": 8
           },
           "spread": {
-            "points": 0,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -7047,17 +7075,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.8,
+        "freshness_hours": 191.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 209778.82,
-        "risk_status": "BLOCK",
+        "risk_status": "WARN",
         "risk_flags": [
-          "Spread %2.5 üzerinde"
+          "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 2.85,
-        "verdict": "RİSKLİ / ELE"
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -7140,7 +7168,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7189,14 +7217,14 @@
         "volume_ratio_20d": 2.12,
         "trend": "bearish",
         "technical_confirmation": "unconfirmed",
-        "market_cap": 221191769.63,
+        "market_cap": 628252355.75,
         "name": "Enhanced Group Inc.",
-        "spread_pct": 6.811,
+        "spread_pct": null,
         "short_float_pct": null
       },
       "conviction": {
-        "score": 22,
-        "data_completeness_pct": 90,
+        "score": 23,
+        "data_completeness_pct": 85,
         "components": {
           "insider_role": {
             "points": 3,
@@ -7228,7 +7256,7 @@
             "max": 8
           },
           "spread": {
-            "points": 0,
+            "points": null,
             "max": 5
           },
           "short_interest": {
@@ -7244,17 +7272,17 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 209778.82,
-        "risk_status": "BLOCK",
+        "risk_status": "WARN",
         "risk_flags": [
-          "Spread %2.5 üzerinde"
+          "Mevcut trend aşağı"
         ],
         "price_vs_insider_pct": 2.54,
-        "verdict": "RİSKLİ / ELE"
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -7337,7 +7365,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7441,7 +7469,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7537,7 +7565,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 0,
@@ -7628,7 +7656,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.8,
+        "freshness_hours": 47.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7719,7 +7747,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.8,
+        "freshness_hours": 215.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7810,7 +7838,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7901,7 +7929,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 141.8,
+        "freshness_hours": 143.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7992,7 +8020,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8083,7 +8111,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8174,7 +8202,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8265,7 +8293,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.8,
+        "freshness_hours": 167.8,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
