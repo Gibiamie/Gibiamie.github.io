@@ -1,9 +1,9 @@
 {
   "version": 35,
-  "generated_at": "2026-09-10T21:22:31Z",
+  "generated_at": "2026-09-10T23:19:11Z",
   "source": "Xoomar Form 4 API (SEC EDGAR-derived) + Yahoo Finance market enrichment",
   "canonical_source": "SEC EDGAR",
-  "provider_updated_at": "2026-09-10T21:22:31.726Z",
+  "provider_updated_at": "2026-09-10T23:19:12.009Z",
   "provider_age_minutes": -0.0,
   "source_scope": "Only Xoomar buy feed rows cross-checked as txCode=P and isOpenMarket=true when ticker history is fetched",
   "filing_timestamp_available": false,
@@ -113,7 +113,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -124,6 +124,110 @@
         ],
         "price_vs_insider_pct": -9.85,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GME|CHENG LAWRENCE|2026-09-08|55000.0000|18.7992",
+      "source_key": "GME|CHENG LAWRENCE|2026-09-08|55000.0000|18.7992",
+      "accession": null,
+      "ticker": "GME",
+      "issuer": "GameStop Corporation",
+      "issuer_cik": null,
+      "insider": "Cheng Lawrence",
+      "insider_cik": "Cheng Lawrence",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-08",
+      "filed_at": null,
+      "shares": 55000.0,
+      "avg_price": 18.7992,
+      "value_usd": 1033956.0,
+      "post_shares": 143000.0,
+      "prior_shares_est": 88000.0,
+      "position_increase_pct": 62.5,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gme",
+      "sec_url": "https://xoomar.com/markets/insiders/gme",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 20.39,
+        "sma20": 18.59,
+        "sma50": 20.1338,
+        "atr14_pct": 2.84,
+        "avg_dollar_volume_20d": 132894456.06,
+        "volume_ratio_20d": 1.49,
+        "trend": "neutral",
+        "technical_confirmation": "watch",
+        "market_cap": 9148814456.37,
+        "name": "GameStop Corporation",
+        "spread_pct": 0.094,
+        "short_float_pct": 13.2
+      },
+      "conviction": {
+        "score": 65,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 6,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 7,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 5,
+            "max": 5
+          },
+          "trend": {
+            "points": 3,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 3,
+            "max": 6
+          }
+        },
+        "freshness_hours": 71.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 1033956.0,
+        "risk_status": "PASS",
+        "risk_flags": [],
+        "price_vs_insider_pct": 8.46,
+        "verdict": "İZLE / TEYİT BEKLE"
       }
     },
     {
@@ -219,7 +323,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -230,110 +334,6 @@
         ],
         "price_vs_insider_pct": -9.85,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GME|CHENG LAWRENCE|2026-09-08|55000.0000|18.7992",
-      "source_key": "GME|CHENG LAWRENCE|2026-09-08|55000.0000|18.7992",
-      "accession": null,
-      "ticker": "GME",
-      "issuer": "GameStop Corporation",
-      "issuer_cik": null,
-      "insider": "Cheng Lawrence",
-      "insider_cik": "Cheng Lawrence",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-08",
-      "filed_at": null,
-      "shares": 55000.0,
-      "avg_price": 18.7992,
-      "value_usd": 1033956.0,
-      "post_shares": 143000.0,
-      "prior_shares_est": 88000.0,
-      "position_increase_pct": 62.5,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gme",
-      "sec_url": "https://xoomar.com/markets/insiders/gme",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 20.39,
-        "sma20": 18.59,
-        "sma50": 20.1338,
-        "atr14_pct": 2.84,
-        "avg_dollar_volume_20d": 132894456.06,
-        "volume_ratio_20d": 1.49,
-        "trend": "neutral",
-        "technical_confirmation": "watch",
-        "market_cap": 9148814456.37,
-        "name": "GameStop Corporation",
-        "spread_pct": null,
-        "short_float_pct": 13.2
-      },
-      "conviction": {
-        "score": 63,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 13,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 6,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 7,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 5,
-            "max": 5
-          },
-          "trend": {
-            "points": 3,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 3,
-            "max": 6
-          }
-        },
-        "freshness_hours": 69.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 1033956.0,
-        "risk_status": "PASS",
-        "risk_flags": [],
-        "price_vs_insider_pct": 8.46,
-        "verdict": "İZLE / TEYİT BEKLE"
       }
     },
     {
@@ -429,7 +429,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -535,7 +535,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -641,7 +641,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -651,6 +651,220 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -7.06,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 1913691.0,
+      "avg_price": 0.1889,
+      "value_usd": 361496.23,
+      "post_shares": 2613692.0,
+      "prior_shares_est": 700001.0,
+      "position_increase_pct": 273.38,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 57,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -1.01,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 1913691.0,
+      "avg_price": 0.1889,
+      "value_usd": 361496.23,
+      "post_shares": 2613692.0,
+      "prior_shares_est": 700001.0,
+      "position_increase_pct": 273.38,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 57,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 10,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -1.01,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -747,7 +961,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 2,
         "management_cluster_10d": 2,
@@ -853,7 +1067,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -957,7 +1171,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -966,220 +1180,6 @@
         "risk_flags": [],
         "price_vs_insider_pct": -1.22,
         "verdict": "DÜŞÜK ÖNCELİK"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 1913691.0,
-      "avg_price": 0.1889,
-      "value_usd": 361496.23,
-      "post_shares": 2613692.0,
-      "prior_shares_est": 700001.0,
-      "position_increase_pct": 273.38,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 55,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 165.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -1.01,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-04|1913691.0000|0.1889",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 1913691.0,
-      "avg_price": 0.1889,
-      "value_usd": 361496.23,
-      "post_shares": 2613692.0,
-      "prior_shares_est": 700001.0,
-      "position_increase_pct": 273.38,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 55,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 165.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -1.01,
-        "verdict": "RİSKLİ / ELE"
       }
     },
     {
@@ -1275,7 +1275,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1379,7 +1379,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1483,7 +1483,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1587,7 +1587,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1691,7 +1691,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -1701,6 +1701,113 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -2.68,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
+      "source_key": "GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "CRAGUN KENNETH S",
+      "insider_cik": "CRAGUN KENNETH S",
+      "role": "CFO",
+      "officer_title": "Chief Financial Officer",
+      "role_points": 12,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 100000.0,
+      "avg_price": 0.1865,
+      "value_usd": 18650.0,
+      "post_shares": 100000.0,
+      "prior_shares_est": 0.0,
+      "position_increase_pct": null,
+      "new_position": true,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 50,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 12,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 12,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": 0.27,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -1797,7 +1904,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1903,7 +2010,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -1996,7 +2103,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -2100,7 +2207,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2207,7 +2314,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2313,7 +2420,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2419,7 +2526,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2525,7 +2632,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2631,7 +2738,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2735,7 +2842,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2745,113 +2852,6 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -2.9,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
-      "source_key": "GPUS|CRAGUN KENNETH S|2026-09-04|100000.0000|0.1865",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "CRAGUN KENNETH S",
-      "insider_cik": "CRAGUN KENNETH S",
-      "role": "CFO",
-      "officer_title": "Chief Financial Officer",
-      "role_points": 12,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 100000.0,
-      "avg_price": 0.1865,
-      "value_usd": 18650.0,
-      "post_shares": 100000.0,
-      "prior_shares_est": 0.0,
-      "position_increase_pct": null,
-      "new_position": true,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 47,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 12,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 12,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 165.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": 0.27,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -2948,7 +2948,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -2958,6 +2958,220 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -6.84,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 196800.0,
+      "avg_price": 0.1926,
+      "value_usd": 37903.68,
+      "post_shares": 679500.0,
+      "prior_shares_est": 482700.0,
+      "position_increase_pct": 40.77,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 46,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 10,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -2.91,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-04",
+      "filed_at": null,
+      "shares": 196800.0,
+      "avg_price": 0.1926,
+      "value_usd": 37903.68,
+      "post_shares": 679500.0,
+      "prior_shares_est": 482700.0,
+      "position_increase_pct": 40.77,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 46,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 10,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 5,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 167.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -2.91,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -3054,7 +3268,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.4,
+        "freshness_hours": 215.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3160,7 +3374,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -3266,7 +3480,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3372,7 +3586,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3478,7 +3692,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -3584,7 +3798,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3690,7 +3904,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3796,7 +4010,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.4,
+        "freshness_hours": 215.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3902,7 +4116,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -3912,220 +4126,6 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -3.29,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 196800.0,
-      "avg_price": 0.1926,
-      "value_usd": 37903.68,
-      "post_shares": 679500.0,
-      "prior_shares_est": 482700.0,
-      "position_increase_pct": 40.77,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 43,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 10,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 165.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -2.91,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-04|196800.0000|0.1926",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-04",
-      "filed_at": null,
-      "shares": 196800.0,
-      "avg_price": 0.1926,
-      "value_usd": 37903.68,
-      "post_shares": 679500.0,
-      "prior_shares_est": 482700.0,
-      "position_increase_pct": 40.77,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 43,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 10,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 5,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 165.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -2.91,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -4222,7 +4222,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4328,7 +4328,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -4434,7 +4434,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4540,7 +4540,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -4551,6 +4551,219 @@
         ],
         "price_vs_insider_pct": 0.8,
         "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-02|42000.0000|0.2348",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-02|42000.0000|0.2348",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-02",
+      "filed_at": null,
+      "shares": 42000.0,
+      "avg_price": 0.2348,
+      "value_usd": 9861.6,
+      "post_shares": 444500.0,
+      "prior_shares_est": 402500.0,
+      "position_increase_pct": 10.43,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 42,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 8,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": -20.36,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:AON|KNIGHT LESTER B|2026-09-02|5097.0000|326.5300",
+      "source_key": "AON|KNIGHT LESTER B|2026-09-02|5097.0000|326.5300",
+      "accession": null,
+      "ticker": "AON",
+      "issuer": "Aon plc",
+      "issuer_cik": null,
+      "insider": "KNIGHT LESTER B",
+      "insider_cik": "KNIGHT LESTER B",
+      "role": "Reporting person",
+      "officer_title": null,
+      "role_points": 3,
+      "is_entity": false,
+      "transaction_date": "2026-09-02",
+      "filed_at": null,
+      "shares": 5097.0,
+      "avg_price": 326.53,
+      "value_usd": 1664323.41,
+      "post_shares": 149836.0,
+      "prior_shares_est": 144739.0,
+      "position_increase_pct": 3.52,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/aon",
+      "sec_url": "https://xoomar.com/markets/insiders/aon",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 307.77,
+        "sma20": 339.4355,
+        "sma50": 351.9498,
+        "atr14_pct": 3.23,
+        "avg_dollar_volume_20d": 413414010.8,
+        "volume_ratio_20d": 1.94,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 65285842491.7,
+        "name": "Aon plc",
+        "spread_pct": 0.567,
+        "short_float_pct": 1.6
+      },
+      "conviction": {
+        "score": 40,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 3,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 13,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 2,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 0,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 5,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 8,
+            "max": 8
+          },
+          "spread": {
+            "points": 3,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 3,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 215.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 1,
+        "management_cluster_10d": 0,
+        "cluster_value_10d": 2139077.01,
+        "risk_status": "WARN",
+        "risk_flags": [
+          "Mevcut trend aşağı"
+        ],
+        "price_vs_insider_pct": -5.75,
+        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -4646,7 +4859,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.4,
+        "freshness_hours": 215.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -4752,7 +4965,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -4858,7 +5071,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -4964,7 +5177,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5070,7 +5283,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5176,7 +5389,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -5283,7 +5496,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -5389,7 +5602,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5495,7 +5708,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5601,7 +5814,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5611,113 +5824,6 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 0.8,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-02|42000.0000|0.2348",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-02|42000.0000|0.2348",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-02",
-      "filed_at": null,
-      "shares": 42000.0,
-      "avg_price": 0.2348,
-      "value_usd": 9861.6,
-      "post_shares": 444500.0,
-      "prior_shares_est": 402500.0,
-      "position_increase_pct": 10.43,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 39,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 8,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": -20.36,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5814,7 +5920,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 5,
         "management_cluster_10d": 0,
@@ -5824,6 +5930,220 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": 0.8,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-03",
+      "filed_at": null,
+      "shares": 38200.0,
+      "avg_price": 0.1863,
+      "value_usd": 7116.66,
+      "post_shares": 482700.0,
+      "prior_shares_est": 444500.0,
+      "position_increase_pct": 8.59,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 39,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 191.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": 0.38,
+        "verdict": "RİSKLİ / ELE"
+      }
+    },
+    {
+      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
+      "source_key": "GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
+      "accession": null,
+      "ticker": "GPUS",
+      "issuer": "Hyperscale Data, Inc.",
+      "issuer_cik": null,
+      "insider": "AULT MILTON C III",
+      "insider_cik": "AULT MILTON C III",
+      "role": "Chair / Executive Chair",
+      "officer_title": "Executive Chairman",
+      "role_points": 10,
+      "is_entity": false,
+      "transaction_date": "2026-09-03",
+      "filed_at": null,
+      "shares": 38200.0,
+      "avg_price": 0.1863,
+      "value_usd": 7116.66,
+      "post_shares": 482700.0,
+      "prior_shares_est": 444500.0,
+      "position_increase_pct": 8.59,
+      "new_position": false,
+      "transaction_count": 1,
+      "source_url": "https://xoomar.com/markets/insiders/gpus",
+      "sec_url": "https://xoomar.com/markets/insiders/gpus",
+      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+      "discovery_source": "Xoomar",
+      "freshness_basis": "transaction_date_proxy",
+      "possible_private_placement": false,
+      "market": {
+        "price": 0.187,
+        "sma20": 0.3393,
+        "sma50": 0.5157,
+        "atr14_pct": 20.09,
+        "avg_dollar_volume_20d": 7021756.17,
+        "volume_ratio_20d": 0.97,
+        "trend": "bearish",
+        "technical_confirmation": "unconfirmed",
+        "market_cap": 26321702.4,
+        "name": "Hyperscale Data, Inc.",
+        "spread_pct": 0.0,
+        "short_float_pct": 83.47
+      },
+      "conviction": {
+        "score": 39,
+        "data_completeness_pct": 95,
+        "components": {
+          "insider_role": {
+            "points": 10,
+            "max": 12
+          },
+          "purchase_value": {
+            "points": 1,
+            "max": 15
+          },
+          "position_increase": {
+            "points": 5,
+            "max": 12
+          },
+          "cluster_buying": {
+            "points": 9,
+            "max": 14
+          },
+          "filing_freshness": {
+            "points": 3,
+            "max": 10,
+            "proxy": true
+          },
+          "market_cap": {
+            "points": 1,
+            "max": 7
+          },
+          "dollar_volume": {
+            "points": 5,
+            "max": 8
+          },
+          "spread": {
+            "points": 5,
+            "max": 5
+          },
+          "short_interest": {
+            "points": 0,
+            "max": 5
+          },
+          "trend": {
+            "points": 0,
+            "max": 6
+          },
+          "technical_confirmation": {
+            "points": 0,
+            "max": 6
+          }
+        },
+        "freshness_hours": 191.3,
+        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+        "cluster_insiders_10d": 2,
+        "management_cluster_10d": 2,
+        "cluster_value_10d": 841544.74,
+        "risk_status": "BLOCK",
+        "risk_flags": [
+          "Fiyat $1 altında",
+          "Piyasa değeri $30M altında"
+        ],
+        "price_vs_insider_pct": 0.38,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -5920,7 +6240,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6028,7 +6348,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6044,8 +6364,8 @@
       }
     },
     {
-      "id": "xoomar:AON|KNIGHT LESTER B|2026-09-02|5097.0000|326.5300",
-      "source_key": "AON|KNIGHT LESTER B|2026-09-02|5097.0000|326.5300",
+      "id": "xoomar:AON|KNIGHT LESTER B|2026-09-02|1440.0000|329.6900",
+      "source_key": "AON|KNIGHT LESTER B|2026-09-02|1440.0000|329.6900",
       "accession": null,
       "ticker": "AON",
       "issuer": "Aon plc",
@@ -6058,12 +6378,12 @@
       "is_entity": false,
       "transaction_date": "2026-09-02",
       "filed_at": null,
-      "shares": 5097.0,
-      "avg_price": 326.53,
-      "value_usd": 1664323.41,
-      "post_shares": 149836.0,
-      "prior_shares_est": 144739.0,
-      "position_increase_pct": 3.52,
+      "shares": 1440.0,
+      "avg_price": 329.69,
+      "value_usd": 474753.6,
+      "post_shares": 162633.0,
+      "prior_shares_est": 161193.0,
+      "position_increase_pct": 0.89,
       "new_position": false,
       "transaction_count": 1,
       "source_url": "https://xoomar.com/markets/insiders/aon",
@@ -6083,7 +6403,7 @@
         "technical_confirmation": "unconfirmed",
         "market_cap": 65285842491.7,
         "name": "Aon plc",
-        "spread_pct": 2.258,
+        "spread_pct": 0.567,
         "short_float_pct": 1.6
       },
       "conviction": {
@@ -6095,7 +6415,7 @@
             "max": 12
           },
           "purchase_value": {
-            "points": 13,
+            "points": 10,
             "max": 15
           },
           "position_increase": {
@@ -6120,7 +6440,7 @@
             "max": 8
           },
           "spread": {
-            "points": 0,
+            "points": 3,
             "max": 5
           },
           "short_interest": {
@@ -6136,17 +6456,16 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.4,
+        "freshness_hours": 215.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
         "cluster_value_10d": 2139077.01,
         "risk_status": "WARN",
         "risk_flags": [
-          "Spread geniş",
           "Mevcut trend aşağı"
         ],
-        "price_vs_insider_pct": -5.75,
+        "price_vs_insider_pct": -6.65,
         "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
@@ -6243,7 +6562,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6350,7 +6669,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6457,7 +6776,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 213.4,
+        "freshness_hours": 215.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6564,7 +6883,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6574,220 +6893,6 @@
           "Spread %2.5 üzerinde"
         ],
         "price_vs_insider_pct": -2.58,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-03",
-      "filed_at": null,
-      "shares": 38200.0,
-      "avg_price": 0.1863,
-      "value_usd": 7116.66,
-      "post_shares": 482700.0,
-      "prior_shares_est": 444500.0,
-      "position_increase_pct": 8.59,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 36,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 189.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": 0.38,
-        "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
-      "source_key": "GPUS|AULT MILTON C III|2026-09-03|38200.0000|0.1863",
-      "accession": null,
-      "ticker": "GPUS",
-      "issuer": "Hyperscale Data, Inc.",
-      "issuer_cik": null,
-      "insider": "AULT MILTON C III",
-      "insider_cik": "AULT MILTON C III",
-      "role": "Chair / Executive Chair",
-      "officer_title": "Executive Chairman",
-      "role_points": 10,
-      "is_entity": false,
-      "transaction_date": "2026-09-03",
-      "filed_at": null,
-      "shares": 38200.0,
-      "avg_price": 0.1863,
-      "value_usd": 7116.66,
-      "post_shares": 482700.0,
-      "prior_shares_est": 444500.0,
-      "position_increase_pct": 8.59,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/gpus",
-      "sec_url": "https://xoomar.com/markets/insiders/gpus",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 0.187,
-        "sma20": 0.3393,
-        "sma50": 0.5157,
-        "atr14_pct": 20.09,
-        "avg_dollar_volume_20d": 7021756.17,
-        "volume_ratio_20d": 0.97,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 26321702.4,
-        "name": "Hyperscale Data, Inc.",
-        "spread_pct": null,
-        "short_float_pct": 83.47
-      },
-      "conviction": {
-        "score": 36,
-        "data_completeness_pct": 90,
-        "components": {
-          "insider_role": {
-            "points": 10,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 1,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 5,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 9,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 1,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 5,
-            "max": 8
-          },
-          "spread": {
-            "points": null,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 0,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 189.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 2,
-        "management_cluster_10d": 2,
-        "cluster_value_10d": 841544.74,
-        "risk_status": "BLOCK",
-        "risk_flags": [
-          "Fiyat $1 altında",
-          "Piyasa değeri $30M altında"
-        ],
-        "price_vs_insider_pct": 0.38,
         "verdict": "RİSKLİ / ELE"
       }
     },
@@ -6884,7 +6989,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -6991,7 +7096,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7097,7 +7202,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7108,113 +7213,6 @@
         ],
         "price_vs_insider_pct": -2.67,
         "verdict": "RİSKLİ / ELE"
-      }
-    },
-    {
-      "id": "xoomar:AON|KNIGHT LESTER B|2026-09-02|1440.0000|329.6900",
-      "source_key": "AON|KNIGHT LESTER B|2026-09-02|1440.0000|329.6900",
-      "accession": null,
-      "ticker": "AON",
-      "issuer": "Aon plc",
-      "issuer_cik": null,
-      "insider": "KNIGHT LESTER B",
-      "insider_cik": "KNIGHT LESTER B",
-      "role": "Reporting person",
-      "officer_title": null,
-      "role_points": 3,
-      "is_entity": false,
-      "transaction_date": "2026-09-02",
-      "filed_at": null,
-      "shares": 1440.0,
-      "avg_price": 329.69,
-      "value_usd": 474753.6,
-      "post_shares": 162633.0,
-      "prior_shares_est": 161193.0,
-      "position_increase_pct": 0.89,
-      "new_position": false,
-      "transaction_count": 1,
-      "source_url": "https://xoomar.com/markets/insiders/aon",
-      "sec_url": "https://xoomar.com/markets/insiders/aon",
-      "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-      "discovery_source": "Xoomar",
-      "freshness_basis": "transaction_date_proxy",
-      "possible_private_placement": false,
-      "market": {
-        "price": 307.77,
-        "sma20": 339.4355,
-        "sma50": 351.9498,
-        "atr14_pct": 3.23,
-        "avg_dollar_volume_20d": 413414010.8,
-        "volume_ratio_20d": 1.94,
-        "trend": "bearish",
-        "technical_confirmation": "unconfirmed",
-        "market_cap": 65285842491.7,
-        "name": "Aon plc",
-        "spread_pct": 2.258,
-        "short_float_pct": 1.6
-      },
-      "conviction": {
-        "score": 34,
-        "data_completeness_pct": 95,
-        "components": {
-          "insider_role": {
-            "points": 3,
-            "max": 12
-          },
-          "purchase_value": {
-            "points": 10,
-            "max": 15
-          },
-          "position_increase": {
-            "points": 2,
-            "max": 12
-          },
-          "cluster_buying": {
-            "points": 0,
-            "max": 14
-          },
-          "filing_freshness": {
-            "points": 3,
-            "max": 10,
-            "proxy": true
-          },
-          "market_cap": {
-            "points": 5,
-            "max": 7
-          },
-          "dollar_volume": {
-            "points": 8,
-            "max": 8
-          },
-          "spread": {
-            "points": 0,
-            "max": 5
-          },
-          "short_interest": {
-            "points": 3,
-            "max": 5
-          },
-          "trend": {
-            "points": 0,
-            "max": 6
-          },
-          "technical_confirmation": {
-            "points": 0,
-            "max": 6
-          }
-        },
-        "freshness_hours": 213.4,
-        "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-        "cluster_insiders_10d": 1,
-        "management_cluster_10d": 0,
-        "cluster_value_10d": 2139077.01,
-        "risk_status": "WARN",
-        "risk_flags": [
-          "Spread geniş",
-          "Mevcut trend aşağı"
-        ],
-        "price_vs_insider_pct": -6.65,
-        "verdict": "DÜŞÜK ÖNCELİK"
       }
     },
     {
@@ -7310,7 +7308,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7416,7 +7414,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7522,7 +7520,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -7630,7 +7628,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 45.4,
+        "freshness_hours": 47.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7683,7 +7681,7 @@
         "technical_confirmation": "watch",
         "market_cap": 67679998.4,
         "name": "Cross Timbers Royalty Trust",
-        "spread_pct": 1.146,
+        "spread_pct": 0.969,
         "short_float_pct": 0.27
       },
       "conviction": {
@@ -7736,7 +7734,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7829,7 +7827,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -7933,7 +7931,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
@@ -8040,7 +8038,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8136,7 +8134,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8240,7 +8238,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 69.4,
+        "freshness_hours": 71.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8293,7 +8291,7 @@
         "technical_confirmation": "watch",
         "market_cap": 67679998.4,
         "name": "Cross Timbers Royalty Trust",
-        "spread_pct": 1.146,
+        "spread_pct": 0.969,
         "short_float_pct": 0.27
       },
       "conviction": {
@@ -8346,7 +8344,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 189.4,
+        "freshness_hours": 191.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 0,
@@ -8452,7 +8450,7 @@
             "max": 6
           }
         },
-        "freshness_hours": 165.4,
+        "freshness_hours": 167.3,
         "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
         "cluster_insiders_10d": 1,
         "management_cluster_10d": 1,
