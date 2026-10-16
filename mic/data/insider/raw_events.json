@@ -29,15 +29,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.46,
-      "market_cap": 105978571.1,
+      "price": 1.515,
+      "sma20": 1.1972,
+      "sma50": 1.0152,
+      "atr14_pct": 17.84,
+      "avg_dollar_volume_20d": 32439235.35,
+      "volume_ratio_20d": 0.2,
+      "trend": "bullish",
+      "technical_confirmation": "watch",
+      "market_cap": 101954067.12,
       "name": "QTREX Quantum Ltd.",
       "spread_pct": 5.825,
       "short_float_pct": 5.08
     },
     "conviction": {
-      "score": 49,
-      "data_completeness_pct": 75,
+      "score": 55,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -65,7 +72,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -77,15 +84,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 6,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 25.0,
+      "freshness_hours": 40.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 2,
       "management_cluster_10d": 2,
@@ -94,7 +101,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -2.67,
+      "price_vs_insider_pct": 1.0,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -128,17 +135,17 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 11.39,
-      "sma20": 11.91,
-      "sma50": 11.6024,
-      "atr14_pct": 4.2,
-      "avg_dollar_volume_20d": 3047721.76,
-      "volume_ratio_20d": 0.88,
+      "price": 11.72,
+      "sma20": 11.858,
+      "sma50": 11.6208,
+      "atr14_pct": 3.79,
+      "avg_dollar_volume_20d": 2858557.73,
+      "volume_ratio_20d": 0.2,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
-      "market_cap": 807838006.79,
+      "market_cap": 831243316.06,
       "name": "Cresud S.A.C.I.F. y A.",
-      "spread_pct": 54.317,
+      "spread_pct": 54.372,
       "short_float_pct": 5.21
     },
     "conviction": {
@@ -191,7 +198,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 25.0,
+      "freshness_hours": 40.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -200,7 +207,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 1.88,
+      "price_vs_insider_pct": 4.83,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -234,15 +241,15 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 10.49,
-      "market_cap": 101490747.79,
+      "price": 10.4,
+      "market_cap": 100619996.31,
       "name": "Frazier Life Sciences Acquisition Corp. II Class A Ordinary Shares",
-      "spread_pct": null,
+      "spread_pct": 1.828,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 73,
-      "data_completeness_pct": 65,
+      "score": 68,
+      "data_completeness_pct": 70,
       "components": {
         "insider_role": {
           "points": 12,
@@ -274,7 +281,7 @@
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 0,
           "max": 5
         },
         "short_interest": {
@@ -290,14 +297,16 @@
           "max": 6
         }
       },
-      "freshness_hours": 25.0,
+      "freshness_hours": 40.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 3000000.0,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": 4.9,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Spread geniş"
+      ],
+      "price_vs_insider_pct": 4.0,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -381,7 +390,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 25.0,
+      "freshness_hours": 40.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -390,6 +399,322 @@
       "risk_flags": [],
       "price_vs_insider_pct": null,
       "verdict": "DÜŞÜK ÖNCELİK"
+    }
+  },
+  {
+    "id": "xoomar:BORR|TROIM TOR OLAV|2026-10-15|500000.0000|4.5983",
+    "source_key": "BORR|TROIM TOR OLAV|2026-10-15|500000.0000|4.5983",
+    "accession": null,
+    "ticker": "BORR",
+    "issuer": "Borr Drilling Limited",
+    "issuer_cik": null,
+    "insider": "Troim Tor Olav",
+    "insider_cik": "Troim Tor Olav",
+    "role": "Director",
+    "officer_title": "Director",
+    "role_points": 8,
+    "is_entity": false,
+    "transaction_date": "2026-10-15",
+    "filed_at": null,
+    "shares": 500000.0,
+    "avg_price": 4.5983,
+    "value_usd": 2299150.0,
+    "post_shares": 40117808.0,
+    "prior_shares_est": 39617808.0,
+    "position_increase_pct": 1.26,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/borr",
+    "sec_url": "https://xoomar.com/markets/insiders/borr",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 4.4786,
+      "sma20": 4.3484,
+      "sma50": 4.3654,
+      "atr14_pct": 5.65,
+      "avg_dollar_volume_20d": 36510716.96,
+      "volume_ratio_20d": 0.55,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1380594486.55,
+      "name": "Borr Drilling Limited",
+      "spread_pct": 0.222,
+      "short_float_pct": 14.53
+    },
+    "conviction": {
+      "score": 68,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 8,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 13,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 9,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 7,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 7,
+          "max": 8
+        },
+        "spread": {
+          "points": 4,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 5,
+          "max": 5
+        },
+        "trend": {
+          "points": 3,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 3,
+          "max": 6
+        }
+      },
+      "freshness_hours": 40.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 26559800.0,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -2.6,
+      "verdict": "İZLE / TEYİT BEKLE"
+    }
+  },
+  {
+    "id": "xoomar:UXIN|DAI KUN|2026-10-15|4100.0000|1.0421",
+    "source_key": "UXIN|DAI KUN|2026-10-15|4100.0000|1.0421",
+    "accession": null,
+    "ticker": "UXIN",
+    "issuer": "Uxin Limited",
+    "issuer_cik": null,
+    "insider": "Dai Kun",
+    "insider_cik": "Dai Kun",
+    "role": "CEO / President",
+    "officer_title": "Chief Executive Officer",
+    "role_points": 12,
+    "is_entity": false,
+    "transaction_date": "2026-10-15",
+    "filed_at": null,
+    "shares": 4100.0,
+    "avg_price": 1.0421,
+    "value_usd": 4272.61,
+    "post_shares": 91929.0,
+    "prior_shares_est": 87829.0,
+    "position_increase_pct": 4.67,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/uxin",
+    "sec_url": "https://xoomar.com/markets/insiders/uxin",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 1.025,
+      "sma20": 1.1873,
+      "sma50": 1.1669,
+      "atr14_pct": 9.93,
+      "avg_dollar_volume_20d": 1318733.51,
+      "volume_ratio_20d": 0.05,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 225479762.28,
+      "name": "Uxin Limited",
+      "spread_pct": 30.263,
+      "short_float_pct": 0.68
+    },
+    "conviction": {
+      "score": 38,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 12,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 1,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 7,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 3,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 3,
+          "max": 5
+        },
+        "trend": {
+          "points": 3,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 0,
+          "max": 6
+        }
+      },
+      "freshness_hours": 40.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 1,
+      "cluster_value_10d": 31630.28,
+      "risk_status": "BLOCK",
+      "risk_flags": [
+        "Spread %2.5 üzerinde"
+      ],
+      "price_vs_insider_pct": -1.64,
+      "verdict": "RİSKLİ / ELE"
+    }
+  },
+  {
+    "id": "xoomar:EDRY|PITTAS ARISTEIDIS P|2026-10-15|300.0000|48.1682",
+    "source_key": "EDRY|PITTAS ARISTEIDIS P|2026-10-15|300.0000|48.1682",
+    "accession": null,
+    "ticker": "EDRY",
+    "issuer": "EuroDry Ltd.",
+    "issuer_cik": null,
+    "insider": "Pittas Aristeidis P",
+    "insider_cik": "Pittas Aristeidis P",
+    "role": "Director",
+    "officer_title": "Director",
+    "role_points": 8,
+    "is_entity": false,
+    "transaction_date": "2026-10-15",
+    "filed_at": null,
+    "shares": 300.0,
+    "avg_price": 48.1682,
+    "value_usd": 14450.46,
+    "post_shares": 77088.0,
+    "prior_shares_est": 76788.0,
+    "position_increase_pct": 0.39,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/edry",
+    "sec_url": "https://xoomar.com/markets/insiders/edry",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 46.055,
+      "sma20": 53.8948,
+      "sma50": 52.5389,
+      "atr14_pct": 12.93,
+      "avg_dollar_volume_20d": 8733961.26,
+      "volume_ratio_20d": 0.29,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 132020849.38,
+      "name": "EuroDry Ltd.",
+      "spread_pct": 52.228,
+      "short_float_pct": 8.76
+    },
+    "conviction": {
+      "score": 38,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 8,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 1,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 7,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 5,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 5,
+          "max": 5
+        },
+        "trend": {
+          "points": 3,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 0,
+          "max": 6
+        }
+      },
+      "freshness_hours": 40.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 1,
+      "cluster_value_10d": 64726.92,
+      "risk_status": "BLOCK",
+      "risk_flags": [
+        "Spread %2.5 üzerinde"
+      ],
+      "price_vs_insider_pct": -4.39,
+      "verdict": "RİSKLİ / ELE"
     }
   },
   {
@@ -472,7 +797,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 25.0,
+      "freshness_hours": 40.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -481,6 +806,112 @@
       "risk_flags": [],
       "price_vs_insider_pct": null,
       "verdict": "DÜŞÜK ÖNCELİK"
+    }
+  },
+  {
+    "id": "xoomar:EDRY|PITTAS ARISTEIDIS P|2026-10-15|300.0000|48.1682",
+    "source_key": "EDRY|PITTAS ARISTEIDIS P|2026-10-15|300.0000|48.1682",
+    "accession": null,
+    "ticker": "EDRY",
+    "issuer": "EuroDry Ltd.",
+    "issuer_cik": null,
+    "insider": "Pittas Aristeidis P",
+    "insider_cik": "Pittas Aristeidis P",
+    "role": "Director",
+    "officer_title": "Director",
+    "role_points": 8,
+    "is_entity": false,
+    "transaction_date": "2026-10-15",
+    "filed_at": null,
+    "shares": 300.0,
+    "avg_price": 48.1682,
+    "value_usd": 14450.46,
+    "post_shares": 77088.0,
+    "prior_shares_est": 76788.0,
+    "position_increase_pct": 0.39,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/edry",
+    "sec_url": "https://xoomar.com/markets/insiders/edry",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 46.055,
+      "sma20": 53.8948,
+      "sma50": 52.5389,
+      "atr14_pct": 12.93,
+      "avg_dollar_volume_20d": 8733961.26,
+      "volume_ratio_20d": 0.29,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 132020849.38,
+      "name": "EuroDry Ltd.",
+      "spread_pct": 52.228,
+      "short_float_pct": 8.76
+    },
+    "conviction": {
+      "score": 38,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 8,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 1,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 7,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 5,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 5,
+          "max": 5
+        },
+        "trend": {
+          "points": 3,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 0,
+          "max": 6
+        }
+      },
+      "freshness_hours": 40.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 1,
+      "cluster_value_10d": 64726.92,
+      "risk_status": "BLOCK",
+      "risk_flags": [
+        "Spread %2.5 üzerinde"
+      ],
+      "price_vs_insider_pct": -4.39,
+      "verdict": "RİSKLİ / ELE"
     }
   },
   {
@@ -513,15 +944,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 38.72,
-      "market_cap": 1153092353.13,
+      "price": 40.11,
+      "sma20": 41.8335,
+      "sma50": 43.9722,
+      "atr14_pct": 3.01,
+      "avg_dollar_volume_20d": 17704051.97,
+      "volume_ratio_20d": 0.24,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1167058667.37,
       "name": "Gold.com, Inc.",
-      "spread_pct": 0.378,
+      "spread_pct": 0.199,
       "short_float_pct": 19.67
     },
     "conviction": {
-      "score": 46,
-      "data_completeness_pct": 75,
+      "score": 45,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -549,11 +987,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 3,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -561,22 +999,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 3941859.92,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": -2.3,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": 1.2,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -610,15 +1050,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.68,
-      "market_cap": 1403732971.55,
+      "price": 4.4786,
+      "sma20": 4.3484,
+      "sma50": 4.3654,
+      "atr14_pct": 5.65,
+      "avg_dollar_volume_20d": 36510716.96,
+      "volume_ratio_20d": 0.55,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1380594486.55,
       "name": "Borr Drilling Limited",
-      "spread_pct": 0.0,
+      "spread_pct": 0.222,
       "short_float_pct": 14.53
     },
     "conviction": {
-      "score": 57,
-      "data_completeness_pct": 75,
+      "score": 67,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -633,7 +1080,7 @@
           "max": 12
         },
         "cluster_buying": {
-          "points": 0,
+          "points": 9,
           "max": 14
         },
         "filing_freshness": {
@@ -646,11 +1093,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 5,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -658,23 +1105,23 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 22787650.0,
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 26559800.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": -0.92,
-      "verdict": "DÜŞÜK ÖNCELİK"
+      "price_vs_insider_pct": -5.18,
+      "verdict": "İZLE / TEYİT BEKLE"
     }
   },
   {
@@ -707,15 +1154,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.03,
-      "market_cap": 228779471.44,
+      "price": 1.025,
+      "sma20": 1.1873,
+      "sma50": 1.1669,
+      "atr14_pct": 9.93,
+      "avg_dollar_volume_20d": 1318733.51,
+      "volume_ratio_20d": 0.05,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 225479762.28,
       "name": "Uxin Limited",
-      "spread_pct": 29.058,
+      "spread_pct": 30.263,
       "short_float_pct": 0.68
     },
     "conviction": {
-      "score": 42,
-      "data_completeness_pct": 75,
+      "score": 40,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -743,7 +1197,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -755,24 +1209,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 27357.67,
+      "cluster_value_10d": 31630.28,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -5.92,
+      "price_vs_insider_pct": -6.38,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -806,15 +1260,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.32,
-      "market_cap": 380474037.0,
+      "price": 4.428,
+      "sma20": 4.2271,
+      "sma50": 4.2374,
+      "atr14_pct": 3.28,
+      "avg_dollar_volume_20d": 685618.2,
+      "volume_ratio_20d": 0.25,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 374386450.15,
       "name": "Agora, Inc.",
-      "spread_pct": 53.89,
+      "spread_pct": 33.943,
       "short_float_pct": 0.84
     },
     "conviction": {
-      "score": 39,
-      "data_completeness_pct": 75,
+      "score": 37,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -842,7 +1303,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
@@ -854,15 +1315,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -871,7 +1332,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.58,
+      "price_vs_insider_pct": 3.09,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -905,20 +1366,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 62,
+      "score": 66,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -951,7 +1412,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -967,16 +1428,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -1.13,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -1.61,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -1010,21 +1469,21 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 11.8,
-      "sma20": 11.989,
-      "sma50": 12.2994,
-      "atr14_pct": 1.61,
-      "avg_dollar_volume_20d": 666554.41,
-      "volume_ratio_20d": 1.29,
+      "price": 11.7182,
+      "sma20": 11.9634,
+      "sma50": 12.2848,
+      "atr14_pct": 1.54,
+      "avg_dollar_volume_20d": 646132.64,
+      "volume_ratio_20d": 0.1,
       "trend": "bearish",
       "technical_confirmation": "unconfirmed",
-      "market_cap": 161163258.01,
+      "market_cap": 160046035.25,
       "name": "27623",
-      "spread_pct": 4.862,
+      "spread_pct": 1.191,
       "short_float_pct": 0.06
     },
     "conviction": {
-      "score": 31,
+      "score": 32,
       "data_completeness_pct": 95,
       "components": {
         "insider_role": {
@@ -1057,7 +1516,7 @@
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": 1,
           "max": 5
         },
         "short_interest": {
@@ -1073,16 +1532,123 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 834052.42,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Spread geniş",
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": -0.19,
+      "verdict": "DÜŞÜK ÖNCELİK"
+    }
+  },
+  {
+    "id": "xoomar:DGXX|AMAR MICHEL|2026-10-14|20000.0000|2.7628",
+    "source_key": "DGXX|AMAR MICHEL|2026-10-14|20000.0000|2.7628",
+    "accession": null,
+    "ticker": "DGXX",
+    "issuer": "Digi Power X Inc.",
+    "issuer_cik": null,
+    "insider": "Amar Michel",
+    "insider_cik": "Amar Michel",
+    "role": "CEO / President",
+    "officer_title": "Chief Executive Officer",
+    "role_points": 12,
+    "is_entity": false,
+    "transaction_date": "2026-10-14",
+    "filed_at": null,
+    "shares": 20000.0,
+    "avg_price": 2.7628,
+    "value_usd": 55256.0,
+    "post_shares": 1719885.0,
+    "prior_shares_est": 1699885.0,
+    "position_increase_pct": 1.18,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/dgxx",
+    "sec_url": "https://xoomar.com/markets/insiders/dgxx",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 2.655,
+      "sma20": 3.6818,
+      "sma50": 3.7636,
+      "atr14_pct": 9.93,
+      "avg_dollar_volume_20d": 9868459.37,
+      "volume_ratio_20d": 0.3,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 269208203.74,
+      "name": "Digi Power X Inc.",
+      "spread_pct": 53.818,
+      "short_float_pct": 6.49
+    },
+    "conviction": {
+      "score": 41,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 12,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 4,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 6,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 5,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 5,
+          "max": 5
+        },
+        "trend": {
+          "points": 0,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 0,
+          "max": 6
+        }
+      },
+      "freshness_hours": 64.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 1,
+      "cluster_value_10d": 55256.0,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.51,
+      "price_vs_insider_pct": -3.9,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1116,15 +1682,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
       "score": 36,
-      "data_completeness_pct": 75,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1152,7 +1725,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1164,15 +1737,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1181,7 +1754,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -0.58,
+      "price_vs_insider_pct": 4.22,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1265,7 +1838,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -1306,15 +1879,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
-      "score": 44,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1342,7 +1922,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1354,15 +1934,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1371,7 +1951,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 1.41,
+      "price_vs_insider_pct": 6.32,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1405,15 +1985,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
-      "score": 44,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1441,7 +2028,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1453,15 +2040,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1470,7 +2057,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.31,
+      "price_vs_insider_pct": 5.15,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1554,7 +2141,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -1595,15 +2182,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
-      "score": 44,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1631,7 +2225,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1643,15 +2237,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1660,7 +2254,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.31,
+      "price_vs_insider_pct": 5.15,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1694,15 +2288,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
       "score": 36,
-      "data_completeness_pct": 75,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1730,7 +2331,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1742,15 +2343,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1759,7 +2360,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -0.58,
+      "price_vs_insider_pct": 4.22,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1793,15 +2394,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 85.26,
-      "market_cap": 1331948230.0,
+      "price": 89.38,
+      "sma20": 96.822,
+      "sma50": 103.7028,
+      "atr14_pct": 5.49,
+      "avg_dollar_volume_20d": 21927964.97,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1315464410.38,
       "name": "Inhibrx Biosciences, Inc.",
-      "spread_pct": 52.098,
+      "spread_pct": 54.71,
       "short_float_pct": 31.14
     },
     "conviction": {
-      "score": 44,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -1829,7 +2437,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -1841,15 +2449,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -1858,7 +2466,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 1.41,
+      "price_vs_insider_pct": 6.32,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -1892,15 +2500,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 8.37,
-      "market_cap": 436364279.0,
+      "price": 8.31,
+      "sma20": 8.488,
+      "sma50": 8.8645,
+      "atr14_pct": 5.22,
+      "avg_dollar_volume_20d": 4522309.31,
+      "volume_ratio_20d": 0.35,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 426610275.48,
       "name": "Prothena Corporation plc",
-      "spread_pct": 54.48,
+      "spread_pct": 55.803,
       "short_float_pct": 18.79
     },
     "conviction": {
-      "score": 31,
-      "data_completeness_pct": 75,
+      "score": 28,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -1928,7 +2543,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -1940,15 +2555,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -1957,7 +2572,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -1.03,
+      "price_vs_insider_pct": -1.74,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -2041,7 +2656,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -2082,15 +2697,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 0.115,
-      "market_cap": 60550800.82,
+      "price": 0.11,
+      "sma20": 0.1274,
+      "sma50": 0.1494,
+      "atr14_pct": 9.25,
+      "avg_dollar_volume_20d": 1022320.28,
+      "volume_ratio_20d": 0.59,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 55971328.19,
       "name": "Zone Frontier Inc.",
-      "spread_pct": null,
+      "spread_pct": 0.363,
       "short_float_pct": 2.72
     },
     "conviction": {
-      "score": 49,
-      "data_completeness_pct": 70,
+      "score": 43,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -2118,11 +2740,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 3,
           "max": 5
         },
         "short_interest": {
@@ -2130,15 +2752,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -2147,7 +2769,113 @@
       "risk_flags": [
         "Fiyat $1 altında"
       ],
-      "price_vs_insider_pct": 1.23,
+      "price_vs_insider_pct": -3.17,
+      "verdict": "RİSKLİ / ELE"
+    }
+  },
+  {
+    "id": "xoomar:BZUN|QIU WENBIN|2026-10-14|5800.0000|3.4400",
+    "source_key": "BZUN|QIU WENBIN|2026-10-14|5800.0000|3.4400",
+    "accession": null,
+    "ticker": "BZUN",
+    "issuer": "Baozun Inc.",
+    "issuer_cik": null,
+    "insider": "Qiu Wenbin",
+    "insider_cik": "Qiu Wenbin",
+    "role": "CEO / President",
+    "officer_title": "Chief Executive Officer",
+    "role_points": 12,
+    "is_entity": false,
+    "transaction_date": "2026-10-14",
+    "filed_at": null,
+    "shares": 5800.0,
+    "avg_price": 3.44,
+    "value_usd": 19952.0,
+    "post_shares": 1684372.0,
+    "prior_shares_est": 1678572.0,
+    "position_increase_pct": 0.35,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/bzun",
+    "sec_url": "https://xoomar.com/markets/insiders/bzun",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 3.83,
+      "sma20": 3.2412,
+      "sma50": 2.9914,
+      "atr14_pct": 5.62,
+      "avg_dollar_volume_20d": 1135520.69,
+      "volume_ratio_20d": 1.77,
+      "trend": "bullish",
+      "technical_confirmation": "confirmed",
+      "market_cap": 222316397.71,
+      "name": "Baozun Inc.",
+      "spread_pct": 20.804,
+      "short_float_pct": 1.45
+    },
+    "conviction": {
+      "score": 46,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 12,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 1,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 6,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 3,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 3,
+          "max": 5
+        },
+        "trend": {
+          "points": 6,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 6,
+          "max": 6
+        }
+      },
+      "freshness_hours": 64.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 1,
+      "cluster_value_10d": 60118.0,
+      "risk_status": "BLOCK",
+      "risk_flags": [
+        "Spread %2.5 üzerinde"
+      ],
+      "price_vs_insider_pct": 11.34,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -2181,20 +2909,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 58,
+      "score": 61,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -2227,7 +2955,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -2243,16 +2971,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -0.79,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -1.27,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -2286,15 +3012,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 2.94,
-      "market_cap": 341111517.88,
+      "price": 3.055,
+      "sma20": 3.7555,
+      "sma50": 4.6483,
+      "atr14_pct": 9.51,
+      "avg_dollar_volume_20d": 5466169.54,
+      "volume_ratio_20d": 0.3,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 323632208.04,
       "name": "Terrestrial Energy Inc.",
-      "spread_pct": 43.771,
+      "spread_pct": 28.676,
       "short_float_pct": 13.31
     },
     "conviction": {
-      "score": 64,
-      "data_completeness_pct": 75,
+      "score": 53,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -2309,7 +3042,7 @@
           "max": 12
         },
         "cluster_buying": {
-          "points": 12,
+          "points": 9,
           "max": 14
         },
         "filing_freshness": {
@@ -2322,7 +3055,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 5,
           "max": 8
         },
         "spread": {
@@ -2334,25 +3067,129 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 3,
-      "management_cluster_10d": 3,
-      "cluster_value_10d": 112279.3,
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 72943.3,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -0.34,
+      "price_vs_insider_pct": 3.56,
       "verdict": "RİSKLİ / ELE"
+    }
+  },
+  {
+    "id": "xoomar:BORR|SNOWLING HARVEY EDWARD|2026-10-14|300000.0000|4.9100",
+    "source_key": "BORR|SNOWLING HARVEY EDWARD|2026-10-14|300000.0000|4.9100",
+    "accession": null,
+    "ticker": "BORR",
+    "issuer": "Borr Drilling Limited",
+    "issuer_cik": null,
+    "insider": "Snowling Harvey Edward",
+    "insider_cik": "Snowling Harvey Edward",
+    "role": "COO",
+    "officer_title": "Chief Operating Officer",
+    "role_points": 11,
+    "is_entity": false,
+    "transaction_date": "2026-10-14",
+    "filed_at": null,
+    "shares": 300000.0,
+    "avg_price": 4.91,
+    "value_usd": 1473000.0,
+    "post_shares": 445944.0,
+    "prior_shares_est": 145944.0,
+    "position_increase_pct": 205.56,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/borr",
+    "sec_url": "https://xoomar.com/markets/insiders/borr",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 4.4786,
+      "sma20": 4.3484,
+      "sma50": 4.3654,
+      "atr14_pct": 5.65,
+      "avg_dollar_volume_20d": 36510716.96,
+      "volume_ratio_20d": 0.55,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1380594486.55,
+      "name": "Borr Drilling Limited",
+      "spread_pct": 0.222,
+      "short_float_pct": 14.53
+    },
+    "conviction": {
+      "score": 80,
+      "data_completeness_pct": 95,
+      "components": {
+        "insider_role": {
+          "points": 11,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 13,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 12,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 9,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 6,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": 7,
+          "max": 8
+        },
+        "spread": {
+          "points": 4,
+          "max": 5
+        },
+        "short_interest": {
+          "points": 5,
+          "max": 5
+        },
+        "trend": {
+          "points": 3,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": 3,
+          "max": 6
+        }
+      },
+      "freshness_hours": 64.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 26559800.0,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -8.79,
+      "verdict": "İZLE / TEYİT BEKLE"
     }
   },
   {
@@ -2435,7 +3272,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 49.0,
+      "freshness_hours": 64.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -2476,15 +3313,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 8.37,
-      "market_cap": 436364279.0,
+      "price": 8.31,
+      "sma20": 8.488,
+      "sma50": 8.8645,
+      "atr14_pct": 5.22,
+      "avg_dollar_volume_20d": 4522309.31,
+      "volume_ratio_20d": 0.35,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 426610275.48,
       "name": "Prothena Corporation plc",
-      "spread_pct": 54.48,
+      "spread_pct": 55.803,
       "short_float_pct": 18.79
     },
     "conviction": {
-      "score": 46,
-      "data_completeness_pct": 75,
+      "score": 40,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -2512,7 +3356,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -2524,15 +3368,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -2541,7 +3385,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.18,
+      "price_vs_insider_pct": -0.54,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -2575,15 +3419,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 5.63,
-      "market_cap": 1358202339.0,
+      "price": 5.8,
+      "sma20": 5.335,
+      "sma50": 6.1302,
+      "atr14_pct": 3.65,
+      "avg_dollar_volume_20d": 13267671.69,
+      "volume_ratio_20d": 0.42,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1346593816.28,
       "name": "Sprinklr, Inc.",
-      "spread_pct": null,
+      "spread_pct": 0.171,
       "short_float_pct": 10.12
     },
     "conviction": {
-      "score": 64,
-      "data_completeness_pct": 70,
+      "score": 65,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -2611,11 +3462,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -2623,22 +3474,22 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 850500.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": -0.71,
+      "price_vs_insider_pct": 2.29,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -2722,7 +3573,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -2763,10 +3614,10 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 13.5,
-      "market_cap": 388630857.12,
+      "price": 13.635,
+      "market_cap": 374221880.35,
       "name": "TRex Bio, Inc.",
-      "spread_pct": 5.587,
+      "spread_pct": 2.546,
       "short_float_pct": null
     },
     "conviction": {
@@ -2819,7 +3670,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -2828,7 +3679,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -3.57,
+      "price_vs_insider_pct": -2.61,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -2862,20 +3713,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 45,
+      "score": 49,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -2908,7 +3759,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -2924,16 +3775,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -2.42,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -2.89,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -3017,11 +3866,102 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 44777.67,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": null,
+      "verdict": "DÜŞÜK ÖNCELİK"
+    }
+  },
+  {
+    "id": "xoomar:GF|SABA CAPITAL MANAGEMENT, L.P.|2026-10-13|3678.0000|10.2700",
+    "source_key": "GF|SABA CAPITAL MANAGEMENT, L.P.|2026-10-13|3678.0000|10.2700",
+    "accession": null,
+    "ticker": "GF",
+    "issuer": "GF",
+    "issuer_cik": null,
+    "insider": "Saba Capital Management, L.P.",
+    "insider_cik": "Saba Capital Management, L.P.",
+    "role": "Entity / beneficial owner",
+    "officer_title": "10% owner",
+    "role_points": 3,
+    "is_entity": true,
+    "transaction_date": "2026-10-13",
+    "filed_at": null,
+    "shares": 3678.0,
+    "avg_price": 10.27,
+    "value_usd": 37773.06,
+    "post_shares": 3757760.0,
+    "prior_shares_est": 3754082.0,
+    "position_increase_pct": 0.1,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/gf",
+    "sec_url": "https://xoomar.com/markets/insiders/gf",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {},
+    "conviction": {
+      "score": 19,
+      "data_completeness_pct": 58,
+      "components": {
+        "insider_role": {
+          "points": 3,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 1,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 2,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 6,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": null,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": null,
+          "max": 8
+        },
+        "spread": {
+          "points": null,
+          "max": 5
+        },
+        "short_interest": {
+          "points": null,
+          "max": 5
+        },
+        "trend": {
+          "points": null,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": null,
+          "max": 6
+        }
+      },
+      "freshness_hours": 88.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 0,
+      "cluster_value_10d": 92814.36,
       "risk_status": "PASS",
       "risk_flags": [],
       "price_vs_insider_pct": null,
@@ -3058,15 +3998,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.46,
-      "market_cap": 105978571.1,
+      "price": 1.515,
+      "sma20": 1.1972,
+      "sma50": 1.0152,
+      "atr14_pct": 17.84,
+      "avg_dollar_volume_20d": 32439235.35,
+      "volume_ratio_20d": 0.2,
+      "trend": "bullish",
+      "technical_confirmation": "watch",
+      "market_cap": 101954067.12,
       "name": "QTREX Quantum Ltd.",
       "spread_pct": 5.825,
       "short_float_pct": 5.08
     },
     "conviction": {
-      "score": 65,
-      "data_completeness_pct": 75,
+      "score": 68,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3094,7 +4041,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -3106,15 +4053,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 6,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 2,
       "management_cluster_10d": 2,
@@ -3123,7 +4070,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -2.01,
+      "price_vs_insider_pct": 1.68,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -3157,8 +4104,8 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.21,
-      "market_cap": 101728824.11,
+      "price": 12.885,
+      "market_cap": 107352655.02,
       "name": "Retension Pharmaceuticals, Inc.",
       "spread_pct": null,
       "short_float_pct": null
@@ -3213,14 +4160,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 2,
       "management_cluster_10d": 2,
       "cluster_value_10d": 369600.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": 1.75,
+      "price_vs_insider_pct": 7.37,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -3254,8 +4201,8 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.21,
-      "market_cap": 101728824.11,
+      "price": 12.885,
+      "market_cap": 107352655.02,
       "name": "Retension Pharmaceuticals, Inc.",
       "spread_pct": null,
       "short_float_pct": null
@@ -3310,14 +4257,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 2,
       "management_cluster_10d": 2,
       "cluster_value_10d": 369600.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": 1.75,
+      "price_vs_insider_pct": 7.37,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -3351,15 +4298,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 0.115,
-      "market_cap": 60550800.82,
+      "price": 0.11,
+      "sma20": 0.1274,
+      "sma50": 0.1494,
+      "atr14_pct": 9.25,
+      "avg_dollar_volume_20d": 1022320.28,
+      "volume_ratio_20d": 0.59,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 55971328.19,
       "name": "Zone Frontier Inc.",
-      "spread_pct": null,
+      "spread_pct": 0.363,
       "short_float_pct": 2.72
     },
     "conviction": {
-      "score": 45,
-      "data_completeness_pct": 70,
+      "score": 40,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3387,11 +4341,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 3,
           "max": 5
         },
         "short_interest": {
@@ -3399,15 +4353,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -3416,7 +4370,7 @@
       "risk_flags": [
         "Fiyat $1 altında"
       ],
-      "price_vs_insider_pct": -3.12,
+      "price_vs_insider_pct": -7.33,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -3450,15 +4404,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 0.115,
-      "market_cap": 60550800.82,
+      "price": 0.11,
+      "sma20": 0.1274,
+      "sma50": 0.1494,
+      "atr14_pct": 9.25,
+      "avg_dollar_volume_20d": 1022320.28,
+      "volume_ratio_20d": 0.59,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 55971328.19,
       "name": "Zone Frontier Inc.",
-      "spread_pct": null,
+      "spread_pct": 0.363,
       "short_float_pct": 2.72
     },
     "conviction": {
-      "score": 56,
-      "data_completeness_pct": 70,
+      "score": 48,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3486,11 +4447,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 3,
           "max": 5
         },
         "short_interest": {
@@ -3498,15 +4459,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -3515,7 +4476,7 @@
       "risk_flags": [
         "Fiyat $1 altında"
       ],
-      "price_vs_insider_pct": -1.2,
+      "price_vs_insider_pct": -5.5,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -3549,22 +4510,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 28.02,
-      "sma20": 24.963,
-      "sma50": 21.4912,
-      "atr14_pct": 3.98,
-      "avg_dollar_volume_20d": 294925999.32,
-      "volume_ratio_20d": 1.04,
+      "price": 26.865,
+      "sma20": 25.1743,
+      "sma50": 21.6439,
+      "atr14_pct": 4.24,
+      "avg_dollar_volume_20d": 290118379.56,
+      "volume_ratio_20d": 0.39,
       "trend": "bullish",
-      "technical_confirmation": "confirmed",
-      "market_cap": 14136117970.74,
+      "technical_confirmation": "watch",
+      "market_cap": 13553418980.88,
       "name": "GameStop Corporation",
-      "spread_pct": 0.645,
+      "spread_pct": null,
       "short_float_pct": 9.17
     },
     "conviction": {
-      "score": 66,
-      "data_completeness_pct": 95,
+      "score": 63,
+      "data_completeness_pct": 90,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3596,7 +4557,7 @@
           "max": 8
         },
         "spread": {
-          "points": 3,
+          "points": null,
           "max": 5
         },
         "short_interest": {
@@ -3608,18 +4569,18 @@
           "max": 6
         },
         "technical_confirmation": {
-          "points": 6,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 22774727.5,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": 4.75,
+      "price_vs_insider_pct": 0.43,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -3653,22 +4614,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 28.02,
-      "sma20": 24.963,
-      "sma50": 21.4912,
-      "atr14_pct": 3.98,
-      "avg_dollar_volume_20d": 294925999.32,
-      "volume_ratio_20d": 1.04,
+      "price": 26.865,
+      "sma20": 25.1743,
+      "sma50": 21.6439,
+      "atr14_pct": 4.24,
+      "avg_dollar_volume_20d": 290118379.56,
+      "volume_ratio_20d": 0.39,
       "trend": "bullish",
-      "technical_confirmation": "confirmed",
-      "market_cap": 14136117970.74,
+      "technical_confirmation": "watch",
+      "market_cap": 13553418980.88,
       "name": "GameStop Corporation",
-      "spread_pct": 0.645,
+      "spread_pct": null,
       "short_float_pct": 9.17
     },
     "conviction": {
-      "score": 68,
-      "data_completeness_pct": 95,
+      "score": 65,
+      "data_completeness_pct": 90,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3700,7 +4661,7 @@
           "max": 8
         },
         "spread": {
-          "points": 3,
+          "points": null,
           "max": 5
         },
         "short_interest": {
@@ -3712,18 +4673,18 @@
           "max": 6
         },
         "technical_confirmation": {
-          "points": 6,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 22774727.5,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": 3.78,
+      "price_vs_insider_pct": -0.5,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -3757,15 +4718,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 50.82,
-      "market_cap": 135991077.04,
+      "price": 46.055,
+      "sma20": 53.8948,
+      "sma50": 52.5389,
+      "atr14_pct": 12.93,
+      "avg_dollar_volume_20d": 8733961.26,
+      "volume_ratio_20d": 0.29,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 132020849.38,
       "name": "EuroDry Ltd.",
-      "spread_pct": 51.656,
+      "spread_pct": 52.228,
       "short_float_pct": 8.76
     },
     "conviction": {
-      "score": 36,
-      "data_completeness_pct": 75,
+      "score": 37,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -3793,7 +4761,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 5,
           "max": 8
         },
         "spread": {
@@ -3805,24 +4773,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 35826.0,
+      "cluster_value_10d": 64726.92,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -0.7,
+      "price_vs_insider_pct": -10.01,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -3856,15 +4824,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 2.94,
-      "market_cap": 341111517.88,
+      "price": 3.055,
+      "sma20": 3.7555,
+      "sma50": 4.6483,
+      "atr14_pct": 9.51,
+      "avg_dollar_volume_20d": 5466169.54,
+      "volume_ratio_20d": 0.3,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 323632208.04,
       "name": "Terrestrial Energy Inc.",
-      "spread_pct": 43.771,
+      "spread_pct": 28.676,
       "short_float_pct": 13.31
     },
     "conviction": {
-      "score": 60,
-      "data_completeness_pct": 75,
+      "score": 50,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3879,7 +4854,7 @@
           "max": 12
         },
         "cluster_buying": {
-          "points": 12,
+          "points": 9,
           "max": 14
         },
         "filing_freshness": {
@@ -3892,7 +4867,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 5,
           "max": 8
         },
         "spread": {
@@ -3904,24 +4879,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 3,
-      "management_cluster_10d": 3,
-      "cluster_value_10d": 112279.3,
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 72943.3,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -2.23,
+      "price_vs_insider_pct": 1.6,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -3955,15 +4930,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 3.35,
-      "market_cap": 213029032.86,
+      "price": 3.83,
+      "sma20": 3.2412,
+      "sma50": 2.9914,
+      "atr14_pct": 5.62,
+      "avg_dollar_volume_20d": 1135520.69,
+      "volume_ratio_20d": 1.77,
+      "trend": "bullish",
+      "technical_confirmation": "confirmed",
+      "market_cap": 222316397.71,
       "name": "Baozun Inc.",
-      "spread_pct": 29.252,
+      "spread_pct": 20.804,
       "short_float_pct": 1.45
     },
     "conviction": {
-      "score": 39,
-      "data_completeness_pct": 75,
+      "score": 46,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -3991,7 +4973,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -4003,24 +4985,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 6,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 6,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 40166.0,
+      "cluster_value_10d": 60118.0,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -3.46,
+      "price_vs_insider_pct": 10.37,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -4054,15 +5036,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 50.82,
-      "market_cap": 135991077.04,
+      "price": 46.055,
+      "sma20": 53.8948,
+      "sma50": 52.5389,
+      "atr14_pct": 12.93,
+      "avg_dollar_volume_20d": 8733961.26,
+      "volume_ratio_20d": 0.29,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 132020849.38,
       "name": "EuroDry Ltd.",
-      "spread_pct": 51.656,
+      "spread_pct": 52.228,
       "short_float_pct": 8.76
     },
     "conviction": {
-      "score": 36,
-      "data_completeness_pct": 75,
+      "score": 37,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -4090,7 +5079,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 5,
           "max": 8
         },
         "spread": {
@@ -4102,24 +5091,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 35826.0,
+      "cluster_value_10d": 64726.92,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -0.7,
+      "price_vs_insider_pct": -10.01,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -4153,15 +5142,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.68,
-      "market_cap": 1403732971.55,
+      "price": 4.4786,
+      "sma20": 4.3484,
+      "sma50": 4.3654,
+      "atr14_pct": 5.65,
+      "avg_dollar_volume_20d": 36510716.96,
+      "volume_ratio_20d": 0.55,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1380594486.55,
       "name": "Borr Drilling Limited",
-      "spread_pct": 0.0,
+      "spread_pct": 0.222,
       "short_float_pct": 14.53
     },
     "conviction": {
-      "score": 60,
-      "data_completeness_pct": 75,
+      "score": 69,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -4176,7 +5172,7 @@
           "max": 12
         },
         "cluster_buying": {
-          "points": 0,
+          "points": 9,
           "max": 14
         },
         "filing_freshness": {
@@ -4189,11 +5185,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 5,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -4201,22 +5197,22 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 22787650.0,
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 26559800.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": -5.16,
+      "price_vs_insider_pct": -9.24,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -4300,7 +5296,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -4341,15 +5337,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 38.72,
-      "market_cap": 1153092353.13,
+      "price": 40.11,
+      "sma20": 41.8335,
+      "sma50": 43.9722,
+      "atr14_pct": 3.01,
+      "avg_dollar_volume_20d": 17704051.97,
+      "volume_ratio_20d": 0.24,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1167058667.37,
       "name": "Gold.com, Inc.",
-      "spread_pct": 0.378,
+      "spread_pct": 0.199,
       "short_float_pct": 19.67
     },
     "conviction": {
-      "score": 54,
-      "data_completeness_pct": 75,
+      "score": 51,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -4377,11 +5380,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 3,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -4389,22 +5392,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 3941859.92,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": -3.0,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": 0.48,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -4488,7 +5493,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -4529,15 +5534,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.32,
-      "market_cap": 380474037.0,
+      "price": 4.428,
+      "sma20": 4.2271,
+      "sma50": 4.2374,
+      "atr14_pct": 3.28,
+      "avg_dollar_volume_20d": 685618.2,
+      "volume_ratio_20d": 0.25,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 374386450.15,
       "name": "Agora, Inc.",
-      "spread_pct": 53.89,
+      "spread_pct": 33.943,
       "short_float_pct": 0.84
     },
     "conviction": {
-      "score": 39,
-      "data_completeness_pct": 75,
+      "score": 37,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -4565,7 +5577,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
@@ -4577,15 +5589,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -4594,7 +5606,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 2.74,
+      "price_vs_insider_pct": 5.31,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -4678,7 +5690,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -4769,7 +5781,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -4810,20 +5822,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 62,
+      "score": 66,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -4856,7 +5868,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -4872,59 +5884,70 @@
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -2.81,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -3.27,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
   {
-    "id": "xoomar:GF|SABA CAPITAL MANAGEMENT, L.P.|2026-10-13|3678.0000|10.2700",
-    "source_key": "GF|SABA CAPITAL MANAGEMENT, L.P.|2026-10-13|3678.0000|10.2700",
+    "id": "xoomar:CRBG|NIPPON LIFE INSURANCE CO|2026-10-13|253776.0000|34.6839",
+    "source_key": "CRBG|NIPPON LIFE INSURANCE CO|2026-10-13|253776.0000|34.6839",
     "accession": null,
-    "ticker": "GF",
-    "issuer": "GF",
+    "ticker": "CRBG",
+    "issuer": "Corebridge Financial Inc.",
     "issuer_cik": null,
-    "insider": "Saba Capital Management, L.P.",
-    "insider_cik": "Saba Capital Management, L.P.",
+    "insider": "NIPPON LIFE INSURANCE CO",
+    "insider_cik": "NIPPON LIFE INSURANCE CO",
     "role": "Entity / beneficial owner",
     "officer_title": "10% owner",
     "role_points": 3,
     "is_entity": true,
     "transaction_date": "2026-10-13",
     "filed_at": null,
-    "shares": 3678.0,
-    "avg_price": 10.27,
-    "value_usd": 37773.06,
-    "post_shares": 3757760.0,
-    "prior_shares_est": 3754082.0,
-    "position_increase_pct": 0.1,
+    "shares": 253776.0,
+    "avg_price": 34.6839,
+    "value_usd": 8801941.41,
+    "post_shares": 128387932.0,
+    "prior_shares_est": 128134156.0,
+    "position_increase_pct": 0.2,
     "new_position": false,
     "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/gf",
-    "sec_url": "https://xoomar.com/markets/insiders/gf",
+    "source_url": "https://xoomar.com/markets/insiders/crbg",
+    "sec_url": "https://xoomar.com/markets/insiders/crbg",
     "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
     "discovery_source": "Xoomar",
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
-    "market": {},
+    "market": {
+      "price": 34.655,
+      "sma20": 34.2407,
+      "sma50": 33.8273,
+      "atr14_pct": 2.64,
+      "avg_dollar_volume_20d": 167808361.82,
+      "volume_ratio_20d": 0.39,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 15448246205.75,
+      "name": "Corebridge Financial Inc.",
+      "spread_pct": 0.029,
+      "short_float_pct": 5.49
+    },
     "conviction": {
-      "score": 19,
-      "data_completeness_pct": 58,
+      "score": 55,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
           "max": 12
         },
         "purchase_value": {
-          "points": 1,
+          "points": 15,
           "max": 15
         },
         "position_increase": {
@@ -4941,38 +5964,38 @@
           "proxy": true
         },
         "market_cap": {
-          "points": null,
+          "points": 5,
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 8,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 5,
           "max": 5
         },
         "short_interest": {
-          "points": null,
+          "points": 5,
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 73.0,
+      "freshness_hours": 88.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
-      "cluster_value_10d": 92814.36,
+      "cluster_value_10d": 25214238.12,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": null,
+      "price_vs_insider_pct": -0.08,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -5056,7 +6079,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -5151,7 +6174,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -5192,15 +6215,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.32,
-      "market_cap": 380474037.0,
+      "price": 4.428,
+      "sma20": 4.2271,
+      "sma50": 4.2374,
+      "atr14_pct": 3.28,
+      "avg_dollar_volume_20d": 685618.2,
+      "volume_ratio_20d": 0.25,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 374386450.15,
       "name": "Agora, Inc.",
-      "spread_pct": 53.89,
+      "spread_pct": 33.943,
       "short_float_pct": 0.84
     },
     "conviction": {
-      "score": 38,
-      "data_completeness_pct": 75,
+      "score": 36,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -5228,7 +6258,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
@@ -5240,15 +6270,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -5257,7 +6287,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 5.07,
+      "price_vs_insider_pct": 7.69,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -5341,7 +6371,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -5432,7 +6462,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -5473,20 +6503,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 61,
+      "score": 65,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -5519,7 +6549,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -5535,16 +6565,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -3.62,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -4.08,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -5628,7 +6656,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -5669,15 +6697,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.03,
-      "market_cap": 228779471.44,
+      "price": 1.025,
+      "sma20": 1.1873,
+      "sma50": 1.1669,
+      "atr14_pct": 9.93,
+      "avg_dollar_volume_20d": 1318733.51,
+      "volume_ratio_20d": 0.05,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 225479762.28,
       "name": "Uxin Limited",
-      "spread_pct": 29.058,
+      "spread_pct": 30.263,
       "short_float_pct": 0.68
     },
     "conviction": {
-      "score": 45,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -5705,7 +6740,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -5717,24 +6752,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 27357.67,
+      "cluster_value_10d": 31630.28,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -10.4,
+      "price_vs_insider_pct": -10.83,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -5768,15 +6803,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 38.72,
-      "market_cap": 1153092353.13,
+      "price": 40.11,
+      "sma20": 41.8335,
+      "sma50": 43.9722,
+      "atr14_pct": 3.01,
+      "avg_dollar_volume_20d": 17704051.97,
+      "volume_ratio_20d": 0.24,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1167058667.37,
       "name": "Gold.com, Inc.",
-      "spread_pct": 0.378,
+      "spread_pct": 0.199,
       "short_float_pct": 19.67
     },
     "conviction": {
-      "score": 52,
-      "data_completeness_pct": 75,
+      "score": 50,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -5804,11 +6846,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 3,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -5816,22 +6858,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 3941859.92,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": -2.88,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": 0.61,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -5840,7 +6884,7 @@
     "source_key": "FINS|BORTZ ROBERT EDWARD III|2026-10-12|418.0000|11.9200",
     "accession": null,
     "ticker": "FINS",
-    "issuer": "FINS",
+    "issuer": "Angel Oak Financial Strategies Income Term Trust",
     "issuer_cik": null,
     "insider": "Bortz Robert Edward III",
     "insider_cik": "Bortz Robert Edward III",
@@ -5864,10 +6908,23 @@
     "discovery_source": "Xoomar",
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
-    "market": {},
+    "market": {
+      "price": 11.9436,
+      "sma20": 11.9577,
+      "sma50": 12.3233,
+      "atr14_pct": 1.27,
+      "avg_dollar_volume_20d": 598285.11,
+      "volume_ratio_20d": 0.33,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 398810053.37,
+      "name": "Angel Oak Financial Strategies Income Term Trust",
+      "spread_pct": 0.67,
+      "short_float_pct": 0.15
+    },
     "conviction": {
-      "score": 46,
-      "data_completeness_pct": 58,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 11,
@@ -5891,38 +6948,40 @@
           "proxy": true
         },
         "market_cap": {
-          "points": null,
+          "points": 7,
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
-          "points": null,
+          "points": 3,
           "max": 5
         },
         "short_interest": {
-          "points": null,
+          "points": 3,
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 4982.56,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": null,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": 0.2,
       "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
@@ -5956,15 +7015,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.05,
-      "market_cap": 1059155120.32,
+      "price": 12.03,
+      "sma20": 12.5093,
+      "sma50": 12.7513,
+      "atr14_pct": 3.96,
+      "avg_dollar_volume_20d": 12396678.32,
+      "volume_ratio_20d": 0.18,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 1054771176.71,
       "name": "Mission Produce, Inc.",
-      "spread_pct": 55.461,
+      "spread_pct": 57.06,
       "short_float_pct": 8.24
     },
     "conviction": {
-      "score": 42,
-      "data_completeness_pct": 75,
+      "score": 41,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -5992,7 +7058,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -6004,15 +7070,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -6021,7 +7087,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 7.4,
+      "price_vs_insider_pct": 7.22,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -6030,7 +7096,7 @@
     "source_key": "WVVI|HAZLETT JOHN WALTER|2026-10-12|2004.0000|2.0500",
     "accession": null,
     "ticker": "WVVI",
-    "issuer": "Willamette Valley Vineyards, In",
+    "issuer": "WVVI",
     "issuer_cik": null,
     "insider": "Hazlett John Walter",
     "insider_cik": "Hazlett John Walter",
@@ -6054,23 +7120,10 @@
     "discovery_source": "Xoomar",
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
-    "market": {
-      "price": 2.0,
-      "sma20": 1.937,
-      "sma50": 2.0952,
-      "atr14_pct": 8.64,
-      "avg_dollar_volume_20d": 21174.3,
-      "volume_ratio_20d": 1.16,
-      "trend": "neutral",
-      "technical_confirmation": "watch",
-      "market_cap": 9959058.0,
-      "name": "Willamette Valley Vineyards, In",
-      "spread_pct": 52.326,
-      "short_float_pct": 0.22
-    },
+    "market": {},
     "conviction": {
-      "score": 38,
-      "data_completeness_pct": 95,
+      "score": 44,
+      "data_completeness_pct": 58,
       "components": {
         "insider_role": {
           "points": 12,
@@ -6094,43 +7147,39 @@
           "proxy": true
         },
         "market_cap": {
-          "points": 1,
+          "points": null,
           "max": 7
         },
         "dollar_volume": {
-          "points": 0,
+          "points": null,
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": null,
           "max": 5
         },
         "short_interest": {
-          "points": 3,
+          "points": null,
           "max": 5
         },
         "trend": {
-          "points": 3,
+          "points": null,
           "max": 6
         },
         "technical_confirmation": {
-          "points": 3,
+          "points": null,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 6399.95,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "20g dolar hacmi $0.5M altında",
-        "Spread %2.5 üzerinde",
-        "Piyasa değeri $30M altında"
-      ],
-      "price_vs_insider_pct": -2.44,
-      "verdict": "RİSKLİ / ELE"
+      "cluster_value_10d": 4108.2,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": null,
+      "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
   {
@@ -6213,7 +7262,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -6304,7 +7353,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -6395,7 +7444,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -6486,7 +7535,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -6577,7 +7626,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -6618,15 +7667,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 3.35,
-      "market_cap": 213029032.86,
+      "price": 3.83,
+      "sma20": 3.2412,
+      "sma50": 2.9914,
+      "atr14_pct": 5.62,
+      "avg_dollar_volume_20d": 1135520.69,
+      "volume_ratio_20d": 1.77,
+      "trend": "bullish",
+      "technical_confirmation": "confirmed",
+      "market_cap": 222316397.71,
       "name": "Baozun Inc.",
-      "spread_pct": 29.252,
+      "spread_pct": 20.804,
       "short_float_pct": 1.45
     },
     "conviction": {
-      "score": 38,
-      "data_completeness_pct": 75,
+      "score": 45,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -6654,7 +7710,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -6666,24 +7722,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 6,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 6,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 40166.0,
+      "cluster_value_10d": 60118.0,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 0.3,
+      "price_vs_insider_pct": 14.67,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -6717,15 +7773,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 33.95,
-      "market_cap": 15347947932.46,
+      "price": 34.655,
+      "sma20": 34.2407,
+      "sma50": 33.8273,
+      "atr14_pct": 2.64,
+      "avg_dollar_volume_20d": 167808361.82,
+      "volume_ratio_20d": 0.39,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 15448246205.75,
       "name": "Corebridge Financial Inc.",
-      "spread_pct": 7.969,
+      "spread_pct": 0.029,
       "short_float_pct": 5.49
     },
     "conviction": {
-      "score": 41,
-      "data_completeness_pct": 75,
+      "score": 52,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -6753,11 +7816,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 8,
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": 5,
           "max": 5
         },
         "short_interest": {
@@ -6765,25 +7828,23 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
-      "cluster_value_10d": 16412296.71,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "Spread %2.5 üzerinde"
-      ],
-      "price_vs_insider_pct": -1.57,
-      "verdict": "RİSKLİ / ELE"
+      "cluster_value_10d": 25214238.12,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": 0.48,
+      "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
   {
@@ -6816,21 +7877,21 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 11.8,
-      "sma20": 11.989,
-      "sma50": 12.2994,
-      "atr14_pct": 1.61,
-      "avg_dollar_volume_20d": 666554.41,
-      "volume_ratio_20d": 1.29,
+      "price": 11.7182,
+      "sma20": 11.9634,
+      "sma50": 12.2848,
+      "atr14_pct": 1.54,
+      "avg_dollar_volume_20d": 646132.64,
+      "volume_ratio_20d": 0.1,
       "trend": "bearish",
       "technical_confirmation": "unconfirmed",
-      "market_cap": 161163258.01,
+      "market_cap": 160046035.25,
       "name": "27623",
-      "spread_pct": 4.862,
+      "spread_pct": 1.191,
       "short_float_pct": 0.06
     },
     "conviction": {
-      "score": 27,
+      "score": 28,
       "data_completeness_pct": 95,
       "components": {
         "insider_role": {
@@ -6863,7 +7924,7 @@
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": 1,
           "max": 5
         },
         "short_interest": {
@@ -6879,16 +7940,116 @@
           "max": 6
         }
       },
-      "freshness_hours": 97.0,
+      "freshness_hours": 112.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 834052.42,
+      "risk_status": "WARN",
+      "risk_flags": [
+        "Spread geniş",
+        "Mevcut trend aşağı"
+      ],
+      "price_vs_insider_pct": -2.59,
+      "verdict": "DÜŞÜK ÖNCELİK"
+    }
+  },
+  {
+    "id": "xoomar:QVCG|GOLDENTREE ASSET MANAGEMENT LP|2026-10-09|1352000.0000|12.3500",
+    "source_key": "QVCG|GOLDENTREE ASSET MANAGEMENT LP|2026-10-09|1352000.0000|12.3500",
+    "accession": null,
+    "ticker": "QVCG",
+    "issuer": "QVC Group, Inc.",
+    "issuer_cik": null,
+    "insider": "GOLDENTREE ASSET MANAGEMENT LP",
+    "insider_cik": "GOLDENTREE ASSET MANAGEMENT LP",
+    "role": "Entity / beneficial owner",
+    "officer_title": "10% owner",
+    "role_points": 3,
+    "is_entity": true,
+    "transaction_date": "2026-10-09",
+    "filed_at": null,
+    "shares": 1352000.0,
+    "avg_price": 12.35,
+    "value_usd": 16697200.0,
+    "post_shares": 12679754.0,
+    "prior_shares_est": 11327754.0,
+    "position_increase_pct": 11.94,
+    "new_position": false,
+    "transaction_count": 1,
+    "source_url": "https://xoomar.com/markets/insiders/qvcg",
+    "sec_url": "https://xoomar.com/markets/insiders/qvcg",
+    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
+    "discovery_source": "Xoomar",
+    "freshness_basis": "transaction_date_proxy",
+    "possible_private_placement": false,
+    "market": {
+      "price": 9.22,
+      "market_cap": 460999063.69,
+      "name": "QVC Group, Inc.",
+      "spread_pct": 32.829,
+      "short_float_pct": null
+    },
+    "conviction": {
+      "score": 48,
+      "data_completeness_pct": 70,
+      "components": {
+        "insider_role": {
+          "points": 3,
+          "max": 12
+        },
+        "purchase_value": {
+          "points": 15,
+          "max": 15
+        },
+        "position_increase": {
+          "points": 8,
+          "max": 12
+        },
+        "cluster_buying": {
+          "points": 0,
+          "max": 14
+        },
+        "filing_freshness": {
+          "points": 3,
+          "max": 10,
+          "proxy": true
+        },
+        "market_cap": {
+          "points": 7,
+          "max": 7
+        },
+        "dollar_volume": {
+          "points": null,
+          "max": 8
+        },
+        "spread": {
+          "points": 0,
+          "max": 5
+        },
+        "short_interest": {
+          "points": null,
+          "max": 5
+        },
+        "trend": {
+          "points": null,
+          "max": 6
+        },
+        "technical_confirmation": {
+          "points": null,
+          "max": 6
+        }
+      },
+      "freshness_hours": 184.0,
+      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
+      "cluster_insiders_10d": 1,
+      "management_cluster_10d": 0,
+      "cluster_value_10d": 16697200.0,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -1.91,
+      "price_vs_insider_pct": -25.34,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -6922,15 +8083,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.71,
-      "market_cap": 27668018.5,
+      "price": 4.68,
+      "sma20": 5.3947,
+      "sma50": 5.9891,
+      "atr14_pct": 9.44,
+      "avg_dollar_volume_20d": 385471.67,
+      "volume_ratio_20d": 0.04,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 27260278.28,
       "name": "OneMedNet Corp",
       "spread_pct": 13.777,
       "short_float_pct": 3.65
     },
     "conviction": {
-      "score": 35,
-      "data_completeness_pct": 75,
+      "score": 28,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 9,
@@ -6958,7 +8126,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
@@ -6970,25 +8138,26 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 249998.04,
       "risk_status": "BLOCK",
       "risk_flags": [
+        "20g dolar hacmi $0.5M altında",
         "Spread %2.5 üzerinde",
         "Piyasa değeri $30M altında"
       ],
-      "price_vs_insider_pct": -14.98,
+      "price_vs_insider_pct": -15.52,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -7072,7 +8241,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -7113,15 +8282,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 2.28,
-      "market_cap": 7305067.62,
+      "price": 1.995,
+      "sma20": 2.0823,
+      "sma50": 2.3024,
+      "atr14_pct": 18.37,
+      "avg_dollar_volume_20d": 10109083.39,
+      "volume_ratio_20d": 0.02,
+      "trend": "bearish",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 6810098.1,
       "name": "Dreamland Limited",
       "spread_pct": 18.565,
       "short_float_pct": 1.7
     },
     "conviction": {
-      "score": 49,
-      "data_completeness_pct": 75,
+      "score": 46,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -7149,7 +8325,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -7161,15 +8337,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 0,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -7179,7 +8355,7 @@
         "Spread %2.5 üzerinde",
         "Piyasa değeri $30M altında"
       ],
-      "price_vs_insider_pct": 14.0,
+      "price_vs_insider_pct": -0.25,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -7213,15 +8389,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 33.95,
-      "market_cap": 15347947932.46,
+      "price": 34.655,
+      "sma20": 34.2407,
+      "sma50": 33.8273,
+      "atr14_pct": 2.64,
+      "avg_dollar_volume_20d": 167808361.82,
+      "volume_ratio_20d": 0.39,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 15448246205.75,
       "name": "Corebridge Financial Inc.",
-      "spread_pct": 7.969,
+      "spread_pct": 0.029,
       "short_float_pct": 5.49
     },
     "conviction": {
-      "score": 41,
-      "data_completeness_pct": 75,
+      "score": 52,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -7249,11 +8432,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 8,
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": 5,
           "max": 5
         },
         "short_interest": {
@@ -7261,25 +8444,23 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
-      "cluster_value_10d": 16412296.71,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "Spread %2.5 üzerinde"
-      ],
-      "price_vs_insider_pct": -0.36,
-      "verdict": "RİSKLİ / ELE"
+      "cluster_value_10d": 25214238.12,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": 1.71,
+      "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
   {
@@ -7362,7 +8543,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -7403,15 +8584,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 3.41,
-      "market_cap": 402254273.07,
+      "price": 3.225,
+      "sma20": 5.7138,
+      "sma50": 5.5059,
+      "atr14_pct": 15.12,
+      "avg_dollar_volume_20d": 59409440.02,
+      "volume_ratio_20d": 0.27,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 389570568.25,
       "name": "New Era Energy & Digital, Inc.",
       "spread_pct": 50.86,
       "short_float_pct": 23.43
     },
     "conviction": {
-      "score": 39,
-      "data_completeness_pct": 75,
+      "score": 42,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 3,
@@ -7439,7 +8627,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 8,
           "max": 8
         },
         "spread": {
@@ -7451,122 +8639,26 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
       "cluster_value_10d": 1192350.0,
       "risk_status": "BLOCK",
       "risk_flags": [
-        "Spread %2.5 üzerinde"
+        "Spread %2.5 üzerinde",
+        "Fiyat insider alımından sonra %32 düşmüş"
       ],
-      "price_vs_insider_pct": -28.5,
+      "price_vs_insider_pct": -32.38,
       "verdict": "RİSKLİ / ELE"
-    }
-  },
-  {
-    "id": "xoomar:QVCG|GOLDENTREE ASSET MANAGEMENT LP|2026-10-09|1352000.0000|12.3500",
-    "source_key": "QVCG|GOLDENTREE ASSET MANAGEMENT LP|2026-10-09|1352000.0000|12.3500",
-    "accession": null,
-    "ticker": "QVCG",
-    "issuer": "QVC Group, Inc.",
-    "issuer_cik": null,
-    "insider": "GOLDENTREE ASSET MANAGEMENT LP",
-    "insider_cik": "GOLDENTREE ASSET MANAGEMENT LP",
-    "role": "Entity / beneficial owner",
-    "officer_title": "10% owner",
-    "role_points": 3,
-    "is_entity": true,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 1352000.0,
-    "avg_price": 12.35,
-    "value_usd": 16697200.0,
-    "post_shares": 12679754.0,
-    "prior_shares_est": 11327754.0,
-    "position_increase_pct": 11.94,
-    "new_position": false,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/qvcg",
-    "sec_url": "https://xoomar.com/markets/insiders/qvcg",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {
-      "price": 10.43,
-      "market_cap": 487498995.75,
-      "name": "QVC Group, Inc.",
-      "spread_pct": null,
-      "short_float_pct": null
-    },
-    "conviction": {
-      "score": 51,
-      "data_completeness_pct": 65,
-      "components": {
-        "insider_role": {
-          "points": 3,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 15,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 8,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 0,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": 7,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": null,
-          "max": 8
-        },
-        "spread": {
-          "points": null,
-          "max": 5
-        },
-        "short_interest": {
-          "points": null,
-          "max": 5
-        },
-        "trend": {
-          "points": null,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": null,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 0,
-      "cluster_value_10d": 16697200.0,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": -15.55,
-      "verdict": "DÜŞÜK ÖNCELİK"
     }
   },
   {
@@ -7599,15 +8691,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.46,
-      "market_cap": 105978571.1,
+      "price": 1.515,
+      "sma20": 1.1972,
+      "sma50": 1.0152,
+      "atr14_pct": 17.84,
+      "avg_dollar_volume_20d": 32439235.35,
+      "volume_ratio_20d": 0.2,
+      "trend": "bullish",
+      "technical_confirmation": "watch",
+      "market_cap": 101954067.12,
       "name": "QTREX Quantum Ltd.",
       "spread_pct": 5.825,
       "short_float_pct": 5.08
     },
     "conviction": {
-      "score": 49,
-      "data_completeness_pct": 75,
+      "score": 55,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -7635,7 +8734,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
@@ -7647,15 +8746,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 6,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 2,
       "management_cluster_10d": 2,
@@ -7664,7 +8763,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -12.57,
+      "price_vs_insider_pct": -9.28,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -7748,7 +8847,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 0,
@@ -7789,20 +8888,20 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.49,
-      "sma20": 12.568,
-      "sma50": 12.3564,
-      "atr14_pct": 2.17,
-      "avg_dollar_volume_20d": 12038465.38,
-      "volume_ratio_20d": 0.84,
+      "price": 12.43,
+      "sma20": 12.594,
+      "sma50": 12.3496,
+      "atr14_pct": 2.15,
+      "avg_dollar_volume_20d": 11849144.63,
+      "volume_ratio_20d": 0.35,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
       "name": "Bluerock Private Real Estate Fund",
-      "spread_pct": 1.201,
+      "spread_pct": 0.241,
       "short_float_pct": null
     },
     "conviction": {
-      "score": 62,
+      "score": 66,
       "data_completeness_pct": 83,
       "components": {
         "insider_role": {
@@ -7835,7 +8934,7 @@
           "max": 8
         },
         "spread": {
-          "points": 1,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -7851,16 +8950,14 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 3,
       "management_cluster_10d": 3,
       "cluster_value_10d": 7776998.59,
-      "risk_status": "WARN",
-      "risk_flags": [
-        "Spread geniş"
-      ],
-      "price_vs_insider_pct": -5.16,
+      "risk_status": "PASS",
+      "risk_flags": [],
+      "price_vs_insider_pct": -5.61,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -7894,17 +8991,17 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 12.27,
-      "sma20": 12.678,
-      "sma50": 12.147,
-      "atr14_pct": 6.21,
-      "avg_dollar_volume_20d": 70796081.52,
-      "volume_ratio_20d": 0.51,
+      "price": 11.91,
+      "sma20": 12.6235,
+      "sma50": 12.1592,
+      "atr14_pct": 6.47,
+      "avg_dollar_volume_20d": 66312618.29,
+      "volume_ratio_20d": 0.11,
       "trend": "neutral",
       "technical_confirmation": "unconfirmed",
-      "market_cap": 2678615137.11,
+      "market_cap": 2598933276.48,
       "name": "Neogen Corporation",
-      "spread_pct": 21.125,
+      "spread_pct": 25.615,
       "short_float_pct": 7.25
     },
     "conviction": {
@@ -7957,7 +9054,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -7966,7 +9063,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 2.68,
+      "price_vs_insider_pct": -0.33,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -8054,7 +9151,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -8149,7 +9246,7 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -8190,15 +9287,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.32,
-      "market_cap": 380474037.0,
+      "price": 4.428,
+      "sma20": 4.2271,
+      "sma50": 4.2374,
+      "atr14_pct": 3.28,
+      "avg_dollar_volume_20d": 685618.2,
+      "volume_ratio_20d": 0.25,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 374386450.15,
       "name": "Agora, Inc.",
-      "spread_pct": 53.89,
+      "spread_pct": 33.943,
       "short_float_pct": 0.84
     },
     "conviction": {
-      "score": 35,
-      "data_completeness_pct": 75,
+      "score": 34,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -8226,7 +9330,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 0,
           "max": 8
         },
         "spread": {
@@ -8238,15 +9342,15 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
@@ -8255,7 +9359,7 @@
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": 5.93,
+      "price_vs_insider_pct": 8.58,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -8289,15 +9393,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 4.68,
-      "market_cap": 1403732971.55,
+      "price": 4.4786,
+      "sma20": 4.3484,
+      "sma50": 4.3654,
+      "atr14_pct": 5.65,
+      "avg_dollar_volume_20d": 36510716.96,
+      "volume_ratio_20d": 0.55,
+      "trend": "neutral",
+      "technical_confirmation": "watch",
+      "market_cap": 1380594486.55,
       "name": "Borr Drilling Limited",
-      "spread_pct": 0.0,
+      "spread_pct": 0.222,
       "short_float_pct": 14.53
     },
     "conviction": {
-      "score": 60,
-      "data_completeness_pct": 75,
+      "score": 69,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 8,
@@ -8312,7 +9423,7 @@
           "max": 12
         },
         "cluster_buying": {
-          "points": 0,
+          "points": 9,
           "max": 14
         },
         "filing_freshness": {
@@ -8325,11 +9436,11 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 7,
           "max": 8
         },
         "spread": {
-          "points": 5,
+          "points": 4,
           "max": 5
         },
         "short_interest": {
@@ -8337,22 +9448,22 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 3,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 22787650.0,
+      "cluster_insiders_10d": 2,
+      "management_cluster_10d": 2,
+      "cluster_value_10d": 26559800.0,
       "risk_status": "PASS",
       "risk_flags": [],
-      "price_vs_insider_pct": -1.21,
+      "price_vs_insider_pct": -5.46,
       "verdict": "İZLE / TEYİT BEKLE"
     }
   },
@@ -8386,15 +9497,22 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 1.03,
-      "market_cap": 228779471.44,
+      "price": 1.025,
+      "sma20": 1.1873,
+      "sma50": 1.1669,
+      "atr14_pct": 9.93,
+      "avg_dollar_volume_20d": 1318733.51,
+      "volume_ratio_20d": 0.05,
+      "trend": "neutral",
+      "technical_confirmation": "unconfirmed",
+      "market_cap": 225479762.28,
       "name": "Uxin Limited",
-      "spread_pct": 29.058,
+      "spread_pct": 30.263,
       "short_float_pct": 0.68
     },
     "conviction": {
-      "score": 42,
-      "data_completeness_pct": 75,
+      "score": 40,
+      "data_completeness_pct": 95,
       "components": {
         "insider_role": {
           "points": 12,
@@ -8422,7 +9540,7 @@
           "max": 7
         },
         "dollar_volume": {
-          "points": null,
+          "points": 3,
           "max": 8
         },
         "spread": {
@@ -8434,24 +9552,24 @@
           "max": 5
         },
         "trend": {
-          "points": null,
+          "points": 3,
           "max": 6
         },
         "technical_confirmation": {
-          "points": null,
+          "points": 0,
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
-      "cluster_value_10d": 27357.67,
+      "cluster_value_10d": 31630.28,
       "risk_status": "BLOCK",
       "risk_flags": [
         "Spread %2.5 üzerinde"
       ],
-      "price_vs_insider_pct": -8.67,
+      "price_vs_insider_pct": -9.12,
       "verdict": "RİSKLİ / ELE"
     }
   },
@@ -8485,21 +9603,21 @@
     "freshness_basis": "transaction_date_proxy",
     "possible_private_placement": false,
     "market": {
-      "price": 15.22,
-      "sma20": 16.301,
-      "sma50": 17.5578,
-      "atr14_pct": 4.0,
-      "avg_dollar_volume_20d": 2777898.1,
-      "volume_ratio_20d": 0.7,
+      "price": 15.32,
+      "sma20": 16.185,
+      "sma50": 17.4744,
+      "atr14_pct": 3.87,
+      "avg_dollar_volume_20d": 2718511.65,
+      "volume_ratio_20d": 0.2,
       "trend": "bearish",
       "technical_confirmation": "unconfirmed",
-      "market_cap": 236817694.51,
+      "market_cap": 238373649.41,
       "name": "Saratoga Investment Corp New",
-      "spread_pct": 2.458,
+      "spread_pct": 0.391,
       "short_float_pct": 4.42
     },
     "conviction": {
-      "score": 47,
+      "score": 50,
       "data_completeness_pct": 95,
       "components": {
         "insider_role": {
@@ -8532,7 +9650,7 @@
           "max": 8
         },
         "spread": {
-          "points": 0,
+          "points": 3,
           "max": 5
         },
         "short_interest": {
@@ -8548,532 +9666,17 @@
           "max": 6
         }
       },
-      "freshness_hours": 169.0,
+      "freshness_hours": 184.0,
       "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
       "cluster_insiders_10d": 1,
       "management_cluster_10d": 1,
       "cluster_value_10d": 222450.0,
       "risk_status": "WARN",
       "risk_flags": [
-        "Spread geniş",
         "Mevcut trend aşağı"
       ],
-      "price_vs_insider_pct": 2.63,
+      "price_vs_insider_pct": 3.3,
       "verdict": "DÜŞÜK ÖNCELİK"
-    }
-  },
-  {
-    "id": "xoomar:HBIA-PK|SLATTERY THOMAS M.|2026-10-09|1000.0000|47.0000",
-    "source_key": "HBIA-PK|SLATTERY THOMAS M.|2026-10-09|1000.0000|47.0000",
-    "accession": null,
-    "ticker": "HBIA-PK",
-    "issuer": "HBIA-PK",
-    "issuer_cik": null,
-    "insider": "Slattery Thomas M.",
-    "insider_cik": "Slattery Thomas M.",
-    "role": "Director",
-    "officer_title": "Director",
-    "role_points": 8,
-    "is_entity": false,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 1000.0,
-    "avg_price": 47.0,
-    "value_usd": 47000.0,
-    "post_shares": 1000.0,
-    "prior_shares_est": 0.0,
-    "position_increase_pct": null,
-    "new_position": true,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/hbia-pk",
-    "sec_url": "https://xoomar.com/markets/insiders/hbia-pk",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {},
-    "conviction": {
-      "score": 38,
-      "data_completeness_pct": 58,
-      "components": {
-        "insider_role": {
-          "points": 8,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 1,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 12,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 0,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": null,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": null,
-          "max": 8
-        },
-        "spread": {
-          "points": null,
-          "max": 5
-        },
-        "short_interest": {
-          "points": null,
-          "max": 5
-        },
-        "trend": {
-          "points": null,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": null,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 47000.0,
-      "risk_status": "PASS",
-      "risk_flags": [],
-      "price_vs_insider_pct": null,
-      "verdict": "DÜŞÜK ÖNCELİK"
-    }
-  },
-  {
-    "id": "xoomar:IMSR|BUCKMAN FREDERICK W|2026-10-09|12000.0000|3.2780",
-    "source_key": "IMSR|BUCKMAN FREDERICK W|2026-10-09|12000.0000|3.2780",
-    "accession": null,
-    "ticker": "IMSR",
-    "issuer": "Terrestrial Energy Inc.",
-    "issuer_cik": null,
-    "insider": "BUCKMAN FREDERICK W",
-    "insider_cik": "BUCKMAN FREDERICK W",
-    "role": "Director",
-    "officer_title": "Director",
-    "role_points": 8,
-    "is_entity": false,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 12000.0,
-    "avg_price": 3.278,
-    "value_usd": 39336.0,
-    "post_shares": 18669.0,
-    "prior_shares_est": 6669.0,
-    "position_increase_pct": 179.94,
-    "new_position": false,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/imsr",
-    "sec_url": "https://xoomar.com/markets/insiders/imsr",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {
-      "price": 2.94,
-      "market_cap": 341111517.88,
-      "name": "Terrestrial Energy Inc.",
-      "spread_pct": 43.771,
-      "short_float_pct": 13.31
-    },
-    "conviction": {
-      "score": 60,
-      "data_completeness_pct": 75,
-      "components": {
-        "insider_role": {
-          "points": 8,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 1,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 12,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 12,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": 7,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": null,
-          "max": 8
-        },
-        "spread": {
-          "points": 0,
-          "max": 5
-        },
-        "short_interest": {
-          "points": 5,
-          "max": 5
-        },
-        "trend": {
-          "points": null,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": null,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 3,
-      "management_cluster_10d": 3,
-      "cluster_value_10d": 112279.3,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "Spread %2.5 üzerinde"
-      ],
-      "price_vs_insider_pct": -10.31,
-      "verdict": "RİSKLİ / ELE"
-    }
-  },
-  {
-    "id": "xoomar:WVVI|HAZLETT JOHN WALTER|2026-10-09|315.0000|1.9500",
-    "source_key": "WVVI|HAZLETT JOHN WALTER|2026-10-09|315.0000|1.9500",
-    "accession": null,
-    "ticker": "WVVI",
-    "issuer": "Willamette Valley Vineyards, In",
-    "issuer_cik": null,
-    "insider": "Hazlett John Walter",
-    "insider_cik": "Hazlett John Walter",
-    "role": "CFO",
-    "officer_title": "Chief Financial Officer",
-    "role_points": 12,
-    "is_entity": false,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 315.0,
-    "avg_price": 1.95,
-    "value_usd": 614.25,
-    "post_shares": 2315.0,
-    "prior_shares_est": 2000.0,
-    "position_increase_pct": 15.75,
-    "new_position": false,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/wvvi",
-    "sec_url": "https://xoomar.com/markets/insiders/wvvi",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {
-      "price": 2.0,
-      "sma20": 1.937,
-      "sma50": 2.0952,
-      "atr14_pct": 8.64,
-      "avg_dollar_volume_20d": 21174.3,
-      "volume_ratio_20d": 1.16,
-      "trend": "neutral",
-      "technical_confirmation": "watch",
-      "market_cap": 9959058.0,
-      "name": "Willamette Valley Vineyards, In",
-      "spread_pct": 52.326,
-      "short_float_pct": 0.22
-    },
-    "conviction": {
-      "score": 34,
-      "data_completeness_pct": 95,
-      "components": {
-        "insider_role": {
-          "points": 12,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 1,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 8,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 0,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": 1,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": 0,
-          "max": 8
-        },
-        "spread": {
-          "points": 0,
-          "max": 5
-        },
-        "short_interest": {
-          "points": 3,
-          "max": 5
-        },
-        "trend": {
-          "points": 3,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": 3,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 6399.95,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "20g dolar hacmi $0.5M altında",
-        "Spread %2.5 üzerinde",
-        "Piyasa değeri $30M altında"
-      ],
-      "price_vs_insider_pct": 2.56,
-      "verdict": "RİSKLİ / ELE"
-    }
-  },
-  {
-    "id": "xoomar:WVVI|HAZLETT JOHN WALTER|2026-10-09|750.0000|1.9700",
-    "source_key": "WVVI|HAZLETT JOHN WALTER|2026-10-09|750.0000|1.9700",
-    "accession": null,
-    "ticker": "WVVI",
-    "issuer": "Willamette Valley Vineyards, In",
-    "issuer_cik": null,
-    "insider": "Hazlett John Walter",
-    "insider_cik": "Hazlett John Walter",
-    "role": "CFO",
-    "officer_title": "Chief Financial Officer",
-    "role_points": 12,
-    "is_entity": false,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 750.0,
-    "avg_price": 1.97,
-    "value_usd": 1477.5,
-    "post_shares": 3664.0,
-    "prior_shares_est": 2914.0,
-    "position_increase_pct": 25.74,
-    "new_position": false,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/wvvi",
-    "sec_url": "https://xoomar.com/markets/insiders/wvvi",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {
-      "price": 2.0,
-      "sma20": 1.937,
-      "sma50": 2.0952,
-      "atr14_pct": 8.64,
-      "avg_dollar_volume_20d": 21174.3,
-      "volume_ratio_20d": 1.16,
-      "trend": "neutral",
-      "technical_confirmation": "watch",
-      "market_cap": 9959058.0,
-      "name": "Willamette Valley Vineyards, In",
-      "spread_pct": 52.326,
-      "short_float_pct": 0.22
-    },
-    "conviction": {
-      "score": 36,
-      "data_completeness_pct": 95,
-      "components": {
-        "insider_role": {
-          "points": 12,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 1,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 10,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 0,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": 1,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": 0,
-          "max": 8
-        },
-        "spread": {
-          "points": 0,
-          "max": 5
-        },
-        "short_interest": {
-          "points": 3,
-          "max": 5
-        },
-        "trend": {
-          "points": 3,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": 3,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 6399.95,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "20g dolar hacmi $0.5M altında",
-        "Spread %2.5 üzerinde",
-        "Piyasa değeri $30M altında"
-      ],
-      "price_vs_insider_pct": 1.52,
-      "verdict": "RİSKLİ / ELE"
-    }
-  },
-  {
-    "id": "xoomar:WVVI|HAZLETT JOHN WALTER|2026-10-09|100.0000|2.0000",
-    "source_key": "WVVI|HAZLETT JOHN WALTER|2026-10-09|100.0000|2.0000",
-    "accession": null,
-    "ticker": "WVVI",
-    "issuer": "Willamette Valley Vineyards, In",
-    "issuer_cik": null,
-    "insider": "Hazlett John Walter",
-    "insider_cik": "Hazlett John Walter",
-    "role": "CFO",
-    "officer_title": "Chief Financial Officer",
-    "role_points": 12,
-    "is_entity": false,
-    "transaction_date": "2026-10-09",
-    "filed_at": null,
-    "shares": 100.0,
-    "avg_price": 2.0,
-    "value_usd": 200.0,
-    "post_shares": 4100.0,
-    "prior_shares_est": 4000.0,
-    "position_increase_pct": 2.5,
-    "new_position": false,
-    "transaction_count": 1,
-    "source_url": "https://xoomar.com/markets/insiders/wvvi",
-    "sec_url": "https://xoomar.com/markets/insiders/wvvi",
-    "source_rule": "Xoomar SEC-derived Form 4: txCode=P and isOpenMarket=true",
-    "discovery_source": "Xoomar",
-    "freshness_basis": "transaction_date_proxy",
-    "possible_private_placement": false,
-    "market": {
-      "price": 2.0,
-      "sma20": 1.937,
-      "sma50": 2.0952,
-      "atr14_pct": 8.64,
-      "avg_dollar_volume_20d": 21174.3,
-      "volume_ratio_20d": 1.16,
-      "trend": "neutral",
-      "technical_confirmation": "watch",
-      "market_cap": 9959058.0,
-      "name": "Willamette Valley Vineyards, In",
-      "spread_pct": 52.326,
-      "short_float_pct": 0.22
-    },
-    "conviction": {
-      "score": 28,
-      "data_completeness_pct": 95,
-      "components": {
-        "insider_role": {
-          "points": 12,
-          "max": 12
-        },
-        "purchase_value": {
-          "points": 1,
-          "max": 15
-        },
-        "position_increase": {
-          "points": 2,
-          "max": 12
-        },
-        "cluster_buying": {
-          "points": 0,
-          "max": 14
-        },
-        "filing_freshness": {
-          "points": 3,
-          "max": 10,
-          "proxy": true
-        },
-        "market_cap": {
-          "points": 1,
-          "max": 7
-        },
-        "dollar_volume": {
-          "points": 0,
-          "max": 8
-        },
-        "spread": {
-          "points": 0,
-          "max": 5
-        },
-        "short_interest": {
-          "points": 3,
-          "max": 5
-        },
-        "trend": {
-          "points": 3,
-          "max": 6
-        },
-        "technical_confirmation": {
-          "points": 3,
-          "max": 6
-        }
-      },
-      "freshness_hours": 169.0,
-      "freshness_label": "İşlem tarihi yaşı (SEC filing zamanı mevcut değil)",
-      "cluster_insiders_10d": 1,
-      "management_cluster_10d": 1,
-      "cluster_value_10d": 6399.95,
-      "risk_status": "BLOCK",
-      "risk_flags": [
-        "20g dolar hacmi $0.5M altında",
-        "Spread %2.5 üzerinde",
-        "Piyasa değeri $30M altında"
-      ],
-      "price_vs_insider_pct": 0.0,
-      "verdict": "RİSKLİ / ELE"
     }
   }
 ]
